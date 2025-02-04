@@ -1,19 +1,31 @@
-import Heal from "../assets/Logo.svg"
+import Heal from "../assets/Logo.svg";
+import { NavLink } from "react-router-dom";
+
 const Navbar = () => {
+  const navItems = [
+    { name: "Home", to: "/" },
+    { name: "Disease", to: "/disease" },
+    { name: "Drugs", to: "/drugs" },
+    { name: "Clinic", to: "/clinic" },
+    { name: "Pharmacy", to: "/pharmacy" },
+    { name: "Blogs", to: "/blogs" },
+  ];
+  return (
+    <div className="flex items-center justify-between mx-5 my-2">
+      <img src={Heal} alt="Healthify Logo" className="w-40" />
+      <nav className="no-underline flex gap-2 bg-white rounded-full">
+        {navItems.map((item) => (
+          <NavLink
+            key={item.to}
+            to={item.to}
+            className={({ isActive }) => `Nav ${isActive ? "active" : ""}`}
+          >
+            {item.name}
+          </NavLink>
+        ))}
+      </nav>
+    </div>
+  );
+};
 
-    return (
-        <div className="flex items-center justify-between mx-5 my-2">
-            <img src={Heal} alt="Healthify Logo" />
-            <nav className="no-underline flex gap-6">
-                <a href="">Home</a>
-                <a href="">Disease</a>
-                <a href="">Drugs</a>
-                <a href="">Clinic</a>
-                <a href="">Pharmacy</a>
-                <a href="">Blogs</a>
-            </nav>
-        </div>
-    )
-}
-
-export default Navbar
+export default Navbar;
