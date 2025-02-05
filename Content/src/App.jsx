@@ -1,10 +1,10 @@
 import { Routes, Route } from "react-router-dom";
-import Dashboard from "./pages/Dashboard/Dashboard";
+import Landing from "./pages/Landing/Landing";
 
 const App = () => {
   return (
     <Routes>
-      <Route path="/" element={<Dashboard />} />
+      <Route path="/" element={<Landing />} />
     </Routes>
   );
 };
