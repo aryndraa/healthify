@@ -11,9 +11,9 @@ const Navbar = () => {
     { name: "Blogs", to: "/blogs" },
   ];
   return (
-    <div className="flex items-center justify-between mx-5 mt-10 mb-12">
+    <div className="flex items-center justify-between  mt-10 mb-12">
       <img src={Heal} alt="Healthify Logo" className="w-40" />
-      <nav className="no-underline flex gap-2 bg-white rounded-full">
+      <nav className="no-underline flex bg-white rounded-full">
         {navItems.map((item) => (
           <NavLink
             key={item.to}
