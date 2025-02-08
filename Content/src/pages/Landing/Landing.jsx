@@ -2,6 +2,14 @@ import Navbar from "../../component/navbar";
 import IDemo from "../../assets/Demo.svg";
 import patient from "../../assets/patient.png";
 import pharmacy from "../../assets/Rectangle 70.svg";
+import IDemo2 from "../../assets/idemo2.svg";
+import Clinic from "../../assets/Rectangle 71.svg";
+import Drugs from "../../assets/Rectangle 74.svg";
+import Disease from "../../assets/Rectangle 75.svg";
+import Clinic2 from "../../assets/Rectangle 73.svg";
+import Jinx from "../../assets/Rectangle 76.svg";
+import Dyven from "../../assets/Rectangle 77.svg";
+
 import "../Landing/Landing.css";
 
 const Landing = () => {
@@ -295,7 +303,7 @@ const Landing = () => {
 					<div className="w-[370px] max-h-[400px]  bg-white rounded-[40px] ">
 						<div
 							className=" h-[307px] justify-end flex"
-							style={{ backgroundImage: `url(${pharmacy})` }}
+							style={{ backgroundImage: `url(${Clinic})` }}
 						>
 							<svg
 								className=" rounded-full p-[20px] max-w-[72px] max-h-[72px] m-4 "
@@ -316,13 +324,13 @@ const Landing = () => {
 							</svg>
 						</div>
 						<p className="p-5 text-start font-semibold text-2xl">
-							Find Nearest Pharmacy
+							Find Nearest Clinics
 						</p>
 					</div>
 					<div className="w-[370px] max-h-[400px]  bg-white rounded-[40px] ">
 						<div
 							className=" h-[307px] justify-end flex"
-							style={{ backgroundImage: `url(${pharmacy})` }}
+							style={{ backgroundImage: `url(${Drugs})` }}
 						>
 							<svg
 								className=" rounded-full p-[20px] max-w-[72px] max-h-[72px] m-4 "
@@ -343,13 +351,13 @@ const Landing = () => {
 							</svg>
 						</div>
 						<p className="p-5 text-start font-semibold text-2xl">
-							Find Nearest Pharmacy
+							Browse Drugs
 						</p>
 					</div>
 					<div className="w-[370px] max-h-[400px]  bg-white rounded-[40px] ">
 						<div
 							className=" h-[307px] justify-end flex"
-							style={{ backgroundImage: `url(${pharmacy})` }}
+							style={{ backgroundImage: `url(${Disease})` }}
 						>
 							<svg
 								className=" rounded-full p-[20px] max-w-[72px] max-h-[72px] m-4 "
@@ -370,7 +378,7 @@ const Landing = () => {
 							</svg>
 						</div>
 						<p className="p-5 text-start font-semibold text-2xl">
-							Find Nearest Pharmacy
+							Disease Information
 						</p>
 					</div>
 				</div>
@@ -379,11 +387,212 @@ const Landing = () => {
 			<div
 				className="max-w-[1680px] h-[500px] rounded-[40px] mt-4"
 				style={{
-					backgroundImage: `url(${IDemo})`,
+					backgroundImage: `url(${IDemo2})`,
 					backgroundSize: "cover",
 					backgroundPosition: "center",
 				}}
 			></div>
+
+			<div className="flex gap-4 mt-12">
+				<div className="BOX2 bg-[#213170] flex flex-col h-screen justify-between">
+					<div className="flex flex-col gap-4">
+						<div className="flex justify-between ">
+							<p className="text-5xl font-semibold text-white ">
+								Explore Clinics Nearby
+							</p>
+							<svg
+								className=" rounded-full p-[20px] max-w-[72px] max-h-[72px]"
+								style={{ backgroundColor: "white" }}
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 24 24"
+							>
+								<path
+									fill="currentColor"
+									fillRule="evenodd"
+									d="M9 6.75a.75.75 0 0 1 0-1.5h9a.75.75 0 0 1 .75.75v9a.75.75 0 0 1-1.5 0V7.81L6.53 18.53a.75.75 0 0 1-1.06-1.06L16.19 6.75z"
+									clipRule="evenodd"
+								></path>
+							</svg>
+						</div>
+						<p className="text-white text-lg">
+							Need medical checkup?, we make it easy to find
+							nearby clinics for you
+						</p>
+					</div>
+					<div className="text-end">
+						<p className="text-[64px] font-semibold text-white">
+							12K+
+						</p>
+						<p className=" text-[18px] text-white">
+							Clinics near you!
+						</p>
+					</div>
+				</div>
+				<div
+					className="BOX2  flex flex-col h-screen w-screen justify-between"
+					style={{
+						backgroundImage: `url(${Clinic2})`,
+						backgroundSize: "cover",
+						backgroundPosition: "center",
+					}}
+				>
+					<svg
+						className=" rounded-full p-[20px] max-w-[72px] max-h-[72px] self-end"
+						style={{ backgroundColor: "white" }}
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 24 24"
+					>
+						<path
+							fill="currentColor"
+							fillRule="evenodd"
+							d="M9 6.75a.75.75 0 0 1 0-1.5h9a.75.75 0 0 1 .75.75v9a.75.75 0 0 1-1.5 0V7.81L6.53 18.53a.75.75 0 0 1-1.06-1.06L16.19 6.75z"
+							clipRule="evenodd"
+						></path>
+					</svg>
+					<div className="flex  bg-white rounded-[40px] p-[22px]  items-center justify-between">
+						<div>
+							<p className="text-2xl font-semibold">
+								Mahardika's Clinics
+							</p>
+							<p className="text-base">Dental Clinics</p>
+						</div>
+						<div>
+							<p className="text-[32px] font-medium">2KM</p>
+						</div>
+					</div>
+				</div>
+				<div
+					className="BOX2  flex flex-col bg-slate-500 h-screen w-screen justify-between"
+					// style={{
+					// 	backgroundImage: `url(${Clinic2})`,
+					// 	backgroundSize: "cover",
+					// 	backgroundPosition: "center",
+					// }}
+				>
+					<svg
+						className=" rounded-full p-[20px] max-w-[72px] max-h-[72px] self-end"
+						style={{ backgroundColor: "white" }}
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 24 24"
+					>
+						<path
+							fill="currentColor"
+							fillRule="evenodd"
+							d="M9 6.75a.75.75 0 0 1 0-1.5h9a.75.75 0 0 1 .75.75v9a.75.75 0 0 1-1.5 0V7.81L6.53 18.53a.75.75 0 0 1-1.06-1.06L16.19 6.75z"
+							clipRule="evenodd"
+						></path>
+					</svg>
+					<div className="flex  bg-white rounded-[40px] p-[22px]  items-center justify-between">
+						<div>
+							<p className="text-2xl font-semibold">
+								Vaelrino Clinics & Medics
+							</p>
+							<p className="text-base">Cardiology Clinics</p>
+						</div>
+						<div>
+							<p className="text-[32px] font-medium">2KM</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div className="flex  flex-row-reverse gap-4 mt-12">
+				<div className="BOX2 bg-[#C5E5FF] flex flex-col h-screen justify-between">
+					<div className="flex flex-col gap-4">
+						<div className="flex justify-between ">
+							<p className="text-5xl font-semibold  ">
+								Explore Nearest Pharmacy
+							</p>
+							<svg
+								className=" rounded-full p-[20px] max-w-[72px] max-h-[72px]"
+								style={{ backgroundColor: "white" }}
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 24 24"
+							>
+								<path
+									fill="currentColor"
+									fillRule="evenodd"
+									d="M9 6.75a.75.75 0 0 1 0-1.5h9a.75.75 0 0 1 .75.75v9a.75.75 0 0 1-1.5 0V7.81L6.53 18.53a.75.75 0 0 1-1.06-1.06L16.19 6.75z"
+									clipRule="evenodd"
+								></path>
+							</svg>
+						</div>
+						<p className="text-lg">
+							Need a quick drugs or herbal?, Discover more listed
+							pharmacy near you
+						</p>
+					</div>
+					<div className="text-end">
+						<p className="text-[64px] font-semibold">3K+</p>
+						<p className=" text-[18px] ">Pharmacy near you!</p>
+					</div>
+				</div>
+				<div
+					className="BOX2  flex flex-col h-screen w-screen justify-between"
+					style={{
+						backgroundImage: `url(${Jinx})`,
+						backgroundSize: "cover",
+						backgroundPosition: "center",
+					}}
+				>
+					<svg
+						className=" rounded-full p-[20px] max-w-[72px] max-h-[72px] self-end"
+						style={{ backgroundColor: "white" }}
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 24 24"
+					>
+						<path
+							fill="currentColor"
+							fillRule="evenodd"
+							d="M9 6.75a.75.75 0 0 1 0-1.5h9a.75.75 0 0 1 .75.75v9a.75.75 0 0 1-1.5 0V7.81L6.53 18.53a.75.75 0 0 1-1.06-1.06L16.19 6.75z"
+							clipRule="evenodd"
+						></path>
+					</svg>
+					<div className="flex  bg-white rounded-[40px] p-[22px]  items-center justify-between">
+						<div>
+							<p className="text-2xl font-semibold">
+								Jinx Pharmacy
+							</p>
+							<p className="text-base">Hospital Pharmacy</p>
+						</div>
+						<div>
+							<p className="text-[32px] font-medium">2KM</p>
+						</div>
+					</div>
+				</div>
+				<div
+					className="BOX2  flex flex-col h-screen w-screen justify-between"
+					style={{
+						backgroundImage: `url(${Dyven})`,
+						backgroundSize: "cover",
+						backgroundPosition: "center",
+					}}
+				>
+					<svg
+						className=" rounded-full p-[20px] max-w-[72px] max-h-[72px] self-end"
+						style={{ backgroundColor: "white" }}
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 24 24"
+					>
+						<path
+							fill="currentColor"
+							fillRule="evenodd"
+							d="M9 6.75a.75.75 0 0 1 0-1.5h9a.75.75 0 0 1 .75.75v9a.75.75 0 0 1-1.5 0V7.81L6.53 18.53a.75.75 0 0 1-1.06-1.06L16.19 6.75z"
+							clipRule="evenodd"
+						></path>
+					</svg>
+					<div className="flex  bg-white rounded-[40px] p-[22px]  items-center justify-between">
+						<div>
+							<p className="text-2xl font-semibold">
+								Dyven Pharmacy
+							</p>
+							<p className="text-base">Pharmacy</p>
+						</div>
+						<div>
+							<p className="text-[32px] font-medium">2KM</p>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	);
 };
