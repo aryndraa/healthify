@@ -1,11 +1,40 @@
 @tailwind utilities;
 
- .deskItem1{
+:root {
+	  --primary-color: #ffff;
+	  --second-color: #213170;
+}
+
+.deskItem1 {
 	font-size: 19px;
 	line-height: 25px;
- }
+}
 
 @layer utilities {
+
+	.Text64sm{
+		font-size: 64px;
+		font-weight: 600;
+	}
+
+	.Text32m{
+		font-size: 32px;
+		font-weight: 500
+	}
+	
+	.Text2sm{
+		font-size: 18px;
+		line-height: 2rem;
+		font-weight:600 ;
+	}
+	.Text24sm{
+		font-size: 24px;
+		line-height: 2rem;
+		font-weight:600 ;
+	}
+
+
+
 	.Nav {
 		font-weight: 600;
 		padding: 15px 20px;
@@ -34,10 +63,9 @@
 		background-color: inherit;
 	}
 
-	.item-1 :nth-child(1){
+	.item-1 :nth-child(1) {
 		background-color: inherit;
 	}
-	
 
 	.Button {
 		display: flex;
@@ -48,24 +76,22 @@
 		border-radius: 40px;
 		background-color: white;
 		border: solid;
-		border-width:1px;
+		border-width: 1px;
 	}
 
-	.Button:hover{
+	.Button:hover {
 		background-color: #213170;
 		color: white;
-
 	}
 
-.Container1 {
-   display: flex;
-   flex-direction: column;
-   gap: 16px;
-   width: 833px;
-}
+	.Container1 {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+		width: 833px;
+	}
 
-
-.item-2 {
+	.item-2 {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
@@ -79,18 +105,37 @@
 		background-color: inherit;
 	}
 
-.BOX {
-	margin-top: 16px;
-	width: 408px;
-	padding: 32px;
-	background-color: white;
-	border-radius: 40px;
-}
-.BOX2 {
-	max-height: 450px;
-	max-width: 549px;
-	padding: 32px;
-	border-radius: 40px;
-}
+	.BOX {
+		margin-top: 16px;
+		width: 408px;
+		padding: 32px;
+		background-color: white;
+		border-radius: 40px;
+	}
+	.BOX2 {
+		max-height: 450px;
+		width: 549px;
+		padding: 32px;
+		border-radius: 40px;
+	}
+	.BLOG {
+		max-height: 450px;
+		width: 549px;
+		padding: 32px;
+		border-radius: 40px;
+	}
 
+	.BLOG:hover{
+		background-color: #213170;
+		color: white;
+	}
+	.Tag{
+		font-size: 1rem;
+		padding: 4px 16px 4px 16px ;
+
+		border: solid;
+		border-width: 1px;
+		border-radius: 24px;
+		max-height: fit-content;
+	}
 }

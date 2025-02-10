@@ -1,22 +1,23 @@
 import Navbar from "../../component/navbar";
 import IDemo from "../../assets/Demo.svg";
+import IDemo2 from "../../assets/idemo2.svg";
 import patient from "../../assets/patient.png";
 import pharmacy from "../../assets/Rectangle 70.svg";
-import IDemo2 from "../../assets/idemo2.svg";
 import Clinic from "../../assets/Rectangle 71.svg";
+import Clinic2 from "../../assets/Rectangle 73.svg";
 import Drugs from "../../assets/Rectangle 74.svg";
 import Disease from "../../assets/Rectangle 75.svg";
-import Clinic2 from "../../assets/Rectangle 73.svg";
 import Jinx from "../../assets/Rectangle 76.svg";
 import Dyven from "../../assets/Rectangle 77.svg";
-
+import Blog1 from "../../assets/Ellipse 5-1.svg";
+import Blog2 from "../../assets/Ellipse 5-2.svg";
+import Blog3 from "../../assets/Ellipse 5.svg";
 import "../Landing/Landing.css";
 
 const Landing = () => {
 	return (
 		<div>
 			<Navbar />
-
 			<div className="mt-9 max-w-screen flex gap-4">
 				<div className="Container1 w-full ">
 					<div className="item-1">
@@ -37,7 +38,9 @@ const Landing = () => {
 
 							<div className=" flex flex-wrap gap-4">
 								<div className="Button  ">
-									<p>Nearest Pharmacy</p>
+									<p className="font-medium">
+										Nearest Pharmacy
+									</p>
 									<svg
 										className=""
 										xmlns="http://www.w3.org/2000/svg"
@@ -56,7 +59,9 @@ const Landing = () => {
 									</svg>
 								</div>
 								<div className="Button   ">
-									<p>Nearest Clinic</p>
+									<p className="font-medium">
+										Nearest Clinic
+									</p>
 									<svg
 										className=""
 										xmlns="http://www.w3.org/2000/svg"
@@ -75,7 +80,9 @@ const Landing = () => {
 									</svg>
 								</div>
 								<div className="Button ">
-									<p>Read our Blogs</p>
+									<p className="font-medium">
+										Read our Blogs
+									</p>
 									<svg
 										className=""
 										xmlns="http://www.w3.org/2000/svg"
@@ -94,7 +101,9 @@ const Landing = () => {
 									</svg>
 								</div>
 								<div className="Button ">
-									<p>BMI Calculator</p>
+									<p className="font-medium">
+										BMI Calculator
+									</p>
 									<svg
 										className=""
 										xmlns="http://www.w3.org/2000/svg"
@@ -148,7 +157,6 @@ const Landing = () => {
 					style={{ backgroundImage: `url(${IDemo})` }}
 				></div>
 			</div>
-
 			<div className="flex gap-4">
 				<div className="BOX">
 					<div className="flex justify-between  mb-[71px]">
@@ -261,7 +269,6 @@ const Landing = () => {
 					</p>
 				</div>
 			</div>
-
 			<div className="max-w-[1680px] max-h-[706px] bg-[#213170] flex flex-col justify-center text-center p-[62px] rounded-[40px] mt-12 ">
 				<div className=" flex flex-col gap-6  items-center justify-center align-middle mb-16">
 					<p className="text-[48px] font-semibold  text-white">
@@ -383,7 +390,6 @@ const Landing = () => {
 					</div>
 				</div>
 			</div>
-
 			<div
 				className="max-w-[1680px] h-[500px] rounded-[40px] mt-4"
 				style={{
@@ -392,7 +398,6 @@ const Landing = () => {
 					backgroundPosition: "center",
 				}}
 			></div>
-
 			<div className="flex gap-4 mt-12">
 				<div className="BOX2 bg-[#213170] flex flex-col h-screen justify-between">
 					<div className="flex flex-col gap-4">
@@ -495,7 +500,7 @@ const Landing = () => {
 					</div>
 				</div>
 			</div>
-			<div className="flex  flex-row-reverse gap-4 mt-12">
+			<div className="flex  flex-row-reverse gap-4 my-12">
 				<div className="BOX2 bg-[#C5E5FF] flex flex-col h-screen justify-between">
 					<div className="flex flex-col gap-4">
 						<div className="flex justify-between ">
@@ -589,6 +594,96 @@ const Landing = () => {
 						</div>
 						<div>
 							<p className="text-[32px] font-medium">2KM</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			{/* blog content container  */}
+			<div className=" flex flex-col gap-4">
+				<div className=" flex justify-between p-8 bg-white rounded-[40px] items-center">
+					<p className="text-5xl font-semibold">Explore Our Blogs</p>
+					<svg
+						className=" rounded-full p-[20px] max-w-[72px] max-h-[72px]"
+						style={{ backgroundColor: "#C5E5FF" }}
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 24 24"
+					>
+						<path
+							fill="currentColor"
+							fillRule="evenodd"
+							d="M9 6.75a.75.75 0 0 1 0-1.5h9a.75.75 0 0 1 .75.75v9a.75.75 0 0 1-1.5 0V7.81L6.53 18.53a.75.75 0 0 1-1.06-1.06L16.19 6.75z"
+							clipRule="evenodd"
+						></path>
+					</svg>
+				</div>
+
+				<div className="flex gap-4">
+					{/* blog content 1  */}
+					<div className="BLOG bg-white h-screen flex flex-col justify-between">
+						<div className="flex  justify-between">
+							<div className="flex gap-4">
+								<p className="Tag text-whi">Health</p>
+								<p className="Tag ">Disease</p>
+							</div>
+							<img src={Blog3} alt="" height={140} />
+						</div>
+						<div className="Blog-Content flex flex-col gap-4">
+							<p className="text-2xl font-semibold">
+								This is why you always open incognito tabs at
+								night
+							</p>
+							<p className="text-lg">
+								Market important all turn accountable like cc
+								didn't. Turn dog commitment engagement
+								contribution book silently I container.
+								Competitors procrastinating unpack marginalised
+								company please.{" "}
+							</p>
+						</div>
+					</div>
+					{/* blog content 2 */}
+					<div className="BLOG bg-white h-screen flex flex-col justify-between">
+						<div className="flex  justify-between">
+							<div className="flex gap-4">
+								<p className="Tag text-whi">Health</p>
+								<p className="Tag ">Disease</p>
+							</div>
+							<img src={Blog2} alt="" height={140} />
+						</div>
+						<div className="Blog-Content flex flex-col gap-4">
+							<p className="text-2xl font-semibold">
+								New virus Nvidia 5090 make gamers broke
+							</p>
+							<p className="text-lg">
+								Market important all turn accountable like cc
+								didn't. Turn dog commitment engagement
+								contribution book silently I container.
+								Competitors procrastinating unpack marginalised
+								company please.{" "}
+							</p>
+						</div>
+					</div>
+					{/* blog content 3  */}
+					<div className="BLOG bg-white h-screen flex flex-col justify-between">
+						<div className="flex  justify-between">
+							<div className="flex gap-4">
+								<p className="Tag text-whi">Health</p>
+								<p className="Tag ">Disease</p>
+							</div>
+							<img src={Blog1} alt="" height={140} />
+						</div>
+						<div className="Blog-Content flex flex-col gap-4">
+							<p className="text-2xl font-semibold">
+								Cheat code to boost your immune (100% Legit)
+							</p>
+							<p className="text-lg">
+								Market important all turn accountable like cc
+								didn't. Turn dog commitment engagement
+								contribution book silently I container.
+								Competitors procrastinating unpack marginalised
+								company please.{" "}
+							</p>
 						</div>
 					</div>
 				</div>
