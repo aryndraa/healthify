@@ -1,6 +1,12 @@
+// CSS 
+import "../Landing/Landing.css";
+// Component 
 import Navbar from "../../component/navbar";
+import FAQ from "../../component/FAQ";
+// image assets 
 import IDemo from "../../assets/Demo.svg";
 import IDemo2 from "../../assets/idemo2.svg";
+import IDemo3 from "../../assets/idemo3.svg";
 import patient from "../../assets/patient.png";
 import pharmacy from "../../assets/Rectangle 70.svg";
 import Clinic from "../../assets/Rectangle 71.svg";
@@ -12,7 +18,6 @@ import Dyven from "../../assets/Rectangle 77.svg";
 import Blog1 from "../../assets/Ellipse 5-1.svg";
 import Blog2 from "../../assets/Ellipse 5-2.svg";
 import Blog3 from "../../assets/Ellipse 5.svg";
-import "../Landing/Landing.css";
 
 const Landing = () => {
 	return (
@@ -135,7 +140,7 @@ const Landing = () => {
 					<div className="flex gap-4">
 						<img
 							src={IDemo}
-							alt=""
+							alt="particle image"
 							width={250}
 							className="rounded-[40px]"
 						/>
@@ -233,7 +238,7 @@ const Landing = () => {
 					<div className=" flex flex-col justify-between">
 						<img
 							src={patient}
-							alt=""
+							alt="patient image"
 							width={200}
 							style={{ backgroundColor: "white" }}
 							className="my-4"
@@ -626,7 +631,11 @@ const Landing = () => {
 								<p className="Tag text-whi">Health</p>
 								<p className="Tag ">Disease</p>
 							</div>
-							<img src={Blog3} alt="" height={140} />
+							<img
+								src={Blog3}
+								alt="Blog timoni image"
+								height={140}
+							/>
 						</div>
 						<div className="Blog-Content flex flex-col gap-4">
 							<p className="text-2xl font-semibold">
@@ -649,7 +658,11 @@ const Landing = () => {
 								<p className="Tag text-whi">Health</p>
 								<p className="Tag ">Disease</p>
 							</div>
-							<img src={Blog2} alt="" height={140} />
+							<img
+								src={Blog2}
+								alt="Blog timoni image"
+								height={140}
+							/>
 						</div>
 						<div className="Blog-Content flex flex-col gap-4">
 							<p className="text-2xl font-semibold">
@@ -671,7 +684,11 @@ const Landing = () => {
 								<p className="Tag text-whi">Health</p>
 								<p className="Tag ">Disease</p>
 							</div>
-							<img src={Blog1} alt="" height={140} />
+							<img
+								src={Blog1}
+								alt="Blog timoni image"
+								height={140}
+							/>
 						</div>
 						<div className="Blog-Content flex flex-col gap-4">
 							<p className="text-2xl font-semibold">
@@ -687,6 +704,14 @@ const Landing = () => {
 						</div>
 					</div>
 				</div>
+			</div>
+
+			<div className="mt-[34px] mb-[30px] flex gap-4">
+				<FAQ />
+				<div
+					className="Container2 bg-cover bg-center rounded-[40px] w-[690px]"
+					style={{ backgroundImage: `url(${IDemo3})` }}
+				></div>
 			</div>
 		</div>
 	);
