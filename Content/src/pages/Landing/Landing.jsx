@@ -3,6 +3,7 @@ import "../Landing/Landing.css";
 // Component 
 import Navbar from "../../component/navbar";
 import FAQ from "../../component/FAQ";
+import Footer from "../../component/Footer";
 // image assets 
 import IDemo from "../../assets/Demo.svg";
 import IDemo2 from "../../assets/idemo2.svg";
@@ -713,6 +714,8 @@ const Landing = () => {
 					style={{ backgroundImage: `url(${IDemo3})` }}
 				></div>
 			</div>
+
+			<Footer />
 		</div>
 	);
 };

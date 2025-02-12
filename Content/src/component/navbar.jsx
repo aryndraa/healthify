@@ -19,8 +19,9 @@ const Navbar = () => {
 						key={item.to}
 						to={item.to}
 						className={({ isActive }) =>
-							`Nav ${isActive ? "active" : ""}`
+							`Nav ${isActive ? "active" : ""} text-xl`
 						}
+						
 					>
 						{item.name}
 					</NavLink>
