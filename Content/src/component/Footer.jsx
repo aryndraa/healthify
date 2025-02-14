@@ -68,17 +68,17 @@ const Footer = () => {
 							</li>
 							<li>
 								<a href="" className="opacity-35">
-									Home
+									Disease
 								</a>
 							</li>
 							<li>
 								<a href="" className="opacity-35">
-									Home
+									Drugs
 								</a>
 							</li>
 							<li>
 								<a href="" className="opacity-35">
-									Home
+									Blogs
 								</a>
 							</li>
 						</ul>
@@ -88,12 +88,12 @@ const Footer = () => {
 							</li>
 							<li>
 								<a href="" className="opacity-35">
-									Home
+									Clinics
 								</a>
 							</li>
 							<li>
 								<a href="" className="opacity-35">
-									Home
+									Pharmacy
 								</a>
 							</li>
 						</ul>
@@ -105,12 +105,17 @@ const Footer = () => {
 							</li>
 							<li>
 								<a href="" className="opacity-35">
-									Home
+									331 Rhett Ville, Burleson <br /> 58799
 								</a>
 							</li>
 							<li>
 								<a href="" className="opacity-35">
-									Home
+									1-449-709-9073 x5655
+								</a>
+							</li>
+							<li>
+								<a href="" className="opacity-35">
+									United State
 								</a>
 							</li>
 						</ul>
@@ -118,7 +123,7 @@ const Footer = () => {
 				</div>
 			</div>
 
-			<div className="flex flex-col gap-6 mt-16">
+			<div className="flex flex-col gap-6 mt-16 opacity-35">
 				<hr />
 				<div className="flex justify-between">
 					<p>Copyright © 2024 Healthify, inc. All Right Reserved</p>

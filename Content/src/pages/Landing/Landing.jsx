@@ -23,16 +23,16 @@ import Blog3 from "../../assets/Ellipse 5.svg";
 const Landing = () => {
 	return (
 		<div>
-			<Navbar />
-			<div className="mt-9 max-w-screen flex gap-4">
+			<Navbar  />
+			<div className=" max-w-screen flex gap-4 mt-[160px]">
 				<div className="Container1 w-full ">
 					<div className="item-1">
 						<div>
-							<p className=" font-semibold text-5xl">
+							<p className=" font-semibold text-5xl ">
 								Where Health Meets Knowledge for a Brighter
 								Future
 							</p>
-							<p className=" text-lg  mt-4 mb-6">
+							<p className=" text-lg  mt-4 mb-6 ">
 								Explore a wealth of resources designed to
 								empower you with the knowledge you need to make
 								informed health decisions. From understanding
