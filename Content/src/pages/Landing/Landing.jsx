@@ -1,3 +1,4 @@
+
 // CSS 
 import "../Landing/Landing.css";
 // Component 
@@ -23,16 +24,16 @@ import Blog3 from "../../assets/Ellipse 5.svg";
 const Landing = () => {
 	return (
 		<div>
-			<Navbar  />
+			<Navbar />
 			<div className=" max-w-screen flex gap-4 mt-[160px]">
-				<div className="Container1 w-full ">
+				<div className="Container1">
 					<div className="item-1">
 						<div>
-							<p className=" font-semibold text-5xl ">
+							<p className=" font-semibold text--5xl ">
 								Where Health Meets Knowledge for a Brighter
 								Future
 							</p>
-							<p className=" text-lg  mt-4 mb-6 ">
+							<p className=" text--lg  mt-4 mb-6 ">
 								Explore a wealth of resources designed to
 								empower you with the knowledge you need to make
 								informed health decisions. From understanding
@@ -138,18 +139,19 @@ const Landing = () => {
 						</p>
 					</div>
 
-					<div className="flex gap-4">
+					{/* item 2  */}
+					<div className="flex gap-4  ">
 						<img
 							src={IDemo}
 							alt="particle image"
 							width={250}
-							className="rounded-[40px]"
+							className="rounded-[40px] max-[1550px]:hidden"
 						/>
 						<div className="item-2">
 							<p className=" font-semibold text-4xl">
 								Our mision
 							</p>
-							<p className=" text-lg">
+							<p className=" text--lg">
 								Our mission is to empower individuals with
 								accessible health information that promotes
 								informed decision-making and enhances overall
@@ -158,12 +160,14 @@ const Landing = () => {
 						</div>
 					</div>
 				</div>
+				{/* item 3 */}
 				<div
-					className="Container2 bg-cover bg-center rounded-[40px] w-screen "
+					className="Container2 max-[1550px]:hidden bg-cover bg-center rounded-[40px] w-screen "
 					style={{ backgroundImage: `url(${IDemo})` }}
 				></div>
 			</div>
-			<div className="flex gap-4">
+
+			<div className="flex flex-wrap gap-4 justify-center">
 				<div className="BOX">
 					<div className="flex justify-between  mb-[71px]">
 						<p className="text-4xl font-semibold w-1/2  ">
@@ -183,8 +187,8 @@ const Landing = () => {
 							></path>
 						</svg>
 					</div>
-					<p className="text-[64px] font-semibold ">12K</p>
-					<p className="text-[18px]  ">
+					<p className="text--7xl font-semibold ">12K</p>
+					<p className="text--lg  ">
 						<strong className="">12K+</strong> Clinics have been
 						listed into our services. Helping you find the perfect
 						one
@@ -209,8 +213,8 @@ const Landing = () => {
 							></path>
 						</svg>
 					</div>
-					<p className="text-[64px] font-semibold ">16K</p>
-					<p className="text-[18px]  ">
+					<p className="text--7xl font-semibold ">16K</p>
+					<p className="text--lg  ">
 						<strong className="">12K+</strong> Pharmacys have been
 						listed into our services. Helping you find the perfect
 						one
@@ -244,7 +248,7 @@ const Landing = () => {
 							style={{ backgroundColor: "white" }}
 							className="my-4"
 						/>
-						<p className="text-[18px]  ">
+						<p className="text--lg  ">
 							Over <strong className="">200K+</strong> Patient we
 							help to finding their best choice for healthy need
 						</p>
@@ -269,23 +273,24 @@ const Landing = () => {
 							></path>
 						</svg>
 					</div>
-					{/* <p className="text-[64px] font-semibold ">12K</p> */}
-					<p className="text-[18px]  ">
+					{/* <p className="text--7xl font-semibold ">12K</p> */}
+					<p className="text--lg  ">
 						Browse Disease or find drugs on your nearest pharmacy!
 					</p>
 				</div>
 			</div>
-			<div className="max-w-[1680px] max-h-[706px] bg-[#213170] flex flex-col justify-center text-center p-[62px] rounded-[40px] mt-12 ">
+
+			<div className="max-w-[1680px] min-h-[706px] h-fit bg-[#213170] flex flex-col justify-center text-center p-[62px] rounded-[40px] mt-12 ">
 				<div className=" flex flex-col gap-6  items-center justify-center align-middle mb-16">
-					<p className="text-[48px] font-semibold  text-white">
+					<p className="text--5xl font-semibold  text-white">
 						Explore Our Services
 					</p>
-					<p className=" text-lg text-white max-w-[483px] ">
+					<p className=" text--lg text-white max-w-[483px] ">
 						The website that provide you best way to find
 						information to improve your health decision
 					</p>
 				</div>
-				<div className="flex gap-4">
+				<div className="flex flex-wrap justify-center gap-4">
 					<div className="w-[370px] max-h-[400px]  bg-white rounded-[40px] ">
 						<div
 							className=" h-[307px] justify-end flex"
@@ -309,7 +314,7 @@ const Landing = () => {
 								></path>
 							</svg>
 						</div>
-						<p className="p-5 text-start font-semibold text-2xl">
+						<p className="p-5 text-start font-semibold text--2xl">
 							Find Nearest Pharmacy
 						</p>
 					</div>
@@ -336,7 +341,7 @@ const Landing = () => {
 								></path>
 							</svg>
 						</div>
-						<p className="p-5 text-start font-semibold text-2xl">
+						<p className="p-5 text-start font-semibold text--2xl">
 							Find Nearest Clinics
 						</p>
 					</div>
@@ -363,7 +368,7 @@ const Landing = () => {
 								></path>
 							</svg>
 						</div>
-						<p className="p-5 text-start font-semibold text-2xl">
+						<p className="p-5 text-start font-semibold text--2xl">
 							Browse Drugs
 						</p>
 					</div>
@@ -390,12 +395,13 @@ const Landing = () => {
 								></path>
 							</svg>
 						</div>
-						<p className="p-5 text-start font-semibold text-2xl">
+						<p className="p-5 text-start font-semibold text--2xl">
 							Disease Information
 						</p>
 					</div>
 				</div>
 			</div>
+
 			<div
 				className="max-w-[1680px] h-[500px] rounded-[40px] mt-4"
 				style={{
@@ -404,11 +410,12 @@ const Landing = () => {
 					backgroundPosition: "center",
 				}}
 			></div>
-			<div className="flex gap-4 mt-12">
+
+			<div className="flex flex-wrap justify-center gap-4 mt-12">
 				<div className="BOX2 bg-[#213170] flex flex-col h-screen justify-between">
 					<div className="flex flex-col gap-4">
 						<div className="flex justify-between ">
-							<p className="text-5xl font-semibold text-white ">
+							<p className="text--5xl font-semibold text-white ">
 								Explore Clinics Nearby
 							</p>
 							<svg
@@ -425,20 +432,21 @@ const Landing = () => {
 								></path>
 							</svg>
 						</div>
-						<p className="text-white text-lg">
+						<p className="text-white text--lg">
 							Need medical checkup?, we make it easy to find
 							nearby clinics for you
 						</p>
 					</div>
 					<div className="text-end">
-						<p className="text-[64px] font-semibold text-white">
+						<p className="text--7xl font-semibold text-white">
 							12K+
 						</p>
-						<p className=" text-[18px] text-white">
+						<p className=" text--lg text-white">
 							Clinics near you!
 						</p>
 					</div>
 				</div>
+
 				<div
 					className="BOX2  flex flex-col h-screen w-screen justify-between"
 					style={{
@@ -462,16 +470,17 @@ const Landing = () => {
 					</svg>
 					<div className="flex  bg-white rounded-[40px] p-[22px]  items-center justify-between">
 						<div>
-							<p className="text-2xl font-semibold">
+							<p className="text--2xl font-semibold">
 								Mahardika's Clinics
 							</p>
 							<p className="text-base">Dental Clinics</p>
 						</div>
 						<div>
-							<p className="text-[32px] font-medium">2KM</p>
+							<p className="text--32 font-medium">2KM</p>
 						</div>
 					</div>
 				</div>
+
 				<div
 					className="BOX2  flex flex-col bg-slate-500 h-screen w-screen justify-between"
 					// style={{
@@ -495,22 +504,23 @@ const Landing = () => {
 					</svg>
 					<div className="flex  bg-white rounded-[40px] p-[22px]  items-center justify-between">
 						<div>
-							<p className="text-2xl font-semibold">
+							<p className="text--2xl font-semibold">
 								Vaelrino Clinics & Medics
 							</p>
 							<p className="text-base">Cardiology Clinics</p>
 						</div>
 						<div>
-							<p className="text-[32px] font-medium">2KM</p>
+							<p className="text--32 font-medium">2KM</p>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div className="flex  flex-row-reverse gap-4 my-12">
+
+			<div className="flex flex-wrap justify-center flex-row-reverse gap-4 my-12">
 				<div className="BOX2 bg-[#C5E5FF] flex flex-col h-screen justify-between">
 					<div className="flex flex-col gap-4">
 						<div className="flex justify-between ">
-							<p className="text-5xl font-semibold  ">
+							<p className="text--5xl font-semibold  ">
 								Explore Nearest Pharmacy
 							</p>
 							<svg
@@ -527,14 +537,14 @@ const Landing = () => {
 								></path>
 							</svg>
 						</div>
-						<p className="text-lg">
+						<p className="text--lg">
 							Need a quick drugs or herbal?, Discover more listed
 							pharmacy near you
 						</p>
 					</div>
 					<div className="text-end">
-						<p className="text-[64px] font-semibold">3K+</p>
-						<p className=" text-[18px] ">Pharmacy near you!</p>
+						<p className="text--7xl font-semibold">3K+</p>
+						<p className=" text--lg ">Pharmacy near you!</p>
 					</div>
 				</div>
 				<div
@@ -560,13 +570,13 @@ const Landing = () => {
 					</svg>
 					<div className="flex  bg-white rounded-[40px] p-[22px]  items-center justify-between">
 						<div>
-							<p className="text-2xl font-semibold">
+							<p className="text--2xl font-semibold">
 								Jinx Pharmacy
 							</p>
 							<p className="text-base">Hospital Pharmacy</p>
 						</div>
 						<div>
-							<p className="text-[32px] font-medium">2KM</p>
+							<p className="text--32 font-medium">2KM</p>
 						</div>
 					</div>
 				</div>
@@ -593,22 +603,22 @@ const Landing = () => {
 					</svg>
 					<div className="flex  bg-white rounded-[40px] p-[22px]  items-center justify-between">
 						<div>
-							<p className="text-2xl font-semibold">
+							<p className="text--2xl font-semibold">
 								Dyven Pharmacy
 							</p>
 							<p className="text-base">Pharmacy</p>
 						</div>
 						<div>
-							<p className="text-[32px] font-medium">2KM</p>
+							<p className="text--32 font-medium text">2KM</p>
 						</div>
 					</div>
 				</div>
 			</div>
 
 			{/* blog content container  */}
-			<div className=" flex flex-col gap-4">
+			<div className=" flex  flex-col gap-4">
 				<div className=" flex justify-between p-8 bg-white rounded-[40px] items-center">
-					<p className="text-5xl font-semibold">Explore Our Blogs</p>
+					<p className="text--5xl font-semibold">Explore Our Blogs</p>
 					<svg
 						className=" rounded-full p-[20px] max-w-[72px] max-h-[72px]"
 						style={{ backgroundColor: "#C5E5FF" }}
@@ -624,7 +634,7 @@ const Landing = () => {
 					</svg>
 				</div>
 
-				<div className="flex gap-4">
+				<div className="flex flex-wrap justify-center gap-4">
 					{/* blog content 1  */}
 					<div className="BLOG bg-white h-screen flex flex-col justify-between">
 						<div className="flex  justify-between">
@@ -639,11 +649,11 @@ const Landing = () => {
 							/>
 						</div>
 						<div className="Blog-Content flex flex-col gap-4">
-							<p className="text-2xl font-semibold">
+							<p className="text--2xl font-semibold">
 								This is why you always open incognito tabs at
 								night
 							</p>
-							<p className="text-lg">
+							<p className="text--lg">
 								Market important all turn accountable like cc
 								didn't. Turn dog commitment engagement
 								contribution book silently I container.
@@ -666,10 +676,10 @@ const Landing = () => {
 							/>
 						</div>
 						<div className="Blog-Content flex flex-col gap-4">
-							<p className="text-2xl font-semibold">
+							<p className="text--2xl font-semibold">
 								New virus Nvidia 5090 make gamers broke
 							</p>
-							<p className="text-lg">
+							<p className="text--lg">
 								Market important all turn accountable like cc
 								didn't. Turn dog commitment engagement
 								contribution book silently I container.
@@ -692,10 +702,10 @@ const Landing = () => {
 							/>
 						</div>
 						<div className="Blog-Content flex flex-col gap-4">
-							<p className="text-2xl font-semibold">
+							<p className="text--2xl font-semibold">
 								Cheat code to boost your immune (100% Legit)
 							</p>
-							<p className="text-lg">
+							<p className="text--lg">
 								Market important all turn accountable like cc
 								didn't. Turn dog commitment engagement
 								contribution book silently I container.

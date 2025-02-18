@@ -17,14 +17,14 @@ const Footer = () => {
 					<div className="flex flex-col gap-6">
 						<div>
 							<p className="text-xl">company</p>
-							<p className="text-[38px] font-semibold">
+							<p className="text--38 font-semibold">
 								Healthify.inc Health Information Center
 							</p>
 						</div>
 
 						<div>
 							<p className="text-xl">Explore</p>
-							<p className="text-[38px] font-semibold">
+							<p className="text--38 font-semibold">
 								Disease Information, Drugs Library, Pharmacy &
 								Clinics
 							</p>
@@ -35,7 +35,7 @@ const Footer = () => {
 				<div>
 					<div className="w-[652px]">
 						<div className="flex justify-between items-center mb-6">
-							<p className="text-[38px] font-semibold">
+							<p className="text--38 font-semibold">
 								Enter Your Email
 							</p>
 							<div className="bg-[#C5E5FF] w-fit p-4 rounded-full">
@@ -59,7 +59,7 @@ const Footer = () => {
 					<div className="flex gap-16 justify-end pt-16">
 						<ul>
 							<li>
-								<p className="text-2xl font-semibold">Pages</p>
+								<p className="text--2xl font-semibold">Pages</p>
 							</li>
 							<li>
 								<a href="" className="opacity-35">
@@ -84,7 +84,7 @@ const Footer = () => {
 						</ul>
 						<ul>
 							<li>
-								<p className="text-2xl font-semibold">Find</p>
+								<p className="text--2xl font-semibold">Find</p>
 							</li>
 							<li>
 								<a href="" className="opacity-35">
@@ -99,7 +99,7 @@ const Footer = () => {
 						</ul>
 						<ul>
 							<li>
-								<p className="text-2xl font-semibold">
+								<p className="text--2xl font-semibold">
 									Contact
 								</p>
 							</li>

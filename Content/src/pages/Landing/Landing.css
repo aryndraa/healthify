@@ -16,28 +16,30 @@
 
 
 @layer utilities {
+	.text--2xl{
+		font-size: clamp(1.125rem, 0.6563rem + 1.5vw, 1.5rem);
+		line-height: 32px;
 
-	.Text64sm{
-		font-size: 64px;
-		font-weight: 600;
 	}
-
-	.Text32m{
-		font-size: 32px;
-		font-weight: 500
-	}
-	
-	.Text2sm{
-		font-size: 18px;
-		line-height: 2rem;
-		font-weight:600 ;
-	}
-	.Text24sm{
-		font-size: 24px;
-		line-height: 2rem;
-		font-weight:600 ;
+	.text--lg{
+		font-size: clamp(0.875rem, 0.5625rem + 1vw, 1.125rem);
 	}
 
+	.text--32{
+		font-size: clamp(1.125rem, 0.0313rem + 3.5vw, 2rem);
+	}
+	.text--38{
+		font-size: clamp(1.125rem, -0.4375rem + 5vw, 2.375rem);
+	}
+
+	.text--5xl{
+		font-size: clamp(1rem, -1.5rem + 8vw, 3rem);
+		
+	}
+
+	.text--7xl{
+		font-size: clamp(1.25rem, -2.1875rem + 11vw, 4rem);
+	}
 
 
 	.Nav {
@@ -85,6 +87,8 @@
 	}
 	
 	.Button:hover {
+		transition: all;
+		transition-delay: 20ms;
 		background-color: #213170;
 		color: white;
 	}
@@ -93,7 +97,15 @@
 		display: flex;
 		flex-direction: column;
 		gap: 16px;
-		width: 833px;
+		max-width: 1680px;
+	}
+	@media only screen and (min-width:1553px) {
+		.Container1{
+			width: 833px;
+		}
+		.item-2{
+			width: 883px;
+		}
 	}
 
 	.item-2 {
@@ -104,7 +116,7 @@
 		gap: 20px;
 		background-color: white;
 		border-radius: 40px;
-		width: 833px;
+		
 	}
 	.item-2 p {
 		background-color: inherit;
