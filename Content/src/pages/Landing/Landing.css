@@ -24,6 +24,9 @@
 	.text--lg{
 		font-size: clamp(0.875rem, 0.5625rem + 1vw, 1.125rem);
 	}
+	.text--xl{
+		font-size: clamp(0.875rem, 0.4063rem + 1.5vw, 1.25rem);
+	}
 
 	.text--32{
 		font-size: clamp(1.125rem, 0.0313rem + 3.5vw, 2rem);
@@ -124,7 +127,8 @@
 
 	.BOX {
 		margin-top: 16px;
-		width: 408px;
+		max-width: 408px;
+		min-height: 350px;
 		padding: 32px;
 		background-color: white;
 		border-radius: 40px;

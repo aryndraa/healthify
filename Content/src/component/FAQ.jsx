@@ -33,9 +33,9 @@ const FAQ = () => {
 	};
 
 	return (
-		<div className="flex flex-col w-[973px] p-[34px] bg-white rounded-[40px] gap-[32px]">
+		<div className="flex flex-col min-w-[973px] w-screen p-[34px] bg-white rounded-[40px] gap-[32px]">
 			<div>
-				<p className="text-5xl font-semibold mb-[8px]">
+				<p className="text--5xl font-semibold mb-[8px]">
 					Frequently Asked Question
 				</p>
 				<p className="">
@@ -47,7 +47,7 @@ const FAQ = () => {
 				{faqData.map((item, index) => (
 					<div key={index} className="">
 						<motion.div
-							className=" text-2xl font-semibold"
+							className=" text--2xl font-semibold"
 							onClick={() => toggleFAQ(index)}
 							initial={false}
 						>
@@ -95,7 +95,7 @@ const FAQ = () => {
 									animate={{ opacity: 1, height: "auto" }}
 									exit={{ opacity: 0, height: 0 }}
 								>
-									<p className=" max-w-[787px] text-justify text-[18px]">
+									<p className=" min-w-[787px] text-justify text-[18px] mb-4">
 										{item.answer}
 									</p>
 								</motion.div>

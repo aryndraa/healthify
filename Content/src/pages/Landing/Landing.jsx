@@ -25,6 +25,7 @@ const Landing = () => {
 	return (
 		<div>
 			<Navbar />
+			{/* Hero  */}
 			<div className=" max-w-screen flex gap-4 mt-[160px]">
 				<div className="Container1">
 					<div className="item-1">
@@ -167,7 +168,7 @@ const Landing = () => {
 				></div>
 			</div>
 
-			<div className="flex flex-wrap gap-4 justify-center">
+			<div className="flex flex-wrap gap-4 justify-between">
 				<div className="BOX">
 					<div className="flex justify-between  mb-[71px]">
 						<p className="text-4xl font-semibold w-1/2  ">
@@ -717,10 +718,11 @@ const Landing = () => {
 				</div>
 			</div>
 
+			{/* Faq content  */}
 			<div className="mt-[34px] mb-[30px] flex gap-4">
 				<FAQ />
 				<div
-					className="Container2 bg-cover bg-center rounded-[40px] w-[690px]"
+					className="Container2 max-[1550px]:hidden bg-cover bg-center rounded-[40px] w-[690px]"
 					style={{ backgroundImage: `url(${IDemo3})` }}
 				></div>
 			</div>

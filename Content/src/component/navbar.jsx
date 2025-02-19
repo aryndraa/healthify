@@ -40,7 +40,7 @@ const Navbar = () => {
 								key={item.to}
 								to={item.to}
 								className={({ isActive }) =>
-									`Nav ${isActive ? "active" : ""} text-xl`
+									`Nav ${isActive ? "active" : ""} text--xl`
 								}
 							>
 								{item.name}

@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 const Footer = () => {
 	return (
 		<footer className="bg-[#213170] text-white p-16 rounded-[40px]">
-			<div className="container mx-auto flex justify-between">
-				<div className=" max-w-[536px] flex flex-col gap-12">
+			<div className="container mx-auto flex justify-between max-[1280px]:justify-end ">
+				<div className=" hidden max-w-[536px] xl:flex flex-col gap-12">
 					<div>
 						<img src={heal} alt=" healthify logo" />
 						<p className="max-w-[506px]">
