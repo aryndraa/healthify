@@ -2,9 +2,7 @@
 // CSS 
 import "../Landing/Landing.css";
 // Component 
-import Navbar from "../../component/navbar";
 import FAQ from "../../component/FAQ";
-import Footer from "../../component/Footer";
 // image assets 
 import IDemo from "../../assets/Demo.svg";
 import IDemo2 from "../../assets/idemo2.svg";
@@ -24,7 +22,6 @@ import Blog3 from "../../assets/Ellipse 5.svg";
 const Landing = () => {
 	return (
 		<div>
-			<Navbar />
 			<div className=" max-w-screen flex gap-4 mt-[160px]">
 				<div className="Container1">
 					<div className="item-1">
@@ -471,7 +468,7 @@ const Landing = () => {
 					<div className="flex  bg-white rounded-[40px] p-[22px]  items-center justify-between">
 						<div>
 							<p className="text--2xl font-semibold">
-								Mahardika's Clinics
+								Mahardika&apos;s Clinics
 							</p>
 							<p className="text-base">Dental Clinics</p>
 						</div>
@@ -655,7 +652,7 @@ const Landing = () => {
 							</p>
 							<p className="text--lg">
 								Market important all turn accountable like cc
-								didn't. Turn dog commitment engagement
+								didn&apos;t. Turn dog commitment engagement
 								contribution book silently I container.
 								Competitors procrastinating unpack marginalised
 								company please.{" "}
@@ -681,7 +678,7 @@ const Landing = () => {
 							</p>
 							<p className="text--lg">
 								Market important all turn accountable like cc
-								didn't. Turn dog commitment engagement
+								didn&apos;t. Turn dog commitment engagement
 								contribution book silently I container.
 								Competitors procrastinating unpack marginalised
 								company please.{" "}
@@ -707,7 +704,7 @@ const Landing = () => {
 							</p>
 							<p className="text--lg">
 								Market important all turn accountable like cc
-								didn't. Turn dog commitment engagement
+								didn&apos;t. Turn dog commitment engagement
 								contribution book silently I container.
 								Competitors procrastinating unpack marginalised
 								company please.{" "}
@@ -724,8 +721,6 @@ const Landing = () => {
 					style={{ backgroundImage: `url(${IDemo3})` }}
 				></div>
 			</div>
-
-			<Footer />
 		</div>
 	);
 };
