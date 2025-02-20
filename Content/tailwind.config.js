@@ -12,6 +12,10 @@ export default {
         secondary: "#213170",
         trinary: "#C5E5FF",
         text: "#171717"
+      },
+
+      borderRadius: {
+        xxl: "40px"
       }
     },
   },
