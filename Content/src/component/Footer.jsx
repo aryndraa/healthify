@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
 	return (
 		<footer className="bg-[#213170] text-white p-16 rounded-[40px]">
-			<div className="container mx-auto flex justify-between max-[1280px]:justify-end ">
+			<div className="container mx-auto flex justify-between max-[1280px]:justify-start ">
 				<div className=" hidden max-w-[536px] xl:flex flex-col gap-12">
 					<div>
 						<img src={heal} alt=" healthify logo" />
@@ -33,7 +33,7 @@ const Footer = () => {
 				</div>
 
 				<div>
-					<div className="w-[652px]">
+					<div className="min-w-[200px] min-[1440px]:w-[652px]">
 						<div className="flex justify-between items-center mb-6">
 							<p className="text--38 font-semibold">
 								Enter Your Email
@@ -56,8 +56,8 @@ const Footer = () => {
 						</div>
 						<hr className="border-t border-gray-100 opacity-35" />
 					</div>
-					<div className="flex gap-16 justify-end pt-16">
-						<ul>
+					<div className="flex flex-col  gap-16 pt-16 sm:flex sm:flex-row ">
+						<ul className="">
 							<li>
 								<p className="text--2xl font-semibold">Pages</p>
 							</li>
@@ -125,9 +125,9 @@ const Footer = () => {
 
 			<div className="flex flex-col gap-6 mt-16 opacity-35">
 				<hr />
-				<div className="flex justify-between">
+				<div className="flex flex-col justify-between sm:flex sm:flex-row gap-4">
 					<p>Copyright © 2024 Healthify, inc. All Right Reserved</p>
-					<div className="flex gap-12">
+					<div className="flex flex-col gap-2 sm:flex sm:flex-row sm:gap-12">
 						<a href="">Privacy Policy</a>
 						<a href="">FAQ</a>
 						<a href="">Terms of Service</a>

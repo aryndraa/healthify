@@ -22,9 +22,8 @@ import Blog3 from "../../assets/Ellipse 5.svg";
 const Landing = () => {
 	return (
 		<div>
-			<Navbar />
 			{/* Hero  */}
-			<div className=" max-w-screen flex gap-4 mt-[160px]">
+			<div className=" max-w-screen flex gap-4 mt-[100px]  sm:mt-[160px]">
 				<div className="Container1">
 					<div className="item-1">
 						<div>
@@ -44,7 +43,7 @@ const Landing = () => {
 
 							<div className=" flex flex-wrap gap-4">
 								<div className="Button  ">
-									<p className="font-medium">
+									<p className="font-medium text--lg">
 										Nearest Pharmacy
 									</p>
 									<svg
@@ -65,7 +64,7 @@ const Landing = () => {
 									</svg>
 								</div>
 								<div className="Button   ">
-									<p className="font-medium">
+									<p className="font-medium text--lg">
 										Nearest Clinic
 									</p>
 									<svg
@@ -86,7 +85,7 @@ const Landing = () => {
 									</svg>
 								</div>
 								<div className="Button ">
-									<p className="font-medium">
+									<p className="font-medium text--lg">
 										Read our Blogs
 									</p>
 									<svg
@@ -107,7 +106,7 @@ const Landing = () => {
 									</svg>
 								</div>
 								<div className="Button ">
-									<p className="font-medium">
+									<p className="font-medium text--lg">
 										BMI Calculator
 									</p>
 									<svg
@@ -130,7 +129,7 @@ const Landing = () => {
 							</div>
 						</div>
 
-						<p className="deskItem1  font-medium italic ">
+						<p className="deskItem1  font-medium italic text--lg ">
 							“Great health stems from great knowledge, as
 							understanding our bodies and the factors that
 							influence our well-being empowers us to make
@@ -139,15 +138,15 @@ const Landing = () => {
 					</div>
 
 					{/* item 2  */}
-					<div className="flex gap-4  ">
+					<div className="hidden  sm:flex  gap-4 ">
 						<img
 							src={IDemo}
 							alt="particle image"
 							width={250}
 							className="rounded-[40px] max-[1550px]:hidden"
 						/>
-						<div className="item-2">
-							<p className=" font-semibold text-4xl">
+						<div className="item-2 justify-center ">
+							<p className=" font-semibold text--4xl">
 								Our mision
 							</p>
 							<p className=" text--lg">
@@ -166,10 +165,10 @@ const Landing = () => {
 				></div>
 			</div>
 
-			<div className="flex flex-wrap gap-4 justify-between">
+			<div className="flex flex-wrap gap-4 justify-center">
 				<div className="BOX">
 					<div className="flex justify-between  mb-[71px]">
-						<p className="text-4xl font-semibold w-1/2  ">
+						<p className="text--4xl font-semibold w-1/2  ">
 							Clinics Listed
 						</p>
 						<svg
@@ -195,7 +194,7 @@ const Landing = () => {
 				</div>
 				<div className="BOX">
 					<div className="flex justify-between  mb-[71px]">
-						<p className="text-4xl font-semibold w-1/2  ">
+						<p className="text--4xl font-semibold w-1/2  ">
 							Supported Pharmacy
 						</p>
 						<svg
@@ -221,7 +220,7 @@ const Landing = () => {
 				</div>
 				<div className="BOX">
 					<div className="flex justify-between  mb-[71px]">
-						<p className="text-4xl font-semibold w-1/2  ">
+						<p className="text--4xl font-semibold w-1/2  ">
 							Our Patient
 						</p>
 						<svg
@@ -255,7 +254,7 @@ const Landing = () => {
 				</div>
 				<div className="BOX flex flex-col justify-between">
 					<div className="flex justify-between  mb-[71px]">
-						<p className="text-4xl font-semibold w-1/2  ">
+						<p className="text--4xl font-semibold w-1/2  ">
 							Find More
 						</p>
 						<svg
@@ -636,15 +635,15 @@ const Landing = () => {
 				<div className="flex flex-wrap justify-center gap-4">
 					{/* blog content 1  */}
 					<div className="BLOG bg-white h-screen flex flex-col justify-between">
-						<div className="flex  justify-between">
+						<div className="flex flex-col gap-6 justify-between lg:flex-row">
 							<div className="flex gap-4">
 								<p className="Tag text-whi">Health</p>
 								<p className="Tag ">Disease</p>
 							</div>
 							<img
+								className="w-24 sm:w-[120px] h-auto"
 								src={Blog3}
 								alt="Blog timoni image"
-								height={140}
 							/>
 						</div>
 						<div className="Blog-Content flex flex-col gap-4">
@@ -663,12 +662,13 @@ const Landing = () => {
 					</div>
 					{/* blog content 2 */}
 					<div className="BLOG bg-white h-screen flex flex-col justify-between">
-						<div className="flex  justify-between">
+						<div className="flex flex-col gap-6 justify-between lg:flex-row">
 							<div className="flex gap-4">
 								<p className="Tag text-whi">Health</p>
 								<p className="Tag ">Disease</p>
 							</div>
 							<img
+								className="w-24 sm:w-[120px] h-auto"
 								src={Blog2}
 								alt="Blog timoni image"
 								height={140}
@@ -689,12 +689,13 @@ const Landing = () => {
 					</div>
 					{/* blog content 3  */}
 					<div className="BLOG bg-white h-screen flex flex-col justify-between">
-						<div className="flex  justify-between">
+						<div className="flex flex-col gap-6 justify-between lg:flex-row">
 							<div className="flex gap-4">
 								<p className="Tag text-whi">Health</p>
 								<p className="Tag ">Disease</p>
 							</div>
 							<img
+								className="w-24 sm:w-[120px] h-auto"
 								src={Blog1}
 								alt="Blog timoni image"
 								height={140}

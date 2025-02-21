@@ -6,10 +6,7 @@
 		--tranary-color: #C5E5FF;
 }
 
-.deskItem1 {
-	font-size: 19px;
-	line-height: 25px;
-}
+
 
 
 
@@ -33,16 +30,19 @@
 		font-size: clamp(1.125rem, 0.0313rem + 3.5vw, 2rem);
 	}
 	.text--38{
-		font-size: clamp(1.125rem, -0.4375rem + 5vw, 2.375rem);
+		font-size: clamp(1.25rem, -0.4375rem + 5vw, 2.375rem);
 	}
 
 	.text--5xl{
-		font-size: clamp(1rem, -1.5rem + 8vw, 3rem);
+		font-size: clamp(1.5rem, -1.5rem + 8vw, 3rem);
 		
+	}
+	.text--4xl{
+		font-size: clamp(1.5rem, -0.5625rem + 5vw, 2.25rem);
 	}
 
 	.text--7xl{
-		font-size: clamp(1.25rem, -2.1875rem + 11vw, 4rem);
+		font-size: clamp(2.5rem, -2.1875rem + 11vw, 4rem);
 	}
 
 
@@ -67,16 +67,11 @@
 		gap: 20px;
 		background-color: white;
 		border-radius: 40px;
-		height: 600px;
+		min-height: 600px;
 		justify-content: space-between;
 	}
-	.item-1 p {
-		background-color: inherit;
-	}
 
-	.item-1 :nth-child(1) {
-		background-color: inherit;
-	}
+	
 
 	.Button {
 		display: flex;
@@ -103,6 +98,7 @@
 		gap: 16px;
 		max-width: 1680px;
 	}
+
 	@media only screen and (min-width:1553px) {
 		.Container1{
 			width: 833px;
@@ -146,6 +142,7 @@
 		padding: 32px;
 		border-radius: 40px;
 	}
+	
 
 	.BLOG:hover{
 		background-color: #213170;

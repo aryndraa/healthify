@@ -33,12 +33,12 @@ const FAQ = () => {
 	};
 
 	return (
-		<div className="flex flex-col min-w-[973px] w-screen p-[34px] bg-white rounded-[40px] gap-[32px]">
+		<div className="flex flex-col w-screen min-[1920px]:w-[973px]  p-[34px] bg-white rounded-[40px] gap-[32px]">
 			<div>
 				<p className="text--5xl font-semibold mb-[8px]">
 					Frequently Asked Question
 				</p>
-				<p className="">
+				<p className="text--lg">
 					We are dedicated to providing thorough and professional
 					responses to all of your inquiries.
 				</p>
@@ -52,7 +52,8 @@ const FAQ = () => {
 							initial={false}
 						>
 							<div className="flex justify-between items-center my-6">
-								{item.question}
+								<p className="text--xl">{item.question}</p>
+
 								<div className="bg-[#C5E5FF] w-fit p-4 rounded-full">
 									{activeIndex === index ? (
 										// SVG "X" saat aktif (close)
@@ -95,7 +96,7 @@ const FAQ = () => {
 									animate={{ opacity: 1, height: "auto" }}
 									exit={{ opacity: 0, height: 0 }}
 								>
-									<p className=" min-w-[787px] text-justify text-[18px] mb-4">
+									<p className=" max-w-[787px] text-justify text-[18px] mb-4 text--lg">
 										{item.answer}
 									</p>
 								</motion.div>
