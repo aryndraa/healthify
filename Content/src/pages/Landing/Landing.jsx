@@ -1,20 +1,13 @@
 
-// CSS 
+// CSS
 import "../Landing/Landing.css";
-// Component 
+// Component
 import FAQ from "../../component/FAQ";
-// image assets 
+// image assets
 import IDemo from "../../assets/Demo.svg";
 import IDemo2 from "../../assets/idemo2.svg";
 import IDemo3 from "../../assets/idemo3.svg";
 import patient from "../../assets/patient.png";
-import pharmacy from "../../assets/Rectangle 70.svg";
-import Clinic from "../../assets/Rectangle 71.svg";
-import Clinic2 from "../../assets/Rectangle 73.svg";
-import Drugs from "../../assets/Rectangle 74.svg";
-import Disease from "../../assets/Rectangle 75.svg";
-import Jinx from "../../assets/Rectangle 76.svg";
-import Dyven from "../../assets/Rectangle 77.svg";
 import Blog1 from "../../assets/Ellipse 5-1.svg";
 import Blog2 from "../../assets/Ellipse 5-2.svg";
 import Blog3 from "../../assets/Ellipse 5.svg";
@@ -172,7 +165,7 @@ const Landing = () => {
 							Clinics Listed
 						</p>
 						<svg
-							className=" rounded-full p-[20px] max-w-[72px] max-h-[72px]"
+							className="rounded-full p-[10px] w-[50px] h-[50px] md:w-[72px] md:h-[72px] md:p-[20px]"
 							style={{ backgroundColor: "#C5E5FF" }}
 							xmlns="http://www.w3.org/2000/svg"
 							viewBox="0 0 24 24"
@@ -198,7 +191,7 @@ const Landing = () => {
 							Supported Pharmacy
 						</p>
 						<svg
-							className=" rounded-full p-[20px] max-w-[72px] max-h-[72px]"
+							className=" rounded-full p-[10px] w-[50px] h-[50px] md:w-[72px] md:h-[72px] md:p-[20px]"
 							style={{ backgroundColor: "#C5E5FF" }}
 							xmlns="http://www.w3.org/2000/svg"
 							viewBox="0 0 24 24"
@@ -224,7 +217,7 @@ const Landing = () => {
 							Our Patient
 						</p>
 						<svg
-							className=" rounded-full p-[20px] max-w-[72px] max-h-[72px] hidden"
+							className=" rounded-full p-[10px] w-[50px] h-[50px] md:w-[72px] md:h-[72px] md:p-[20px] hidden"
 							style={{ backgroundColor: "#C5E5FF" }}
 							xmlns="http://www.w3.org/2000/svg"
 							viewBox="0 0 24 24"
@@ -258,7 +251,7 @@ const Landing = () => {
 							Find More
 						</p>
 						<svg
-							className=" rounded-full p-[20px] max-w-[72px] max-h-[72px]"
+							className=" rounded-full p-[10px] w-[50px] h-[50px] md:w-[72px] md:h-[72px] md:p-[20px]"
 							style={{ backgroundColor: "#C5E5FF" }}
 							xmlns="http://www.w3.org/2000/svg"
 							viewBox="0 0 24 24"
@@ -278,7 +271,8 @@ const Landing = () => {
 				</div>
 			</div>
 
-			<div className="max-w-[1680px] min-h-[706px] h-fit bg-[#213170] flex flex-col justify-center text-center p-[62px] rounded-[40px] mt-12 ">
+			{/* explore content  */}
+			<div className="max-w-[1680px] min-h-[706px] h-fit bg-[#213170] flex flex-col justify-center text-center p-[25px] rounded-[40px] mt-12 md:p=[62px] ">
 				<div className=" flex flex-col gap-6  items-center justify-center align-middle mb-16">
 					<p className="text--5xl font-semibold  text-white">
 						Explore Our Services
@@ -288,14 +282,12 @@ const Landing = () => {
 						information to improve your health decision
 					</p>
 				</div>
+
 				<div className="flex flex-wrap justify-center gap-4">
-					<div className="w-[370px] max-h-[400px]  bg-white rounded-[40px] ">
-						<div
-							className=" h-[307px] justify-end flex"
-							style={{ backgroundImage: `url(${pharmacy})` }}
-						>
+					<div className="group relative w-[370px] min-h-[300px] min-[640px]:h-[400px]  bg-white rounded-[40px] overflow-hidden transition duration-300 hover:bg-[#213170] hover:shadow-xl">
+						<div className="h-[200px] sm:h-[307px] justify-end flex rounded-[40px] transition-all duration-500 ease-in-out bg-Pharmacy group-hover:bg-none group-hover:transition-all ">
 							<svg
-								className=" rounded-full p-[20px] max-w-[72px] max-h-[72px] m-4 "
+								className="rounded-full p-[10px] w-[50px] h-[50px] md:w-[72px] md:h-[72px] md:p-[20px] m-4 transition-transform duration-300 group-hover:rotate-45"
 								style={{
 									backgroundColor: "white",
 									border: "solid",
@@ -312,17 +304,21 @@ const Landing = () => {
 								></path>
 							</svg>
 						</div>
-						<p className="p-5 text-start font-semibold text--2xl">
-							Find Nearest Pharmacy
-						</p>
+						<div className="absolute p-5 group-hover:mt-[-40px] transition-all duration-300">
+							<p className=" text-start font-semibold text--2xl text-black transition duration-300 group-hover:text-white">
+								Find Nearest Pharmacy
+							</p>
+							<p className="text-start  text-white opacity-0 transition duration-300 group-hover:opacity-100">
+								Know more about disease, so you can self
+								diagnose or just learning!
+							</p>
+						</div>
 					</div>
-					<div className="w-[370px] max-h-[400px]  bg-white rounded-[40px] ">
-						<div
-							className=" h-[307px] justify-end flex"
-							style={{ backgroundImage: `url(${Clinic})` }}
-						>
+
+					<div className="group relative w-[370px] min-h-[300px] min-[640px]:h-[400px]  bg-white rounded-[40px] overflow-hidden transition duration-300 hover:bg-[#213170] hover:shadow-xl">
+						<div className="h-[200px] sm:h-[307px] justify-end flex rounded-[40px] transition-all duration-500 ease-in-out bg-Clinic group-hover:bg-none group-hover:transition-all ">
 							<svg
-								className=" rounded-full p-[20px] max-w-[72px] max-h-[72px] m-4 "
+								className="rounded-full p-[10px] w-[50px] h-[50px] md:w-[72px] md:h-[72px] md:p-[20px] m-4 transition-transform duration-300 group-hover:rotate-45"
 								style={{
 									backgroundColor: "white",
 									border: "solid",
@@ -339,17 +335,21 @@ const Landing = () => {
 								></path>
 							</svg>
 						</div>
-						<p className="p-5 text-start font-semibold text--2xl">
-							Find Nearest Clinics
-						</p>
+						<div className="absolute p-5 group-hover:mt-[-40px] transition-all duration-300">
+							<p className=" text-start font-semibold text--2xl text-black transition duration-300 group-hover:text-white">
+								Find Nearest Clinic
+							</p>
+							<p className="text-start  text-white opacity-0 transition duration-300 group-hover:opacity-100">
+								Know more about disease, so you can self
+								diagnose or just learning!
+							</p>
+						</div>
 					</div>
-					<div className="w-[370px] max-h-[400px]  bg-white rounded-[40px] ">
-						<div
-							className=" h-[307px] justify-end flex"
-							style={{ backgroundImage: `url(${Drugs})` }}
-						>
+
+					<div className="group relative w-[370px] min-h-[300px] min-[640px]:h-[400px]  bg-white rounded-[40px] overflow-hidden transition duration-300 hover:bg-[#213170] hover:shadow-xl">
+						<div className="h-[200px] sm:h-[307px] justify-end flex rounded-[40px] transition-all duration-500 ease-in-out bg-Drugs group-hover:bg-none group-hover:transition-all ">
 							<svg
-								className=" rounded-full p-[20px] max-w-[72px] max-h-[72px] m-4 "
+								className="rounded-full p-[10px] w-[50px] h-[50px] md:w-[72px] md:h-[72px] md:p-[20px] m-4 transition-transform duration-300 group-hover:rotate-45"
 								style={{
 									backgroundColor: "white",
 									border: "solid",
@@ -366,17 +366,21 @@ const Landing = () => {
 								></path>
 							</svg>
 						</div>
-						<p className="p-5 text-start font-semibold text--2xl">
-							Browse Drugs
-						</p>
+						<div className="absolute p-5 group-hover:mt-[-40px] transition-all duration-300">
+							<p className=" text-start font-semibold text--2xl text-black transition duration-300 group-hover:text-white">
+								Browse Drugs
+							</p>
+							<p className="text-start  text-white opacity-0 transition duration-300 group-hover:opacity-100">
+								Know more about disease, so you can self
+								diagnose or just learning!
+							</p>
+						</div>
 					</div>
-					<div className="w-[370px] max-h-[400px]  bg-white rounded-[40px] ">
-						<div
-							className=" h-[307px] justify-end flex"
-							style={{ backgroundImage: `url(${Disease})` }}
-						>
+
+					<div className="group relative w-[370px] min-h-[300px] min-[640px]:h-[400px]  bg-white rounded-[40px] overflow-hidden transition duration-300 hover:bg-[#213170] hover:shadow-xl">
+						<div className="h-[200px] sm:h-[307px] justify-end flex rounded-[40px] transition-all duration-500 ease-in-out bg-Disease group-hover:bg-none group-hover:transition-all ">
 							<svg
-								className=" rounded-full p-[20px] max-w-[72px] max-h-[72px] m-4 "
+								className="rounded-full p-[10px] w-[50px] h-[50px] md:w-[72px] md:h-[72px] md:p-[20px] m-4 transition-transform duration-300 group-hover:rotate-45"
 								style={{
 									backgroundColor: "white",
 									border: "solid",
@@ -393,15 +397,22 @@ const Landing = () => {
 								></path>
 							</svg>
 						</div>
-						<p className="p-5 text-start font-semibold text--2xl">
-							Disease Information
-						</p>
+						<div className="absolute p-5 group-hover:mt-[-40px] transition-all duration-300">
+							<p className=" text-start font-semibold text--2xl text-black transition duration-300 group-hover:text-white">
+								Disease Information
+							</p>
+							<p className="text-start  text-white opacity-0 transition duration-300 group-hover:opacity-100">
+								Know more about disease, so you can self
+								diagnose or just learning!
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
 
+			{/* image after explore  */}
 			<div
-				className="max-w-[1680px] h-[500px] rounded-[40px] mt-4"
+				className="max-w-[1680px] h-[500px] rounded-[40px] mt-4 hidden xl:block"
 				style={{
 					backgroundImage: `url(${IDemo2})`,
 					backgroundSize: "cover",
@@ -409,205 +420,233 @@ const Landing = () => {
 				}}
 			></div>
 
-			<div className="flex flex-wrap justify-center gap-4 mt-12">
-				<div className="BOX2 bg-[#213170] flex flex-col h-screen justify-between">
-					<div className="flex flex-col gap-4">
-						<div className="flex justify-between ">
-							<p className="text--5xl font-semibold text-white ">
-								Explore Clinics Nearby
+			{/* explore clinic and pharmacy  */}
+			<div>
+				<div className="flex flex-wrap justify-center gap-4 mt-12">
+					<div className="BOX2 bg-[#213170] flex flex-col h-screen justify-between p-5 group ">
+						<div className="flex flex-col gap-4">
+							<div className="flex justify-between ">
+								<p className="text--5xl font-semibold text-white  ">
+									Explore Clinics Nearby
+								</p>
+								<svg
+									className="rounded-full p-[10px] w-[50px] h-[50px] md:w-[72px] md:h-[72px] md:p-[20px]  transition-transform duration-300 bg-white  group-hover:border-solid group-hover:border-[#C5E5FF]  group-hover:border-[3px] group-hover:rotate-45  group-hover:bg-[#213170]"
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 24 24"
+								>
+									<path
+										fill="black"
+										className=" group-hover:fill-[#C5E5FF]"
+										fillRule="evenodd"
+										d="M9 6.75a.75.75 0 0 1 0-1.5h9a.75.75 0 0 1 .75.75v9a.75.75 0 0 1-1.5 0V7.81L6.53 18.53a.75.75 0 0 1-1.06-1.06L16.19 6.75z"
+										clipRule="evenodd"
+									></path>
+								</svg>
+							</div>
+							<p className="text-white text--lg">
+								Need medical checkup?, we make it easy to find
+								nearby clinics for you
 							</p>
+						</div>
+						<div className="text-end">
+							<p className="text--7xl font-semibold text-white">
+								12K+
+							</p>
+							<p className=" text--lg text-white">
+								Clinics near you!
+							</p>
+						</div>
+					</div>
+
+					<div className="BOX2  flex flex-col h-screen w-screen justify-between bg-Clinic2 bg-cover  ">
+						<div className="p-5 flex flex-col justify-between h-screen hover:bg-blue-300 hover:bg-opacity-40 rounded-[40px] group">
 							<svg
-								className=" rounded-full p-[20px] max-w-[72px] max-h-[72px]"
-								style={{ backgroundColor: "white" }}
+								className="rounded-full p-[10px] w-[50px] h-[50px] md:w-[72px] md:h-[72px] md:p-[20px] self-end transition-transform duration-300 bg-white  group-hover:border-solid group-hover:border-[#C5E5FF]  group-hover:border-[3px] group-hover:rotate-45  group-hover:bg-[#213170]"
 								xmlns="http://www.w3.org/2000/svg"
 								viewBox="0 0 24 24"
 							>
 								<path
-									fill="currentColor"
+									fill="black"
+									className=" group-hover:fill-[#C5E5FF]"
 									fillRule="evenodd"
 									d="M9 6.75a.75.75 0 0 1 0-1.5h9a.75.75 0 0 1 .75.75v9a.75.75 0 0 1-1.5 0V7.81L6.53 18.53a.75.75 0 0 1-1.06-1.06L16.19 6.75z"
 									clipRule="evenodd"
 								></path>
 							</svg>
+							<div className="flex flex-col gap-6 bg-white rounded-[40px] p-[22px]">
+								<div className="flex items-center justify-between">
+									<div>
+										<p className="text-2xl font-semibold">
+											Mahardika&apos;s Clinics
+										</p>
+										<p className="text-base">
+											Dental Clinics
+										</p>
+									</div>
+									<div>
+										<p className="text-2xl font-medium">
+											2KM
+										</p>
+									</div>
+								</div>
+								{/* Bagian ini hanya muncul saat di hover */}
+								<p className="text-lg font-medium hidden transition-all duration-300 group-hover:block">
+									“Mahardika Clinics is one of the premier
+									dental clinics located in East Denpasar.”
+								</p>
+							</div>
 						</div>
-						<p className="text-white text--lg">
-							Need medical checkup?, we make it easy to find
-							nearby clinics for you
-						</p>
 					</div>
-					<div className="text-end">
-						<p className="text--7xl font-semibold text-white">
-							12K+
-						</p>
-						<p className=" text--lg text-white">
-							Clinics near you!
-						</p>
-					</div>
-				</div>
 
-				<div
-					className="BOX2  flex flex-col h-screen w-screen justify-between"
-					style={{
-						backgroundImage: `url(${Clinic2})`,
-						backgroundSize: "cover",
-						backgroundPosition: "center",
-					}}
-				>
-					<svg
-						className=" rounded-full p-[20px] max-w-[72px] max-h-[72px] self-end"
-						style={{ backgroundColor: "white" }}
-						xmlns="http://www.w3.org/2000/svg"
-						viewBox="0 0 24 24"
-					>
-						<path
-							fill="currentColor"
-							fillRule="evenodd"
-							d="M9 6.75a.75.75 0 0 1 0-1.5h9a.75.75 0 0 1 .75.75v9a.75.75 0 0 1-1.5 0V7.81L6.53 18.53a.75.75 0 0 1-1.06-1.06L16.19 6.75z"
-							clipRule="evenodd"
-						></path>
-					</svg>
-					<div className="flex  bg-white rounded-[40px] p-[22px]  items-center justify-between">
-						<div>
-							<p className="text--2xl font-semibold">
-								Mahardika&apos;s Clinics
-							</p>
-							<p className="text-base">Dental Clinics</p>
-						</div>
-						<div>
-							<p className="text--32 font-medium">2KM</p>
-						</div>
-					</div>
-				</div>
-
-				<div
-					className="BOX2  flex flex-col bg-slate-500 h-screen w-screen justify-between"
-					// style={{
-					// 	backgroundImage: `url(${Clinic2})`,
-					// 	backgroundSize: "cover",
-					// 	backgroundPosition: "center",
-					// }}
-				>
-					<svg
-						className=" rounded-full p-[20px] max-w-[72px] max-h-[72px] self-end"
-						style={{ backgroundColor: "white" }}
-						xmlns="http://www.w3.org/2000/svg"
-						viewBox="0 0 24 24"
-					>
-						<path
-							fill="currentColor"
-							fillRule="evenodd"
-							d="M9 6.75a.75.75 0 0 1 0-1.5h9a.75.75 0 0 1 .75.75v9a.75.75 0 0 1-1.5 0V7.81L6.53 18.53a.75.75 0 0 1-1.06-1.06L16.19 6.75z"
-							clipRule="evenodd"
-						></path>
-					</svg>
-					<div className="flex  bg-white rounded-[40px] p-[22px]  items-center justify-between">
-						<div>
-							<p className="text--2xl font-semibold">
-								Vaelrino Clinics & Medics
-							</p>
-							<p className="text-base">Cardiology Clinics</p>
-						</div>
-						<div>
-							<p className="text--32 font-medium">2KM</p>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div className="flex flex-wrap justify-center flex-row-reverse gap-4 my-12">
-				<div className="BOX2 bg-[#C5E5FF] flex flex-col h-screen justify-between">
-					<div className="flex flex-col gap-4">
-						<div className="flex justify-between ">
-							<p className="text--5xl font-semibold  ">
-								Explore Nearest Pharmacy
-							</p>
+					<div className="BOX2  flex flex-col h-screen w-screen justify-between bg-slate-400 bg-cover  ">
+						<div className="p-5 flex flex-col justify-between h-screen hover:bg-blue-300 hover:bg-opacity-40 rounded-[40px] group">
 							<svg
-								className=" rounded-full p-[20px] max-w-[72px] max-h-[72px]"
-								style={{ backgroundColor: "white" }}
+								className="rounded-full p-[10px] w-[50px] h-[50px] md:w-[72px] md:h-[72px] md:p-[20px] self-end transition-transform duration-300 bg-white  group-hover:border-solid group-hover:border-[#C5E5FF]  group-hover:border-[3px] group-hover:rotate-45  group-hover:bg-[#213170]"
 								xmlns="http://www.w3.org/2000/svg"
 								viewBox="0 0 24 24"
 							>
 								<path
-									fill="currentColor"
+									fill="black"
+									className=" group-hover:fill-[#C5E5FF]"
 									fillRule="evenodd"
 									d="M9 6.75a.75.75 0 0 1 0-1.5h9a.75.75 0 0 1 .75.75v9a.75.75 0 0 1-1.5 0V7.81L6.53 18.53a.75.75 0 0 1-1.06-1.06L16.19 6.75z"
 									clipRule="evenodd"
 								></path>
 							</svg>
-						</div>
-						<p className="text--lg">
-							Need a quick drugs or herbal?, Discover more listed
-							pharmacy near you
-						</p>
-					</div>
-					<div className="text-end">
-						<p className="text--7xl font-semibold">3K+</p>
-						<p className=" text--lg ">Pharmacy near you!</p>
-					</div>
-				</div>
-				<div
-					className="BOX2  flex flex-col h-screen w-screen justify-between"
-					style={{
-						backgroundImage: `url(${Jinx})`,
-						backgroundSize: "cover",
-						backgroundPosition: "center",
-					}}
-				>
-					<svg
-						className=" rounded-full p-[20px] max-w-[72px] max-h-[72px] self-end"
-						style={{ backgroundColor: "white" }}
-						xmlns="http://www.w3.org/2000/svg"
-						viewBox="0 0 24 24"
-					>
-						<path
-							fill="currentColor"
-							fillRule="evenodd"
-							d="M9 6.75a.75.75 0 0 1 0-1.5h9a.75.75 0 0 1 .75.75v9a.75.75 0 0 1-1.5 0V7.81L6.53 18.53a.75.75 0 0 1-1.06-1.06L16.19 6.75z"
-							clipRule="evenodd"
-						></path>
-					</svg>
-					<div className="flex  bg-white rounded-[40px] p-[22px]  items-center justify-between">
-						<div>
-							<p className="text--2xl font-semibold">
-								Jinx Pharmacy
-							</p>
-							<p className="text-base">Hospital Pharmacy</p>
-						</div>
-						<div>
-							<p className="text--32 font-medium">2KM</p>
+							<div className="flex flex-col gap-6 bg-white rounded-[40px] p-[22px]">
+								<div className="flex items-center justify-between">
+									<div>
+										<p className="text-2xl font-semibold">
+											Vaelrino Clinics & Medics
+										</p>
+										<p className="text-base">
+											Cardiology Clinic
+										</p>
+									</div>
+									<div>
+										<p className="text-2xl font-medium">
+											2KM
+										</p>
+									</div>
+								</div>
+								{/* Bagian ini hanya muncul saat di hover */}
+								<p className="text-lg font-medium hidden transition-all duration-300 group-hover:block">
+									“Vaelrino Clinics & Medics is one of the
+									premier Cardiology Clinic located in South
+									Denpasar.”
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div
-					className="BOX2  flex flex-col h-screen w-screen justify-between"
-					style={{
-						backgroundImage: `url(${Dyven})`,
-						backgroundSize: "cover",
-						backgroundPosition: "center",
-					}}
-				>
-					<svg
-						className=" rounded-full p-[20px] max-w-[72px] max-h-[72px] self-end"
-						style={{ backgroundColor: "white" }}
-						xmlns="http://www.w3.org/2000/svg"
-						viewBox="0 0 24 24"
-					>
-						<path
-							fill="currentColor"
-							fillRule="evenodd"
-							d="M9 6.75a.75.75 0 0 1 0-1.5h9a.75.75 0 0 1 .75.75v9a.75.75 0 0 1-1.5 0V7.81L6.53 18.53a.75.75 0 0 1-1.06-1.06L16.19 6.75z"
-							clipRule="evenodd"
-						></path>
-					</svg>
-					<div className="flex  bg-white rounded-[40px] p-[22px]  items-center justify-between">
-						<div>
-							<p className="text--2xl font-semibold">
-								Dyven Pharmacy
+
+				<div className="flex flex-wrap justify-center flex-row-reverse gap-4 my-12">
+					<div className="BOX2 bg-[#C5E5FF] flex flex-col h-screen justify-between p-5 group ">
+						<div className="flex flex-col gap-4">
+							<div className="flex justify-between ">
+								<p className="text--5xl font-semibold  ">
+									Explore Nearest Pharmacy
+								</p>
+								<svg
+									className="rounded-full p-[10px] w-[50px] h-[50px] md:w-[72px] md:h-[72px] md:p-[20px]  transition-transform duration-300 bg-white  group-hover:border-solid group-hover:border-[#C5E5FF]  group-hover:border-[3px] group-hover:rotate-45  group-hover:bg-[#213170]"
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 24 24"
+								>
+									<path
+										fill="black"
+										className=" group-hover:fill-[#C5E5FF]"
+										fillRule="evenodd"
+										d="M9 6.75a.75.75 0 0 1 0-1.5h9a.75.75 0 0 1 .75.75v9a.75.75 0 0 1-1.5 0V7.81L6.53 18.53a.75.75 0 0 1-1.06-1.06L16.19 6.75z"
+										clipRule="evenodd"
+									></path>
+								</svg>
+							</div>
+							<p className=" text--lg">
+								Need a quick drugs or herbal?, Discover more
+								listed pharmacy near you
 							</p>
-							<p className="text-base">Pharmacy</p>
 						</div>
-						<div>
-							<p className="text--32 font-medium text">2KM</p>
+						<div className="text-end">
+							<p className="text--7xl font-semibold ">3K+</p>
+							<p className=" text--lg ">Pharmacy near you!</p>
+						</div>
+					</div>
+
+					<div className="BOX2  flex flex-col h-screen w-screen justify-between bg-Jinx bg-cover  ">
+						<div className="p-5 flex flex-col justify-between h-screen hover:bg-blue-300 hover:bg-opacity-40 rounded-[40px] group">
+							<svg
+								className="rounded-full p-[10px] w-[50px] h-[50px] md:w-[72px] md:h-[72px] md:p-[20px] self-end transition-transform duration-300 bg-white  group-hover:border-solid group-hover:border-[#C5E5FF]  group-hover:border-[3px] group-hover:rotate-45  group-hover:bg-[#213170]"
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 24 24"
+							>
+								<path
+									fill="black"
+									className=" group-hover:fill-[#C5E5FF]"
+									fillRule="evenodd"
+									d="M9 6.75a.75.75 0 0 1 0-1.5h9a.75.75 0 0 1 .75.75v9a.75.75 0 0 1-1.5 0V7.81L6.53 18.53a.75.75 0 0 1-1.06-1.06L16.19 6.75z"
+									clipRule="evenodd"
+								></path>
+							</svg>
+							<div className="flex flex-col gap-6 bg-white rounded-[40px] p-[22px]">
+								<div className="flex items-center justify-between">
+									<div>
+										<p className="text-2xl font-semibold">
+											Hospital Pharmacy
+										</p>
+										<p className="text-base">
+											Hospital Pharmacy
+										</p>
+									</div>
+									<div>
+										<p className="text-2xl font-medium">
+											2KM
+										</p>
+									</div>
+								</div>
+								{/* Bagian ini hanya muncul saat di hover */}
+								<p className="text-lg font-medium hidden transition-all duration-300 group-hover:block">
+									“Hospital Pharmacy is one of the premier
+									Hospital Pharmacy located in East Denpasar.”
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div className="BOX2  flex flex-col h-screen w-screen justify-between bg-Dyven bg-cover  ">
+						<div className="p-5 flex flex-col justify-between h-screen hover:bg-blue-300 hover:bg-opacity-40 rounded-[40px] group">
+							<svg
+								className="rounded-full p-[10px] w-[50px] h-[50px] md:w-[72px] md:h-[72px] md:p-[20px] self-end transition-transform duration-300 bg-white  group-hover:border-solid group-hover:border-[#C5E5FF]  group-hover:border-[3px] group-hover:rotate-45  group-hover:bg-[#213170]"
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 24 24"
+							>
+								<path
+									fill="black"
+									className=" group-hover:fill-[#C5E5FF]"
+									fillRule="evenodd"
+									d="M9 6.75a.75.75 0 0 1 0-1.5h9a.75.75 0 0 1 .75.75v9a.75.75 0 0 1-1.5 0V7.81L6.53 18.53a.75.75 0 0 1-1.06-1.06L16.19 6.75z"
+									clipRule="evenodd"
+								></path>
+							</svg>
+							<div className="flex flex-col gap-6 bg-white rounded-[40px] p-[22px]">
+								<div className="flex items-center justify-between">
+									<div>
+										<p className="text-2xl font-semibold">
+											Dyven Pharmacy
+										</p>
+										<p className="text-base">Pharmacy</p>
+									</div>
+									<div>
+										<p className="text-2xl font-medium">
+											2KM
+										</p>
+									</div>
+								</div>
+								{/* Bagian ini hanya muncul saat di hover */}
+								<p className="text-lg font-medium hidden transition-all duration-300 group-hover:block">
+									“ Dyven Pharmacy & Medics is one of the
+									premier Pharmacy located in South Denpasar.”
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -615,10 +654,10 @@ const Landing = () => {
 
 			{/* blog content container  */}
 			<div className=" flex  flex-col gap-4">
-				<div className=" flex justify-between p-8 bg-white rounded-[40px] items-center">
+				<div className=" flex justify-between py-[32px] px-[48px] bg-white rounded-[40px] items-center gap-2">
 					<p className="text--5xl font-semibold">Explore Our Blogs</p>
 					<svg
-						className=" rounded-full p-[20px] max-w-[72px] max-h-[72px]"
+						className=" rounded-full p-[10px] w-[50px] h-[50px] md:w-[72px] md:h-[72px] md:p-[20px]"
 						style={{ backgroundColor: "#C5E5FF" }}
 						xmlns="http://www.w3.org/2000/svg"
 						viewBox="0 0 24 24"
