@@ -29,7 +29,7 @@ const Navbar = () => {
 				className={`max-w-[1920px] w-full transition-all duration-300 ${
 					isScrolled
 						? "bg-white shadow-md py-3 px-10  mx-10 rounded-xl"
-						: "mt-10 mb-12 px-[120px]"
+						: "mt-10 mb-12 px-20 2xl:px-[120px]"
 				}`}
 			>
 				<div className="flex items-center justify-between">
