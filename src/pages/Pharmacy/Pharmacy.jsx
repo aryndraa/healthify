@@ -6,7 +6,7 @@ import { ListPharmacies } from "../../component/ListPharmacies.jsx";
 export function Pharmacy() {
   return (
     <>
-      <section className="min-h-screen mt-[160px]">
+      <section className="min-h-screen mt-[160px] mb-4">
         <div className="w-full flex gap-2 items-center mb-4">
           <SearchBar/>
           <ShortBy/>
