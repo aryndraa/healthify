@@ -1,5 +1,5 @@
-import Footer from "../component/Footer"
-import Navbar from "../component/navbar"
+import Footer from "../component/Footer.jsx"
+import Navbar from "../component/navbar.jsx"
 import PropTypes from "prop-types";
 
 export const DefaultLayout = ({children}) => {

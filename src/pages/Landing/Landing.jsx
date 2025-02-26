@@ -1,8 +1,8 @@
 
 // CSS
-import "../Landing/Landing.css";
+import "./Landing.css";
 // Component
-import FAQ from "../../component/FAQ";
+import FAQ from "../../component/FAQ.jsx";
 // image assets
 import IDemo from "../../assets/Demo.svg";
 import IDemo2 from "../../assets/idemo2.svg";
