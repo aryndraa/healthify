@@ -1,7 +1,7 @@
-import { SearchBar } from "../../component/SearchBar";
-import { ShortBy } from "../../component/ShortBy";
+import { SearchBar } from "../../component/SearchBar.jsx";
+import { ShortBy } from "../../component/ShortBy.jsx";
 import pharmacyHero from "../../assets/pharmacy.png"
-import { ListPharmacies } from "../../component/ListPharmacies";
+import { ListPharmacies } from "../../component/ListPharmacies.jsx";
 
 export function Pharmacy() {
   return (

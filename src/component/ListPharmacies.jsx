@@ -1,4 +1,4 @@
-import { PharmacyCard } from "./PharmacyCard"
+import { PharmacyCard } from "./PharmacyCard.jsx"
 
 export const ListPharmacies = () => {
   return (
