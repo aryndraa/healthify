@@ -157,7 +157,6 @@ const Landing = () => {
 					style={{ backgroundImage: `url(${IDemo})` }}
 				></div>
 			</div>
-
 			<div className="flex flex-wrap gap-4 justify-center">
 				<div className="BOX">
 					<div className="flex justify-between  mb-[71px]">
@@ -270,7 +269,7 @@ const Landing = () => {
 					</p>
 				</div>
 			</div>
-
+			hover:cursor-pointer
 			{/* explore content  */}
 			<div className="max-w-[1680px] min-h-[706px] h-fit bg-[#213170] flex flex-col justify-center text-center p-[25px] rounded-[40px] mt-12 md:p=[62px] ">
 				<div className=" flex flex-col gap-6  items-center justify-center align-middle mb-16">
@@ -284,7 +283,7 @@ const Landing = () => {
 				</div>
 
 				<div className="flex flex-wrap justify-center gap-4">
-					<div className="group relative w-[370px] min-h-[300px] min-[640px]:h-[400px]  bg-white rounded-[40px] overflow-hidden transition duration-300 hover:bg-[#213170] hover:shadow-xl">
+					<div className="group relative w-[370px] min-h-[300px] min-[640px]:h-[400px]  bg-white rounded-[40px] overflow-hidden transition duration-300 hover:bg-[#213170] hover:shadow-xl hover:border-white hover:border-solid hover:border-[2px] hover:cursor-pointer">
 						<div className="h-[200px] sm:h-[307px] justify-end flex rounded-[40px] transition-all duration-500 ease-in-out bg-Pharmacy group-hover:bg-none group-hover:transition-all ">
 							<svg
 								className="rounded-full p-[10px] w-[50px] h-[50px] md:w-[72px] md:h-[72px] md:p-[20px] m-4 transition-transform duration-300 group-hover:rotate-45"
@@ -315,7 +314,7 @@ const Landing = () => {
 						</div>
 					</div>
 
-					<div className="group relative w-[370px] min-h-[300px] min-[640px]:h-[400px]  bg-white rounded-[40px] overflow-hidden transition duration-300 hover:bg-[#213170] hover:shadow-xl">
+					<div className="group relative w-[370px] min-h-[300px] min-[640px]:h-[400px]  bg-white rounded-[40px] overflow-hidden transition duration-300 hover:bg-[#213170] hover:shadow-xl hover:border-white hover:border-solid hover:border-[2px] hover:cursor-pointer">
 						<div className="h-[200px] sm:h-[307px] justify-end flex rounded-[40px] transition-all duration-500 ease-in-out bg-Clinic group-hover:bg-none group-hover:transition-all ">
 							<svg
 								className="rounded-full p-[10px] w-[50px] h-[50px] md:w-[72px] md:h-[72px] md:p-[20px] m-4 transition-transform duration-300 group-hover:rotate-45"
@@ -346,7 +345,7 @@ const Landing = () => {
 						</div>
 					</div>
 
-					<div className="group relative w-[370px] min-h-[300px] min-[640px]:h-[400px]  bg-white rounded-[40px] overflow-hidden transition duration-300 hover:bg-[#213170] hover:shadow-xl">
+					<div className="group relative w-[370px] min-h-[300px] min-[640px]:h-[400px]  bg-white rounded-[40px] overflow-hidden transition duration-300 hover:bg-[#213170] hover:shadow-xl hover:border-white hover:border-solid hover:border-[2px] hover:cursor-pointer">
 						<div className="h-[200px] sm:h-[307px] justify-end flex rounded-[40px] transition-all duration-500 ease-in-out bg-Drugs group-hover:bg-none group-hover:transition-all ">
 							<svg
 								className="rounded-full p-[10px] w-[50px] h-[50px] md:w-[72px] md:h-[72px] md:p-[20px] m-4 transition-transform duration-300 group-hover:rotate-45"
@@ -377,7 +376,7 @@ const Landing = () => {
 						</div>
 					</div>
 
-					<div className="group relative w-[370px] min-h-[300px] min-[640px]:h-[400px]  bg-white rounded-[40px] overflow-hidden transition duration-300 hover:bg-[#213170] hover:shadow-xl">
+					<div className="group relative w-[370px] min-h-[300px] min-[640px]:h-[400px]  bg-white rounded-[40px] overflow-hidden transition duration-300 hover:bg-[#213170] hover:shadow-xl hover:border-white hover:border-solid hover:border-[2px] hover:cursor-pointer">
 						<div className="h-[200px] sm:h-[307px] justify-end flex rounded-[40px] transition-all duration-500 ease-in-out bg-Disease group-hover:bg-none group-hover:transition-all ">
 							<svg
 								className="rounded-full p-[10px] w-[50px] h-[50px] md:w-[72px] md:h-[72px] md:p-[20px] m-4 transition-transform duration-300 group-hover:rotate-45"
@@ -409,7 +408,6 @@ const Landing = () => {
 					</div>
 				</div>
 			</div>
-
 			{/* image after explore  */}
 			<div
 				className="max-w-[1680px] h-[500px] rounded-[40px] mt-4 hidden xl:block"
@@ -419,11 +417,10 @@ const Landing = () => {
 					backgroundPosition: "center",
 				}}
 			></div>
-
 			{/* explore clinic and pharmacy  */}
 			<div>
 				<div className="flex flex-wrap justify-center gap-4 mt-12">
-					<div className="BOX2 bg-[#213170] flex flex-col h-screen justify-between p-5 group ">
+					<div className="BOX2 bg-[#213170] flex flex-col h-screen justify-between p-5 group hover:cursor-pointer ">
 						<div className="flex flex-col gap-4">
 							<div className="flex justify-between ">
 								<p className="text--5xl font-semibold text-white  ">
@@ -458,7 +455,7 @@ const Landing = () => {
 						</div>
 					</div>
 
-					<div className="BOX2  flex flex-col h-screen w-screen justify-between bg-Clinic2 bg-cover  ">
+					<div className="BOX2  flex flex-col h-screen w-screen justify-between bg-Clinic2 bg-cover hover:cursor-pointer ">
 						<div className="p-5 flex flex-col justify-between h-screen hover:bg-blue-300 hover:bg-opacity-40 rounded-[40px] group">
 							<svg
 								className="rounded-full p-[10px] w-[50px] h-[50px] md:w-[72px] md:h-[72px] md:p-[20px] self-end transition-transform duration-300 bg-white  group-hover:border-solid group-hover:border-[#C5E5FF]  group-hover:border-[3px] group-hover:rotate-45  group-hover:bg-[#213170]"
@@ -498,7 +495,7 @@ const Landing = () => {
 						</div>
 					</div>
 
-					<div className="BOX2  flex flex-col h-screen w-screen justify-between bg-slate-400 bg-cover  ">
+					<div className="BOX2  flex flex-col h-screen w-screen justify-between bg-slate-400 bg-cover   hover:cursor-pointer">
 						<div className="p-5 flex flex-col justify-between h-screen hover:bg-blue-300 hover:bg-opacity-40 rounded-[40px] group">
 							<svg
 								className="rounded-full p-[10px] w-[50px] h-[50px] md:w-[72px] md:h-[72px] md:p-[20px] self-end transition-transform duration-300 bg-white  group-hover:border-solid group-hover:border-[#C5E5FF]  group-hover:border-[3px] group-hover:rotate-45  group-hover:bg-[#213170]"
@@ -541,7 +538,7 @@ const Landing = () => {
 				</div>
 
 				<div className="flex flex-wrap justify-center flex-row-reverse gap-4 my-12">
-					<div className="BOX2 bg-[#C5E5FF] flex flex-col h-screen justify-between p-5 group ">
+					<div className="BOX2 bg-[#C5E5FF] flex flex-col h-screen justify-between p-5 group hover:cursor-pointer">
 						<div className="flex flex-col gap-4">
 							<div className="flex justify-between ">
 								<p className="text--5xl font-semibold  ">
@@ -572,7 +569,7 @@ const Landing = () => {
 						</div>
 					</div>
 
-					<div className="BOX2  flex flex-col h-screen w-screen justify-between bg-Jinx bg-cover  ">
+					<div className="BOX2  flex flex-col h-screen w-screen justify-between bg-Jinx bg-cover hover:cursor-pointer ">
 						<div className="p-5 flex flex-col justify-between h-screen hover:bg-blue-300 hover:bg-opacity-40 rounded-[40px] group">
 							<svg
 								className="rounded-full p-[10px] w-[50px] h-[50px] md:w-[72px] md:h-[72px] md:p-[20px] self-end transition-transform duration-300 bg-white  group-hover:border-solid group-hover:border-[#C5E5FF]  group-hover:border-[3px] group-hover:rotate-45  group-hover:bg-[#213170]"
@@ -612,7 +609,7 @@ const Landing = () => {
 						</div>
 					</div>
 
-					<div className="BOX2  flex flex-col h-screen w-screen justify-between bg-Dyven bg-cover  ">
+					<div className="BOX2  flex flex-col h-screen w-screen justify-between bg-Dyven bg-cover hover:cursor-pointer ">
 						<div className="p-5 flex flex-col justify-between h-screen hover:bg-blue-300 hover:bg-opacity-40 rounded-[40px] group">
 							<svg
 								className="rounded-full p-[10px] w-[50px] h-[50px] md:w-[72px] md:h-[72px] md:p-[20px] self-end transition-transform duration-300 bg-white  group-hover:border-solid group-hover:border-[#C5E5FF]  group-hover:border-[3px] group-hover:rotate-45  group-hover:bg-[#213170]"
@@ -651,12 +648,24 @@ const Landing = () => {
 					</div>
 				</div>
 			</div>
-
 			{/* blog content container  */}
 			<div className=" flex  flex-col gap-4">
-				<div className=" flex justify-between py-[32px] px-[48px] bg-white rounded-[40px] items-center gap-2">
+				<div className=" flex justify-between py-[32px] px-[48px] bg-white rounded-[40px] items-center gap-2 group hover:cursor-pointer">
 					<p className="text--5xl font-semibold">Explore Our Blogs</p>
 					<svg
+						className="rounded-full p-[10px] w-[50px] h-[50px] md:w-[72px] md:h-[72px] md:p-[20px]  transition-transform duration-300 bg-[#C5E5FF]  group-hover:border-solid group-hover:border-[#C5E5FF]  group-hover:border-[3px] group-hover:rotate-45  group-hover:bg-[#213170] "
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 24 24"
+					>
+						<path
+							fill="black"
+							className=" group-hover:fill-[#C5E5FF]"
+							fillRule="evenodd"
+							d="M9 6.75a.75.75 0 0 1 0-1.5h9a.75.75 0 0 1 .75.75v9a.75.75 0 0 1-1.5 0V7.81L6.53 18.53a.75.75 0 0 1-1.06-1.06L16.19 6.75z"
+							clipRule="evenodd"
+						></path>
+					</svg>
+					{/* <svg
 						className=" rounded-full p-[10px] w-[50px] h-[50px] md:w-[72px] md:h-[72px] md:p-[20px]"
 						style={{ backgroundColor: "#C5E5FF" }}
 						xmlns="http://www.w3.org/2000/svg"
@@ -668,7 +677,7 @@ const Landing = () => {
 							d="M9 6.75a.75.75 0 0 1 0-1.5h9a.75.75 0 0 1 .75.75v9a.75.75 0 0 1-1.5 0V7.81L6.53 18.53a.75.75 0 0 1-1.06-1.06L16.19 6.75z"
 							clipRule="evenodd"
 						></path>
-					</svg>
+					</svg> */}
 				</div>
 
 				<div className="flex flex-wrap justify-center gap-4">
@@ -755,7 +764,6 @@ const Landing = () => {
 					</div>
 				</div>
 			</div>
-
 			{/* Faq content  */}
 			<div className="mt-[34px] mb-[30px] flex gap-4">
 				<FAQ />

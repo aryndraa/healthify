@@ -7,12 +7,6 @@
 }
 
 
-
-
-
-
-
-
 @layer utilities {
 	.text--2xl{
 		font-size: clamp(1.125rem, 0.6563rem + 1.5vw, 1.5rem);
@@ -86,8 +80,9 @@
 	}
 	
 	.Button:hover {
+		cursor: pointer;
 		transition: all;
-		transition-delay: 20ms;
+		transition-delay: 200ms;
 		background-color: #213170;
 		color: white;
 	}
