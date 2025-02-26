@@ -13,11 +13,11 @@ export function Pharmacy() {
         </div>
         <div className="flex items-stretch gap-4 mb-4">
           <div>
-            <img src={pharmacyHero} alt="" className="rounded-xl" />
+            <img src={pharmacyHero} alt="" className=" w-[28rem] 2xl:w-full object-cover rounded-xxl h-full" />
           </div>
-          <div className="bg-white flex-1 min-h-full rounded-xxl p-16">
-            <h1 className="font-semibold text-5xl mb-16">Find Trusted and Certificated Pharmacies Near You</h1>
-            <p className="text-lg">Looking for a pharmacy you can trust? Our platform helps you locate nearby pharmacies with real-time information on medication availability, operating hours, and additional services. Whether you need prescription refills, over-the-counter medicine, or expert advice, we connect you to the right place—quickly and hassle-free.</p>
+          <div className="bg-white flex-1 min-h-full rounded-xxl p-10 2xl:p-16">
+            <h1 className="font-semibold text-4xl 2xl:text-5xl mb-6 2xl:mb-16">Find Trusted and Certificated Pharmacies Near You</h1>
+            <p className="text-sm 2xl:text-xl">Looking for a pharmacy you can trust? Our platform helps you locate nearby pharmacies with real-time information on medication availability, operating hours, and additional services. Whether you need prescription refills, over-the-counter medicine, or expert advice, we connect you to the right place—quickly and hassle-free.</p>
           </div>
         </div>
         <div>
