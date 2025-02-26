@@ -1,10 +1,10 @@
-import Footer from "../component/Footer"
-import Navbar from "../component/navbar"
+import Footer from "../component/Footer.jsx"
+import Navbar from "../component/navbar.jsx"
 import PropTypes from "prop-types";
 
 export const DefaultLayout = ({children}) => {
   return (
-    <div className="w-full">
+    <div className="w-full  p-20 2xl:px-32 py-4 ">
       <Navbar/>
       <main className="w-full">
         {children}

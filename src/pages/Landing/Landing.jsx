@@ -1,8 +1,8 @@
 
 // CSS
-import "../Landing/Landing.css";
+import "./Landing.css";
 // Component
-import FAQ from "../../component/FAQ";
+import FAQ from "../../component/FAQ.jsx";
 // image assets
 import IDemo from "../../assets/Demo.svg";
 import IDemo2 from "../../assets/idemo2.svg";
@@ -16,7 +16,7 @@ const Landing = () => {
 	return (
 		<div>
 			{/* Hero  */}
-			<div className=" max-w-screen flex gap-4 mt-[100px]  sm:mt-[160px]">
+			<div className=" max-w-screen flex gap-4 mt-[100px] 	sm:mt-[160px]">
 				<div className="Container1">
 					<div className="item-1">
 						<div>
@@ -157,7 +157,9 @@ const Landing = () => {
 					style={{ backgroundImage: `url(${IDemo})` }}
 				></div>
 			</div>
-			<div className="flex flex-wrap gap-4 justify-center">
+
+
+			<div className="grid 2xl:grid-cols-4  gap-4 justify-center">
 				<div className="BOX">
 					<div className="flex justify-between  mb-[71px]">
 						<p className="text--4xl font-semibold w-1/2  ">

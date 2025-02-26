@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Landing from './pages/Landing/Landing';
-import { DefaultLayout } from './layouts/DefaultLayout';
-import {Pharmacy}  from './pages/Pharmacy/Pharmacy';
+import Landing from './pages/Landing/Landing.jsx';
+import { DefaultLayout } from './layouts/DefaultLayout.jsx';
+import { Pharmacy } from './pages/Pharmacy/Pharmacy.jsx';
 
 const App = () => {
   return (
