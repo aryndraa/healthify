@@ -270,9 +270,7 @@ const Landing = () => {
 						Browse Disease or find drugs on your nearest pharmacy!
 					</p>
 				</div>
-			</div>
-			hover:cursor-pointer
-			{/* explore content  */}
+			</div>			{/* explore content  */}
 			<div className="max-w-[1680px] min-h-[706px] h-fit bg-[#213170] flex flex-col justify-center text-center p-[25px] rounded-[40px] mt-12 md:p=[62px] ">
 				<div className=" flex flex-col gap-6  items-center justify-center align-middle mb-16">
 					<p className="text--5xl font-semibold  text-white">

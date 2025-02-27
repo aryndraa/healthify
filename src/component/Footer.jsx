@@ -1,5 +1,4 @@
 import heal from "../assets/logo-white.svg";
-import { Link } from "react-router-dom";
 
 const Footer = () => {
 	return (
