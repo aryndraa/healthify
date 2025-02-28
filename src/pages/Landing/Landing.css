@@ -32,7 +32,7 @@
 		
 	}
 	.text--4xl{
-		font-size: clamp(1.5rem, -0.5625rem + 5vw, 2.25rem);
+		font-size: clamp(1.5rem, -3.5625rem + 5vw, 2.25rem);
 	}
 
 	.text--7xl{
@@ -65,6 +65,10 @@
 		justify-content: space-between;
 	}
 
+	.items{
+		display: flex;
+		justify-content: center;
+	}
 	
 
 	.Button {
@@ -77,12 +81,12 @@
 		background-color: white;
 		border: solid;
 		border-width: 1px;
+		transition: background-color 0.3s ease, color 0.3s ease;
 	}
 	
 	.Button:hover {
 		cursor: pointer;
 		transition: all;
-		transition-delay: 200ms;
 		background-color: #213170;
 		color: white;
 	}
