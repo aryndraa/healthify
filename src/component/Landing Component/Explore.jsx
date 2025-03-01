@@ -33,7 +33,7 @@ return(
                                     ></path>
                                 </svg>
                             </div>
-                            <div className="absolute p-5 group-hover:mt-[-40px] transition-all duration-300">
+                            <div className="absolute p-4 group-hover:mt-[-40px] transition-all duration-300">
                                 <p className=" text-start font-semibold text--2xl text-black transition duration-300 group-hover:text-white">
                                     Find Nearest Pharmacy
                                 </p>

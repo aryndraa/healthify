@@ -25,10 +25,10 @@ export const Blogs = () => {
 			<div className="grid grid-cols-1 2xl:grid-cols-3 justify-center gap-4">
 				{/* blog content 1  */}
 				<div className="items">
-					<div className="BLOG bg-white h-screen flex flex-col justify-between">
+					<div className="BLOG bg-white h-screen flex flex-col justify-between hover:">
 						<div className="flex flex-col gap-6 justify-between lg:flex-row">
 							<div className="flex gap-4">
-								<p className="Tag text-whi">Health</p>
+								<p className="Tag ">Health</p>
 								<p className="Tag ">Disease</p>
 							</div>
 							<img

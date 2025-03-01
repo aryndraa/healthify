@@ -8,36 +8,7 @@
 
 
 @layer utilities {
-	.text--2xl{
-		font-size: clamp(1.125rem, 0.6563rem + 1.5vw, 1.5rem);
-		line-height: 32px;
-
-	}
-	.text--lg{
-		font-size: clamp(0.875rem, 0.5625rem + 1vw, 1.125rem);
-	}
-	.text--xl{
-		font-size: clamp(0.875rem, 0.4063rem + 1.5vw, 1.25rem);
-	}
-
-	.text--32{
-		font-size: clamp(1.125rem, 0.0313rem + 3.5vw, 2rem);
-	}
-	.text--38{
-		font-size: clamp(1.25rem, -0.4375rem + 5vw, 2.375rem);
-	}
-
-	.text--5xl{
-		font-size: clamp(1.5rem, -1.5rem + 8vw, 3rem);
-		
-	}
-	.text--4xl{
-		font-size: clamp(1.5rem, -3.5625rem + 5vw, 2.25rem);
-	}
-
-	.text--7xl{
-		font-size: clamp(2.5rem, -2.1875rem + 11vw, 4rem);
-	}
+	
 
 
 	.Nav {
@@ -137,7 +108,7 @@
 	
 
 	.BLOG {
-		max-height: 450px;
+		min-height: 450px;
 		width: 549px;
 		padding: 32px;
 		border-radius: 40px;
