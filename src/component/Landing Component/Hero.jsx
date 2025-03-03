@@ -1,7 +1,7 @@
 import IDemo from "../../assets/Demo.svg";
 export const Hero = () => {
 	return (
-		<div className=" max-w-screen flex gap-4 mt-[100px] sm:mt-[160px]">
+		<div className=" max-w-screen flex gap-4 mt-[100px] lg:mt-[160px]">
 			<div className="Container1">
 				<div className="item-1">
 					<div>
