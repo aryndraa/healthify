@@ -1,10 +1,15 @@
 import PropTypes from "prop-types";
 import "../pages/Landing/landing.css"
-
+import { useNavigate } from "react-router-dom";
 export const BlogCard = ({ blog }) => {
+	 const navigate = useNavigate();
+
+		const handleClick = () => {
+			navigate(`/blog/${blog.id}`); // Arahkan ke halaman detail
+		};
 	return (
 		<div className="items">
-			<div className="BLOG bg-white  flex flex-col justify-between p-6 hover:cursor-pointer">
+			<div onClick={handleClick} className="BLOG bg-white  flex flex-col justify-between p-6 hover:cursor-pointer">
 				<div className="flex flex-col gap-6 justify-between lg:flex-row">
 					{/* Tags */}
 					<div className="flex gap-4">
