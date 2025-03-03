@@ -8,23 +8,6 @@
 
 
 @layer utilities {
-	
-
-
-	.Nav {
-		font-weight: 600;
-		padding: 24px 32px;
-		background: white;
-		text-align: center;
-		border-radius: 40px;
-	}
-	.Nav:hover {
-		background-color: rgb(197, 229, 255);
-	}
-	.active {
-		background-color: rgb(197, 229, 255);
-	}
-
 	.item-1 {
 		display: flex;
 		flex-direction: column;

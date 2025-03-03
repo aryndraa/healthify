@@ -41,7 +41,7 @@ const Navbar = () => {
 								key={item.to}
 								to={item.to}
 								className={({ isActive }) =>
-									`Nav ${isActive ? "active" : ""} text--xl`
+									`${isActive ? "bg-trinary" : "bg-white"} 2xl:py-6 2xl:px-8 rounded-xxl text-center hover:bg-trinary/30	font-medium   2xl:text-xl lg:text-lg`
 								}
 							>
 								{item.name}
