@@ -27,14 +27,14 @@ const Navbar = () => {
 	return (
 		<div className="fixed top-0 left-0 w-full z-50 flex justify-center ">
 			<div
-				className={`max-w-[1920px] w-screen transition-all duration-300 ${
+				className={`max-w-[1920px]  w-screen transition-all  rounded-b-xl duration-300 ${
 					isScrolled
-						? "bg-white shadow-md py-3 px-10  mx-10 rounded-b-xl"
-						: "mt-10 mb-12 px-[120px]"
+						? "bg-white shadow-md py-3 px-10 lg:mx-10 "
+						: "lg:mt-10 lg:mb-12 px-10 py-3 lg:py-0 lg:px-[120px] shadow-md lg:shadow-none bg-white lg:bg-transparent "
 				}`}
 			>
-				<div className="flex items-center justify-between">
-					<img src={Heal} alt="Healthify Logo" className="w-40" />
+				<div className="flex items-center justify-between w-full">
+					<img src={Heal} alt="Healthify Logo" className="2xl:w-40 lg:w-36 w-24" />
 					<nav className="no-underline flex bg-white rounded-full max-[1156px]:hidden">
 						{navItems.map((item) => (
 							<NavLink
