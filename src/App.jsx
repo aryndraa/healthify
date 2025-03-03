@@ -1,9 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Landing from './pages/Landing/Landing.jsx';
 import { DefaultLayout } from './layouts/DefaultLayout.jsx';
-import { Pharmacy } from './pages/Pharmacy/Pharmacy.jsx';
+import { Index } from './pages/Pharmacy/Index.jsx';
 import { Blog } from './pages/Blog/Blog.jsx';
-import {PharmacySearched} from "./pages/Pharmacy/PharmacySearched.jsx";
+import {Searched} from "./pages/Pharmacy/Searched.jsx";
+import {Detail} from "./pages/Pharmacy/Detail.jsx";
 
 const App = () => {
   return (
@@ -11,8 +12,13 @@ const App = () => {
       <DefaultLayout>
         <Routes>
           <Route path="/" element={<Landing />} />
-          <Route path="/pharmacy" element={<Pharmacy />} />
-          <Route path="/pharmacy/searched" element={<PharmacySearched />} />
+
+          <Route path="/pharmacy/*">
+            <Route path="" element={<Index />} />
+            <Route path="searched" element={<Searched />} />
+            <Route path="1" element={<Detail />} />
+          </Route>
+
           <Route path="/blogs" element={<Blog />} />
         </Routes>
       </DefaultLayout>

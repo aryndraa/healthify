@@ -35,7 +35,7 @@ return(
                             </div>
                             <div className="absolute p-4 group-hover:mt-[-40px] transition-all duration-300">
                                 <p className=" text-start font-semibold text--2xl text-black transition duration-300 group-hover:text-white">
-                                    Find Nearest Pharmacy
+                                    Find Nearest Index
                                 </p>
                                 <p className="text-start  text-white opacity-0 transition duration-300 group-hover:opacity-100">
                                     Know more about disease, so you can self

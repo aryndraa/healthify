@@ -2,7 +2,7 @@ import {SearchBar} from "../../component/SearchBar.jsx";
 import {ShortBy} from "../../component/ShortBy.jsx";
 import {ListPharmacies} from "../../component/ListPharmacies.jsx";
 
-export function PharmacySearched ()  {
+export function Searched ()  {
   return (
     <>
       <section className="min-h-screen mt-[100px] lg:mt-[160px] mb-4">

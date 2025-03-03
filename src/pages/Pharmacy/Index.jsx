@@ -3,7 +3,7 @@ import { ShortBy } from "../../component/ShortBy.jsx";
 import pharmacyHero from "../../assets/pharmacy.png"
 import { ListPharmacies } from "../../component/ListPharmacies.jsx";
 
-export function Pharmacy() {
+export function Index() {
   return (
     <>
       <section className="min-h-screen mt-[100px] lg:mt-[160px] mb-4">
