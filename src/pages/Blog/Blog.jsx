@@ -36,7 +36,7 @@ return (
 				className="rounded-[40px] max-[1550px]:hidden"
 			/>
 		</div>
-		<div className="w-full grid grid-cols-1 sm:grid-cols-2 min-[1440px]:grid-cols-3 gap-10 mt-4">
+		<div className="w-full grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 justify-center gap-4 mt-4">
 			{blogData.map((blog) => (
 				<BlogCard key={blog.id} blog={blog} />
 			))}
