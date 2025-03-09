@@ -3,9 +3,8 @@ import { blogData } from "./blogdta.js";
 import { BlogCard } from "../../component/blog.jsx";
 
 export const BlogDetail = () => {
-	const { id } = useParams(); // Ambil id dari URL
-	const blog = blogData.find((b) => b.id === parseInt(id)); // Cari data berdasarkan ID
-
+	const { id } = useParams(); 
+	const blog = blogData.find((b) => b.id === parseInt(id)); 
 	if (!blog) {
 		return <p className="text-center text-red-500">Blog tidak ditemukan</p>;
 	}

@@ -1,4 +1,3 @@
-
 import { SearchBar } from "../../component/SearchBar";
 import { ShortBy } from "../../component/ShortBy";
 import { blogData } from "./blogdta";
