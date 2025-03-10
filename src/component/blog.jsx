@@ -1,28 +1,32 @@
 import PropTypes from "prop-types";
 import "../pages/Landing/landing.css"
-
+import { useNavigate } from "react-router-dom";
 export const BlogCard = ({ blog }) => {
+	 const navigate = useNavigate();
+
+		const handleClick = () => {
+			navigate(`/blog/${blog.id}`); // Arahkan ke halaman detail
+		};
 	return (
 		<div className="items">
-			<div className="BLOG bg-white  flex flex-col justify-between p-6 hover:cursor-pointer">
+			<div
+				onClick={handleClick}
+				className="BLOG bg-white h-screen  flex flex-col justify-between p-6 hover:cursor-pointer"
+			>
 				<div className="flex flex-col gap-6 justify-between lg:flex-row">
 					{/* Tags */}
 					<div className="flex gap-4">
 						{blog.tags.map((tag, index) => (
-							<p
-								key={index}
-								className="Tag"
-							>
+							<p key={index} className="Tag">
 								{tag}
 							</p>
 						))}
 					</div>
 					{/* Image */}
-					<img
-						className="w-24 sm:w-[120px] h-auto rounded-lg"
-						src={blog.image}
-						alt={blog.title}
-					/>
+					<div
+						className="w-[90px] h-[90px] sm:w-[120px] sm:h-[120px] rounded-full bg-center bg-cover"
+						style={{ backgroundImage: `url(${blog.image})` }}
+					></div>
 				</div>
 				{/* Blog Content */}
 				<div className="Blog-Content flex flex-col gap-4">
