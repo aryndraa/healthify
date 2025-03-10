@@ -1,6 +1,6 @@
 import {SearchBar} from "../../component/SearchBar.jsx";
 import {ShortBy} from "../../component/ShortBy.jsx";
-import {ListPharmacies} from "../../component/ListPharmacies.jsx";
+import {ListPharmacies} from "../../component/Pharmacy/ListPharmacies.jsx";
 
 export function PharmaciesSearched ()  {
   return (
