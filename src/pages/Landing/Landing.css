@@ -91,7 +91,7 @@
 	
 
 	.BLOG {
-		min-height: 450px;
+		max-height: 450px;
 		width: 549px;
 		padding: 32px;
 		border-radius: 40px;
