@@ -1,6 +1,6 @@
 import {Link} from 'react-router-dom'
 
-export const PharmacyCard = () => {
+export const PharmacyClinicCard = () => {
   return (
     <Link to="1" className="relative w-full h-fit  2xl:w-full lg:h-[320px] xl:h-[320px] 2xl:h-[450px]">
       <img 
@@ -13,7 +13,7 @@ export const PharmacyCard = () => {
           <span className="px-3 lg:px-6 bg-secondary text-white rounded-xxl py-1 text-xs lg:text-base 2xl:text-lg font-medium">Open</span>
           <p className="text-sm lg:text-base 2xl:text-lg font-medium">24 Hours</p>
         </div>        
-        <div className="flex lg:items-end gap-4 lg:gap-2  justify-between items-center">
+        <div className="flex lg:items-start gap-4 lg:gap-2  justify-between items-center">
           <div>
             <h3 className=" lg:text-base 2xl:text-2xl font-semibold">
               Apotek Kimia Farma Diponegoro
