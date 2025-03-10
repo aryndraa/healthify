@@ -12,7 +12,7 @@ export function DiseaseDetail() {
       return(
         <>
           <DiseaseInfo title="Definition">
-            <p className="text-lg leading-[1.6]">
+            <p className=" leading-[1.6]">
               Asthma bronkial adalah penyakit pernapasan kronis yang ditandai dengan peradangan dan
               penyempitan saluran napas, yang menyebabkan kesulitan bernapas, batuk, dan mengi. Kondisi
               ini dapat bervariasi dalam tingkat keparahan dan frekuensi serangan, memerlukan pengelolaan
@@ -21,7 +21,7 @@ export function DiseaseDetail() {
             </p>
           </DiseaseInfo>
           <DiseaseInfo title="Cause">
-            <ul className="list-disc pl-4 text-lg">
+            <ul className="list-disc pl-4 ">
               <li>Alergen (seperti debu, serbuk sari, dan bulu hewan)</li>
               <li>Iritan (seperti asap rokok, polusi udara, dan bahan kimia)</li>
               <li>Infeksi saluran pernapasan</li>
@@ -30,7 +30,7 @@ export function DiseaseDetail() {
             </ul>
           </DiseaseInfo>
           <DiseaseInfo title="Complication">
-            <p className="text-lg leading-[1.6]">
+            <p className=" leading-[1.6]">
               Jika tidak dikelola dengan baik, asma dapat menyebabkan serangan parah yang mengancam jiwa,
               serta perubahan permanen pada saluran napas yang dapat mengurangi fungsi paru-paru dan kualitas
               hidup penderita.
@@ -42,7 +42,7 @@ export function DiseaseDetail() {
       return(
         <>
           <DiseaseInfo title="Common Symptoms">
-            <ul className="list-disc pl-4 text-lg">
+            <ul className="list-disc pl-4 ">
               <li>Sesak Napas: Kesulitan bernapas saat beraktivitas atau di malam hari, dengan perasaan tekanan di dada.</li>
               <li>Batuk: Batuk kronis yang memburuk di malam hari atau saat berolahraga, bisa kering atau berdahak.</li>
               <li>Wheezing: Suara mengi saat bernapas, terutama saat mengeluarkan napas, akibat penyempitan saluran napas.</li>
@@ -51,7 +51,7 @@ export function DiseaseDetail() {
             </ul>
           </DiseaseInfo>
           <DiseaseInfo title="Specific Symptoms">
-            <ul className="list-disc pl-4 text-lg">
+            <ul className="list-disc pl-4 ">
               <li>Sesak Napas: Kesulitan bernapas saat beraktivitas atau di malam hari, dengan perasaan tekanan di dada.</li>
               <li>Batuk: Batuk kronis yang memburuk di malam hari atau saat berolahraga, bisa kering atau berdahak.</li>
               <li>Wheezing: Suara mengi saat bernapas, terutama saat mengeluarkan napas, akibat penyempitan saluran napas.</li>
@@ -60,7 +60,7 @@ export function DiseaseDetail() {
             </ul>
           </DiseaseInfo>
           <DiseaseInfo title="Stages of Symptoms">
-            <ul className="list-disc pl-4 text-lg">
+            <ul className="list-disc pl-4 ">
               <li>Sesak Napas: Kesulitan bernapas saat beraktivitas atau di malam hari, dengan perasaan tekanan di dada.</li>
               <li>Batuk: Batuk kronis yang memburuk di malam hari atau saat berolahraga, bisa kering atau berdahak.</li>
               <li>Wheezing: Suara mengi saat bernapas, terutama saat mengeluarkan napas, akibat penyempitan saluran napas.</li>
@@ -75,25 +75,25 @@ export function DiseaseDetail() {
       return (
         <>
           <DiseaseInfo title="Medical Treatment">
-            <ul className="list-disc pl-4 text-lg ">
+            <ul className="list-disc pl-4  ">
               <li>Inhaler bronkodilator untuk meredakan gejala.</li>
               <li>Obat anti-inflamasi (kortikosteroid) untuk mengurangi peradangan.</li>
            </ul>
          </DiseaseInfo>
           <DiseaseInfo title="Self Care">
-            <ul className="list-disc pl-4 text-lg ">
+            <ul className="list-disc pl-4  ">
               <li>Inhaler bronkodilator untuk meredakan gejala.</li>
               <li>Obat anti-inflamasi (kortikosteroid) untuk mengurangi peradangan.</li>
            </ul>
          </DiseaseInfo>
           <DiseaseInfo title="Alternative">
-            <ul className="list-disc pl-4 text-lg ">
+            <ul className="list-disc pl-4  ">
               <li>Inhaler bronkodilator untuk meredakan gejala.</li>
               <li>Obat anti-inflamasi (kortikosteroid) untuk mengurangi peradangan.</li>
            </ul>
          </DiseaseInfo>
           <DiseaseInfo title="Durasi Perawatan">
-            <p className="text-lg leading-[1.6]">
+            <p className=" leading-[1.6]">
               Pengobatan asma bersifat jangka panjang dan memerlukan pemantauan rutin untuk menyesuaikan pengobatan sesuai kebutuhan.
             </p>
           </DiseaseInfo>
@@ -106,30 +106,30 @@ export function DiseaseDetail() {
 
   return (
     <>
-      <section className="mt-[100px] lg:mt-[160px] mb-4">
+      <section className="mt-[100px] lg:mt-[160px] mb-12 lg:mb-4">
 
-        <div className="flex gap-4">
+        <div className="flex flex-col lg:flex-row gap-2 lg:gap-4">
           <div>
             <TabBar activeTab={activeTab} setActiveTab={setActiveTab} />
-            <div className=" rounded-xxl bg-white mt-4 p-12">
-              <div className="pb-8 mb-8 border-b border-b-text ">
-                <h1 className="text-4xl font-bold mb-2">Asthma Bronchiale</h1>
-                <p className="text-xl font-medium">Penyakit Pernafasan yang menyerang paru - paru</p>
+            <div className="rounded-xl lg:rounded-xxl bg-white mt-2 lg:mt-4 p-4 lg:p-8 2xl:p-12">
+              <div className="mb-4 pb-4 lg:mb-6 lg:pb-6 2xl:pb-8 2xl:mb-8 border-b border-b-text ">
+                <h1 className="text-2xl lg:text-3xl 2xl:text-4xl font-semibold lg:font-bold mb-1 2xl:mb-2">Asthma Bronchiale</h1>
+                <p className="text-sm 2xl:text-xl font-medium">Penyakit Pernafasan yang menyerang paru - paru</p>
               </div>
-              <div className="flex flex-col gap-6">
+              <div className="flex flex-col gap-4 lg:gap-6">
                 {tabInfo()}
               </div>
             </div>
           </div>
-          <div className="min-w-[549px] h-[549px] bg-gray-300 rounded-xxl"></div>
+          <div className="min-w-full h-[200px] lg:min-w-[420px] lg:h-[420px] 2xl:min-w-[549px] 2xl:h-[549px] bg-gray-300 rounded-xl lg:rounded-xxl"></div>
         </div>
       </section>
 
       <section className="mb-12">
-        <div className="mb-4">
+        <div className="mb-2 lg:mb-4">
           <MoreLink name={"More Disease"}/>
         </div>
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-2 lg:gap-4">
           <DiseaseCard/>
           <DiseaseCard/>
           <DiseaseCard/>
