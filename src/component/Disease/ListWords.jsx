@@ -7,13 +7,13 @@
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     return (
-    <div className="flex lg:justify-start justify-end">
+    <div>
 
       <div className=" hidden  lg:grid 2xl:grid-cols-6 lg:grid-cols-5 gap-2 h-fit  ">
         <button
           key="All"
           onClick={() => setActiveLetter("All")}
-          className={`2xl:text-2xl  lg:text-lg min-h-[52px] min-w-[52px] lg:h-[60px] lg:w-[60px] 2xl:w-[72px]  2xl:h-[72px]  font-medium flex justify-center items-center  rounded-ful transition rounded-full ${
+          className={`2xl:text-2xl  lg:text-lg  lg:h-[60px] lg:w-[60px] 2xl:w-[72px]  2xl:h-[72px]  font-medium flex justify-center items-center  rounded-ful transition rounded-full ${
             activeLetter === "All" ? "bg-secondary text-white" : "bg-white hover:bg-gray-200"
           }`}
         >
@@ -23,7 +23,7 @@
           <button
             key={letter}
             onClick={() => setActiveLetter(letter)}
-            className={`2xl:text-2xl  lg:text-lg min-h-[52px] min-w-[52px] lg:h-[60px] lg:w-[60px] 2xl:w-[72px] 2xl:h-[72px] font-medium flex justify-center items-center  rounded-full transition ${
+            className={`2xl:text-2xl  lg:text-lg  lg:h-[60px] lg:w-[60px] 2xl:w-[72px] 2xl:h-[72px] font-medium flex justify-center items-center  rounded-full transition ${
               activeLetter === letter ? "bg-secondary text-white" : "bg-white hover:bg-gray-200"
             }`}
           >

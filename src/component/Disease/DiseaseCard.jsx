@@ -9,7 +9,7 @@ export const DiseaseCard = () => {
           Gejala : <span className="font-semibold">Sesak Napas, Batuk Di Malam Hari, Wheezing</span>
         </h3>
 
-        <p className="text-sm 2xl:text-lg lg:text-sm">
+        <p className="text-sm lg:text-base 2xl:text-lg lg:text-sm">
           Asma adalah kondisi pernapasan kronis yang ditandai dengan peradangan
           dan penyempitan saluran napas, menyebabkan kesulitan bernapas.
         </p>
