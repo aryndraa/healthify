@@ -11,7 +11,6 @@ export function Diseases() {
       <section className="min-h-screen mt-[100px] lg:mt-[160px] mb-4">
         <div className="w-full flex  gap-2 items-center mb-4">
           <SearchBar/>
-          <ShortBy/>
         </div>
 
         <Banner
@@ -20,9 +19,9 @@ export function Diseases() {
           text="Explore a complete database of trusted drug information, including uses, dosages, side effects, precautions, interactions, and safety guidelines, to make well-informed healthcare decisions for yourself and your loved ones."
         />
 
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 my-4 lg:my-12">
           <ListWords/>
-          <div className="grid grid-cols-2 col-span-2 gap-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 col-span-2 gap-4 w-fit">
             <DiseaseCard/>
             <DiseaseCard/>
             <DiseaseCard/>
