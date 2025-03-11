@@ -3,16 +3,16 @@ import { drugData } from "./drugsdta";
 import { DrugCard } from "../../component/Drugs/Drug";
 
 export function DrugDetail() {
-	const { id } = useParams(); 
+	const { id } = useParams();
 	const drug = drugData.find((item) => item.id === parseInt(id)); // Cari obat sesuai ID
 
 	if (!drug) {
 		return (
 			<div className="min-h-screen mt-[100px] sm:mt-[160px] mb-4" >
 
-			<h1 className="text-center text-2xl font-bold">
-				Obat tidak ditemukan
-			</h1>
+				<h1 className="text-center text-2xl font-bold">
+					Obat tidak ditemukan
+				</h1>
 			</div>
 		);
 	}
@@ -129,16 +129,16 @@ export function DrugDetail() {
 					</svg>
 				</div>
 				{drugData.map((drug) => (
-								<DrugCard
-									key={drug.id}
-									id={drug.id}
-									pricing={drug.pricing}
-									title={drug.title}
-									standFor={drug.standFor}
-									illustration={drug.ilustration}
-									drugLevel={drug.drugLevel}
-								/>
-							))}
+					<DrugCard
+						key={drug.id}
+						id={drug.id}
+						pricing={drug.pricing}
+						title={drug.title}
+						standFor={drug.standFor}
+						illustration={drug.ilustration}
+						drugLevel={drug.drugLevel}
+					/>
+				))}
 			</div>
 		</div>
 	);
