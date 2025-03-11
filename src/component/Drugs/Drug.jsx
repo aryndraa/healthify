@@ -10,11 +10,9 @@ export function DrugCard({ pricing, title, standFor, illustration, drugLevel, id
     return (
 		<div
         onClick={handleClick}
-        className="justify-between flex flex-col rounded-[40px] py-4 px-2 shadow-lg w-[408px] h-[500px] hover:cursor-pointer"
+        className="justify-between flex flex-col rounded-[40px] py-4 px-2 shadow-lg max-w-[408px] h-[500px] hover:cursor-pointer bg-cover bg-center md:"
         style={{
             backgroundImage: `url(${illustration})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
         }}
 		>
 				<div className="  bg-white text-gray-800 font-semibold w-fit px-6 text--lg py-4 rounded-full ">

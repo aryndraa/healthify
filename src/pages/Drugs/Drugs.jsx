@@ -12,12 +12,12 @@ return (
 			<SearchBar />
 			<ShortBy />
 		</div>
-		<div className="flex items-stretch gap-4 mb-4">
+		<div className="flex items-stretch xl:gap-4 mb-4">
 			<div>
 				<img
 					src={drugs}
 					alt="drugs illustration"
-					className=" w-[28rem] 2xl:w-full object-cover rounded-xxl h-full"
+					className=" w-[28rem] 2xl:w-full object-cover rounded-xxl h-full max-[1550px]:hidden"
 				/>
 			</div>
 			<div className="bg-white flex-1 min-h-full rounded-xxl p-10 2xl:p-16">

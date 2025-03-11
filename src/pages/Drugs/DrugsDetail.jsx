@@ -19,9 +19,9 @@ export function DrugDetail() {
 
 	return (
 		<div className="min-h-screen  mt-[100px] sm:mt-[160px] mb-4">
-			<div className="flex gap-4">
-				<div className="max-w-[549px] max-h-[549px]">
-					<div className="flex justify-between items-center bg-white rounded-[40px] p-12">
+			<div className="flex flex-col 2xl:flex-row gap-4  justify-center items-center 2xl:items-start">
+				<div className="max-w-[549px] 2xl:min-w-[549px] ">
+					<div className="flex justify-between items-center bg-white rounded-[40px] p-12  ">
 						<div className=" flex flex-col ">
 							<h2 className="font-semibold text--5xl">
 								{drug.title}
@@ -34,16 +34,14 @@ export function DrugDetail() {
 							<img
 								src={drug.drugLevel}
 								alt="Drug Level"
-								className="w-16 mt-2"
+								className="w-8 2xl:w-12 mt-2"
 							/>
 						</div>
 					</div>
 					<div
-						className="rounded-[40px] py-4 px-2 w-[549px] h-[549px]"
+						className="rounded-[40px] py-4 px-2 max-w-[549px] h-[250px] md:h-[549px] bg-no-repeat bg-center md:bg-cover"
 						style={{
 							backgroundImage: `url(${drug.ilustration})`,
-							backgroundSize: "cover",
-							backgroundPosition: "center",
 						}}
 					/>
 					<div className="flex items-center justify-center bg-[#213170] text-white gap-4 py-8 px-4 rounded-[32px] hover:cursor-pointer ">
