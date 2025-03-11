@@ -13,6 +13,7 @@ import {DiseasesSearched} from "./pages/Disease/DiseasesSearched.jsx";
 import {DiseaseDetail} from "./pages/Disease/DiseaseDetail.jsx";
 import {Clinics} from "./pages/Clinic/Clinics.jsx";
 import {ClinicSearched} from "./pages/Clinic/ClinicSearched.jsx";
+import {ClinicDetail} from "./pages/Clinic/ClinicDetail.jsx";
 
 const App = () => {
   return (
@@ -36,7 +37,7 @@ const App = () => {
           <Route path="/clinic/*">
             <Route path="" element={<Clinics />} />
             <Route path="searched" element={<ClinicSearched />} />
-            <Route path="1" element={<ClinicSearched />} />
+            <Route path="1" element={<ClinicDetail />} />
           </Route>
 
 					<Route path="/blogs" element={<Blog />} />

@@ -106,17 +106,17 @@ export function DiseaseDetail() {
 
   return (
     <>
-      <section className="mt-[100px] lg:mt-[160px] mb-12 lg:mb-4">
+      <section className="mt-[100px] lg:mt-[160px] mb-4">
 
-        <div className="flex flex-col lg:flex-row gap-2 lg:gap-4">
+        <div className="flex flex-col lg:flex-row gap-4">
           <div>
             <TabBar activeTab={activeTab} setActiveTab={setActiveTab} />
-            <div className="rounded-xl lg:rounded-xxl bg-white mt-2 lg:mt-4 p-4 lg:p-8 2xl:p-12">
+            <div className="rounded-xl lg:rounded-xxl bg-white mt-4 p-4 lg:p-8 2xl:p-12">
               <div className="mb-4 pb-4 lg:mb-6 lg:pb-6 2xl:pb-8 2xl:mb-8 border-b border-b-text ">
                 <h1 className="text-2xl lg:text-3xl 2xl:text-4xl font-semibold lg:font-bold mb-1 2xl:mb-2">Asthma Bronchiale</h1>
                 <p className="text-sm 2xl:text-xl font-medium">Penyakit Pernafasan yang menyerang paru - paru</p>
               </div>
-              <div className="flex flex-col gap-4 lg:gap-6">
+              <div className="flex flex-col gap-4 2xl:gap-6">
                 {tabInfo()}
               </div>
             </div>
