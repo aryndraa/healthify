@@ -1,6 +1,5 @@
-import PropTypes from "prop-types";
-import "../pages/Landing/landing.css"
 import { useNavigate } from "react-router-dom";
+
 export const BlogCard = ({ blog }) => {
 	 const navigate = useNavigate();
 
@@ -38,13 +37,3 @@ export const BlogCard = ({ blog }) => {
 	);
 };
 
-
-// Prop validation
-BlogCard.propTypes = {
-	blog: PropTypes.shape({
-		image: PropTypes.string.isRequired,
-		tags: PropTypes.arrayOf(PropTypes.string).isRequired,
-		title: PropTypes.string.isRequired,
-		description: PropTypes.string.isRequired,
-	}).isRequired,
-};

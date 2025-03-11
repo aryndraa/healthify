@@ -1,7 +1,7 @@
 import { SearchBar } from "../../component/SearchBar";
 import { ShortBy } from "../../component/ShortBy";
 import { blogData } from "./blogdta";
-import { BlogCard } from "../../component/blog";
+import { BlogCard } from "../../component/BlogCard.jsx";
 import idemo3 from "../../assets/Rectangle 78.svg";
 
 
