@@ -28,12 +28,13 @@ export function Drugs() {
 					<p className="text-sm 2xl:text-xl">
 						Explore a complete database of trusted drug information,
 						including uses, dosages, side effects, precautions,
-						interactions, and safety guidelines, to make well-informed
-						healthcare decisions for yourself and your loved ones.
+						interactions, and safety guidelines, to make
+						well-informed healthcare decisions for yourself and your
+						loved ones.
 					</p>
 				</div>
 			</div>
-			<div>
+			<div className="w-full grid gap-4 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4">
 				{drugData.map((drug) => (
 					<DrugCard
 						key={drug.id}
