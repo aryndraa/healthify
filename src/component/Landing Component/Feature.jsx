@@ -2,10 +2,10 @@ import patient from "../../assets/patient.png";
 
 export const Feature = () => {
 	return (
-		<div className="grid grid-cols-1 min-[1024px]:grid-cols-2 2xl:grid-cols-4  gap-4 ">
-			<div className="items hover:cursor-pointer">
-				<div className="BOX  ">
-					<div className="flex justify-between  mb-[71px]">
+		<div className="grid grid-cols-1 min-[1024px]:grid-cols-2 2xl:grid-cols-4 gap-4 ">
+			<div className="items hover:cursor-pointer group">
+				<div className="BOX">
+					<div className="flex justify-between  mb-[71px]   ">
 						<p className="text--4xl font-semibold w-1/2  ">
 							Clinics Listed
 						</p>
@@ -32,7 +32,7 @@ export const Feature = () => {
 				</div>
 			</div>
 
-			<div className="items hover:cursor-pointer">
+			<div className="items hover:cursor-pointer group">
 				<div className="BOX">
 					<div className="flex justify-between  mb-[71px]">
 						<p className="text--4xl font-semibold w-1/2  ">
@@ -98,7 +98,7 @@ export const Feature = () => {
 				</div>
 			</div>
 
-			<div className="items hover:cursor-pointer">
+			<div className="items hover:cursor-pointer group">
 				<div className="BOX flex flex-col justify-between">
 					<div className="flex justify-between  mb-[71px]">
 						<p className="text--4xl font-semibold w-1/2  ">
@@ -118,7 +118,6 @@ export const Feature = () => {
 							></path>
 						</svg>
 					</div>
-					{/* <p className="text--7xl font-semibold ">12K</p> */}
 					<p className="text--lg  ">
 						Browse Disease or find drugs on your nearest pharmacy!
 					</p>
