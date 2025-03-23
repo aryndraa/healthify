@@ -21,11 +21,11 @@ export function Drugs() {
 					/>
 				</div>
 				<div className="bg-white flex-1 min-h-full rounded-xxl p-10 2xl:p-16">
-					<h1 className="font-semibold text-4xl 2xl:text-5xl mb-6 2xl:mb-16">
+					<h1 className="font-semibold text--4xl 2xl:text-5xl mb-6 2xl:mb-16">
 						Discover Reliable Drug Information for Safe and Informed
 						Healthcare
 					</h1>
-					<p className="text-sm 2xl:text-xl">
+					<p className="text--sm 2xl:text-xl">
 						Explore a complete database of trusted drug information,
 						including uses, dosages, side effects, precautions,
 						interactions, and safety guidelines, to make
@@ -34,7 +34,7 @@ export function Drugs() {
 					</p>
 				</div>
 			</div>
-			<div className="w-full grid gap-4 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4">
+			<div className="w-full grid gap-4 grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4">
 				{drugData.map((drug) => (
 					<DrugCard
 						key={drug.id}

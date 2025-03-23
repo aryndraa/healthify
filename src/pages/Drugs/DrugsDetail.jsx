@@ -20,7 +20,7 @@ export function DrugDetail() {
 	return (
 		<div className="min-h-screen  mt-[100px] sm:mt-[160px] mb-4">
 			<div className="flex flex-col 2xl:flex-row gap-4  justify-center items-center 2xl:items-start">
-				<div className="w-[549px] 2xl:min-w-[549px] ">
+				<div className="max-w-[549px] 2xl:min-w-[549px] ">
 					<div className="flex justify-between items-center bg-white rounded-[40px] p-12  ">
 						<div className=" flex flex-col ">
 							<h2 className="font-semibold text--5xl">
@@ -128,7 +128,7 @@ export function DrugDetail() {
 						></path>
 					</svg>
 				</div>
-				<div className="w-full grid gap-4 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4">
+				<div className="w-full grid gap-4 grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4 mt-4">
 					{drugData.map((drug) => (
 						<DrugCard
 							key={drug.id}
