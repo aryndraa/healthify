@@ -71,7 +71,7 @@ export function DrugDetail() {
 					<br />
 					<p className="text--xl font-semibold"> komposisi</p>
 					{drug.composition.map((item, index) => (
-						<li className="text-gray-500" key={index}>
+						<li className="text-gray-500 text--lg" key={index}>
 							{" "}
 							{item}{" "}
 						</li>
@@ -79,14 +79,19 @@ export function DrugDetail() {
 					<br />
 					<p className="text--xl font-semibold"> Cara Penggunaan</p>
 					<ul className="list-disc ml-5">
-						<li className="font-bold text-gray-500">
-							{drug.usage.adults}
-						</li>
+						{drug.usage.map((item, index) => (
+							<li
+								className="font-bold text--lg text-gray-500"
+								key={index}
+							>
+								{item}
+							</li>
+						))}
 					</ul>
 					<br />
 					<p className="text--xl font-semibold"> Efek Samping</p>
 					{drug.sideEffects.map((item, index) => (
-						<li className="text-gray-500" key={index}>
+						<li className="text-gray-500 text--lg" key={index}>
 							{item}
 						</li>
 					))}
@@ -101,7 +106,7 @@ export function DrugDetail() {
 						Perhatian:
 					</p>
 					{drug.precautions.map((item, index) => (
-						<li className="text-gray-500" key={index}>
+						<li className="text-gray-500 text--lg" key={index}>
 							{item}
 						</li>
 					))}
@@ -129,7 +134,7 @@ export function DrugDetail() {
 					</svg>
 				</div>
 				<div className="w-full grid gap-4 grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4 mt-4">
-					{drugData.map((drug) => (
+					{drugData.slice(0,4).map((drug) => (
 						<DrugCard
 							key={drug.id}
 							id={drug.id}

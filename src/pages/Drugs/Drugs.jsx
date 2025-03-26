@@ -35,7 +35,7 @@ export function Drugs() {
 				</div>
 			</div>
 			<div className="w-full grid gap-4 grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4">
-				{drugData.map((drug) => (
+				{drugData.slice(0,12).map((drug) => (
 					<DrugCard
 						key={drug.id}
 						id={drug.id}
