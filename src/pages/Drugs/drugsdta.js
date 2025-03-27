@@ -366,33 +366,7 @@ export const drugData = [
 		// additionalInfo:
 		// 	"Sebelum menggunakan Actifed, selalu baca petunjuk penggunaan yang tertera pada kemasan dan ikuti anjuran dari tenaga kesehatan.",
 	},
-	{
-		id: 15,
-		pricing: "Rp2.000 - Rp5.000",
-		title: "Paracetamol",
-		standFor: "Pereda Nyeri & Demam",
-		ilustration:
-			"https://res.cloudinary.com/dektxbmmb/image/upload/v1742992434/Healthify/Drugs/hmmaf0yefcy68xavfaim.svg",
-		drugLevel:
-			" https://res.cloudinary.com/dektxbmmb/image/upload/v1742997397/Healthify/Drugs/c5q5p5mwfvgz1u3zand4.svg  ",
-		description:
-			"Paracetamol adalah obat yang digunakan untuk meredakan nyeri ringan hingga sedang dan menurunkan demam. Obat ini sering digunakan untuk mengatasi sakit kepala, sakit gigi, nyeri otot, dan demam akibat infeksi.",
-		composition: ["Paracetamol 500 mg"],
-		usage: [
-			"Dewasa: 1-2 tablet, diminum setiap 4-6 jam sesuai kebutuhan, tidak melebihi 8 tablet dalam 24 jam.",
-			"Anak usia 6-12 tahun: Dosis sesuai petunjuk dokter.",
-		],
-		sideEffects: ["Mual", "Reaksi alergi (jarang)", "Gangguan pencernaan"],
-		bpomInfo:
-			"Informasi BPOM dan Produsen: Paracetamol terdaftar di Badan Pengawas Obat dan Makanan (BPOM) Indonesia dan diproduksi oleh berbagai perusahaan farmasi. Pastikan untuk membeli obat ini di apotek atau toko obat resmi untuk menjamin keaslian dan keamanannya.",
-		precautions: [
-			"Hindari mengemudikan kendaraan setelah mengonsumsi obat ini karena dapat menyebabkan kantuk.",
-			"Tidak disarankan untuk digunakan pada penderita hipertensi, penyakit jantung, atau diabetes tanpa konsultasi dokter.",
-			"Jika gejala tidak membaik setelah beberapa hari, penting untuk segera mencari nasihat medis.",
-		],
-		// additionalInfo:
-		// 	"Sebelum menggunakan Actifed, selalu baca petunjuk penggunaan yang tertera pada kemasan dan ikuti anjuran dari tenaga kesehatan.",
-	},
+
 	{
 		id: 16,
 		pricing: "Rp2.000 - Rp5.000",
@@ -522,6 +496,33 @@ export const drugData = [
 			"Hindari penggunaan bersamaan dengan alkohol.",
 			"Tidak disarankan untuk penderita penyakit hati.",
 			"Jika gejala tidak membaik setelah 3 hari, segera konsultasikan dengan tenaga medis.",
+		],
+		// additionalInfo:
+		// 	"Sebelum menggunakan Actifed, selalu baca petunjuk penggunaan yang tertera pada kemasan dan ikuti anjuran dari tenaga kesehatan.",
+	},
+	{
+		id: 15,
+		pricing: "Rp2.000 - Rp5.000",
+		title: "Paracetamol",
+		standFor: "Pereda Nyeri & Demam",
+		ilustration:
+			"https://res.cloudinary.com/dektxbmmb/image/upload/v1742992434/Healthify/Drugs/hmmaf0yefcy68xavfaim.svg",
+		drugLevel:
+			" https://res.cloudinary.com/dektxbmmb/image/upload/v1742997397/Healthify/Drugs/c5q5p5mwfvgz1u3zand4.svg  ",
+		description:
+			"Paracetamol adalah obat yang digunakan untuk meredakan nyeri ringan hingga sedang dan menurunkan demam. Obat ini sering digunakan untuk mengatasi sakit kepala, sakit gigi, nyeri otot, dan demam akibat infeksi.",
+		composition: ["Paracetamol 500 mg"],
+		usage: [
+			"Dewasa: 1-2 tablet, diminum setiap 4-6 jam sesuai kebutuhan, tidak melebihi 8 tablet dalam 24 jam.",
+			"Anak usia 6-12 tahun: Dosis sesuai petunjuk dokter.",
+		],
+		sideEffects: ["Mual", "Reaksi alergi (jarang)", "Gangguan pencernaan"],
+		bpomInfo:
+			"Informasi BPOM dan Produsen: Paracetamol terdaftar di Badan Pengawas Obat dan Makanan (BPOM) Indonesia dan diproduksi oleh berbagai perusahaan farmasi. Pastikan untuk membeli obat ini di apotek atau toko obat resmi untuk menjamin keaslian dan keamanannya.",
+		precautions: [
+			"Hindari mengemudikan kendaraan setelah mengonsumsi obat ini karena dapat menyebabkan kantuk.",
+			"Tidak disarankan untuk digunakan pada penderita hipertensi, penyakit jantung, atau diabetes tanpa konsultasi dokter.",
+			"Jika gejala tidak membaik setelah beberapa hari, penting untuk segera mencari nasihat medis.",
 		],
 		// additionalInfo:
 		// 	"Sebelum menggunakan Actifed, selalu baca petunjuk penggunaan yang tertera pada kemasan dan ikuti anjuran dari tenaga kesehatan.",

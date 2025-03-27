@@ -3,13 +3,19 @@ import { ShortBy } from "../../component/ShortBy";
 import drugs from "../../assets/drugs.png"
 import { DrugCard } from "../../component/Drugs/Drug";
 import { drugData } from "./drugsdta";
+import { useState } from "react";
 
 
 export function Drugs() {
+	const [searchQuery, setSearchQuery] = useState('')
+
+ const filteredDrugs = drugData.filter((drug) =>
+		drug.title.toLowerCase().includes(searchQuery.toLowerCase())
+ );
 	return (
 		<div className="min-h-screen  mt-[100px] sm:mt-[160px] mb-4">
 			<div className="w-full flex gap-2 items-center mb-4">
-				<SearchBar />
+				<SearchBar onSearch={setSearchQuery} />
 				<ShortBy />
 			</div>
 			<div className="flex items-stretch xl:gap-4 mb-4">
@@ -35,17 +41,24 @@ export function Drugs() {
 				</div>
 			</div>
 			<div className="w-full grid gap-4 grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4">
-				{drugData.slice(0,12).map((drug) => (
-					<DrugCard
-						key={drug.id}
-						id={drug.id}
-						pricing={drug.pricing}
-						title={drug.title}
-						standFor={drug.standFor}
-						illustration={drug.ilustration}
-						drugLevel={drug.drugLevel}
-					/>
-				))}
+				{filteredDrugs.length > 0 ? (
+					filteredDrugs
+						.slice(0, 12).map((drug) => (
+							<DrugCard
+								key={drug.id}
+								id={drug.id}
+								pricing={drug.pricing}
+								title={drug.title}
+								standFor={drug.standFor}
+								illustration={drug.ilustration}
+								drugLevel={drug.drugLevel}
+							/>
+						))
+				) : (
+					<p className="col-span-full text-center text-gray-500">
+						No results found.
+					</p>
+				)}
 			</div>
 		</div>
 	);

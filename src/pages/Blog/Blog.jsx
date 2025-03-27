@@ -3,13 +3,19 @@ import { ShortBy } from "../../component/ShortBy";
 import { blogData } from "./blogdta";
 import { BlogCard } from "../../component/BlogCard.jsx";
 import idemo3 from "../../assets/Rectangle 78.svg";
+import { useState } from "react";
 
 
 export function Blog() {
+	const [searchQuery, setSearchQuery] = useState('')
+
+ const filteredBlog = blogData.filter((blog) =>
+		blog.title.toLowerCase().includes(searchQuery.toLowerCase())
+ );
 return (
 	<div className="min-h-screen  mt-[100px] sm:mt-[160px] mb-4">
 		<div className="w-full flex gap-2 items-center mb-4">
-			<SearchBar />
+			<SearchBar onSearch={setSearchQuery} />
 			<ShortBy />
 		</div>
 		<div className="hidden min-h-[400px] p-64px sm:flex  gap-4 ">
@@ -35,9 +41,15 @@ return (
 			/>
 		</div>
 		<div className="w-full grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-10 mt-4">
-			{blogData.map((blog) => (
-				<BlogCard key={blog.id} blog={blog} />
-			))}
+			{filteredBlog.length > 0 ? (
+				filteredBlog.map((blog) => (
+					<BlogCard key={blog.id} blog={blog} />
+				))
+			) : (
+				<p className="col-span-full text-center text-gray-500">
+					No results found.
+				</p>
+			)}
 		</div>
 	</div>
 );
