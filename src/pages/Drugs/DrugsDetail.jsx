@@ -4,12 +4,11 @@ import { DrugCard } from "../../component/Drugs/Drug";
 
 export function DrugDetail() {
 	const { id } = useParams();
-	const drug = drugData.find((item) => item.id === parseInt(id)); // Cari obat sesuai ID
+	const drug = drugData.find((item) => item.id === parseInt(id));
 
 	if (!drug) {
 		return (
 			<div className="min-h-screen mt-[100px] sm:mt-[160px] mb-4" >
-
 				<h1 className="text-center text-2xl font-bold">
 					Obat tidak ditemukan
 				</h1>

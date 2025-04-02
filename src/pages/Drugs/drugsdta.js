@@ -9,6 +9,8 @@ export const drugData = [
 		pricing: "Rp5.000 - Rp10.000",
 		title: "Actifed",
 		standFor: "Obat Flu & Alergi",
+		Tags: ["Flu"],
+		Level: ["Over-the-counter"],
 		ilustration:
 			"https://res.cloudinary.com/dektxbmmb/image/upload/v1741612892/Healthify/Drugs/ghyzrzs0ws8njz7aqetz.svg",
 		drugLevel:
@@ -33,6 +35,8 @@ export const drugData = [
 		pricing: "Rp1.500 - Rp4.000",
 		title: "Antangin",
 		standFor: "Meringankan Masuk Angin",
+		Tags: ["Flu"],
+		Level: ["Herbal "],
 		ilustration:
 			"https://res.cloudinary.com/dektxbmmb/image/upload/v1742992509/Healthify/Drugs/dqezqvyyagashnezmikd.svg",
 		drugLevel:
@@ -69,6 +73,8 @@ export const drugData = [
 		pricing: "Rp1.500 - Rp4.000",
 		title: "Tolak Angin",
 		standFor: "Meringankan Masuk Angin",
+		Tags: ["Flu"],
+		Level: ["Herbal "],
 		ilustration:
 			"https://res.cloudinary.com/dektxbmmb/image/upload/v1742992461/Healthify/Drugs/is894hmybavyfmbfk248.svg",
 		drugLevel:
@@ -105,6 +111,8 @@ export const drugData = [
 		pricing: "Rp2.000 - Rp5.000",
 		title: "Mixagrip",
 		standFor: "Meredakan Flu & Sakit Kepala",
+		Tags: ["Flu", "Fever"],
+		Level: ["Over-the-counter"],
 		ilustration:
 			"https://res.cloudinary.com/dektxbmmb/image/upload/v1742992485/Healthify/Drugs/nwip4pryelaijtz2qgw9.svg",
 		drugLevel:
@@ -141,6 +149,8 @@ export const drugData = [
 		pricing: "Rp2.000 - Rp5.000",
 		title: "Decolgen",
 		standFor: "Meredakan Flu & Demam",
+		Tags: ["Flu"],
+		Level: ["Over-the-counter"],
 		ilustration:
 			"https://res.cloudinary.com/dektxbmmb/image/upload/v1742992448/Healthify/Drugs/wr5fh9lvfujcmugp2dem.svg",
 		drugLevel:
@@ -177,6 +187,8 @@ export const drugData = [
 		pricing: "Rp2.000 - Rp5.000",
 		title: "Konidin",
 		standFor: "Obat Batuk",
+		Tags: ["Flu", "Caugh"],
+		Level: ["Over-the-counter", "Herbal "],
 		ilustration:
 			"https://res.cloudinary.com/dektxbmmb/image/upload/v1742992437/Healthify/Drugs/igaafcnkaszfzcf4gjfo.svg",
 		drugLevel:
@@ -209,6 +221,8 @@ export const drugData = [
 		pricing: "Rp2.000 - Rp5.000",
 		title: "OBH Combi",
 		standFor: "Obat Batuk Berdahak",
+		Tags: ["Caugh"],
+		Level: ["Over-the-counter"],
 		ilustration:
 			"https://res.cloudinary.com/dektxbmmb/image/upload/v1742992465/Healthify/Drugs/nelp3nxb1pjonytdb0ol.svg",
 		drugLevel:
@@ -245,6 +259,8 @@ export const drugData = [
 		pricing: "Rp2.000 - Rp5.000",
 		title: "Komix",
 		standFor: "Meredakan Batuk",
+		Tags: ["Caugh"],
+		Level: ["Over-the-counter"],
 		ilustration:
 			"https://res.cloudinary.com/dektxbmmb/image/upload/v1742992464/Healthify/Drugs/qyodtkivknjuw0xwgbjh.svg",
 		drugLevel:
@@ -281,6 +297,8 @@ export const drugData = [
 		pricing: "Rp2.000 - Rp5.000",
 		title: "Siladex",
 		standFor: "Obat Batuk Kering & Berdahak",
+		Tags: ["Caugh"],
+		Level: ["Over-the-counter"],
 		ilustration:
 			"https://res.cloudinary.com/dektxbmmb/image/upload/v1742992445/Healthify/Drugs/qlhybshbl31aipiymtq4.svg",
 		drugLevel:
@@ -317,6 +335,8 @@ export const drugData = [
 		pricing: "Rp2.000 - Rp5.000",
 		title: "Bodrex",
 		standFor: "Sakit Kepala & Demam",
+		Tags: ["Fever"],
+		Level: ["Over-the-counter"],
 		ilustration:
 			"https://res.cloudinary.com/dektxbmmb/image/upload/v1742992449/Healthify/Drugs/mf4kyqio3o1l2jrfzkvs.svg",
 		drugLevel:
@@ -343,7 +363,9 @@ export const drugData = [
 		id: 12,
 		pricing: "Rp2.000 - Rp5.000",
 		title: "Panadol",
+		Level: ["Over-the-counter"],
 		standFor: "Pereda Nyeri",
+		Tags: ["Pain", "Antibiotics"],
 		ilustration:
 			"https://res.cloudinary.com/dektxbmmb/image/upload/v1742992447/Healthify/Drugs/krhf6ujns7ukydiymy4t.svg",
 		drugLevel:
@@ -372,6 +394,8 @@ export const drugData = [
 		pricing: "Rp2.000 - Rp5.000",
 		title: "Amoxicillin",
 		standFor: "Antibiotik untuk bakteri",
+		Tags: ["Antibiotics"],
+		Level: ["Hard Drugs"],
 		ilustration:
 			"https://res.cloudinary.com/dektxbmmb/image/upload/v1742992451/Healthify/Drugs/piw84xym1wdapezjuvdt.svg",
 		drugLevel:
@@ -404,6 +428,8 @@ export const drugData = [
 		pricing: "Rp2.000 - Rp5.000",
 		title: "Cotrimoxazole",
 		standFor: "Antibiotik untuk saluran kemih",
+		Tags: ["Antibiotics"],
+		Level: ["Hard Drugs"],
 		ilustration:
 			"https://res.cloudinary.com/dektxbmmb/image/upload/v1742992434/Healthify/Drugs/fcalvkhdxynwyvbzhdof.svg",
 		drugLevel:
@@ -436,6 +462,8 @@ export const drugData = [
 		pricing: "Rp2.000 - Rp5.000",
 		title: "Neozep Forte",
 		standFor: "Flu, Demam & Hidung Tersumbat",
+		Tags: ["Caugh", "Flu", "Fever"],
+		Level: ["Over-the-counter"],
 		ilustration:
 			"https://res.cloudinary.com/dektxbmmb/image/upload/v1742992450/Healthify/Drugs/wwuiyzryl6ohugpcizra.svg",
 		drugLevel:
@@ -474,6 +502,8 @@ export const drugData = [
 		pricing: "Rp2.000 - Rp5.000",
 		title: "Paramex",
 		standFor: "Sakit Kepala & Flu",
+		Tags: ["Flu", "Pain"],
+		Level: ["Over-the-counter"],
 		ilustration:
 			"https://res.cloudinary.com/dektxbmmb/image/upload/v1742992456/Healthify/Drugs/dsnx8ble82ltjvdbarqi.svg",
 		drugLevel:
@@ -505,6 +535,10 @@ export const drugData = [
 		pricing: "Rp2.000 - Rp5.000",
 		title: "Paracetamol",
 		standFor: "Pereda Nyeri & Demam",
+		Tags: ["Pain", "Fever"],
+		Level: [
+			"Over-the-counter",
+		],
 		ilustration:
 			"https://res.cloudinary.com/dektxbmmb/image/upload/v1742992434/Healthify/Drugs/hmmaf0yefcy68xavfaim.svg",
 		drugLevel:
