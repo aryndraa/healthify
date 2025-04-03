@@ -14,44 +14,53 @@ import { DiseaseDetail } from "./pages/Disease/DiseaseDetail.jsx";
 import { Clinics } from "./pages/Clinic/Clinics.jsx";
 import { ClinicSearched } from "./pages/Clinic/ClinicSearched.jsx";
 import { ClinicDetail } from "./pages/Clinic/ClinicDetail.jsx";
+import ScrollToTop from "./component/scrollReset.jsx";
 
 const App = () => {
 	return (
-		<Router>
-			<DefaultLayout>
-				<Routes>
-					<Route path="/" element={<Landing />} />
+		<>
+			<Router>
+			<ScrollToTop />
+				<DefaultLayout>
+					<Routes>
+						<Route path="/" element={<Landing />} />
 
-					<Route path="/pharmacy/*">
-						<Route path="" element={<Pharmacies />} />
-						<Route
-							path="searched"
-							element={<PharmaciesSearched />}
-						/>
-						<Route path="1" element={<PharmacyDetail />} />
-					</Route>
+						<Route path="/pharmacy/*">
+							<Route path="" element={<Pharmacies />} />
+							<Route
+								path="searched"
+								element={<PharmaciesSearched />}
+							/>
+							<Route path="1" element={<PharmacyDetail />} />
+						</Route>
 
-					<Route path="/disease/*">
-						<Route path="" element={<Diseases />} />
-						<Route path="searched" element={<DiseasesSearched />} />
-						<Route path="1" element={<DiseaseDetail />} />
-					</Route>
+						<Route path="/disease/*">
+							<Route path="" element={<Diseases />} />
+							<Route
+								path="searched"
+								element={<DiseasesSearched />}
+							/>
+							<Route path="1" element={<DiseaseDetail />} />
+						</Route>
 
-					<Route path="/clinic/*">
-						<Route path="" element={<Clinics />} />
-						<Route path="searched" element={<ClinicSearched />} />
-						<Route path="1" element={<ClinicDetail />} />
-					</Route>
+						<Route path="/clinic/*">
+							<Route path="" element={<Clinics />} />
+							<Route
+								path="searched"
+								element={<ClinicSearched />}
+							/>
+							<Route path="1" element={<ClinicDetail />} />
+						</Route>
 
-					<Route path="/blogs" element={<Blog />} />
-					<Route path="/blog/:id" element={<BlogDetail />} />
+						<Route path="/blogs" element={<Blog />} />
+						<Route path="/blog/:id" element={<BlogDetail />} />
 
-					<Route path="/drugs" element={<Drugs />} />
-					<Route path="/drugs/:id" element={<DrugDetail />} />
-
-				</Routes>
-			</DefaultLayout>
-		</Router>
+						<Route path="/drugs" element={<Drugs />} />
+						<Route path="/drugs/:id" element={<DrugDetail />} />
+					</Routes>
+				</DefaultLayout>
+			</Router>
+		</>
 	);
 };
 

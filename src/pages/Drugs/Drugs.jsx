@@ -4,7 +4,7 @@ import xIcon from "../../assets/x-icon.svg";
 import { DrugCard } from "../../component/Drugs/Drug";
 import { drugData } from "./drugsdta";
 import { useState, useEffect } from "react";
-import { FilterDrug } from "../../component/Drugs/FilterDrug";
+import { Filter } from "../../component/Drugs/FilterDrug";
 
 export function Drugs() {
 	const [searchQuery, setSearchQuery] = useState("");
@@ -12,7 +12,6 @@ export function Drugs() {
 	const [tagsActive, setTagsActive] = useState([]);
 	const [filteredDrugs, setFilteredDrugs] = useState(drugData);
 
-	// Daftar kategori dan level
 	const level = [
 		"Over-the-counter",
 		"Limited Over-the-Counter",
@@ -41,23 +40,19 @@ export function Drugs() {
 		"Wounds",
 	];
 
-	// Toggle tag aktif
 	const toggleTag = (tag) => {
 		setTagsActive((prev) =>
 			prev.includes(tag) ? prev.filter((t) => t !== tag) : [...prev, tag]
 		);
 	};
 
-	// Clear filter
 	const clearFilters = () => {
 		setTagsActive([]);
 	};
 
-	// Filter berdasarkan tag & search query
 	useEffect(() => {
 		let filtered = drugData;
 
-		// Filter berdasarkan tag
 		if (tagsActive.length > 0) {
 			filtered = filtered.filter((drug) =>
 				tagsActive.some(
@@ -66,7 +61,6 @@ export function Drugs() {
 			);
 		}
 
-		// Filter berdasarkan search query
 		if (searchQuery) {
 			filtered = filtered.filter((drug) =>
 				drug.title.toLowerCase().includes(searchQuery.toLowerCase())
@@ -78,18 +72,17 @@ export function Drugs() {
 
 	return (
 		<div className="relative min-h-screen mt-[100px] sm:mt-[160px] mb-4">
-			{/* Search & Filter */}
+			
 			<div className="w-full flex gap-2 items-center mb-4">
 				<SearchBar onSearch={setSearchQuery} />
-				<FilterDrug onClick={() => setActive((prev) => !prev)} />
+				<Filter onClick={() => setActive((prev) => !prev)} />
 			</div>
 
-			{/* Filter Modal */}
 			{active && (
 				<div className="w-full grid grid-cols-4 absolute">
 					<div className="col-span-3 col-start-2 bg-white p-8 rounded-xl">
 						<div className="flex justify-end">
-							<button onClick={() => setActive(false)}>
+							<button onClick={() => setActive(false)} >
 								<img src={xIcon} alt="Close" />
 							</button>
 						</div>
@@ -139,7 +132,6 @@ export function Drugs() {
 				</div>
 			)}
 
-			{/* Filter Applied Section */}
 			{tagsActive.length > 0 && (
 				<div className="my-4 border rounded-full items-center gap-4 p-8 flex bg-white">
 					<p className="font-semibold text-2xl">Filter Applied:</p>
