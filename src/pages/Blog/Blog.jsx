@@ -126,7 +126,7 @@ export function Blog() {
 
 			{active && (
 				<div className="w-full grid grid-cols-4 absolute">
-					<div className="col-span-3 col-start-2 bg-white p-8 rounded-xl">
+					<div className="col-span-4  md:col-span-3 md:col-start-2 bg-white p-8 rounded-xl">
 						<div className="flex justify-end">
 							<button onClick={() => setActive(false)}>
 								<img src={xIcon} alt="Close" />
@@ -221,7 +221,7 @@ export function Blog() {
 			)}
 
 			{tagsActive.length > 0 && (
-				<div className="my-4 border rounded-full items-center gap-4 p-8 flex bg-white">
+				<div className="my-4 border rounded-2xl items-center gap-4 p-8 flex bg-white md:flex-row flex-col md:rounded-full">
 					<p className="font-semibold text-2xl">Filter Applied:</p>
 					<div className="flex flex-wrap gap-2 mt-2">
 						{tagsActive.map((tag, index) => (
