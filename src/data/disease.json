@@ -1,0 +1,53 @@
+{
+  "Asthma_Bronchiale": {
+    "gambar": "https://media-hosting.imagekit.io//89f833e3f75646a0/Asthma%20Bronchiale.png?Expires=1836332368&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=s6qoOHqEym7eW0lgIyaIowSXz8Seu5xPB3C2dJ2ZP~cmVPMCh1eazykQiuhlgn6x1j75qVGE-osgLCTQhlnWq~kLK1xJ~ik3zLNJKR2BlneFKUs1sF0ieqMvXktA4~VIxuyCYiddt~mHhfPZF37i~JYxo4XvlBUCmE-IoW6yb2mEEfDdWhWljc~Qxb3Z0REsaI312APwsYvIwTO0w55W4~-sdtMoMwJG0WCAIy4mcxeuRRJAJzRzvK7cR00kLkhkSYUyyu2AlQVosEbMBjoR~DYKnIjweQQLx4XWFzu4NSOh6i9r4vXwelp0Hd9PpF2WWr-xf~QbAN~H2hTbjQdXcQ__",
+    "Definisi": "Asthma bronkial adalah penyakit pernapasan kronis yang ditandai dengan peradangan dan penyempitan saluran napas, menyebabkan kesulitan bernapas, batuk, dan mengi.",
+    "Gejala": {
+      "Umum": [
+        "Sesak Napas: Kesulitan bernapas saat beraktivitas atau di malam hari, dengan perasaan tekanan di dada.",
+        "Batuk: Batuk kronis yang memburuk di malam hari atau saat berolahraga, bisa kering atau berdahak.\n",
+        "Wheezing: Suara mengi saat bernapas, terutama saat mengeluarkan napas, akibat penyempitan saluran napas.\n",
+        "Nyeri Dada: Ketidaknyamanan di dada akibat ketegangan otot pernapasan saat bernapas dalam-dalam.\n",
+        "Kelelahan: Kelelahan akibat usaha ekstra untuk bernapas, sering terjadi setelah serangan.\n"
+      ],
+      "Spesifik": [
+        "Nyeri dada: Rasa nyeri atau tekanan di dada yang dapat diperparah oleh batuk atau napas dalam.\n",
+        "Kelelahan: Rasa lelah yang berlebihan, bahkan setelah beristirahat.\n",
+        "Gejala yang muncul saat terpapar pemicu (alergen, iritan): Perburukan gejala asma setelah terpapar alergen seperti serbuk sari, bulu hewan, atau iritan seperti asap rokok dan polusi udara.\n"
+      ],
+      "Tahapan": {
+        "Ringan": "Gejala muncul sesekali, seperti batuk ringan.",
+        "Sedang": "Gejala lebih sering muncul, termasuk wheezing.",
+        "Parah": "Gejala menjadi lebih intens, dengan serangan asma yang sering terjadi."
+      }
+    },
+    "Penyebab": [
+      "Alergen (debu, serbuk sari, bulu hewan)\n",
+      "Iritan (asap rokok, polusi udara, bahan kimia)\n",
+      "Infeksi saluran pernapasan",
+      "Aktivitas fisik (terutama di lingkungan dingin)\n",
+      "Stres emosional"
+    ],
+    "Pengobatan": {
+      "Medis": [
+        "Inhaler bronkodilator untuk meredakan gejala",
+        "Obat anti-inflamasi (kortikosteroid) untuk mengurangi peradangan.\ni"
+      ],
+      "Mandiri": [
+        "Menghindari pemicu asma.",
+        "Menggunakan obat pencegahan sesuai anjuran dokter."
+      ],
+      "Alternatif": [
+        "Terapi pernapasan",
+        "Akupunktur"
+      ],
+      "Durasi Perawatan": "Pengobatan asma bersifat jangka panjang dan memerlukan pemantauan rutin untuk menyesuaikan pengobatan sesuai kebutuhan.\n"
+    },
+    "Pencegahan": [
+      "Menghindari alergen dan iritan yang diketahui.",
+      "Menggunakan masker saat beraktivitas di lingkungan berdebu atau berpolusi.",
+      "Melakukan pemeriksaan rutin untuk memantau kondisi."
+    ],
+    "Komplikasi": "SJika tidak dikelola dengan baik, asma bronkial dapat menyebabkan serangan parah yang mengancam jiwa. Selain itu, penderita berisiko mengalami perubahan permanen pada saluran napas, yang dapat mengurangi fungsi paru-paru dan kualitas hidup. "
+  }
+}
