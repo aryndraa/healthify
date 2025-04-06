@@ -1,9 +1,16 @@
+// Level obat ilustration
+// https://res.cloudinary.com/dektxbmmb/image/upload/v1742993337/Healthify/Drugs/nxa2nhht3muioxowusjr.svg hijau+logo
+// https://res.cloudinary.com/dektxbmmb/image/upload/v1741525775/Healthify/Drugs/onbii428z6vtgwxen0nw.png merah+k
+// https://res.cloudinary.com/dektxbmmb/image/upload/v1742993336/Healthify/Drugs/qydnkyqsqwiiuukodcor.svg biru
+// https://res.cloudinary.com/dektxbmmb/image/upload/v1742997397/Healthify/Drugs/c5q5p5mwfvgz1u3zand4.svg hijau
 export const drugData = [
 	{
 		id: 1,
 		pricing: "Rp5.000 - Rp10.000",
 		title: "Actifed",
 		standFor: "Obat Flu & Alergi",
+		Tags: ["Flu"],
+		Level: ["Over-the-counter"],
 		ilustration:
 			"https://res.cloudinary.com/dektxbmmb/image/upload/v1741612892/Healthify/Drugs/ghyzrzs0ws8njz7aqetz.svg",
 		drugLevel:
@@ -11,9 +18,7 @@ export const drugData = [
 		description:
 			"Actifed adalah obat yang digunakan untuk meredakan gejala flu dan alergi, seperti hidung tersumbat, bersin-bersin, dan batuk. Obat ini mengandung kombinasi zat aktif yang bekerja efektif dalam meredakan gejala tersebut.",
 		composition: ["Triprolidine HCI 2,5 mg", "Pseudoephedrine HCI 60 mg"],
-		usage: {
-			adults: "1 tablet, diminum 3 kali sehari.",
-		},
+		usage: ["1 tablet, diminum 3 kali sehari."],
 		sideEffects: ["Mengantuk", "Sakit kepala", "Mulut kering", "Pusing"],
 		bpomInfo:
 			"Actified terdaftar di Badan Pengawas Obat dan Makanan (BPOM) Indonesia dan diproduksi oleh PT. Sanofi Aventis Indonesia.",
@@ -24,5 +29,536 @@ export const drugData = [
 		],
 		additionalInfo:
 			"Sebelum menggunakan Actifed, selalu baca petunjuk penggunaan yang tertera pada kemasan dan ikuti anjuran dari tenaga kesehatan.",
+	},
+	{
+		id: 5,
+		pricing: "Rp1.500 - Rp4.000",
+		title: "Antangin",
+		standFor: "Meringankan Masuk Angin",
+		Tags: ["Flu"],
+		Level: ["Herbal "],
+		ilustration:
+			"https://res.cloudinary.com/dektxbmmb/image/upload/v1742992509/Healthify/Drugs/dqezqvyyagashnezmikd.svg",
+		drugLevel:
+			"https://res.cloudinary.com/dektxbmmb/image/upload/v1742993337/Healthify/Drugs/nxa2nhht3muioxowusjr.svg ",
+		description:
+			"Antangin adalah obat herbal yang digunakan untuk meredakan gejala masuk angin, seperti perut kembung, mual, dan nyeri. Obat ini mengandung bahan alami yang membantu meningkatkan daya tahan tubuh dan meredakan ketidaknyamanan.",
+		composition: [
+			"Jahe 100 mg",
+			"Kencur 50 mg",
+			"Madu 10 mg",
+			"Bahan herbal lainnya",
+		],
+		usage: [
+			"Dewasa: 1-2 sachet, diminum 2-3 kali sehari.",
+			"Anak usia 6-12 tahun: Dosis sesuai petunjuk dokter.",
+		],
+		sideEffects: [
+			"Mual (jarang)",
+			"Reaksi alergi (jarang)",
+			"Gangguan pencernaan",
+		],
+		bpomInfo:
+			"Informasi BPOM dan Produsen: Antangin terdaftar di Badan Pengawas Obat dan Makanan (BPOM) Indonesia dan diproduksi oleh PT. Sido Muncul.",
+		precautions: [
+			"Penggunaan berlebihan dapat menyebabkan efek samping yang tidak diinginkan.",
+			"Sebaiknya konsultasikan dengan dokter jika Anda memiliki riwayat alergi terhadap bahan herbal.",
+			"Jika gejala tidak membaik setelah beberapa hari, penting untuk segera mencari nasihat medis.",
+		],
+		// additionalInfo:
+		// 	"Sebelum menggunakan Actifed, selalu baca petunjuk penggunaan yang tertera pada kemasan dan ikuti anjuran dari tenaga kesehatan.",
+	},
+	{
+		id: 8,
+		pricing: "Rp1.500 - Rp4.000",
+		title: "Tolak Angin",
+		standFor: "Meringankan Masuk Angin",
+		Tags: ["Flu"],
+		Level: ["Herbal "],
+		ilustration:
+			"https://res.cloudinary.com/dektxbmmb/image/upload/v1742992461/Healthify/Drugs/is894hmybavyfmbfk248.svg",
+		drugLevel:
+			"https://res.cloudinary.com/dektxbmmb/image/upload/v1741525775/Healthify/Drugs/onbii428z6vtgwxen0nw.png ",
+		description:
+			"Tolak Angin adalah obat herbal yang digunakan untuk meredakan gejala masuk angin, seperti perut kembung, mual, dan nyeri. Obat ini mengandung bahan alami yang membantu meningkatkan daya tahan tubuh dan meredakan ketidaknyamanan.",
+		composition: [
+			"Jahe 100 mg",
+			"Kencur 50 mg",
+			"Madu 10 mg",
+			"Bahan herbal lainnya",
+		],
+		usage: [
+			"Dewasa: 1-2 sachet, diminum 2-3 kali sehari.",
+			"Anak usia 6-12 tahun: Dosis sesuai petunjuk dokter.",
+		],
+		sideEffects: [
+			"Mual (jarang)",
+			"Reaksi alergi (jarang)",
+			"Gangguan pencernaan",
+		],
+		bpomInfo:
+			"Informasi BPOM dan Produsen: Tolak Angin terdaftar di Badan Pengawas Obat dan Makanan (BPOM) Indonesia dan diproduksi oleh PT. Sido Muncul.",
+		precautions: [
+			"Hindari penggunaan berlebihan untuk mencegah efek samping.",
+			"Konsultasikan dengan dokter jika Anda memiliki riwayat alergi terhadap bahan herbal.",
+			"Jika gejala tidak membaik setelah beberapa hari, segera cari nasihat medis.",
+		],
+		// additionalInfo:
+		// 	"Sebelum menggunakan Actifed, selalu baca petunjuk penggunaan yang tertera pada kemasan dan ikuti anjuran dari tenaga kesehatan.",
+	},
+	{
+		id: 2,
+		pricing: "Rp2.000 - Rp5.000",
+		title: "Mixagrip",
+		standFor: "Meredakan Flu & Sakit Kepala",
+		Tags: ["Flu", "Fever"],
+		Level: ["Over-the-counter"],
+		ilustration:
+			"https://res.cloudinary.com/dektxbmmb/image/upload/v1742992485/Healthify/Drugs/nwip4pryelaijtz2qgw9.svg",
+		drugLevel:
+			"https://res.cloudinary.com/dektxbmmb/image/upload/v1742993336/Healthify/Drugs/qydnkyqsqwiiuukodcor.svg ",
+		description:
+			"Mixagrip adalah obat yang digunakan untuk meredakan gejala flu dan pilek, seperti demam, sakit kepala, hidung tersumbat, dan nyeri tenggorokan. Obat ini mengandung kombinasi bahan aktif yang bekerja efektif dalam meredakan gejala tersebut.",
+		composition: [
+			"Paracetamol 500 mg",
+			"Pseudoephedrine HCl 30 mg",
+			"Chlorpheniramine maleate 2 mg",
+		],
+		usage: [
+			"Dewasa: 1-2 sachet, diminum 2-3 kali sehari.",
+			"Anak usia 6-12 tahun: Dosis sesuai petunjuk dokter.",
+		],
+		sideEffects: [
+			"Mengantuk",
+			"Sakit kepala",
+			"Mulut kering",
+			"Gangguan pencernaan",
+		],
+		bpomInfo:
+			"Informasi BPOM dan Produsen: Mixagrip terdaftar di Badan Pengawas Obat dan Makanan (BPOM) Indonesia dan diproduksi oleh PT. Medifarma Laboratories.",
+		precautions: [
+			"Hindari mengemudikan kendaraan setelah mengonsumsi obat ini karena dapat menyebabkan kantuk.",
+			"Tidak disarankan untuk digunakan pada penderita hipertensi, penyakit jantung, atau diabetes tanpa konsultasi dokter.",
+			"Jika gejala tidak membaik setelah beberapa hari, penting untuk segera mencari nasihat medis.",
+		],
+		// additionalInfo:
+		// 	"Sebelum menggunakan Actifed, selalu baca petunjuk penggunaan yang tertera pada kemasan dan ikuti anjuran dari tenaga kesehatan.",
+	},
+	{
+		id: 3,
+		pricing: "Rp2.000 - Rp5.000",
+		title: "Decolgen",
+		standFor: "Meredakan Flu & Demam",
+		Tags: ["Flu"],
+		Level: ["Over-the-counter"],
+		ilustration:
+			"https://res.cloudinary.com/dektxbmmb/image/upload/v1742992448/Healthify/Drugs/wr5fh9lvfujcmugp2dem.svg",
+		drugLevel:
+			"https://res.cloudinary.com/dektxbmmb/image/upload/v1742993336/Healthify/Drugs/qydnkyqsqwiiuukodcor.svg ",
+		description:
+			"Decolgen adalah obat yang digunakan untuk meredakan gejala flu dan pilek, seperti demam, sakit kepala, hidung tersumbat, dan nyeri tenggorokan. Obat ini mengandung kombinasi bahan aktif yang bekerja efektif dalam meredakan gejala tersebut.",
+		composition: [
+			"Paracetamol 500 mg",
+			"Pseudoephedrine HCl 30 mg",
+			"Chlorpheniramine maleate 2 mg",
+		],
+		usage: [
+			"Dewasa: 1-2 sachet, diminum 2-3 kali sehari.",
+			"Anak usia 6-12 tahun: Dosis sesuai petunjuk dokter.",
+		],
+		sideEffects: [
+			"Mengantuk",
+			"Sakit kepala",
+			"Mulut kering",
+			"Gangguan pencernaan",
+		],
+		bpomInfo:
+			"Informasi BPOM dan Produsen: Decolgen terdaftar di Badan Pengawas Obat dan Makanan (BPOM) Indonesia dan diproduksi oleh PT. Medifarma Laboratories.",
+		precautions: [
+			"Hindari mengemudikan kendaraan setelah mengonsumsi obat ini karena dapat menyebabkan kantuk.",
+			"Tidak disarankan untuk digunakan pada penderita hipertensi, penyakit jantung, atau diabetes tanpa konsultasi dokter.",
+			"Jika gejala tidak membaik setelah beberapa hari, penting untuk segera mencari nasihat medis.",
+		],
+		// additionalInfo:
+		// 	"Sebelum menggunakan Actifed, selalu baca petunjuk penggunaan yang tertera pada kemasan dan ikuti anjuran dari tenaga kesehatan.",
+	},
+	{
+		id: 4,
+		pricing: "Rp2.000 - Rp5.000",
+		title: "Konidin",
+		standFor: "Obat Batuk",
+		Tags: ["Flu", "Caugh"],
+		Level: ["Over-the-counter", "Herbal "],
+		ilustration:
+			"https://res.cloudinary.com/dektxbmmb/image/upload/v1742992437/Healthify/Drugs/igaafcnkaszfzcf4gjfo.svg",
+		drugLevel:
+			"https://res.cloudinary.com/dektxbmmb/image/upload/v1742993336/Healthify/Drugs/qydnkyqsqwiiuukodcor.svg ",
+		description:
+			"Konidin adalah obat yang digunakan untuk meredakan gejala flu dan alergi, seperti hidung tersumbat, bersin-bersin, dan batuk. Obat ini mengandung kombinasi bahan aktif yang bekerja efektif dalam meredakan gejala tersebut.",
+		composition: ["Pseudoephedrine HCl 30 mg", "Diphenhydramine HCl 25 mg"],
+		usage: [
+			"Dewasa: 1-2 sachet, diminum 2-3 kali sehari.",
+			"Anak usia 6-12 tahun: Dosis sesuai petunjuk dokter.",
+		],
+		sideEffects: [
+			"Mengantuk",
+			"Sakit kepala",
+			"Mulut kering",
+			"Gangguan pencernaan",
+		],
+		bpomInfo:
+			"Informasi BPOM dan Produsen: Konidin terdaftar di Badan Pengawas Obat dan Makanan (BPOM) Indonesia dan diproduksi oleh PT. Medifarma Laboratories.",
+		precautions: [
+			"Hindari mengemudikan kendaraan setelah mengonsumsi obat ini karena dapat menyebabkan kantuk.",
+			"Tidak disarankan untuk digunakan pada penderita hipertensi, penyakit jantung, atau diabetes tanpa konsultasi dokter.",
+			"Jika gejala tidak membaik setelah beberapa hari, penting untuk segera mencari nasihat medis.",
+		],
+		// additionalInfo:
+		// 	"Sebelum menggunakan Actifed, selalu baca petunjuk penggunaan yang tertera pada kemasan dan ikuti anjuran dari tenaga kesehatan.",
+	},
+	{
+		id: 6,
+		pricing: "Rp2.000 - Rp5.000",
+		title: "OBH Combi",
+		standFor: "Obat Batuk Berdahak",
+		Tags: ["Caugh"],
+		Level: ["Over-the-counter"],
+		ilustration:
+			"https://res.cloudinary.com/dektxbmmb/image/upload/v1742992465/Healthify/Drugs/nelp3nxb1pjonytdb0ol.svg",
+		drugLevel:
+			"https://res.cloudinary.com/dektxbmmb/image/upload/v1742993336/Healthify/Drugs/qydnkyqsqwiiuukodcor.svg ",
+		description:
+			"OBH Combi adalah obat yang digunakan untuk meredakan batuk dan gejala flu, seperti hidung tersumbat dan nyeri tenggorokan. Obat ini mengandung kombinasi bahan aktif yang bekerja efektif dalam meredakan gejala tersebut.",
+		composition: [
+			"Paracetamol 500 mg",
+			"Dextromethorphan HBr 10 mg",
+			"Pseudoephedrine HCl 30 mg",
+		],
+		usage: [
+			"Dewasa: 1-2 sendok takar (15-30 ml), diminum 3 kali sehari.",
+			"Anak usia 6-12 tahun: Dosis sesuai petunjuk dokter.",
+		],
+		sideEffects: [
+			"Mengantuk",
+			"Sakit kepala",
+			"Gangguan pencernaan",
+			"Mulut kering",
+		],
+		bpomInfo:
+			"Informasi BPOM dan Produsen: OBH Combi terdaftar di Badan Pengawas Obat dan Makanan (BPOM) Indonesia dan diproduksi oleh PT. Medifarma Laboratories.",
+		precautions: [
+			"Hindari mengemudikan kendaraan setelah mengonsumsi obat ini karena dapat menyebabkan kantuk.",
+			"Tidak disarankan untuk digunakan pada penderita hipertensi, penyakit jantung, atau diabetes tanpa konsultasi dokter.",
+			"Jika gejala tidak membaik setelah beberapa hari, penting untuk segera mencari nasihat medis.",
+		],
+		// additionalInfo:
+		// 	"Sebelum menggunakan Actifed, selalu baca petunjuk penggunaan yang tertera pada kemasan dan ikuti anjuran dari tenaga kesehatan.",
+	},
+	{
+		id: 7,
+		pricing: "Rp2.000 - Rp5.000",
+		title: "Komix",
+		standFor: "Meredakan Batuk",
+		Tags: ["Caugh"],
+		Level: ["Over-the-counter"],
+		ilustration:
+			"https://res.cloudinary.com/dektxbmmb/image/upload/v1742992464/Healthify/Drugs/qyodtkivknjuw0xwgbjh.svg",
+		drugLevel:
+			"https://res.cloudinary.com/dektxbmmb/image/upload/v1742993336/Healthify/Drugs/qydnkyqsqwiiuukodcor.svg ",
+		description:
+			"Komix adalah obat yang digunakan untuk meredakan gejala batuk dan flu, seperti hidung tersumbat, bersin-bersin, dan nyeri tenggorokan. Obat ini mengandung kombinasi bahan aktif yang bekerja efektif dalam meredakan gejala tersebut.",
+		composition: [
+			"Paracetamol 500 mg",
+			"Dextromethorphan HBr 10 mg",
+			"Pseudoephedrine HCl 30 mg",
+		],
+		usage: [
+			"Dewasa: 1-2 sendok takar (15-30 ml), diminum 3 kali sehari.",
+			"Anak usia 6-12 tahun: Dosis sesuai petunjuk dokter.",
+		],
+		sideEffects: [
+			"Mengantuk",
+			"Sakit kepala",
+			"Gangguan pencernaan",
+			"Mulut kering",
+		],
+		bpomInfo:
+			"Informasi BPOM dan Produsen: Komix terdaftar di Badan Pengawas Obat dan Makanan (BPOM) Indonesia dan diproduksi oleh PT. Medifarma Laboratories.",
+		precautions: [
+			"Hindari mengemudikan kendaraan setelah mengonsumsi obat ini karena dapat menyebabkan kantuk.",
+			"Tidak disarankan untuk digunakan pada penderita hipertensi, penyakit jantung, atau diabetes tanpa konsultasi dokter.",
+			"Jika gejala tidak membaik setelah beberapa hari, penting untuk segera mencari nasihat medis.",
+		],
+		// additionalInfo:
+		// 	"Sebelum menggunakan Actifed, selalu baca petunjuk penggunaan yang tertera pada kemasan dan ikuti anjuran dari tenaga kesehatan.",
+	},
+	{
+		id: 10,
+		pricing: "Rp2.000 - Rp5.000",
+		title: "Siladex",
+		standFor: "Obat Batuk Kering & Berdahak",
+		Tags: ["Caugh"],
+		Level: ["Over-the-counter"],
+		ilustration:
+			"https://res.cloudinary.com/dektxbmmb/image/upload/v1742992445/Healthify/Drugs/qlhybshbl31aipiymtq4.svg",
+		drugLevel:
+			"https://res.cloudinary.com/dektxbmmb/image/upload/v1742993336/Healthify/Drugs/qydnkyqsqwiiuukodcor.svg ",
+		description:
+			"Siladex adalah obat yang digunakan untuk meredakan gejala flu dan alergi, seperti hidung tersumbat, bersin-bersin, dan batuk. Obat ini mengandung kombinasi bahan aktif yang bekerja efektif dalam meredakan gejala tersebut.",
+		composition: [
+			"Paracetamol 500 mg",
+			"Dextromethorphan HBr 10 mg",
+			"Pseudoephedrine HCl 30 mg",
+		],
+		usage: [
+			"Dewasa: 1 tablet, diminum 3 kali sehari.",
+			"Anak usia 6-12 tahun: Dosis sesuai petunjuk dokter",
+		],
+		sideEffects: [
+			"Mengantuk",
+			"Sakit kepala",
+			"Gangguan pencernaan",
+			"Mulut kering",
+		],
+		bpomInfo:
+			"Informasi BPOM dan Produsen: Siladex terdaftar di Badan Pengawas Obat dan Makanan (BPOM) Indonesia dan diproduksi oleh PT. Medifarma Laboratories.",
+		precautions: [
+			"Hindari mengemudikan kendaraan setelah mengonsumsi obat ini karena dapat menyebabkan kantuk.",
+			"Tidak disarankan untuk digunakan pada penderita hipertensi, penyakit jantung, atau diabetes tanpa konsultasi dokter.",
+			"Jika gejala tidak membaik setelah beberapa hari, penting untuk segera mencari nasihat medis.",
+		],
+		// additionalInfo:
+		// 	"Sebelum menggunakan Actifed, selalu baca petunjuk penggunaan yang tertera pada kemasan dan ikuti anjuran dari tenaga kesehatan.",
+	},
+	{
+		id: 9,
+		pricing: "Rp2.000 - Rp5.000",
+		title: "Bodrex",
+		standFor: "Sakit Kepala & Demam",
+		Tags: ["Fever"],
+		Level: ["Over-the-counter"],
+		ilustration:
+			"https://res.cloudinary.com/dektxbmmb/image/upload/v1742992449/Healthify/Drugs/mf4kyqio3o1l2jrfzkvs.svg",
+		drugLevel:
+			"https://res.cloudinary.com/dektxbmmb/image/upload/v1742993336/Healthify/Drugs/qydnkyqsqwiiuukodcor.svg ",
+		description:
+			"Bodrex adalah obat yang digunakan untuk meredakan nyeri ringan hingga sedang dan menurunkan demam. Obat ini sering digunakan untuk mengatasi sakit kepala, sakit gigi, dan nyeri otot.",
+		composition: ["Paracetamol 500 mg", "Kafein 50 mg"],
+		usage: [
+			"Dewasa: 1-2 tablet, diminum setiap 4-6 jam sesuai kebutuhan, tidak melebihi 8 tablet dalam 24 jam.",
+			"Anak usia 6-12 tahun: Dosis sesuai petunjuk dokter.",
+		],
+		sideEffects: ["Mual", "Reaksi alergi (jarang)", "Gangguan pencernaan"],
+		bpomInfo:
+			"Informasi BPOM dan Produsen: Bodrex terdaftar di Badan Pengawas Obat dan Makanan (BPOM) Indonesia dan diproduksi oleh PT. Bodrex Medica.",
+		precautions: [
+			"Hindari mengemudikan kendaraan setelah mengonsumsi obat ini karena dapat menyebabkan kantuk.",
+			"Tidak disarankan untuk digunakan pada penderita hipertensi, penyakit jantung, atau diabetes tanpa konsultasi dokter.",
+			"Jika gejala tidak membaik setelah beberapa hari, penting untuk segera mencari nasihat medis.",
+		],
+		// additionalInfo:
+		// 	"Sebelum menggunakan Actifed, selalu baca petunjuk penggunaan yang tertera pada kemasan dan ikuti anjuran dari tenaga kesehatan.",
+	},
+	{
+		id: 12,
+		pricing: "Rp2.000 - Rp5.000",
+		title: "Panadol",
+		Level: ["Over-the-counter"],
+		standFor: "Pereda Nyeri",
+		Tags: ["Pain", "Antibiotics"],
+		ilustration:
+			"https://res.cloudinary.com/dektxbmmb/image/upload/v1742992447/Healthify/Drugs/krhf6ujns7ukydiymy4t.svg",
+		drugLevel:
+			"https://res.cloudinary.com/dektxbmmb/image/upload/v1742993336/Healthify/Drugs/qydnkyqsqwiiuukodcor.svg ",
+		description:
+			"Panadol adalah obat yang digunakan untuk meredakan nyeri ringan hingga sedang dan menurunkan demam. Obat ini mengandung paracetamol sebagai bahan aktif yang efektif dalam mengurangi rasa sakit dan demam.",
+		composition: ["Paracetamol 500 mg"],
+		usage: [
+			"Dewasa: 1-2 tablet, diminum setiap 4-6 jam sesuai kebutuhan, tidak melebihi 8 tablet dalam 24 jam.",
+			"Anak usia 6-12 tahun: Dosis sesuai petunjuk dokter.",
+		],
+		sideEffects: ["Mual", "Reaksi alergi (jarang)", "Gangguan pencernaan"],
+		bpomInfo:
+			"Informasi BPOM dan Produsen: Informasi BPOM dan Produsen: Panadol terdaftar di Badan Pengawas Obat dan Makanan (BPOM) Indonesia dan diproduksi oleh perusahaan farmasi terkemuka. Pastikan untuk membeli obat ini di apotek atau toko obat resmi untuk menjamin keaslian dan keamanannya.",
+		precautions: [
+			"Hindari mengemudikan kendaraan setelah mengonsumsi obat ini karena dapat menyebabkan kantuk.",
+			"Tidak disarankan untuk digunakan pada penderita hipertensi, penyakit jantung, atau diabetes tanpa konsultasi dokter.",
+			"Jika gejala tidak membaik setelah beberapa hari, penting untuk segera mencari nasihat medis.",
+		],
+		// additionalInfo:
+		// 	"Sebelum menggunakan Actifed, selalu baca petunjuk penggunaan yang tertera pada kemasan dan ikuti anjuran dari tenaga kesehatan.",
+	},
+
+	{
+		id: 16,
+		pricing: "Rp2.000 - Rp5.000",
+		title: "Amoxicillin",
+		standFor: "Antibiotik untuk bakteri",
+		Tags: ["Antibiotics"],
+		Level: ["Hard Drugs"],
+		ilustration:
+			"https://res.cloudinary.com/dektxbmmb/image/upload/v1742992451/Healthify/Drugs/piw84xym1wdapezjuvdt.svg",
+		drugLevel:
+			" https://res.cloudinary.com/dektxbmmb/image/upload/v1741525775/Healthify/Drugs/onbii428z6vtgwxen0nw.png",
+		description:
+			"Amoxicillin adalah antibiotik yang digunakan untuk mengobati berbagai infeksi bakteri, termasuk infeksi saluran pernapasan, infeksi telinga, dan infeksi saluran kemih. Obat ini bekerja dengan menghambat pertumbuhan bakteri.",
+		composition: ["Amoxicillin 500 mg"],
+		usage: [
+			"Dewasa: 1 kapsul, diminum setiap 8-12 jam sesuai kebutuhan.",
+			"Anak-anak: Dosis sesuai petunjuk dokter berdasarkan berat badan.",
+		],
+		sideEffects: [
+			"Mual",
+			"Diare",
+			"Reaksi alergi (ruam, gatal)",
+			"Gangguan pencernaan",
+		],
+		bpomInfo:
+			"Informasi BPOM dan Produsen: Amoxicillin terdaftar di Badan Pengawas Obat dan Makanan (BPOM) Indonesia dan diproduksi oleh berbagai perusahaan farmasi.",
+		precautions: [
+			"Hindari penggunaan jika Anda memiliki riwayat alergi terhadap antibiotik golongan penisilin.",
+			"Penting untuk menyelesaikan seluruh dosis yang diresepkan meskipun gejala telah membaik",
+			"Jika gejala tidak membaik setelah beberapa hari, segera konsultasikan dengan tenaga medis.",
+		],
+		// additionalInfo:
+		// 	"Sebelum menggunakan Actifed, selalu baca petunjuk penggunaan yang tertera pada kemasan dan ikuti anjuran dari tenaga kesehatan.",
+	},
+	{
+		id: 17,
+		pricing: "Rp2.000 - Rp5.000",
+		title: "Cotrimoxazole",
+		standFor: "Antibiotik untuk saluran kemih",
+		Tags: ["Antibiotics"],
+		Level: ["Hard Drugs"],
+		ilustration:
+			"https://res.cloudinary.com/dektxbmmb/image/upload/v1742992434/Healthify/Drugs/fcalvkhdxynwyvbzhdof.svg",
+		drugLevel:
+			" https://res.cloudinary.com/dektxbmmb/image/upload/v1741525775/Healthify/Drugs/onbii428z6vtgwxen0nw.png",
+		description:
+			"Cotrimoxazole adalah antibiotik yang digunakan untuk mengobati berbagai infeksi bakteri, termasuk infeksi saluran pernapasan, infeksi saluran kemih, dan infeksi gastrointestinal. Obat ini merupakan kombinasi dari sulfamethoxazole dan trimethoprim yang bekerja sinergis untuk menghambat pertumbuhan bakteri.",
+		composition: ["Sulfamethoxazole 400 mg", "Trimethoprim 80 mg"],
+		usage: [
+			"Dewasa: 1 kapsul, diminum setiap 8-12 jam sesuai kebutuhan.",
+			"Anak-anak: Dosis sesuai petunjuk dokter berdasarkan berat badan.",
+		],
+		sideEffects: [
+			"Mual",
+			"Diare",
+			"Reaksi alergi (ruam, gatal)",
+			"Gangguan pencernaan",
+		],
+		bpomInfo:
+			"Informasi BPOM dan Produsen: Cotrimoxazole terdaftar di Badan Pengawas Obat dan Makanan (BPOM) Indonesia dan diproduksi oleh berbagai perusahaan farmasi.",
+		precautions: [
+			"Hindari penggunaan jika Anda memiliki riwayat alergi terhadap antibiotik golongan penisilin.",
+			"Penting untuk menyelesaikan seluruh dosis yang diresepkan meskipun gejala telah membaik",
+			"Jika gejala tidak membaik setelah beberapa hari, segera konsultasikan dengan tenaga medis.",
+		],
+		// additionalInfo:
+		// 	"Sebelum menggunakan Actifed, selalu baca petunjuk penggunaan yang tertera pada kemasan dan ikuti anjuran dari tenaga kesehatan.",
+	},
+	{
+		id: 14,
+		pricing: "Rp2.000 - Rp5.000",
+		title: "Neozep Forte",
+		standFor: "Flu, Demam & Hidung Tersumbat",
+		Tags: ["Caugh", "Flu", "Fever"],
+		Level: ["Over-the-counter"],
+		ilustration:
+			"https://res.cloudinary.com/dektxbmmb/image/upload/v1742992450/Healthify/Drugs/wwuiyzryl6ohugpcizra.svg",
+		drugLevel:
+			"https://res.cloudinary.com/dektxbmmb/image/upload/v1742993336/Healthify/Drugs/qydnkyqsqwiiuukodcor.svg ",
+		description:
+			"Neozep Forte adalah obat yang digunakan untuk meredakan gejala flu, seperti demam, sakit kepala, hidung tersumbat, dan bersin-bersin. Obat ini mengandung kombinasi zat aktif yang bekerja efektif dalam meredakan berbagai gejala flu.",
+		composition: [
+			"Paracetamol 500 mg",
+			"Pseudoephedrin HCl 30 mg",
+			"Diphenhydramine HCl 25 mg",
+		],
+		usage: [
+			"Dewasa: 1 tablet, diminum 3-4 kali sehari.",
+			"Anak usia 6-12 tahun: ½ tablet, diminum 3-4 kali sehari.",
+		],
+		sideEffects: [
+			"Mengantuk",
+			"Sakit kepala",
+			"Gangguan pencernaan",
+			"Mulut kering",
+			"Jantung berdebar",
+			"Pusing",
+		],
+		bpomInfo:
+			"Informasi BPOM dan Produsen: Neozep Forte terdaftar di Badan Pengawas Obat dan Makanan (BPOM) Indonesia dan diproduksi oleh PT. Medifarma Laboratories. Pastikan untuk membeli obat ini di apotek atau toko obat resmi untuk menjamin keaslian dan keamanannya.",
+		precautions: [
+			"Hindari mengemudikan kendaraan setelah mengonsumsi obat ini karena dapat menyebabkan kantuk.",
+			"Tidak disarankan untuk digunakan pada penderita hipertensi, penyakit jantung, atau diabetes tanpa konsultasi dokter.",
+			"Jika gejala tidak membaik setelah beberapa hari, penting untuk segera mencari nasihat medis.",
+		],
+		// additionalInfo:
+		// 	"Sebelum menggunakan Actifed, selalu baca petunjuk penggunaan yang tertera pada kemasan dan ikuti anjuran dari tenaga kesehatan.",
+	},
+	{
+		id: 11,
+		pricing: "Rp2.000 - Rp5.000",
+		title: "Paramex",
+		standFor: "Sakit Kepala & Flu",
+		Tags: ["Flu", "Pain"],
+		Level: ["Over-the-counter"],
+		ilustration:
+			"https://res.cloudinary.com/dektxbmmb/image/upload/v1742992456/Healthify/Drugs/dsnx8ble82ltjvdbarqi.svg",
+		drugLevel:
+			"https://res.cloudinary.com/dektxbmmb/image/upload/v1742993336/Healthify/Drugs/qydnkyqsqwiiuukodcor.svg ",
+		description:
+			"Paramex adalah obat yang digunakan untuk meredakan gejala nyeri dan demam, seperti sakit kepala, sakit gigi, dan nyeri otot. Obat ini mengandung bahan aktif yang bekerja efektif dalam mengurangi rasa sakit dan menurunkan suhu tubuh.",
+		composition: ["Paracetamol 500 mg"],
+		usage: [
+			"Dewasa: 1-2 tablet, diminum setiap 4-6 jam sesuai kebutuhan, tidak lebih dari 8 tablet dalam 24 jam.",
+			"Anak usia 6-12 tahun: Dosis sesuai petunjuk dokter.",
+		],
+		sideEffects: [
+			"Mual",
+			"Reaksi alergi (ruam, gatal)",
+			"Gangguan pencernaan",
+		],
+		bpomInfo:
+			"Informasi BPOM dan Produsen: Paramex terdaftar di Badan Pengawas Obat dan Makanan (BPOM) Indonesia dan diproduksi oleh PT. Kimia Farma.",
+		precautions: [
+			"Hindari penggunaan bersamaan dengan alkohol.",
+			"Tidak disarankan untuk penderita penyakit hati.",
+			"Jika gejala tidak membaik setelah 3 hari, segera konsultasikan dengan tenaga medis.",
+		],
+		// additionalInfo:
+		// 	"Sebelum menggunakan Actifed, selalu baca petunjuk penggunaan yang tertera pada kemasan dan ikuti anjuran dari tenaga kesehatan.",
+	},
+	{
+		id: 15,
+		pricing: "Rp2.000 - Rp5.000",
+		title: "Paracetamol",
+		standFor: "Pereda Nyeri & Demam",
+		Tags: ["Pain", "Fever"],
+		Level: [
+			"Over-the-counter",
+		],
+		ilustration:
+			"https://res.cloudinary.com/dektxbmmb/image/upload/v1742992434/Healthify/Drugs/hmmaf0yefcy68xavfaim.svg",
+		drugLevel:
+			" https://res.cloudinary.com/dektxbmmb/image/upload/v1742997397/Healthify/Drugs/c5q5p5mwfvgz1u3zand4.svg  ",
+		description:
+			"Paracetamol adalah obat yang digunakan untuk meredakan nyeri ringan hingga sedang dan menurunkan demam. Obat ini sering digunakan untuk mengatasi sakit kepala, sakit gigi, nyeri otot, dan demam akibat infeksi.",
+		composition: ["Paracetamol 500 mg"],
+		usage: [
+			"Dewasa: 1-2 tablet, diminum setiap 4-6 jam sesuai kebutuhan, tidak melebihi 8 tablet dalam 24 jam.",
+			"Anak usia 6-12 tahun: Dosis sesuai petunjuk dokter.",
+		],
+		sideEffects: ["Mual", "Reaksi alergi (jarang)", "Gangguan pencernaan"],
+		bpomInfo:
+			"Informasi BPOM dan Produsen: Paracetamol terdaftar di Badan Pengawas Obat dan Makanan (BPOM) Indonesia dan diproduksi oleh berbagai perusahaan farmasi. Pastikan untuk membeli obat ini di apotek atau toko obat resmi untuk menjamin keaslian dan keamanannya.",
+		precautions: [
+			"Hindari mengemudikan kendaraan setelah mengonsumsi obat ini karena dapat menyebabkan kantuk.",
+			"Tidak disarankan untuk digunakan pada penderita hipertensi, penyakit jantung, atau diabetes tanpa konsultasi dokter.",
+			"Jika gejala tidak membaik setelah beberapa hari, penting untuk segera mencari nasihat medis.",
+		],
+		// additionalInfo:
+		// 	"Sebelum menggunakan Actifed, selalu baca petunjuk penggunaan yang tertera pada kemasan dan ikuti anjuran dari tenaga kesehatan.",
 	},
 ];

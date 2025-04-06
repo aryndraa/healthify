@@ -4,12 +4,11 @@ import { DrugCard } from "../../component/Drugs/Drug";
 
 export function DrugDetail() {
 	const { id } = useParams();
-	const drug = drugData.find((item) => item.id === parseInt(id)); // Cari obat sesuai ID
+	const drug = drugData.find((item) => item.id === parseInt(id));
 
 	if (!drug) {
 		return (
 			<div className="min-h-screen mt-[100px] sm:mt-[160px] mb-4" >
-
 				<h1 className="text-center text-2xl font-bold">
 					Obat tidak ditemukan
 				</h1>
@@ -34,7 +33,7 @@ export function DrugDetail() {
 							<img
 								src={drug.drugLevel}
 								alt="Drug Level"
-								className="w-8 2xl:w-12 mt-2"
+								className="w-12 mt-2"
 							/>
 						</div>
 					</div>
@@ -71,7 +70,7 @@ export function DrugDetail() {
 					<br />
 					<p className="text--xl font-semibold"> komposisi</p>
 					{drug.composition.map((item, index) => (
-						<li className="text-gray-500" key={index}>
+						<li className="text-gray-500 text--lg" key={index}>
 							{" "}
 							{item}{" "}
 						</li>
@@ -79,14 +78,19 @@ export function DrugDetail() {
 					<br />
 					<p className="text--xl font-semibold"> Cara Penggunaan</p>
 					<ul className="list-disc ml-5">
-						<li className="font-bold text-gray-500">
-							{drug.usage.adults}
-						</li>
+						{drug.usage.map((item, index) => (
+							<li
+								className="font-bold text--lg text-gray-500"
+								key={index}
+							>
+								{item}
+							</li>
+						))}
 					</ul>
 					<br />
 					<p className="text--xl font-semibold"> Efek Samping</p>
 					{drug.sideEffects.map((item, index) => (
-						<li className="text-gray-500" key={index}>
+						<li className="text-gray-500 text--lg" key={index}>
 							{item}
 						</li>
 					))}
@@ -101,7 +105,7 @@ export function DrugDetail() {
 						Perhatian:
 					</p>
 					{drug.precautions.map((item, index) => (
-						<li className="text-gray-500" key={index}>
+						<li className="text-gray-500 text--lg" key={index}>
 							{item}
 						</li>
 					))}
@@ -128,17 +132,19 @@ export function DrugDetail() {
 						></path>
 					</svg>
 				</div>
-				{drugData.map((drug) => (
-					<DrugCard
-						key={drug.id}
-						id={drug.id}
-						pricing={drug.pricing}
-						title={drug.title}
-						standFor={drug.standFor}
-						illustration={drug.ilustration}
-						drugLevel={drug.drugLevel}
-					/>
-				))}
+				<div className="w-full grid gap-4 grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4 mt-4">
+					{drugData.slice(0,4).map((drug) => (
+						<DrugCard
+							key={drug.id}
+							id={drug.id}
+							pricing={drug.pricing}
+							title={drug.title}
+							standFor={drug.standFor}
+							illustration={drug.ilustration}
+							drugLevel={drug.drugLevel}
+						/>
+					))}
+				</div>
 			</div>
 		</div>
 	);

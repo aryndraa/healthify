@@ -33,7 +33,7 @@ const Footer = () => {
 
 				<div>
 					<div className="min-w-[200px] min-[1440px]:w-[652px]">
-						<div className="flex justify-between items-center mb-6">
+						<div className="hidden xl:flex justify-between items-center mb-6">
 							<p className="text--38 font-semibold">
 								Enter Your Email
 							</p>
@@ -53,10 +53,10 @@ const Footer = () => {
 								</svg>
 							</div>
 						</div>
-						<hr className="border-t border-gray-100 opacity-35" />
+						<hr className="border-t border-gray-100 opacity-35 hidden xl:flex" />
 					</div>
-					<div className="flex flex-col  gap-16 pt-16 sm:flex sm:flex-row ">
-						<ul className="">
+					<div className="flex flex-col  gap-16 xl:pt-16 sm:flex sm:flex-row ">
+						<ul className=" hover:cursor-pointer hover:text-white">
 							<li>
 								<p className="text--2xl font-semibold">Pages</p>
 							</li>
