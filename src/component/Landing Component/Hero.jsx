@@ -1,7 +1,17 @@
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
 import IDemo from "../../assets/Demo.svg";
 export const Hero = () => {
+	const { ref, inView } = useInView({ triggerOnce: true });
 	return (
-		<div className=" max-w-screen flex gap-4 mt-[100px] lg:mt-[160px]">
+		<motion.div
+			ref={ref}
+			initial={{ opacity: 0, y: 100 }}
+			animate={inView ? { opacity: 1, y: 0 } : {}}
+			transition={{ duration: 1 , delay: 0.7}}
+			className=" max-w-screen flex gap-4 mt-[100px] lg:mt-[160px]"
+		>
 			<div className="Container1">
 				<div className="item-1">
 					<div>
@@ -133,6 +143,6 @@ export const Hero = () => {
 				className="Container2 max-[1550px]:hidden bg-cover bg-center rounded-[40px] w-screen "
 				style={{ backgroundImage: `url(${IDemo})` }}
 			></div>
-		</div>
+		</motion.div>
 	);
 };

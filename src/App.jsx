@@ -15,11 +15,13 @@ import { Clinics } from "./pages/Clinic/Clinics.jsx";
 import { ClinicSearched } from "./pages/Clinic/ClinicSearched.jsx";
 import { ClinicDetail } from "./pages/Clinic/ClinicDetail.jsx";
 import ScrollToTop from "./component/scrollReset.jsx";
+import SmoothInvertedCursor from "./component/Cursor.jsx";
 
 const App = () => {
 	return (
 		<>
 			<Router>
+				<SmoothInvertedCursor />
 			<ScrollToTop />
 				<DefaultLayout>
 					<Routes>

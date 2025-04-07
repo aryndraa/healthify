@@ -25,7 +25,7 @@ export default {
 				Clinic2: "url('../../assets/Rectangle 73.svg')",
 				Jinx: "url('../../assets/Rectangle 76.svg')",
 				Dyven: "url('../../assets/Rectangle 77.svg')",
-				
+				vaelclinic: "url('../../assets/vaelrino.png')",
 			},
 		},
 	},

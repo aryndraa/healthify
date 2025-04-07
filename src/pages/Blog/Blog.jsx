@@ -261,7 +261,7 @@ export function Blog() {
 					className="rounded-[40px] max-[1550px]:hidden"
 				/>
 			</div>
-			<div className="w-full grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-10 mt-4">
+			<div className="w-full grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-4 mt-4">
 				{filteredBlogs.length > 0 ? (
 					filteredBlogs.map((blog) => (
 						<BlogCard key={blog.id} blog={blog} />
