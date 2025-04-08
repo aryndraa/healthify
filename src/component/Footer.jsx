@@ -64,22 +64,22 @@ const Footer = () => {
 							</li>
 							<div className="flex flex-col gap-3 text--lg ">
 								<li>
-									<a href="" className="opacity-35">
+									<a href="" className="opacity-35 hover:opacity-100 transition-all duration-150">
 										Home
 									</a>
 								</li>
 								<li>
-									<a href="" className="opacity-35">
+										<a href="" className="opacity-35 hover:opacity-100 transition-all duration-150">
 										Disease
 									</a>
 								</li>
 								<li>
-									<a href="" className="opacity-35">
+										<a href="" className="opacity-35 hover:opacity-100 transition-all duration-150">
 										Drugs
 									</a>
 								</li>
 								<li>
-									<a href="" className="opacity-35">
+										<a href="" className="opacity-35 hover:opacity-100 transition-all duration-150">
 										Blogs
 									</a>
 								</li>
@@ -94,12 +94,12 @@ const Footer = () => {
 							</li>
 							<div className="flex flex-col gap-3 text--lg">
 								<li>
-									<a href="" className="opacity-35">
+										<a href="" className="opacity-35 hover:opacity-100 transition-all duration-150">
 										Clinics
 									</a>
 								</li>
 								<li>
-									<a href="" className="opacity-35">
+										<a href="" className="opacity-35 hover:opacity-100 transition-all duration-150">
 										Pharmacy
 									</a>
 								</li>
@@ -113,17 +113,17 @@ const Footer = () => {
 							</li>
 
 							<li>
-								<a href="" className="opacity-35">
+									<a href="" className="opacity-35 hover:opacity-100 transition-all duration-150">
 									331 Rhett Ville, Burleson <br /> 58799
 								</a>
 							</li>
 							<li>
-								<a href="" className="opacity-35">
+									<a href="" className="opacity-35 hover:opacity-100 transition-all duration-150">
 									1-449-709-9073 x5655
 								</a>
 							</li>
 							<li>
-								<a href="" className="opacity-35">
+									<a href="" className="opacity-35 hover:opacity-100 transition-all duration-150">
 									United State
 								</a>
 							</li>
