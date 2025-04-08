@@ -120,7 +120,10 @@ export function Blog() {
 	return (
 		<div className=" relative min-h-screen  mb-4">
 			<div className="w-full flex gap-2 items-center mb-4">
-				<SearchBar onSearch={setSearchQuery} />
+				<SearchBar
+					onSearch={setSearchQuery}
+					placeholder="Search some of our blogs"
+				/>
 				<Filter onClick={() => setActive((prev) => !prev)} />
 			</div>
 
