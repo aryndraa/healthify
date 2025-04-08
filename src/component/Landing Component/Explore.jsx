@@ -22,7 +22,7 @@ export const Explore = () => {
 				</p>
 			</div>
 
-			<div className="grid grid-cols-1 min-[1024px]:grid-cols-2 2xl:grid-cols-4  gap-4 ">
+			<div className="grid grid-cols-1 min-[1024px]:grid-cols-2 2xl:grid-cols-4">
 				<div className="items">
 					<div
 						onClick={() => navigate("/pharmacy")}
