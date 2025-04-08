@@ -135,7 +135,7 @@ export const BlogDetail = () => {
 			<div className="mb-12">
 				<div
 					onClick={() => navigate('/blogs')}
-					className=" flex justify-between py-[32px] px-[48px] bg-white rounded-[40px] items-center gap-2 group hover:cursor-pointer"
+					className=" flex justify-between py-[32px] px-[48px] bg-white rounded-[40px] items-center gap-2 group "
 				>
 					<p className="text--5xl font-semibold">More Blogs</p>
 					<svg

@@ -39,7 +39,6 @@
 	}
 	
 	.Button:hover {
-		cursor: pointer;
 		transition: all;
 		background-color: #213170;
 		color: white;

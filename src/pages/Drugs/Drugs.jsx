@@ -71,8 +71,7 @@ export function Drugs() {
 	}, [tagsActive, searchQuery]);
 
 	return (
-		<div className="relative min-h-screen mt-[100px] sm:mt-[160px] mb-4">
-			
+		<div className="relative min-h-screen mb-4">
 			<div className="w-full flex gap-2 items-center mb-4">
 				<SearchBar onSearch={setSearchQuery} />
 				<Filter onClick={() => setActive((prev) => !prev)} />
@@ -82,7 +81,7 @@ export function Drugs() {
 				<div className="w-full grid grid-cols-4 absolute">
 					<div className="col-span-4  md:col-span-3 md:col-start-2 bg-white p-8 rounded-xl">
 						<div className="flex justify-end">
-							<button onClick={() => setActive(false)} >
+							<button onClick={() => setActive(false)}>
 								<img src={xIcon} alt="Close" />
 							</button>
 						</div>

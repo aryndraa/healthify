@@ -43,7 +43,7 @@ export function DrugDetail() {
 							backgroundImage: `url(${drug.ilustration})`,
 						}}
 					/>
-					<div className="flex items-center justify-center bg-[#213170] text-white gap-4 py-8 px-4 rounded-[32px] hover:cursor-pointer ">
+					<div className="flex items-center justify-center bg-[#213170] text-white gap-4 py-8 px-4 rounded-[32px] ">
 						<p className="font-medium text--2xl">
 							Find In Nearest Pharmacy
 						</p>
@@ -116,7 +116,7 @@ export function DrugDetail() {
 				</div>
 			</div>
 			<div className="mt-[256px]">
-				<div className=" flex justify-between py-[32px] px-[48px] bg-white rounded-[40px] items-center gap-2 group hover:cursor-pointer">
+				<div className=" flex justify-between py-[32px] px-[48px] bg-white rounded-[40px] items-center gap-2 group ">
 					<p className="text--5xl font-semibold">More Drugs</p>
 					<svg
 						className="rounded-full p-[10px] w-[50px] h-[50px] md:w-[72px] md:h-[72px] md:p-[20px]  transition-transform duration-300 bg-[#C5E5FF]  group-hover:border-solid group-hover:border-[#C5E5FF]  group-hover:border-[3px] group-hover:rotate-45  group-hover:bg-[#213170] "

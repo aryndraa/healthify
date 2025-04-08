@@ -9,8 +9,8 @@ const fadeUpVariants = {
 		opacity: 1,
 		y: 0,
 		transition: {
-			delay: 0.3 + i * 0.2,
-			duration: 0.8,
+			delay: 0.1 + i * 0.2,
+			duration: 0.5,
 			ease: "easeOut",
 		},
 	}),
@@ -25,7 +25,7 @@ export const Hero = () => {
 			ref={ref}
 			initial="hidden"
 			animate={inView ? "visible" : "hidden"}
-			className="max-w-screen flex gap-4 mt-[100px] lg:mt-[134px]"
+			className="max-w-screen flex gap-4 "
 		>
 			<motion.div variants={fadeUpVariants} className="Container1">
 				<div className="item-1 ">

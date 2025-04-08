@@ -118,7 +118,7 @@ export function Blog() {
 	}, [tagsActive, searchQuery]);
 
 	return (
-		<div className=" relative min-h-screen mt-[100px] sm:mt-[160px] mb-4">
+		<div className=" relative min-h-screen  mb-4">
 			<div className="w-full flex gap-2 items-center mb-4">
 				<SearchBar onSearch={setSearchQuery} />
 				<Filter onClick={() => setActive((prev) => !prev)} />

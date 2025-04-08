@@ -8,7 +8,7 @@ import {DiseaseCard} from "../../component/Disease/DiseaseCard.jsx";
 export function Diseases() {
   return (
     <>
-      <section className="min-h-screen mt-[100px] lg:mt-[160px] mb-4">
+      <section className="min-h-screen  mb-4">
         <div className="w-full flex  gap-2 items-center mb-4">
           <SearchBar/>
         </div>

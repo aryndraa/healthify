@@ -10,7 +10,7 @@ export const BlogCard = ({ blog }) => {
 		<div className="items">
 			<div
 				onClick={handleClick}
-				className="BLOG bg-white h-screen  flex flex-col justify-between p-6 hover:cursor-pointer"
+				className="BLOG bg-white h-screen  flex flex-col justify-between p-6 "
 			>
 				<div className="flex flex-col gap-6 justify-between lg:flex-row">
 					{/* Tags */}

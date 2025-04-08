@@ -9,7 +9,7 @@ export const ExpClinic = () => {
 			ref={ref}
 			initial={{ opacity: 0, y: 100 }}
 			animate={inView ? { opacity: 1, y: 0 } : {}}
-			transition={{ duration: 1, delay: 0.7 }}
+			transition={{ duration: 1 }}
 			className="grid grid-cols-1 2xl:grid-cols-3  gap-4 mt-12"
 		>
 			<div className="items">

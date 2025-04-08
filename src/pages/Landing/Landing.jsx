@@ -33,7 +33,7 @@ const Landing = () => {
 				ref={refImage}
 				initial={{ opacity: 0, y: 100 }}
 				animate={inViewImage ? { opacity: 1, y: 0 } : {}}
-				transition={{ duration: 1, delay: 0.7 }}
+				transition={{ duration: 1 }}
 				className="max-w-[1680px] h-[500px] rounded-[40px] mt-4 hidden xl:block"
 				style={{
 					backgroundImage: `url(${IDemo2})`,
@@ -54,7 +54,7 @@ const Landing = () => {
 				initial={{ opacity: 0, y: 100 }}
 				
 				animate={inViewFaq ? { opacity: 1, y: 0 } : {}}
-				transition={{ duration: 1, delay: 0.4 }}
+				transition={{ duration: 1}}
 				className="mt-[34px] mb-[30px] flex gap-4"
 			>
 				<FAQ />

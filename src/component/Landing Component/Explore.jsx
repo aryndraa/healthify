@@ -9,7 +9,7 @@ export const Explore = () => {
 			ref={ref}
 			initial={{ opacity: 0, y: 100 }}
 			animate={inView ? { opacity: 1, y: 0 } : {}}
-			transition={{ duration: 1, delay: 0.7 }}
+			transition={{ duration: 1}}
 			className="max-w-[1680px] min-h-[706px] h-fit bg-[#213170] flex flex-col justify-center text-center p-[25px] rounded-[40px] mt-12 md:p=[62px] "
 		>
 			<div className=" flex flex-col gap-6  items-center justify-center align-middle mb-16">

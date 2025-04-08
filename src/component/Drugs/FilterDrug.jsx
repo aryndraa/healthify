@@ -6,7 +6,7 @@ export const Filter = ({ onClick }) => {
 		<div>
 			<div className="relative flex items-center gap-2">
 				<div
-					className="p-4 2xl:p-6 bg-trinary rounded-full min-w-9 cursor-pointer"
+					className="p-4 2xl:p-6 bg-trinary rounded-full min-w-9 "
 					onClick={onClick} >
 					<img
 						src={sortIcon}
