@@ -26,7 +26,7 @@ export const Explore = () => {
 				<div className="items">
 					<div
 						onClick={() => navigate("/pharmacy")}
-						className="group relative w-[370px] min-h-[300px] min-[640px]:h-[400px]  bg-white rounded-[40px] overflow-hidden transition duration-300 hover:bg-[#213170] hover:shadow-xl hover:border-white hover:border-solid hover:border-[2px] hover:cursor-pointer"
+						className="group relative w-[370px] min-h-[300px] min-[640px]:h-[400px]  bg-white rounded-[40px] overflow-hidden transition duration-300 hover:bg-[#213170] hover:shadow-xl hover:border-white hover:border-solid hover:border-[2px]  "
 					>
 						<div className="h-[200px] sm:h-[307px] justify-end flex rounded-[40px] transition-all duration-500 ease-in-out bg-Pharmacy group-hover:bg-none group-hover:transition-all ">
 							<svg
@@ -61,7 +61,7 @@ export const Explore = () => {
 				<div className="items">
 					<div
 						onClick={() => navigate("/clinic")}
-						className="group relative w-[370px] min-h-[300px] min-[640px]:h-[400px]  bg-white rounded-[40px] overflow-hidden transition duration-300 hover:bg-[#213170] hover:shadow-xl hover:border-white hover:border-solid hover:border-[2px] hover:cursor-pointer"
+						className="group relative w-[370px] min-h-[300px] min-[640px]:h-[400px]  bg-white rounded-[40px] overflow-hidden transition duration-300 hover:bg-[#213170] hover:shadow-xl hover:border-white hover:border-solid hover:border-[2px]  "
 					>
 						<div className="h-[200px] sm:h-[307px] justify-end flex rounded-[40px] transition-all duration-500 ease-in-out bg-Clinic group-hover:bg-none group-hover:transition-all ">
 							<svg
@@ -96,7 +96,7 @@ export const Explore = () => {
 				<div className="items">
 					<div
 						onClick={() => navigate("/drugs")}
-						className="group relative w-[370px] min-h-[300px] min-[640px]:h-[400px]  bg-white rounded-[40px] overflow-hidden transition duration-300 hover:bg-[#213170] hover:shadow-xl hover:border-white hover:border-solid hover:border-[2px] hover:cursor-pointer"
+						className="group relative w-[370px] min-h-[300px] min-[640px]:h-[400px]  bg-white rounded-[40px] overflow-hidden transition duration-300 hover:bg-[#213170] hover:shadow-xl hover:border-white hover:border-solid hover:border-[2px]  "
 					>
 						<div className="h-[200px] sm:h-[307px] justify-end flex rounded-[40px] transition-all duration-500 ease-in-out bg-Drugs group-hover:bg-none group-hover:transition-all ">
 							<svg
@@ -131,7 +131,7 @@ export const Explore = () => {
 				<div className="items">
 					<div
 						onClick={() => navigate("/disease")}
-						className="group relative w-[370px] min-h-[300px] min-[640px]:h-[400px]  bg-white rounded-[40px] overflow-hidden transition duration-300 hover:bg-[#213170] hover:shadow-xl hover:border-white hover:border-solid hover:border-[2px] hover:cursor-pointer"
+						className="group relative w-[370px] min-h-[300px] min-[640px]:h-[400px]  bg-white rounded-[40px] overflow-hidden transition duration-300 hover:bg-[#213170] hover:shadow-xl hover:border-white hover:border-solid hover:border-[2px]  "
 					>
 						<div className="h-[200px] sm:h-[307px] justify-end flex rounded-[40px] transition-all duration-500 ease-in-out bg-Disease group-hover:bg-none group-hover:transition-all ">
 							<svg

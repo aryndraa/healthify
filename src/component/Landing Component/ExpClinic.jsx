@@ -15,7 +15,7 @@ export const ExpClinic = () => {
 			<div className="items">
 				<div
 					onClick={() => navigate("/clinic")}
-					className="BOX2 bg-[#213170] flex flex-col h-screen justify-between p-8 group hover:cursor-pointer "
+					className="BOX2 bg-[#213170] flex flex-col h-screen justify-between p-8 group   "
 				>
 					<div className="flex flex-col gap-4">
 						<div className="flex justify-between ">
@@ -54,7 +54,7 @@ export const ExpClinic = () => {
 			<div className="items">
 				<div
 					onClick={() => navigate("/clinic")}
-					className="BOX2  flex flex-col h-screen w-screen justify-between bg-Clinic2 bg-cover hover:cursor-pointer "
+					className="BOX2  flex flex-col h-screen w-screen justify-between bg-Clinic2 bg-cover   "
 				>
 					<div className="p-8 flex flex-col justify-between h-screen hover:bg-blue-300 hover:bg-opacity-40 rounded-[40px] group">
 						<svg
@@ -93,7 +93,7 @@ export const ExpClinic = () => {
 			<div className="items">
 				<div
 					onClick={() => navigate("/clinic")}
-					className="BOX2  flex flex-col h-screen w-screen justify-between bg-vaelclinic bg-cover   hover:cursor-pointer"
+					className="BOX2  flex flex-col h-screen w-screen justify-between bg-vaelclinic bg-cover    "
 				>
 					<div className="p-8 flex flex-col justify-between h-screen hover:bg-blue-300 hover:bg-opacity-40 rounded-[40px] group">
 						<svg

@@ -34,6 +34,7 @@ export default function SmoothInvertedCursor() {
 			<div
 				ref={cursorRef}
 				style={{
+					
 					position: "fixed",
 					top: cursorPos.y,
 					left: cursorPos.x,

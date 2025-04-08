@@ -10,12 +10,12 @@ export const ExpPharmacy = () => {
 			initial={{ opacity: 0, y: 100 }}
 			animate={inView ? { opacity: 1, y: 0 } : {}}
 			transition={{ duration: 1, delay: 0.7 }}
-			className="grid grid-cols-1 2xl:grid-cols-3 gap-4 my-12  flex-row-reverse"
+			className="grid grid-cols-1 2xl:grid-cols-3 gap-4 mb-12 mt-4  flex-row-reverse"
 		>
 			<div className="items">
 				<div
 					onClick={() => navigate("/pharmacy")}
-					className="BOX2  flex flex-col h-screen w-screen justify-between bg-Jinx bg-cover hover:cursor-pointer "
+					className="BOX2  flex flex-col h-screen w-screen justify-between bg-Jinx bg-cover   "
 				>
 					<div className="p-8 flex flex-col justify-between h-screen hover:bg-blue-300 hover:bg-opacity-40 rounded-[40px] group">
 						<svg
@@ -58,7 +58,7 @@ export const ExpPharmacy = () => {
 			<div className="items">
 				<div
 					onClick={() => navigate("/pharmacy")}
-					className="BOX2  flex flex-col h-screen w-screen justify-between bg-Dyven bg-cover hover:cursor-pointer "
+					className="BOX2  flex flex-col h-screen w-screen justify-between bg-Dyven bg-cover   "
 				>
 					<div className="p-8 flex flex-col justify-between h-screen hover:bg-blue-300 hover:bg-opacity-40 rounded-[40px] group">
 						<svg
@@ -99,7 +99,7 @@ export const ExpPharmacy = () => {
 			<div className="items">
 				<div
 					onClick={() => navigate("/pharmacy")}
-					className="BOX2 bg-[#C5E5FF] flex flex-col h-screen justify-between p-8 group hover:cursor-pointer"
+					className="BOX2 bg-[#C5E5FF] flex flex-col h-screen justify-between p-8 group  "
 				>
 					<div className="flex flex-col gap-4">
 						<div className="flex justify-between ">

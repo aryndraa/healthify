@@ -12,7 +12,7 @@ export const Feature = () => {
 			transition={{ duration: 1, delay: 1.5 }}
 			className="grid grid-cols-1 min-[1024px]:grid-cols-2 2xl:grid-cols-4 gap-4 "
 		>
-			<div className="items hover:cursor-pointer group hover">
+			<div className="items   group hover">
 				<div className="BOX hover:bg-[#213170] hover:text-white  transition-all duration-300">
 					<div className="flex justify-between  mb-[71px]   ">
 						<p className="text--4xl font-semibold w-1/2  ">
@@ -41,7 +41,7 @@ export const Feature = () => {
 				</div>
 			</div>
 
-			<div className="items hover:cursor-pointer group">
+			<div className="items   group">
 				<div className="BOX hover:bg-[#213170] hover:text-white  transition-all duration-300">
 					<div className="flex justify-between  mb-[71px]">
 						<p className="text--4xl font-semibold w-1/2  ">
@@ -94,7 +94,7 @@ export const Feature = () => {
 				</div>
 			</div>
 
-			<div className="items hover:cursor-pointer group">
+			<div className="items   group">
 				<div className="BOX hover:bg-[#213170] hover:text-white  transition-all duration-300 flex flex-col justify-between">
 					<div className="flex justify-between  mb-[71px]">
 						<p className="text--4xl font-semibold w-1/2  ">

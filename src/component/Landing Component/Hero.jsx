@@ -25,7 +25,7 @@ export const Hero = () => {
 			ref={ref}
 			initial="hidden"
 			animate={inView ? "visible" : "hidden"}
-			className="max-w-screen flex gap-4 mt-[100px] lg:mt-[160px]"
+			className="max-w-screen flex gap-4 mt-[100px] lg:mt-[134px]"
 		>
 			<motion.div variants={fadeUpVariants} className="Container1">
 				<div className="item-1 ">
@@ -33,7 +33,7 @@ export const Hero = () => {
 					<motion.p
 						variants={fadeUpVariants}
 						custom={0}
-						className="font-semibold text--5xl cursor-pointer"
+						className="font-semibold text--5xl"
 					>
 						Where Health Meets Knowledge for a Brighter Future
 					</motion.p>
@@ -42,7 +42,7 @@ export const Hero = () => {
 					<motion.p
 						variants={fadeUpVariants}
 						custom={1}
-						className="text--lg mt-4 mb-6 cursor-pointer"
+						className="text--lg mt-4 mb-6   "
 					>
 						Explore a wealth of resources designed to empower you
 						with the knowledge you need to make informed health
@@ -66,7 +66,7 @@ export const Hero = () => {
 								custom={index + 2}
 								whileHover={{ scale: 1.05 }}
 								onClick={() => navigate(btn.link)}
-								className="Button flex items-center gap-2 cursor-pointer"
+								className="Button flex items-center gap-2   "
 							>
 								<p className="font-medium text--lg">
 									{btn.label}
@@ -95,7 +95,7 @@ export const Hero = () => {
 						variants={fadeUpVariants}
 						custom={6}
 						whileHover={{ scale: 1.02 }}
-						className="deskItem1 font-medium italic text--lg mt-8 cursor-pointer"
+						className="deskItem1 font-medium italic text--lg mt-8   "
 					>
 						“Great health stems from great knowledge, as
 						understanding our bodies and the factors that influence
@@ -112,12 +112,12 @@ export const Hero = () => {
 						variants={fadeUpVariants}
 						custom={7}
 						whileHover={{ scale: 1.02 }}
-						className="rounded-[40px] max-[1550px]:hidden cursor-pointer"
+						className="rounded-[40px] max-[1550px]:hidden   "
 					/>
 					<motion.div
 						variants={fadeUpVariants}
 						custom={8}
-						className="item-2 justify-center max-[1550px]:hidden space-y-2 cursor-pointer"
+						className="item-2 justify-center max-[1550px]:hidden space-y-2   "
 					>
 						<p className="font-semibold text--4xl">Our mission</p>
 						<p className="text--lg">
@@ -134,7 +134,7 @@ export const Hero = () => {
 				variants={fadeUpVariants}
 				custom={9}
 				whileHover={{ scale: 1.02 }}
-				className="Container2 max-[1550px]:hidden bg-cover bg-center rounded-[40px] w-screen cursor-pointer"
+				className="Container2 max-[1550px]:hidden bg-cover bg-center rounded-[40px] w-screen   "
 				style={{ backgroundImage: `url(${IDemo})` }}
 			></motion.div>
 		</motion.div>

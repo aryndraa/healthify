@@ -22,7 +22,7 @@ const App = () => {
 		<>
 			<Router>
 				<SmoothInvertedCursor />
-			<ScrollToTop />
+				<ScrollToTop />
 				<DefaultLayout>
 					<Routes>
 						<Route path="/" element={<Landing />} />
