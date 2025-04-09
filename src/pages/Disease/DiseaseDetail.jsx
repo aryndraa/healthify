@@ -3,37 +3,45 @@ import {useState} from "react";
 import {DiseaseInfo} from "../../component/Disease/DiseaseInfo.jsx";
 import {MoreLink} from "../../component/MoreLink.jsx";
 import {DiseaseCard} from "../../component/Disease/DiseaseCard.jsx";
+import data from "./../../data/disease.json";
+import {useParams} from "react-router-dom";
 
 export function DiseaseDetail() {
   const [activeTab, setActiveTab] = useState("overview");
+
+  const {name} = useParams();
+
+  console.log(name);
+
+  const disease = data.find(item => Object.keys(item)[0] === name.toLowerCase());
+
+    const key = Object.keys(disease)[0];
+    const detail = disease[key];
+
+  if (disease) {
+
+    console.log(detail.penyebab); // akses definisi
+  }
 
   const tabInfo = () => {
     if(activeTab === "overview") {
       return(
         <>
-          <DiseaseInfo title="Definition">
+          <DiseaseInfo title="Definisi">
             <p className=" leading-[1.6]">
-              Asthma bronkial adalah penyakit pernapasan kronis yang ditandai dengan peradangan dan
-              penyempitan saluran napas, yang menyebabkan kesulitan bernapas, batuk, dan mengi. Kondisi
-              ini dapat bervariasi dalam tingkat keparahan dan frekuensi serangan, memerlukan pengelolaan
-              yang tepat untuk menjaga kualitas hidup penderita. Asma sering kali dipicu oleh berbagai faktor
-              lingkungan dan genetik.
+              {detail.definisi}
             </p>
           </DiseaseInfo>
           <DiseaseInfo title="Cause">
             <ul className="list-disc pl-4 ">
-              <li>Alergen (seperti debu, serbuk sari, dan bulu hewan)</li>
-              <li>Iritan (seperti asap rokok, polusi udara, dan bahan kimia)</li>
-              <li>Infeksi saluran pernapasan</li>
-              <li>Aktivitas fisik (terutama di lingkungan dingin atau kering)</li>
-              <li>Stres emosional</li>
+              {detail.penyebab.map((item, index) => (
+                <li key={index}>{item.trim()}</li>
+              ))}
             </ul>
           </DiseaseInfo>
           <DiseaseInfo title="Complication">
             <p className=" leading-[1.6]">
-              Jika tidak dikelola dengan baik, asma dapat menyebabkan serangan parah yang mengancam jiwa,
-              serta perubahan permanen pada saluran napas yang dapat mengurangi fungsi paru-paru dan kualitas
-              hidup penderita.
+              {detail.komplikasi}
             </p>
           </DiseaseInfo>
         </>
@@ -109,12 +117,11 @@ export function DiseaseDetail() {
       <section className="mt-[100px] lg:mt-[160px] mb-4">
 
         <div className="flex flex-col lg:flex-row gap-4">
-          <div>
+          <div className="flex-1">
             <TabBar activeTab={activeTab} setActiveTab={setActiveTab} />
             <div className="rounded-xl lg:rounded-xxl bg-white mt-4 p-4 lg:p-8 2xl:p-12">
               <div className="mb-4 pb-4 lg:mb-6 lg:pb-6 2xl:pb-8 2xl:mb-8 border-b border-b-text ">
-                <h1 className="text-2xl lg:text-3xl 2xl:text-4xl font-semibold lg:font-bold mb-1 2xl:mb-2">Asthma Bronchiale</h1>
-                <p className="text-sm 2xl:text-xl font-medium">Penyakit Pernafasan yang menyerang paru - paru</p>
+                <h1 className="text-2xl lg:text-3xl 2xl:text-4xl font-semibold lg:font-bold mb-1 2xl:mb-2">{name}</h1>
               </div>
               <div className="flex flex-col gap-4 2xl:gap-6">
                 {tabInfo()}

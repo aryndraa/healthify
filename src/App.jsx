@@ -14,6 +14,7 @@ import {DiseaseDetail} from "./pages/Disease/DiseaseDetail.jsx";
 import {Clinics} from "./pages/Clinic/Clinics.jsx";
 import {ClinicSearched} from "./pages/Clinic/ClinicSearched.jsx";
 import {ClinicDetail} from "./pages/Clinic/ClinicDetail.jsx";
+import ScrollToTop from "./component/scrollReset.jsx";
 
 const App = () => {
 	return (
@@ -33,7 +34,7 @@ const App = () => {
           <Route path="/disease/*">
             <Route path="" element={<Diseases />} />
             <Route path="searched" element={<DiseasesSearched />} />
-            <Route path="1" element={<DiseaseDetail />} />
+            <Route path=":name" element={<DiseaseDetail />} />
           </Route>
 
           <Route path="/clinic/*">
