@@ -1,7 +1,7 @@
 import { useState } from "react";
 import searchIcon from "../assets/search.svg";
 
-export const SearchBar = ({ onSearch }) => {
+export const SearchBar = ({ onSearch, placeholder }) => {
 	const [query, setQuery] = useState("");
 
 	const handleSearch = (e) => {
@@ -16,8 +16,8 @@ export const SearchBar = ({ onSearch }) => {
 		>
 			<input
 				type="text"
-				placeholder="Search nearby pharmacy"
-				className="flex-1 w-full py-4 2xl:py-7 px-8 2xl:px-12 placeholder:text-text rounded-full 2xl:text-xl focus:outline-none placeholder:font-medium"
+				placeholder={placeholder}
+				className="flex-1 w-full py-4 2xl:py-7 px-8 2xl:px-12 placeholder:text-zinc-400 rounded-full 2xl:text-xl focus:outline-none placeholder:font-medium"
 				value={query}
 				onChange={(e) => setQuery(e.target.value)}
 			/>

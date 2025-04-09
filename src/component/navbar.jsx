@@ -30,7 +30,7 @@ const Navbar = () => {
 				className={`max-w-[1920px]  w-screen transition-all  rounded-b-xl duration-300 ${
 					isScrolled
 						? "bg-white shadow-md py-3 px-10 lg:mx-10 "
-						: "lg:mt-10 lg:mb-12 px-10 py-3 lg:py-0 lg:px-[120px] shadow-md lg:shadow-none bg-white lg:bg-transparent "
+						: "lg:mt-10 lg:mb-10 px-10 py-2 lg:py-0 lg:px-[120px] shadow-md lg:shadow-none bg-white lg:bg-transparent "
 				}`}
 			>
 				<div className="flex items-center justify-between w-full">
@@ -49,7 +49,7 @@ const Navbar = () => {
 						))}
 					</nav>
 					<div
-						className="min-[1156px]:hidden cursor-pointer"
+						className="min-[1156px]:hidden   "
 						onClick={() => setIsMenuOpen(!isMenuOpen)}
 					>
 						<svg

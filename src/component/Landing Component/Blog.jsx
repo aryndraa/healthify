@@ -1,11 +1,25 @@
 import Blog1 from "../../assets/Ellipse 5-1.svg";
 import Blog2 from "../../assets/Ellipse 5-2.svg";
 import Blog3 from "../../assets/Ellipse 5.svg";
+import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 export const Blogs = () => {
+	const navigate = useNavigate();
+	const { ref, inView } = useInView({ triggerOnce: true });
 	return (
-		<div className=" flex  flex-col gap-4 ">
+		<motion.div
+			ref={ref}
+			initial={{ opacity: 0, y: 100 }}
+			animate={inView ? { opacity: 1, y: 0 } : {}}
+			transition={{ duration: 1,  }}
+			className=" flex  flex-col gap-4 "
+		>
 			<div className="items">
-				<div className=" flex justify-between max-w-[549px] min-[1441px]:max-w-[1920px] w-screen py-[32px] px-[48px] bg-white rounded-[40px] items-center gap-2 group hover:cursor-pointer">
+				<div
+					onClick={() => navigate("/blogs")}
+					className=" flex justify-between max-w-[549px] min-[1441px]:max-w-[1920px] w-screen py-[32px] px-[48px] bg-white rounded-[40px] items-center gap-2 group  "
+				>
 					<p className="text--5xl font-semibold">Explore Our Blogs</p>
 					<svg
 						className="rounded-full p-[10px] w-[50px] h-[50px] md:w-[72px] md:h-[72px] md:p-[20px]  transition-transform duration-300 bg-[#C5E5FF]  group-hover:border-solid group-hover:border-[#C5E5FF]  group-hover:border-[3px] group-hover:rotate-45  group-hover:bg-[#213170] "
@@ -111,6 +125,6 @@ export const Blogs = () => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</motion.div>
 	);
 };

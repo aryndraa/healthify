@@ -1,8 +1,10 @@
-// src/components/FAQ.jsx
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
+import { useInView } from "react-intersection-observer";
+
 const FAQ = () => {
+		const { ref, inView } = useInView({ triggerOnce: true });
 	const [activeIndex, setActiveIndex] = useState(null);
 
 	const faqData = [
@@ -33,7 +35,13 @@ const FAQ = () => {
 	};
 
 	return (
-		<div className="flex flex-col w-screen min-[1920px]:w-[973px]  p-[34px] bg-white rounded-[40px] gap-[32px]">
+		<motion.div
+			ref={ref}
+			initial={{ opacity: 0, y: 100 }}
+			animate={inView ? { opacity: 1, y: 0 } : {}}
+			transition={{ duration: 1, delay: 0.4 }}
+			className="flex flex-col w-screen min-[1920px]:w-[973px]  p-[34px] bg-white rounded-[40px] gap-[32px]"
+		>
 			<div>
 				<p className="text--5xl font-semibold mb-[8px]">
 					Frequently Asked Question
@@ -106,7 +114,7 @@ const FAQ = () => {
 					</div>
 				))}
 			</div>
-		</div>
+		</motion.div>
 	);
 };
 

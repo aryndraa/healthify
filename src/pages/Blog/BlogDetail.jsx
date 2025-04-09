@@ -1,8 +1,10 @@
 import { useParams } from "react-router-dom";
 import { blogData } from "./blogdta.js";
 import { BlogCard } from "../../component/BlogCard.jsx";
+import { useNavigate } from "react-router-dom";
 
 export const BlogDetail = () => {
+	const navigate = useNavigate()
 	const { id } = useParams(); 
 	const blog = blogData.find((b) => b.id === parseInt(id)); 
 	if (!blog) {
@@ -131,7 +133,10 @@ export const BlogDetail = () => {
 			</div>
 			{/* more blog  */}
 			<div className="mb-12">
-				<div className=" flex justify-between py-[32px] px-[48px] bg-white rounded-[40px] items-center gap-2 group hover:cursor-pointer">
+				<div
+					onClick={() => navigate('/blogs')}
+					className=" flex justify-between py-[32px] px-[48px] bg-white rounded-[40px] items-center gap-2 group "
+				>
 					<p className="text--5xl font-semibold">More Blogs</p>
 					<svg
 						className="rounded-full p-[10px] w-[50px] h-[50px] md:w-[72px] md:h-[72px] md:p-[20px]  transition-transform duration-300 bg-[#C5E5FF]  group-hover:border-solid group-hover:border-[#C5E5FF]  group-hover:border-[3px] group-hover:rotate-45  group-hover:bg-[#213170] "

@@ -118,9 +118,12 @@ export function Blog() {
 	}, [tagsActive, searchQuery]);
 
 	return (
-		<div className=" relative min-h-screen mt-[100px] sm:mt-[160px] mb-4">
+		<div className=" relative min-h-screen  mb-4">
 			<div className="w-full flex gap-2 items-center mb-4">
-				<SearchBar onSearch={setSearchQuery} />
+				<SearchBar
+					onSearch={setSearchQuery}
+					placeholder="Search some of our blogs"
+				/>
 				<Filter onClick={() => setActive((prev) => !prev)} />
 			</div>
 
@@ -261,7 +264,7 @@ export function Blog() {
 					className="rounded-[40px] max-[1550px]:hidden"
 				/>
 			</div>
-			<div className="w-full grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-10 mt-4">
+			<div className="w-full grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-4 mt-4">
 				{filteredBlogs.length > 0 ? (
 					filteredBlogs.map((blog) => (
 						<BlogCard key={blog.id} blog={blog} />

@@ -20,7 +20,7 @@ const App = () => {
 	return (
 		<>
 			<Router>
-			<ScrollToTop />
+				<ScrollToTop />
 				<DefaultLayout>
 					<Routes>
 						<Route path="/" element={<Landing />} />
