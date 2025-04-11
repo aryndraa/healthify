@@ -22,7 +22,7 @@ export function Diseases() {
 
         <div className="grid grid-cols-1 w lg:grid-cols-3 gap-x-0 gap-y-4  lg:gap-4 my-4 lg:my-12">
           <ListWords/>
-          <div className="grid grid-cols-1 lg:grid-cols-2 col-span-2 gap-4 w-fit">
+          <div className="col-span-2">
             <DiseaseList/>
           </div>
         </div>
