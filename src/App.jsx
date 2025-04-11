@@ -15,6 +15,7 @@ import {Clinics} from "./pages/Clinic/Clinics.jsx";
 import {ClinicSearched} from "./pages/Clinic/ClinicSearched.jsx";
 import {ClinicDetail} from "./pages/Clinic/ClinicDetail.jsx";
 import ScrollToTop from "./component/scrollReset.jsx";
+import { PharmacyProvider } from './contexts/PharmacyContext.jsx';
 
 const App = () => {
 	return (
@@ -25,11 +26,19 @@ const App = () => {
 					<Routes>
 						<Route path="/" element={<Landing />} />
 
-          <Route path="/pharmacy/*">
-            <Route path="" element={<Pharmacies />} />
-            <Route path="searched" element={<PharmaciesSearched />} />
-            <Route path="1" element={<PharmacyDetail />} />
-          </Route>
+          <Route 
+						path="/pharmacy/*"
+						element={
+							<PharmacyProvider>
+								<Routes>
+            			<Route path="" element={<Pharmacies />} />
+            			<Route path="searched" element={<PharmaciesSearched />} />
+            			<Route path=":id" element={<PharmacyDetail />} />
+								</Routes>
+							</PharmacyProvider>
+						}
+					/>
+				
 
           <Route path="/disease/*">
             <Route path="" element={<Diseases />} />

@@ -1,4 +1,4 @@
-export const pharmacies = [
+export  const pharmacies = [
   {
     id: 1,
     name: "Kimia Farma Pharmacy Sanur ",

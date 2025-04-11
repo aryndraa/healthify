@@ -6,7 +6,8 @@ import { useNavigate } from "react-router-dom";
 export const BlogDetail = () => {
 	const navigate = useNavigate()
 	const { id } = useParams(); 
-	const blog = blogData.find((b) => b.id === parseInt(id)); 
+	const blog = blogData.find((b) => b.id === parseInt(id));
+
 	if (!blog) {
 		return <p className="text-center text-red-500">Blog tidak ditemukan</p>;
 	}
