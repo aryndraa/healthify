@@ -3,11 +3,34 @@ import {SearchBar} from "../../component/SearchBar.jsx";
 import {ShortBy} from "../../component/ShortBy.jsx";
 import {useParams} from "react-router-dom";
 import {pharmacies} from "./pharmachyData.js";
+import {drugData} from "../Drugs/drugsdta.js";
+import {DrugCard} from "../../component/Drugs/Drug.jsx";
+import {MoreLink} from "../../component/MoreLink.jsx";
+import {useEffect, useState} from "react";
+import searchIcon from "../../assets/search.svg";
+import {blogData} from "../Blog/blogdta.js";
 
 export function PharmacyDetail() {
-
+  const [filteredDrugs, setFilteredDrugs] = useState(drugData);
+  const [searchQuery, setSearchQuery] = useState("");
   const {id} = useParams();
   const pharmacy = pharmacies.find((p) => p.id === parseInt(id));
+  const randomPharmacy = pharmacies
+    .filter((p) => p.id !== parseInt(id))
+    .sort(() => Math.random() - 0.5)
+    .slice(0, 3);
+
+  useEffect(() => {
+    let filtered = drugData;
+
+    if (searchQuery) {
+      filtered = filtered.filter((drug) =>
+        drug.title.toLowerCase().includes(searchQuery.toLowerCase())
+      );
+    }
+
+    setFilteredDrugs(filtered);
+  }, [searchQuery]);
 
   console.log(id);
 
@@ -41,7 +64,40 @@ export function PharmacyDetail() {
 
         <div>
           <div className="w-full flex  gap-2 items-center mb-4">
-            <SearchBar placeholder={"Search Drugs on our listing"}/>
+            <form
+              className="flex w-full bg-white rounded-full"
+              onSubmit={(e) => e.preventDefault()}
+            >
+              <input
+                type="text"
+                className="flex-1 w-full py-4 2xl:py-7 px-8 2xl:px-12 placeholder:text-zinc-400 rounded-full 2xl:text-xl focus:outline-none placeholder:font-medium"
+                onChange={(e) => setSearchQuery(e.target.value)}
+                placeholder="Search for drugs..."
+              />
+              <button
+                type="submit"
+                className="bg-trinary p-5 2xl:p-6 rounded-full"
+              >
+                <img src={searchIcon} alt="Search" className="w-5 2xl:w-8"/>
+              </button>
+            </form>
+          </div>
+          <div className="grid grid-cols-4 gap-4">
+            {
+              filteredDrugs
+                .slice(0, 12)
+                .map((drug) => (
+                  <DrugCard
+                    key={drug.id}
+                    id={drug.id}
+                    pricing={drug.pricing}
+                    title={drug.title}
+                    standFor={drug.standFor}
+                    illustration={drug.ilustration}
+                    drugLevel={drug.drugLevel}
+                  />
+                ))
+            }
           </div>
         </div>
       </section>
