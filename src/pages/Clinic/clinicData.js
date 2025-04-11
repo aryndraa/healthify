@@ -475,7 +475,7 @@ export const clinics = [
   {
     id: 11,
     name: "Eswen Medica Clinic",
-    iamges: [
+    images: [
       "https://media-hosting.imagekit.io/3a01c972b1fb42d1/Eswen%20Medica%20Clinic%201.png?Expires=1838923664&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=cEWKeWUlJ6VRR92QVvmDdpKxHe0jNJsmm~BoEn8MZARiNt-vtiDD72~eWgsYn1ZgtuElMSem~ANdW~23zpdxvdcvDsERM1asTgfi-OeSFaiLJL2coGZTDCWEvRaBGVszPzlUQGIZ8rshhiK20KlwKaGQ1t8FH-SJRyaIxituHPRl9ZEjnuulRt~qtrNsFT8Khd-5nz1rljmiXYS-wGhlD1DnhY5NzlWjszMvt9Ba7H0vKP3N~1clHy0Q9AlLWL-EcwBJQFxebzWTUhDFDlny25wv68bzatCPQnvI~LezOl371sXzEbo4U6e3WFFDhxNXMDTiGkLpj-U7BXSJvoEXKg__",
       "https://media-hosting.imagekit.io/09d5ab7722414b21/Eswen%20Medica%20Clinic%202.png?Expires=1838923664&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=sMHQJUIzRoOF639NyNxhCX36Y46Y6WOh~wAodI39PtWxYWToZ7iDr8YlEAM0Fk4avUySzYArLKV~i3aEVzAMxdGRy8UrwfRNIJm0Wly8g1wJib2xqY5SPVZVgUmaEPq2eEpW-r-jPiMZWLEDwiSrfZddzYrxtLKpsE5wkovJExZN-LX0kcff45Xsysmiw~9-pj0Uu7gTEu2a-Tx~MSUXI7qwGeHS803FmO4cDHGtUCGVQnmsFwGEAM6AQBfGL5n6CMN5U-5oj9~LLg--xivQMpQgDGIPfMaSg9y-JKWTd8cXfXpM7aGtrnxfKPivVxucUi4q2zouRy8mn2EaDQ9apA__",
       "https://media-hosting.imagekit.io/1906a21f83424d3f/Eswen%20Medica%20Clinic%203.png?Expires=1838923664&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=jAlhtK8mGKHUHaM2P6ppPrAoTFy4TEKB7OtR0IG9qBtrkFolKc0~yEzx7W95mqjde7BwbpqEtaMe20H5GF-77b0SajG3I~gfL9~7OoQ6VUc~hsUL5nnARG4t0buydVSILzX5C4CgzfEtO-zuGT9KE7rjz2qV5D~9ker1ACvKwzEsytCx8P3D~j1nDLYSMtRWjXxLzISuW~fd1EW~K0cnQKtvYWEbv6Hh4CeraCMuGXK-qKlneFJ0A75YHt1IArixCf65g7kIdSDyKrEOkXh0cS9ipRxp1VPFGNXwOT1ckB35zWdfvu-D7644l-FAWahWQh8ra9ldvem4G6jS-vIaPA__"

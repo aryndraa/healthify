@@ -2,7 +2,7 @@ import {SearchBar} from "../../component/SearchBar.jsx";
 import {ShortBy} from "../../component/ShortBy.jsx";
 import {Banner} from "../../component/Banner.jsx";
 import pharmacyHero from "../../assets/pharmacy.png";
-import {ListPharmacies} from "../../component/Pharmacy/ListPharmacies.jsx";
+import {ListClinics} from "../../component/Clinic/ListClinics.jsx";
 
 export function Clinics() {
   return (
@@ -23,7 +23,7 @@ export function Clinics() {
 				/>
 
 				<div>
-					<ListPharmacies />
+					<ListClinics />
 				</div>
 			</section>
 		</>
