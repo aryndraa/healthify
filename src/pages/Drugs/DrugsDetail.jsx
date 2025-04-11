@@ -8,6 +8,17 @@ export function DrugDetail() {
 	const { id } = useParams();
 	const drug = drugData.find((item) => item.id === parseInt(id));
 
+
+	  const randomNavigate = () => {
+			const randomNumber = Math.floor(Math.random() * 17) + 1;
+			navigate(`/pharmacy/${randomNumber}`);
+		};
+
+		const randomDrugs = drugData
+				.filter((b) => b.id !== parseInt(id)) 
+				.sort(() => Math.random() - 0.5) 
+				.slice(0, 4); 
+
 	if (!drug) {
 		return (
 			<div className="min-h-screen mt-[100px] sm:mt-[160px] mb-4" >
@@ -45,7 +56,7 @@ export function DrugDetail() {
 							backgroundImage: `url(${drug.ilustration})`,
 						}}
 					/>
-					<div className="flex items-center justify-center bg-[#213170] text-white gap-4 py-8 px-4 rounded-[32px] ">
+					<div className="flex items-center justify-center bg-[#213170] text-white gap-4 py-8 px-4 rounded-[32px] " onClick={randomNavigate}>
 						<p className="font-medium text--2xl">
 							Find In Nearest Pharmacy
 						</p>
@@ -135,7 +146,7 @@ export function DrugDetail() {
 					</svg>
 				</div>
 				<div className="w-full grid gap-4 grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4 mt-4">
-					{drugData.slice(0,4).map((drug) => (
+					{randomDrugs.map((drug) => (
 						<DrugCard
 							key={drug.id}
 							id={drug.id}
