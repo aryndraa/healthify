@@ -15,6 +15,11 @@ export function DiseaseDetail() {
   console.log(name);
   const detail = dieases.find((p) => p.id === parseInt(id));
 
+  const randomDiseases = dieases
+    .filter((p) => p.id !== parseInt(id))
+    .sort(() => Math.random() - 0.5)
+    .slice(0, 6);
+
   const tabInfo = () => {
     if(activeTab === "overview") {
       return(
@@ -129,12 +134,17 @@ export function DiseaseDetail() {
           <MoreLink name={"More Disease"}/>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-2 lg:gap-4">
-          {/*<DiseaseCard/>*/}
-          {/*<DiseaseCard/>*/}
-          {/*<DiseaseCard/>*/}
-          {/*<DiseaseCard/>*/}
-          {/*<DiseaseCard/>*/}
-          {/*<DiseaseCard/>*/}
+          {
+            randomDiseases.map((item, index) => (
+              <DiseaseCard
+                key={index}
+                id={item.id}
+                name={item.name}
+                deskripsi={item.definisi.substring(0, 140)}
+                gejala={item.gejala.find(g => g.name === "umum").list}
+              />
+            ))
+          }
         </div>
       </section>
 

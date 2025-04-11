@@ -1,10 +1,12 @@
   import { useState } from "react";
   import { IoMenu } from "react-icons/io5";
+  import {useDisease} from "../../contexts/DiseaseContext.jsx";
 
   export const ListWords = () => {
     const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
     const [activeLetter, setActiveLetter] = useState("All");
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const {setLetterSelect} = useDisease()
 
     return (
     <div>
@@ -12,7 +14,10 @@
       <div className=" hidden  lg:grid 2xl:grid-cols-6 lg:grid-cols-5 gap-2 h-fit  ">
         <button
           key="All"
-          onClick={() => setActiveLetter("All")}
+          onClick={() => {
+            setActiveLetter("All");
+            setLetterSelect("all");
+          }}
           className={`2xl:text-2xl  lg:text-lg  lg:h-[60px] lg:w-[60px] 2xl:w-[72px]  2xl:h-[72px]  font-medium flex justify-center items-center  rounded-ful transition rounded-full ${
             activeLetter === "All" ? "bg-secondary text-white" : "bg-white hover:bg-gray-200"
           }`}
@@ -22,7 +27,10 @@
         {letters.map((letter) => (
           <button
             key={letter}
-            onClick={() => setActiveLetter(letter)}
+            onClick={() => {
+              setActiveLetter(letter);
+              setLetterSelect(letter);
+            }}
             className={`2xl:text-2xl  lg:text-lg  lg:h-[60px] lg:w-[60px] 2xl:w-[72px] 2xl:h-[72px] font-medium flex justify-center items-center  rounded-full transition ${
               activeLetter === letter ? "bg-secondary text-white" : "bg-white hover:bg-gray-200"
             }`}
@@ -50,6 +58,7 @@
                 key="All"
                 onClick={() => {
                   setActiveLetter("All");
+                  setLetterSelect("all");
                   setIsModalOpen(false);
                 }}
                 className={`w-[40px] h-[40px] rounded-full ${
@@ -63,6 +72,7 @@
                   key={letter}
                   onClick={() => {
                     setActiveLetter(letter);
+                    setLetterSelect(letter);
                     setIsModalOpen(false);
                   }}
                   className={`w-[40px] h-[40px] rounded-full ${
