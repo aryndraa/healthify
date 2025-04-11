@@ -24,6 +24,7 @@ export const DiseaseList = () => {
         {currentData.map((item, index) => (
           <DiseaseCard
             key={index}
+            id={item.id}
             name={item.name}
             deskripsi={item.definisi.substring(0, 140)}
             gejala={item.gejala.find(g => g.name === "umum").list}

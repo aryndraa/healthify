@@ -3,25 +3,17 @@ import {useState} from "react";
 import {DiseaseInfo} from "../../component/Disease/DiseaseInfo.jsx";
 import {MoreLink} from "../../component/MoreLink.jsx";
 import {DiseaseCard} from "../../component/Disease/DiseaseCard.jsx";
-import data from "./../../data/disease.json";
 import {useParams} from "react-router-dom";
+import {dieases} from "./diseaseData.js";
+import {pharmacies} from "../Pharmacy/pharmachyData.js";
 
 export function DiseaseDetail() {
   const [activeTab, setActiveTab] = useState("overview");
 
-  const {name} = useParams();
+  const {id} = useParams();
 
   console.log(name);
-
-  const disease = data.find(item => Object.keys(item)[0] === name.toLowerCase());
-
-    const key = Object.keys(disease)[0];
-    const detail = disease[key];
-
-  if (disease) {
-
-    console.log(detail.penyebab); // akses definisi
-  }
+  const detail = dieases.find((p) => p.id === parseInt(id));
 
   const tabInfo = () => {
     if(activeTab === "overview") {
@@ -121,14 +113,14 @@ export function DiseaseDetail() {
             <TabBar activeTab={activeTab} setActiveTab={setActiveTab} />
             <div className="rounded-xl lg:rounded-xxl bg-white mt-4 p-4 lg:p-8 2xl:p-12">
               <div className="mb-4 pb-4 lg:mb-6 lg:pb-6 2xl:pb-8 2xl:mb-8 border-b border-b-text ">
-                <h1 className="text-2xl lg:text-3xl 2xl:text-4xl font-semibold lg:font-bold mb-1 2xl:mb-2">{name}</h1>
+                <h1 className="text-2xl lg:text-3xl 2xl:text-4xl font-semibold lg:font-bold mb-1 2xl:mb-2 capitalize">{detail.name}</h1>
               </div>
               <div className="flex flex-col gap-4 2xl:gap-6">
                 {tabInfo()}
               </div>
             </div>
           </div>
-          <div className="min-w-full h-[200px] lg:min-w-[420px] lg:h-[420px] 2xl:min-w-[549px] 2xl:h-[549px] bg-gray-300 rounded-xl lg:rounded-xxl"></div>
+          <img src={detail.img} className="min-w-full h-[200px] lg:min-w-[420px] lg:h-[420px] 2xl:min-w-[549px] 2xl:h-[549px] bg-gray-300 rounded-xl lg:rounded-xxl"></img>
         </div>
       </section>
 
@@ -137,12 +129,12 @@ export function DiseaseDetail() {
           <MoreLink name={"More Disease"}/>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-2 lg:gap-4">
-          <DiseaseCard/>
-          <DiseaseCard/>
-          <DiseaseCard/>
-          <DiseaseCard/>
-          <DiseaseCard/>
-          <DiseaseCard/>
+          {/*<DiseaseCard/>*/}
+          {/*<DiseaseCard/>*/}
+          {/*<DiseaseCard/>*/}
+          {/*<DiseaseCard/>*/}
+          {/*<DiseaseCard/>*/}
+          {/*<DiseaseCard/>*/}
         </div>
       </section>
 

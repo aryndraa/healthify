@@ -43,13 +43,13 @@ const App = () => {
           <Route path="/disease/*">
             <Route path="" element={<Diseases />} />
             <Route path="searched" element={<DiseasesSearched />} />
-            <Route path=":name" element={<DiseaseDetail />} />
+            <Route path=":id" element={<DiseaseDetail />} />
           </Route>
 
           <Route path="/clinic/*">
             <Route path="" element={<Clinics />} />
             <Route path="searched" element={<ClinicSearched />} />
-            <Route path="1" element={<ClinicDetail />} />
+            <Route path=":id" element={<ClinicDetail />} />
           </Route>
 
 						<Route path="/blogs" element={<Blog />} />
