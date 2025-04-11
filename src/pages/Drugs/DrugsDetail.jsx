@@ -1,8 +1,10 @@
 import { useParams } from "react-router-dom";
 import { drugData } from "./drugsdta";
 import { DrugCard } from "../../component/Drugs/Drug";
+import { useNavigate } from "react-router-dom";
 
 export function DrugDetail() {
+	const navigate= useNavigate()
 	const { id } = useParams();
 	const drug = drugData.find((item) => item.id === parseInt(id));
 
@@ -116,7 +118,7 @@ export function DrugDetail() {
 				</div>
 			</div>
 			<div className="mt-[256px]">
-				<div className=" flex justify-between py-[32px] px-[48px] bg-white rounded-[40px] items-center gap-2 group ">
+				<div className=" flex justify-between py-[32px] px-[48px] bg-white rounded-[40px] items-center gap-2 group " onClick={()=> navigate("/drugs")}>
 					<p className="text--5xl font-semibold">More Drugs</p>
 					<svg
 						className="rounded-full p-[10px] w-[50px] h-[50px] md:w-[72px] md:h-[72px] md:p-[20px]  transition-transform duration-300 bg-[#C5E5FF]  group-hover:border-solid group-hover:border-[#C5E5FF]  group-hover:border-[3px] group-hover:rotate-45  group-hover:bg-[#213170] "
