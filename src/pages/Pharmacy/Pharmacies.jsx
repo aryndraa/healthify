@@ -143,7 +143,7 @@
 
 
 					<div>
-						<ListPharmacies type={type} search={search} isLoading={isLoading} />
+						<ListPharmacies isLoading={isLoading} />
 					</div>
 				</section>
 			</>
