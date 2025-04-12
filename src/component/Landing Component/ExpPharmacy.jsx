@@ -14,7 +14,7 @@ export const ExpPharmacy = () => {
 		>
 			<div className="items">
 				<div
-					onClick={() => navigate("/pharmacy")}
+					onClick={() => navigate("/pharmacy/2")}
 					className="BOX2  flex flex-col h-screen w-screen justify-between bg-Jinx bg-cover   "
 				>
 					<div className="p-8 flex flex-col justify-between h-screen hover:bg-blue-300 hover:bg-opacity-40 rounded-[40px] group">
@@ -35,20 +35,20 @@ export const ExpPharmacy = () => {
 							<div className="flex items-center justify-between ease-in-out duration-700 group-hover:mb-6">
 								<div>
 									<p className="text--2xl font-semibold">
-										Hospital Pharmacy
+										Kimia Farma Pharmacy Teuku Umar
 									</p>
 									<p className="text-base">
-										Hospital Pharmacy
+										General Medical Clinics
 									</p>
 								</div>
 								<div>
 									<p className="text--2xl font-medium">2KM</p>
 								</div>
 							</div>
-							{/* Bagian ini hanya muncul saat di hover */}
 							<p className="text--lg font-medium max-h-0 overflow-hidden opacity-0 transition-[max-height,opacity] duration-700 ease-in-out group-hover:max-h-[200px] group-hover:opacity-100  ">
-								“Hospital Pharmacy is one of the premier
-								Hospital Pharmacy located in East Denpasar.”
+								“Kimia Farma Pharmacy Teuku Umar is one of the
+								premier Hospital Pharmacy located in East
+								Denpasar.”
 							</p>
 						</div>
 					</div>
@@ -57,7 +57,7 @@ export const ExpPharmacy = () => {
 
 			<div className="items">
 				<div
-					onClick={() => navigate("/pharmacy")}
+					onClick={() => navigate("/pharmacy/1")}
 					className="BOX2  flex flex-col h-screen w-screen justify-between bg-Dyven bg-cover   "
 				>
 					<div className="p-8 flex flex-col justify-between h-screen hover:bg-blue-300 hover:bg-opacity-40 rounded-[40px] group">
@@ -78,9 +78,11 @@ export const ExpPharmacy = () => {
 							<div className="flex items-center justify-between ease-in-out duration-700 group-hover:mb-6">
 								<div>
 									<p className="text--2xl font-semibold">
-										Dyven Pharmacy
+										Kimia Farma Pharmacy Sanur
 									</p>
-									<p className="text-base">Pharmacy</p>
+									<p className="text-base">
+										General Medical Clinics
+									</p>
 								</div>
 								<div>
 									<p className="text--2xl font-medium">2KM</p>
@@ -88,8 +90,8 @@ export const ExpPharmacy = () => {
 							</div>
 
 							<p className="text--lg font-medium max-h-0 overflow-hidden opacity-0 transition-[max-height,opacity] duration-700 ease-in-out group-hover:max-h-[200px] group-hover:opacity-100  ">
-								“ Dyven Pharmacy & Medics is one of the premier
-								Pharmacy located in South Denpasar.”
+								“ Kimia Farma Pharmacy Sanur is one of the
+								premier Pharmacy located in South Denpasar.”
 							</p>
 						</div>
 					</div>

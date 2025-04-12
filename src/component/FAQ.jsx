@@ -4,29 +4,32 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const FAQ = () => {
-		const { ref, inView } = useInView({ triggerOnce: true });
+	const { ref, inView } = useInView({ triggerOnce: true });
 	const [activeIndex, setActiveIndex] = useState(null);
-
 	const faqData = [
 		{
-			question: "Can you find the disease based on symptoms?",
-			answer: "Muted stakeholders conversation heads-up reach moving own. One sandwich latest cob are now look support diligence. Should today synergize initiative attached. Winning functional all rundown moments timepoint protocol finance. Say metal one mifflin would offline. By pain next who's hear teams boil hits.",
+			question: "Apa itu Healthify ini?",
+			answer: "Healthify adalah platform informasi kesehatan yang menyediakan berbagai artikel, panduan, dan sumber daya tentang penyakit, obat-obatan, dan layanan kesehatan.",
 		},
 		{
-			question: "How do you distinguish between a cold and the flu?",
-			answer: "Identify the disease through its symptoms. Differentiate between cold and flu.",
+			question:
+				"Bagaimana cara mencari informasi tentang penyakit tertentu?",
+			answer: "Anda dapat menggunakan fitur pencarian di halaman utama atau menjelajahi kategori penyakit untuk menemukan informasi yang Anda butuhkan.",
 		},
 		{
-			question: "How do you distinguish between a cold and the flu?",
-			answer: "Identify the disease through its symptoms. Differentiate between cold and flu.",
+			question:
+				"Apakah semua informasi di website ini sudah terverifikasi?",
+			answer: "Kami berusaha memberikan informasi yang akurat dan terkini dengan merujuk pada sumber-sumber terpercaya serta melibatkan profesional kesehatan dalam penyusunan konten.",
 		},
 		{
-			question: "How do you distinguish between a cold and the flu?",
-			answer: "Identify the disease through its symptoms. Differentiate between cold and flu.",
+			question:
+				"Bagaimana cara menghubungi dokter atau klinik melalui website ini?",
+			answer: "Setiap halaman klinik menyediakan detail kontak dan alamat klinik. Anda dapat menghubungi mereka langsung melalui nomor telepon atau alamat yang tertera.",
 		},
 		{
-			question: "How do you distinguish between a cold and the flu?",
-			answer: "Identify the disease through its symptoms. Differentiate between cold and flu.",
+			question:
+				"Apakah saya bisa mendapatkan resep obat melalui website ini?",
+			answer: "Website kami tidak memberikan resep obat secara langsung. Untuk mendapatkan resep, silakan konsultasikan dengan dokter atau tenaga medis profesional.",
 		},
 	];
 
@@ -39,12 +42,12 @@ const FAQ = () => {
 			ref={ref}
 			initial={{ opacity: 0, y: 100 }}
 			animate={inView ? { opacity: 1, y: 0 } : {}}
-			transition={{ duration: 1, delay: 0.4 }}
-			className="flex flex-col w-screen min-[1920px]:w-[973px]  p-[34px] bg-white rounded-[40px] gap-[32px]"
+			transition={{ duration: 0.8, ease: "easeOut" }}
+			className="flex flex-col w-screen min-[1920px]:w-[973px] p-[34px] bg-white rounded-[40px] gap-[32px]"
 		>
 			<div>
 				<p className="text--5xl font-semibold mb-[8px]">
-					Frequently Asked Question
+					Frequently Asked Questions
 				</p>
 				<p className="text--lg">
 					We are dedicated to providing thorough and professional
@@ -52,35 +55,32 @@ const FAQ = () => {
 				</p>
 			</div>
 			<div>
-				{faqData.map((item, index) => (
-					<div key={index} className="">
+				{faqData.map((item, index) => {
+					const isActive = activeIndex === index;
+					return (
 						<motion.div
-							className=" text--2xl font-semibold"
-							onClick={() => toggleFAQ(index)}
-							initial={false}
+							key={index}
+							layout
+							className="overflow-hidden"
 						>
-							<div className="flex justify-between items-center my-6">
-								<p className="text--xl">{item.question}</p>
-
-								<div className="bg-[#C5E5FF] w-fit p-4 rounded-full">
-									{activeIndex === index ? (
-										// SVG "X" saat aktif (close)
-										<svg
-											xmlns="http://www.w3.org/2000/svg"
-											width={24}
-											height={24}
-											viewBox="0 0 24 24"
-										>
-											<path
-												fill="none"
-												stroke="currentColor"
-												strokeLinecap="round"
-												strokeLinejoin="round"
-												strokeWidth={2}
-												d="M18 6L6 18M6 6l12 12"
-											/>
-										</svg>
-									) : (
+							<motion.div
+								onClick={() => toggleFAQ(index)}
+								className={`cursor-pointer transition-all duration-300 ease-in-out px-4 py-3 rounded-[20px] ${
+									isActive
+										? "bg-[#E8F6FF]"
+										: "hover:bg-[#F5FAFF]"
+								}`}
+								initial={false}
+							>
+								<div className="flex justify-between items-center">
+									<p className="text--xl font-semibold">
+										{item.question}
+									</p>
+									<motion.div
+										animate={{ rotate: isActive ? 45 : 0 }}
+										transition={{ duration: 0.3 }}
+										className="bg-[#C5E5FF] w-fit p-4 rounded-full"
+									>
 										<svg
 											xmlns="http://www.w3.org/2000/svg"
 											width={24}
@@ -92,27 +92,40 @@ const FAQ = () => {
 												d="M18 12.998h-5v5a1 1 0 0 1-2 0v-5H6a1 1 0 0 1 0-2h5v-5a1 1 0 0 1 2 0v5h5a1 1 0 0 1 0 2"
 											/>
 										</svg>
-									)}
+									</motion.div>
 								</div>
-							</div>
+							</motion.div>
+							<AnimatePresence initial={false}>
+								{isActive && (
+									<motion.div
+										key="content"
+										initial={{
+											opacity: 0,
+											y: -10,
+											height: 0,
+										}}
+										animate={{
+											opacity: 1,
+											y: 0,
+											height: "auto",
+										}}
+										exit={{ opacity: 0, y: -10, height: 0 }}
+										transition={{
+											duration: 0.4,
+											ease: "easeInOut",
+										}}
+										className="pl-4 pr-6 pb-6"
+									>
+										<p className="text--lg  text-justify mt-4">
+											{item.answer}
+										</p>
+									</motion.div>
+								)}
+							</AnimatePresence>
+							<hr className="my-4 border-[#E0E0E0]" />
 						</motion.div>
-						<AnimatePresence>
-							{activeIndex === index && (
-								<motion.div
-									className=""
-									initial={{ opacity: 0, height: 0 }}
-									animate={{ opacity: 1, height: "auto" }}
-									exit={{ opacity: 0, height: 0 }}
-								>
-									<p className=" max-w-[787px] text-justify text-[18px] mb-4 text--lg">
-										{item.answer}
-									</p>
-								</motion.div>
-							)}
-						</AnimatePresence>
-						<hr />
-					</div>
-				))}
+					);
+				})}
 			</div>
 		</motion.div>
 	);
