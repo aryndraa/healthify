@@ -55,8 +55,8 @@ export function Diseases() {
             :
             <Banner
               image={diseaseHero}
-              title="Discover Reliable Drug Information for Safe and Informed Healthcare"
-              text="Explore a complete database of trusted drug information, including uses, dosages, side effects, precautions, interactions, and safety guidelines, to make well-informed healthcare decisions for yourself and your loved ones."
+              title="Explore Diseases for Better Health Awareness "
+              text="Gain insights into various diseases, their symptoms, prevention methods, and treatment options to empower your health journey."
             />
         }
 
