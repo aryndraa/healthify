@@ -131,7 +131,7 @@ export function DiseaseDetail() {
 
       <section className="mb-12">
         <div className="mb-2 lg:mb-4">
-          <MoreLink name={"More Disease"}/>
+          <MoreLink name={"More Disease"} link={'/disease'}/>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-2 lg:gap-4">
           {
