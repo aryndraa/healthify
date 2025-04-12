@@ -105,7 +105,7 @@ export function ClinicDetail() {
               <PharmacyClinicCard
                 name={item.name}
                 type={item.type}
-                id={item.id}
+                id={`/clinic/${item.id}`}
                 img={item.images[0]}
                 time={item.time}
               />
