@@ -18,7 +18,7 @@ export const BlogDetail = () => {
 		.slice(0, 3); 
 
 	return (
-		<div className="min-h-screen  mt-[100px] sm:mt-[160px] mb-4">
+		<div className="min-h-screen  mb-4">
 			<div className="justify-center items-center flex flex-col 2xl:flex-row 2xl:items-start gap-4 mb-12">
 				<div
 					className="min-w-[220px] min-h-[220px]   2xl:w-[549px] 2xl:h-[549px] rounded-[40px] bg-cover bg-center"

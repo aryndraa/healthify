@@ -36,7 +36,7 @@ export function PharmacyDetail() {
 
   return (
     <>
-      <section className="min-h-screen mt-[100px] lg:mt-[160px] mb-4">
+      <section className="min-h-screen mb-4">
 
         <div className="flex flex-col-reverse lg:flex-row gap-4 mb-6 lg:mb-14 2xl:mb-24">
           <img

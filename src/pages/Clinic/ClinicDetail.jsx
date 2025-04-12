@@ -18,7 +18,7 @@ export function ClinicDetail() {
 
   return (
     <>
-      <section className="mt-[100px] lg:mt-[160px] mb-2 lg:mb-4">
+      <section className=" mb-2 lg:mb-4">
         <div className="lg:flex gap-4 mb-2 lg:mb-4">
           <img
             src={detail.images[0]}
