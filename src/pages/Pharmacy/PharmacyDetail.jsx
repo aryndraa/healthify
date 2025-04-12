@@ -9,17 +9,14 @@ import {MoreLink} from "../../component/MoreLink.jsx";
 import {useEffect, useState} from "react";
 import searchIcon from "../../assets/search.svg";
 import {blogData} from "../Blog/blogdta.js";
+import {PharmacyClinicCard} from "../../component/PharmacyClinicCard.jsx";
+import {clinics} from "../Clinic/clinicData.js";
 
 export function PharmacyDetail() {
   const [filteredDrugs, setFilteredDrugs] = useState(drugData);
   const [searchQuery, setSearchQuery] = useState("");
   const {id} = useParams();
   const pharmacy = pharmacies.find((p) => p.id === parseInt(id));
-  const randomPharmacy = pharmacies
-    .filter((p) => p.id !== parseInt(id))
-    .sort(() => Math.random() - 0.5)
-    .slice(0, 3);
-
   useEffect(() => {
     let filtered = drugData;
 
@@ -31,6 +28,11 @@ export function PharmacyDetail() {
 
     setFilteredDrugs(filtered);
   }, [searchQuery]);
+
+  const randomPharmacy = pharmacies
+    .filter((p) => p.id !== parseInt(id))
+    .sort(() => Math.random() - 0.5)
+    .slice(0, 3);
 
   console.log(id);
 
@@ -46,9 +48,11 @@ export function PharmacyDetail() {
           />
 
           <div className="w-full flex flex-col gap-4 bg-white lg:bg-transparent p-4 lg:p-0 rounded-lg">
-            <div className="bg-white rounded-lg lg:rounded-xxl flex flex-col lg:flex-row justify-between p-0 lg:p-8 2xl:p-12">
+            <div
+              className="bg-white rounded-lg lg:rounded-xxl flex flex-col lg:flex-row justify-between p-0 lg:p-8 2xl:p-12">
               <div className="w-full lg:w-[65%] 2xl:w-[60%] mb-2">
-                <h1 className="text-xl lg:text-3xl 2xl:text-5xl lg:mb-4 2xl:mb-6 font-semibold leading-8">{pharmacy.name}</h1>
+                <h1
+                  className="text-xl lg:text-3xl 2xl:text-5xl lg:mb-4 2xl:mb-6 font-semibold leading-8">{pharmacy.name}</h1>
                 <p className="text-sm lg:text-base 2xl:text-lg">{pharmacy.address}</p>
               </div>
               <div className="flex h-fit items-center gap-4 text-sm lg:text-lg 2xl:text-2xl">
@@ -97,6 +101,24 @@ export function PharmacyDetail() {
                     drugLevel={drug.drugLevel}
                   />
                 ))
+            }
+          </div>
+        </div>
+
+        <div className="mt-12">
+          <MoreLink name={"More Pharmacy"}/>
+          <div className="grid grid-cols-1 lg:grid-cols-3 mt-2 lg:mt-4 gap-2 lg:gap-4">
+            {
+              randomPharmacy.map((item, index) => (
+                <PharmacyClinicCard
+                  key={index}
+                  name={item.name}
+                  type={item.type}
+                  id={item.id}
+                  img={item.image}
+                  time={item.time}
+                />
+              ))
             }
           </div>
         </div>
