@@ -1,11 +1,11 @@
 import { useNavigate } from "react-router-dom";
 
 export const BlogCard = ({ blog }) => {
-	 const navigate = useNavigate();
+	const navigate = useNavigate();
 
-		const handleClick = () => {
-			navigate(`/blog/${blog.id}`); // Arahkan ke halaman detail
-		};
+	const handleClick = () => {
+		navigate(`/blogs/${blog.id}`);
+	};
 	return (
 		<div className="items">
 			<div
@@ -36,4 +36,3 @@ export const BlogCard = ({ blog }) => {
 		</div>
 	);
 };
-

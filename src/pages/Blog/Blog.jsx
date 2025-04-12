@@ -266,6 +266,7 @@ export function Blog() {
 					className="rounded-[40px] max-[1550px]:hidden"
 				/>
 			</div>
+			
 			{filteredBlogs.length > 0 ? (
 				<div className="w-full grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-4 mt-4">
 					{filteredBlogs.map((blog) => (

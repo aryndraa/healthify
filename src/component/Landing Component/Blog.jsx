@@ -1,18 +1,26 @@
-import Blog1 from "../../assets/Ellipse 5-1.svg";
-import Blog2 from "../../assets/Ellipse 5-2.svg";
-import Blog3 from "../../assets/Ellipse 5.svg";
+import { useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import { blogData } from "../../pages/Blog/blogdta";
+import { BlogCard } from "../BlogCard";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+
 export const Blogs = () => {
 	const navigate = useNavigate();
+	const { id } = useParams();
+
+	const randomBlogs = blogData
+		.filter((b) => b.id !== parseInt(id))
+		.sort(() => Math.random() - 0.5)
+		.slice(0, 3);
+
 	const { ref, inView } = useInView({ triggerOnce: true });
 	return (
 		<motion.div
 			ref={ref}
 			initial={{ opacity: 0, y: 100 }}
 			animate={inView ? { opacity: 1, y: 0 } : {}}
-			transition={{ duration: 1,  }}
+			transition={{ duration: 1 }}
 			className=" flex  flex-col gap-4 "
 		>
 			<div className="items">
@@ -36,94 +44,10 @@ export const Blogs = () => {
 					</svg>
 				</div>
 			</div>
-			<div className="grid grid-cols-1 2xl:grid-cols-3 justify-center gap-4">
-				{/* blog content 1  */}
-				<div className="items">
-					<div className="BLOG bg-white h-screen flex flex-col justify-between hover:">
-						<div className="flex flex-col gap-6 justify-between lg:flex-row">
-							<div className="flex gap-4">
-								<p className="Tag ">Health</p>
-								<p className="Tag ">Disease</p>
-							</div>
-							<img
-								className="w-24 sm:w-[120px] h-auto"
-								src={Blog3}
-								alt="Blog timoni image"
-							/>
-						</div>
-						<div className="Blog-Content flex flex-col gap-4">
-							<p className="text--2xl font-semibold">
-								This is why you always open incognito tabs at
-								night
-							</p>
-							<p className="text--lg">
-								Market important all turn accountable like cc
-								didn&apos;t. Turn dog commitment engagement
-								contribution book silently I container.
-								Competitors procrastinating unpack marginalised
-								company please.{" "}
-							</p>
-						</div>
-					</div>
-				</div>
-				{/* blog content 2 */}
-				<div className="items">
-					<div className="BLOG bg-white h-screen flex flex-col justify-between">
-						<div className="flex flex-col gap-6 justify-between lg:flex-row">
-							<div className="flex gap-4">
-								<p className="Tag text-whi">Health</p>
-								<p className="Tag ">Disease</p>
-							</div>
-							<img
-								className="w-24 sm:w-[120px] h-auto"
-								src={Blog2}
-								alt="Blog timoni image"
-								height={140}
-							/>
-						</div>
-						<div className="Blog-Content flex flex-col gap-4">
-							<p className="text--2xl font-semibold">
-								New virus Nvidia 5090 make gamers broke
-							</p>
-							<p className="text--lg">
-								Market important all turn accountable like cc
-								didn&apos;t. Turn dog commitment engagement
-								contribution book silently I container.
-								Competitors procrastinating unpack marginalised
-								company please.{" "}
-							</p>
-						</div>
-					</div>
-				</div>
-				{/* blog content 3  */}
-				<div className="items">
-					<div className="BLOG bg-white h-screen flex flex-col justify-between">
-						<div className="flex flex-col gap-6 justify-between lg:flex-row">
-							<div className="flex gap-4">
-								<p className="Tag text-whi">Health</p>
-								<p className="Tag ">Disease</p>
-							</div>
-							<img
-								className="w-24 sm:w-[120px] h-auto"
-								src={Blog1}
-								alt="Blog timoni image"
-								height={140}
-							/>
-						</div>
-						<div className="Blog-Content flex flex-col gap-4">
-							<p className="text--2xl font-semibold">
-								Cheat code to boost your immune (100% Legit)
-							</p>
-							<p className="text--lg">
-								Market important all turn accountable like cc
-								didn&apos;t. Turn dog commitment engagement
-								contribution book silently I container.
-								Competitors procrastinating unpack marginalised
-								company please.{" "}
-							</p>
-						</div>
-					</div>
-				</div>
+			<div className="w-full grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 justify-center gap-4 mt-4">
+				{randomBlogs.map((blog) => (
+					<BlogCard key={blog.id} blog={blog} />
+				))}
 			</div>
 		</motion.div>
 	);

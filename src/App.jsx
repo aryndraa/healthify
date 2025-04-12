@@ -42,17 +42,24 @@ const App = () => {
 					/>
 				
 
-          <Route
-						path="/disease/*"
-						element={
-							<DiseaseProvider>
-								<Routes>
-									<Route path="" element={<Diseases />} />
-									<Route path="searched" element={<DiseasesSearched />} />
-									<Route path=":id" element={<DiseaseDetail />} />
-								</Routes>
-							</DiseaseProvider>
-					}/>
+						<Route
+							path="/disease/*"
+							element={
+								<DiseaseProvider>
+									<Routes>
+										<Route path="" element={<Diseases />} />
+										<Route
+											path="searched"
+											element={<DiseasesSearched />}
+										/>
+										<Route
+											path=":id"
+											element={<DiseaseDetail />}
+										/>
+									</Routes>
+								</DiseaseProvider>
+							}
+						/>
 
           <Route
 						path="/clinic/*"
@@ -68,7 +75,7 @@ const App = () => {
 					/>
 
 						<Route path="/blogs" element={<Blog />} />
-						<Route path="/blog/:id" element={<BlogDetail />} />
+						<Route path="/blogs/:id" element={<BlogDetail />} />
 
 						<Route path="/drugs" element={<Drugs />} />
 						<Route path="/drugs/:id" element={<DrugDetail />} />
