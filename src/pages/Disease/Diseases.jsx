@@ -38,7 +38,7 @@ export function Diseases() {
 
   return (
     <>
-      <section className="min-h-screen mt-[100px] lg:mt-[160px] mb-4">
+      <section className="min-h-screen  mb-4">
         <div className="w-full flex  gap-2 items-center mb-4">
           {
             letterSelect === "all" &&
@@ -60,7 +60,7 @@ export function Diseases() {
             />
         }
 
-        <div className="grid grid-cols-1 w lg:grid-cols-3 gap-x-0 gap-y-4  lg:gap-4 my-4 lg:my-12">
+        <div className="grid grid-cols-1 w lg:grid-cols-3 gap-x-0 gap-y-4  lg:gap-4 my-4 lg:my-8 2xl:my-12">
           {
             search && search.length > 0 ?
               ""
