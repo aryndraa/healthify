@@ -6,7 +6,7 @@ const Footer = () => {
 			setEmail(""); // Clear input
 		};
 	return (
-		<footer className="bg-[#213170] text-white p-10 sm:p-16 rounded-[40px]">
+		<footer className="bg-[#213170] text-white lg:p-10 2xl:p-16 rounded-xl lg:rounded-[40px]">
 			<div className="container mx-auto flex justify-between max-[1280px]:justify-start ">
 				<div className=" hidden max-w-[536px] xl:flex flex-col gap-12">
 					<div>
@@ -39,7 +39,7 @@ const Footer = () => {
 					<div className="min-w-[200px] min-[1440px]:w-[652px]">
 						<div className="hidden xl:flex justify-between items-center mb-6">
 							<input
-								className="text--38 font-semibold bg-transparent placeholder-white focus:outline-none focus:ring-0 focus:border-none"
+								className="text-5xl font-semibold bg-transparent placeholder-white focus:outline-none focus:ring-0 focus:border-none"
 								type="email"
 								placeholder="Enter your email"
 								value={email}
