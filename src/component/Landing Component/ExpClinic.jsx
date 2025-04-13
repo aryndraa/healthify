@@ -15,7 +15,7 @@ export const ExpClinic = () => {
 			<div className="items">
 				<div
 					onClick={() => navigate("/clinic")}
-					className="BOX2 bg-[#213170] flex flex-col h-screen justify-between p-8 group   "
+					className="BOX2 bg-[#213170] w-screen flex flex-col h-screen justify-between p-8 group   "
 				>
 					<div className="flex flex-col gap-4">
 						<div className="flex justify-between ">

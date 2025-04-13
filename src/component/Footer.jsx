@@ -118,7 +118,7 @@ const Footer = () => {
 							<div className="flex flex-col gap-3 text--lg">
 								<li>
 									<a
-										href="/clinics"
+										href="/clinic"
 										className="opacity-35 hover:opacity-100 transition-all duration-150"
 									>
 										Clinics
