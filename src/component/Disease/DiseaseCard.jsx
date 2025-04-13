@@ -18,8 +18,8 @@ export const DiseaseCard = ({id, name, gejala, deskripsi, loading}) => {
         loading ?
           (
             <>
-              <div className="bg-white  rounded-xxl absolute inset-0"/>
-              <div className="bg-neutral-300 animate-pulse rounded-xxl absolute inset-0"/>
+              <div className="bg-white rounded-xl lg:rounded-xxl absolute inset-0"/>
+              <div className="bg-neutral-300 animate-pulse rounded-xl lg:rounded-xxl absolute inset-0"/>
             </>
           )
           :

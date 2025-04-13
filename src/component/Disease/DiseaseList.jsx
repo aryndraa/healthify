@@ -60,7 +60,7 @@ export const DiseaseList = ({loading}) => {
 
   if(letterSelect !== "all" ) {
     return (
-      <div className="grid grid-cols-1   gap-4 mb-8 w-full">
+      <div className="grid grid-cols-1 md:grid-cols-2   gap-4 mb-8 w-full">
         {filteredData.map((item, index) => (
           <DiseaseCard
             key={index}
@@ -131,7 +131,7 @@ export const DiseaseList = ({loading}) => {
 
   if(search.length > 0 && filteredData.length > 0) {
     return (
-      <div className="grid grid-cols-1 lg:grid-cols-3  gap-4 mb-8 w-full">
+      <div className="grid grid-cols-2   gap-4 mb-8 w-full">
 
         {filteredData.map((item, index) => (
           <DiseaseCard

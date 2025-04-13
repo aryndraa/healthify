@@ -65,7 +65,7 @@
 
 		return (
 			<>
-				<section className="min-h-screen relative  mb-4">
+				<section className="max-h-fit relative  mb-4">
 					<div className="w-full flex  gap-2 items-center mb-4">
 						<SearchBar
 							placeholder="Search nearby pharmacy"
