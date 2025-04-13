@@ -2,6 +2,7 @@ import {useEffect, useState} from "react";
 import {DiseaseCard} from "./DiseaseCard.jsx";
 import {dieases} from "../../pages/Disease/diseaseData.js";
 import {useDisease} from "../../contexts/DiseaseContext.jsx";
+import {useNavigate} from "react-router-dom";
 
 export const DiseaseList = ({loading}) => {
   const {search, setSearch, letterSelect, setLetterSelect} = useDisease()
