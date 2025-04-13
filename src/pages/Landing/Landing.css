@@ -30,7 +30,7 @@
 		align-items: center;
 		padding: 8px 24px;
 		gap: 4px;
-		width: max-content;
+		/* width: max-content; */
 		border-radius: 40px;
 		background-color: white;
 		border: solid;
@@ -47,7 +47,6 @@
 	.Container1 {
 		display: flex;
 		flex-direction: column;
-		gap: 16px;
 		max-width: 1680px;
 	}
 
@@ -76,7 +75,7 @@
 
 	.BOX {
 		margin-top: 16px;
-		max-width: 408px;
+
 		min-height: 350px;
 		padding: 32px;
 		background-color: white;
@@ -84,14 +83,14 @@
 	}
 	.BOX2 {
 		max-height: 450px;
-		width: 549px;
+		/* width: 549px; */
 		border-radius: 40px;
 	}
 	
 
 	.BLOG {
 		max-height: 450px;
-		width: 549px;
+		/* width: 549px; */
 		padding: 32px;
 		border-radius: 40px;
 	}

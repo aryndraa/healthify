@@ -9,11 +9,11 @@
 	padding: 0;
 	font-family: "Figtree", sans-serif;
 	scroll-behavior: smooth;
-	cursor: url('./assets/Ccusor.png') , auto ;
+	cursor: url('./assets/cursorhea.svg') , auto ;
 }
 button{
 	
-	cursor: url('./assets/Ccusor.png') , auto ;
+	cursor: url('./assets/cursorhea.svg') , auto ;
 }
 
 body {
