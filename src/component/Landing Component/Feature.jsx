@@ -1,18 +1,23 @@
 import patient from "../../assets/patient.png";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { useNavigate } from "react-router-dom";
 
 export const Feature = () => {
+	const navigate = useNavigate()
 	const { ref, inView } = useInView({ triggerOnce: true });
 	return (
 		<motion.div
 			ref={ref}
 			initial={{ opacity: 0, y: 100 }}
 			animate={inView ? { opacity: 1, y: 0 } : {}}
-			transition={{ duration: 1}}
+			transition={{ duration: 1 }}
 			className="grid grid-cols-1 min-[1024px]:grid-cols-2 2xl:grid-cols-4 gap-4 "
 		>
-			<div className="items   group hover">
+			<div
+				className="items group hover"
+				onClick={() => navigate("/clinic")}
+			>
 				<div className="BOX hover:bg-[#213170] hover:text-white  transition-all duration-300">
 					<div className="flex justify-between  mb-[71px]   ">
 						<p className="text--4xl font-semibold w-1/2  ">
@@ -41,7 +46,7 @@ export const Feature = () => {
 				</div>
 			</div>
 
-			<div className="items   group">
+			<div className="items group" onClick={() => navigate("/pharmacy")}>
 				<div className="BOX hover:bg-[#213170] hover:text-white  transition-all duration-300">
 					<div className="flex justify-between  mb-[71px]">
 						<p className="text--4xl font-semibold w-1/2  ">
@@ -94,7 +99,7 @@ export const Feature = () => {
 				</div>
 			</div>
 
-			<div className="items   group">
+			<div className="items   group" onClick={() => navigate("/disease")}>
 				<div className="BOX hover:bg-[#213170] hover:text-white  transition-all duration-300 flex flex-col justify-between">
 					<div className="flex justify-between  mb-[71px]">
 						<p className="text--4xl font-semibold w-1/2  ">
