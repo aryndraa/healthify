@@ -243,30 +243,33 @@ export function Blog() {
 					</div>
 				</div>
 			)}
-			<div className="hidden min-h-[400px] p-64px sm:flex  gap-4 ">
-				<div className=" bg-white flex flex-col justify-between p-[64px] rounded-[40px] ">
-					<p className=" text--5xl font-semibold">
-						Expand Your Medical Knowledge with Expert Blog Insights
-						and Awareness
-					</p>
-					<p className=" text--lg">
-						Stay informed and empowered with our expert-written
-						blogs. Explore in-depth articles on drugs, diseases, and
-						healthcare topics designed to expand your medical
-						knowledge and raise health awareness. Whether you're
-						looking for reliable information or insights to make
-						better health decisions, our blog is your go-to resource
-						for learning and education.
-					</p>
+			{/* Hero Section */}
+			{!searchQuery && tagsActive.length === 0 && (
+				<div className="hidden min-h-[400px] p-64px sm:flex  gap-4 ">
+					<div className=" bg-white flex flex-col justify-between p-[64px] rounded-[40px] ">
+						<p className=" text--5xl font-semibold">
+							Expand Your Medical Knowledge with Expert Blog
+							Insights and Awareness
+						</p>
+						<p className=" text--lg">
+							Stay informed and empowered with our expert-written
+							blogs. Explore in-depth articles on drugs, diseases,
+							and healthcare topics designed to expand your
+							medical knowledge and raise health awareness.
+							Whether you're looking for reliable information or
+							insights to make better health decisions, our blog
+							is your go-to resource for learning and education.
+						</p>
+					</div>
+					<img
+						src={idemo3}
+						alt="particle image"
+						width={400}
+						className="rounded-[40px] max-[1550px]:hidden"
+					/>
 				</div>
-				<img
-					src={idemo3}
-					alt="particle image"
-					width={400}
-					className="rounded-[40px] max-[1550px]:hidden"
-				/>
-			</div>
-			
+			)}
+
 			{filteredBlogs.length > 0 ? (
 				<div className="w-full grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-4 mt-4">
 					{filteredBlogs.map((blog) => (

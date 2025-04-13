@@ -156,28 +156,30 @@ export function Drugs() {
 			)}
 
 			{/* Hero Section */}
-			<div className="   flex items-stretch xl:gap-4 mb-4">
-				<div>
-					<img
-						src={drugsImage}
-						alt="drugs illustration"
-						className="w-[28rem] 2xl:w-full object-cover rounded-xxl h-full max-[1550px]:hidden"
-					/>
+			{!searchQuery && tagsActive.length === 0 && (
+				<div className="hidden sm:flex items-stretch xl:gap-4 mb-4">
+					<div>
+						<img
+							src={drugsImage}
+							alt="drugs illustration"
+							className="w-[28rem] 2xl:w-full object-cover rounded-xxl h-full max-[1550px]:hidden"
+						/>
+					</div>
+					<div className="bg-white flex-1 min-h-full rounded-xxl p-10 2xl:p-16">
+						<h1 className="font-semibold text-4xl 2xl:text-5xl mb-6 2xl:mb-16">
+							Discover Reliable Drug Information for Safe and
+							Informed Healthcare
+						</h1>
+						<p className="text-sm 2xl:text-xl">
+							Explore a complete database of trusted drug
+							information, including uses, dosages, side effects,
+							precautions, interactions, and safety guidelines, to
+							make well-informed healthcare decisions for yourself
+							and your loved ones.
+						</p>
+					</div>
 				</div>
-				<div className="bg-white flex-1 min-h-full rounded-xxl p-10 2xl:p-16">
-					<h1 className="font-semibold text-4xl 2xl:text-5xl mb-6 2xl:mb-16">
-						Discover Reliable Drug Information for Safe and Informed
-						Healthcare
-					</h1>
-					<p className="text-sm 2xl:text-xl">
-						Explore a complete database of trusted drug information,
-						including uses, dosages, side effects, precautions,
-						interactions, and safety guidelines, to make
-						well-informed healthcare decisions for yourself and your
-						loved ones.
-					</p>
-				</div>
-			</div>
+			)}
 
 			{/* Drug List */}
 			{filteredDrugs.length > 0 ? (

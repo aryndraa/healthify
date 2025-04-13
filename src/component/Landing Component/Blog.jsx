@@ -26,7 +26,7 @@ export const Blogs = () => {
 			<div className="items">
 				<div
 					onClick={() => navigate("/blogs")}
-					className=" flex justify-between max-w-[549px] min-[1441px]:max-w-[1920px] w-screen py-[32px] px-[48px] bg-white rounded-[40px] items-center gap-2 group  "
+					className=" flex justify-between min-[1441px]:max-w-[1920px] w-screen py-[32px] px-[48px] bg-white rounded-[40px] items-center gap-2 group  "
 				>
 					<p className="text--5xl font-semibold">Explore Our Blogs</p>
 					<svg

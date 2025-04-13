@@ -15,9 +15,9 @@ export const ExpPharmacy = () => {
 			<div className="items">
 				<div
 					onClick={() => navigate("/pharmacy/2")}
-					className="BOX2  flex flex-col h-screen w-screen justify-between bg-Jinx bg-cover   "
+					className="BOX2  flex flex-col h-screen justify-between bg-Jinx bg-cover   "
 				>
-					<div className="p-8 flex flex-col justify-between h-screen hover:bg-blue-300 hover:bg-opacity-40 rounded-[40px] group">
+					<div className="p-8 flex flex-col w-full justify-between h-screen hover:bg-blue-300 hover:bg-opacity-40 rounded-[40px] group">
 						<svg
 							className="rounded-full p-[10px] w-[50px] h-[50px] md:w-[72px] md:h-[72px] md:p-[20px] self-end transition-transform duration-300 bg-white  group-hover:border-solid group-hover:border-[#C5E5FF]  group-hover:border-[3px] group-hover:rotate-45  group-hover:bg-[#213170]"
 							xmlns="http://www.w3.org/2000/svg"
@@ -101,7 +101,7 @@ export const ExpPharmacy = () => {
 			<div className="items">
 				<div
 					onClick={() => navigate("/pharmacy")}
-					className="BOX2 bg-[#C5E5FF] flex flex-col h-screen justify-between p-8 group  "
+					className="BOX2 bg-[#C5E5FF] flex flex-col w-screen h-screen justify-between p-8 group  "
 				>
 					<div className="flex flex-col gap-4">
 						<div className="flex justify-between ">
