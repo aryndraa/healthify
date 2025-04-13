@@ -31,8 +31,8 @@ export function DrugDetail() {
 
 	return (
 		<div className="min-h-screen  mb-4">
-			<div className="flex flex-col xl:flex-row gap-4  justify-center items-center 2xl:items-start">
-				<div className="w-screen p-10 2xl:min-w-[549px] ">
+			<div className="flex flex-col xl:flex-row  justify-center xl:items-start items-center 2xl:items-start">
+				<div className="w-screen pb-10 xl:pb-0 px-12 2xl:min-w-[549px] ">
 					<div className="flex justify-between items-center bg-white rounded-[40px] p-12  ">
 						<div className=" flex flex-col ">
 							<h2 className="font-semibold text--5xl">
@@ -132,6 +132,7 @@ export function DrugDetail() {
 					</p>
 				</div>
 			</div>
+			
 			<div className="mt-12">
 				<div className=" flex justify-between py-[32px] px-[48px] bg-white rounded-[40px] items-center gap-2 group " onClick={()=> navigate("/drugs")}>
 					<p className="text--5xl font-semibold">More Drugs</p>
