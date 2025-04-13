@@ -38,7 +38,7 @@ export function Diseases() {
 
   return (
     <>
-      <section className="min-h-screen mt-[100px] lg:mt-[160px] mb-4">
+      <section className="min-h-screen  mb-4">
         <div className="w-full flex  gap-2 items-center mb-4">
           {
             letterSelect === "all" &&
@@ -55,12 +55,12 @@ export function Diseases() {
             :
             <Banner
               image={diseaseHero}
-              title="Discover Reliable Drug Information for Safe and Informed Healthcare"
-              text="Explore a complete database of trusted drug information, including uses, dosages, side effects, precautions, interactions, and safety guidelines, to make well-informed healthcare decisions for yourself and your loved ones."
+              title="Explore Diseases for Better Health Awareness "
+              text="Gain insights into various diseases, their symptoms, prevention methods, and treatment options to empower your health journey."
             />
         }
 
-        <div className="grid grid-cols-1 w lg:grid-cols-3 gap-x-0 gap-y-4  lg:gap-4 my-4 lg:my-12">
+        <div className="grid grid-cols-1 w lg:grid-cols-3 gap-x-0 gap-y-4  lg:gap-4 my-4 lg:my-8 2xl:my-12">
           {
             search && search.length > 0 ?
               ""

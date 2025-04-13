@@ -21,7 +21,7 @@ export function DrugDetail() {
 
 	if (!drug) {
 		return (
-			<div className="min-h-screen mt-[100px] sm:mt-[160px] mb-4" >
+			<div className="min-h-screen  mb-4" >
 				<h1 className="text-center text-2xl font-bold">
 					Obat tidak ditemukan
 				</h1>
@@ -30,7 +30,7 @@ export function DrugDetail() {
 	}
 
 	return (
-		<div className="min-h-screen  mt-[100px] sm:mt-[160px] mb-4">
+		<div className="min-h-screen  mb-4">
 			<div className="flex flex-col 2xl:flex-row gap-4  justify-center items-center 2xl:items-start">
 				<div className="max-w-[549px] 2xl:min-w-[549px] ">
 					<div className="flex justify-between items-center bg-white rounded-[40px] p-12  ">

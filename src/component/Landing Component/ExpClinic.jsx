@@ -70,21 +70,27 @@ export const ExpClinic = () => {
 								clipRule="evenodd"
 							></path>
 						</svg>
-						<div className="flex flex-col  bg-white rounded-[40px] p-[22px]">
+						<div
+							className="flex flex-col  bg-white rounded-[40px] p-[22px]"
+							onClick={() => navigate("/clinic/1")}
+						>
 							<div className="flex items-center justify-between ease-in-out duration-700 group-hover:mb-6">
 								<div>
 									<p className="text--2xl font-semibold">
-										Mahardika&apos;s Clinics
+										Klinik Sudirman Medical Centre
 									</p>
-									<p className="text-base">Dental Clinics</p>
+									<p className="text-base">
+										Ophthalmology Clinics
+									</p>
 								</div>
 								<div>
 									<p className="text--2xl font-medium">2KM</p>
 								</div>
 							</div>
 							<p className="text--lg font-medium max-h-0 overflow-hidden opacity-0 transition-[max-height,opacity] duration-700 ease-in-out group-hover:max-h-[200px] group-hover:opacity-100  ">
-								“Mahardika Clinics is one of the premier dental
-								clinics located in East Denpasar.”
+								“Klinik Sudirman Medical Centre is one of the
+								premier dental clinics located in East
+								Denpasar.”
 							</p>
 						</div>
 					</div>
@@ -92,7 +98,7 @@ export const ExpClinic = () => {
 			</div>
 			<div className="items">
 				<div
-					onClick={() => navigate("/clinic")}
+					onClick={() => navigate("/clinic/2")}
 					className="BOX2  flex flex-col h-screen w-screen justify-between bg-vaelclinic bg-cover    "
 				>
 					<div className="p-8 flex flex-col justify-between h-screen hover:bg-blue-300 hover:bg-opacity-40 rounded-[40px] group">
@@ -113,10 +119,10 @@ export const ExpClinic = () => {
 							<div className="flex items-center justify-between ease-in-out duration-700 group-hover:mb-6">
 								<div>
 									<p className="text--2xl font-semibold">
-										Vaelrino Clinics & Medics
+										Nusa Medica Clinic
 									</p>
 									<p className="text-base">
-										Cardiology Clinic
+										General Medical Clinics
 									</p>
 								</div>
 								<div>
@@ -124,8 +130,8 @@ export const ExpClinic = () => {
 								</div>
 							</div>
 							<p className="text--lg font-medium max-h-0 overflow-hidden opacity-0 transition-[max-height,opacity] duration-700 ease-in-out group-hover:max-h-[200px] group-hover:opacity-100  ">
-								“Vaelrino Clinics & Medics is one of the premier
-								Cardiology Clinic located in South Denpasar.”
+								“Nusa Medica Clinic is one of the General
+								Medical Clinics located in South Denpasar.”
 							</p>
 						</div>
 					</div>

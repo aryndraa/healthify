@@ -1,13 +1,14 @@
 
 export const Banner = ({image, title, text}) => {
   return (
-    <div className="flex flex-col lg:flex-row lg:items-stretch gap-4 mb-4">
+    <div className="flex flex-col lg:flex-row lg:items-stretch gap-4 mb-4"
+    >
       <div className="hidden lg:block bg-transparent">
         <img src={image} alt=""
              className="w-full lg:w-[28rem] 2xl:w-full object-cover lg:rounded-xxl bg rounded-lg h-full"/>
       </div>
-      <div className="bg-white flex-1 min-h-full rounded-xl lg:rounded-xxl p-6 lg:p-10 2xl:p-16">
-        <h1 className="font-semibold text-xl lg:text-4xl 2xl:text-5xl mb-2 lg:mb-6 2xl:mb-16">
+      <div className="bg-white flex flex-col justify-between flex-1 min-h-full rounded-xl lg:rounded-xxl p-6 lg:p-10 2xl:p-16">
+        <h1 className="font-semibold text-xl lg:text-4xl 2xl:text-5xl leading-8">
           {title}
         </h1>
         <p className="text-sm 2xl:text-xl">

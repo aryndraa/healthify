@@ -3,7 +3,7 @@ import {pharmacies} from "./../../pages/Pharmacy/pharmachyData.js" // Pastikan p
 import { useEffect, useState } from "react";
 import { usePharmacy } from "./../../contexts/PharmacyContext";
 
-export const ListPharmacies = ({isLoading}) => {
+export const  ListPharmacies = ({isLoading}) => {
   const { type, search, setSearch } = usePharmacy();
   const [filteredData, setFilteredData] = useState(pharmacies);
 

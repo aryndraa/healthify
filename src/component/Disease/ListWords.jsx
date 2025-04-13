@@ -50,8 +50,9 @@
       </button>
 
       {isModalOpen && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
-          <div className="bg-white p-6 rounded-lg shadow-lg w-[90%] max-w-md">
+        <div className="fixed z-50 inset-0 flex items-center justify-center ">
+          <button onClick={() => setIsModalOpen(false)} className="fixed z-50 inset-0 bg-black bg-opacity-50 "></button>
+          <div className="bg-white z-50 p-6 rounded-lg shadow-lg w-[90%] max-w-md">
             <h2 className="text-lg font-bold mb-4">Select a Letter</h2>
             <div className="grid grid-cols-6 gap-2">
               <button

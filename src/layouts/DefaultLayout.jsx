@@ -4,9 +4,9 @@ import PropTypes from "prop-types";
 
 export const DefaultLayout = ({children}) => {
   return (
-		<div className="w-full max-w-[1920px] px-4 mb-4   md:px-32 ">
+		<div className="w-full max-w-[1920px] px-4 mb-4 md:px-8 lg:px-16  2xl:px-[120px]">
 			<Navbar />
-			<main className="w-full mt-[100px] lg:mt-[134px]">{children}</main>
+			<main className="w-full  pt-[100px]  lg:pt-36 2xl:pt-[164px]">{children}</main>
 			<Footer />
 		</div>
   );

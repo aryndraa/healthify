@@ -18,7 +18,7 @@ export const BlogDetail = () => {
 		.slice(0, 3); 
 
 	return (
-		<div className="min-h-screen  mt-[100px] sm:mt-[160px] mb-4">
+		<div className="min-h-screen  mb-4">
 			<div className="justify-center items-center flex flex-col 2xl:flex-row 2xl:items-start gap-4 mb-12">
 				<div
 					className="min-w-[220px] min-h-[220px]   2xl:w-[549px] 2xl:h-[549px] rounded-[40px] bg-cover bg-center"
@@ -41,93 +41,42 @@ export const BlogDetail = () => {
 					</div>
 					<div className="bg-white p-12 flex flex-col rounded-[40px] gap-4">
 						<p className="text--lg">
-							in today’s fast-paced world, access to reliable
-							medical information is more important than ever.
-							With countless sources available online, it can be
-							challenging to separate fact from misinformation.
-							That’s why our expert-driven blog is dedicated to
-							providing accurate, up-to-date insights on drugs,
-							diseases, and healthcare topics—helping you stay
-							informed and make better health decisions
+							{blog.content[0].orientations}
 						</p>
 						<br />
-						<p className="text-lg  font-bold">
-							Why Medical Knowledge Matters
+						<p className="text--lg  font-bold">
+							{blog.content[0].orientTitle}
 						</p>
-						<p className="text-lg">
-							Understanding medical conditions, treatments, and
-							medications empowers you to take charge of your
-							health. Whether you’re a patient looking for
-							guidance, a caregiver seeking reliable resources, or
-							simply someone who values health education,
-							expanding your knowledge can lead to better outcomes
-							and informed choices.
+						<p className="text--lg">
+							{blog.content[0].orientExplan}
 						</p>
 						<br />
-						<p className="text-lg font-bold">
-							What You’ll Find in Our Blog
+						<p className="text--lg font-bold">
+							{blog.content[0].benefit}
 						</p>
-						<p className="text-lg">
-							Our blog covers a wide range of health-related
-							topics, including:
-							<ul className="list-disc pl-5">
-								<li>
-									<p className="text--lg">
-										Drug Information: Learn about common
-										medications, their uses, side effects,
-										and interactions.
-									</p>
-								</li>
-								<li>
-									<p className="text--lg">
-										Disease Awareness: Get insights into
-										symptoms, prevention, and treatment
-										options for various conditions.
-									</p>
-								</li>
-								<li>
-									<p className="text--lg">
-										Healthcare Tips: Discover expert advice
-										on maintaining a healthy lifestyle and
-										managing chronic illnesses.
-									</p>
-								</li>
-								<li>
-									<p className="text--lg">
-										Medical Innovations: Stay updated on the
-										latest advancements in medicine and
-										healthcare technology.
-									</p>
-								</li>
-							</ul>
-						</p>
+						<ul className="text--lg list-disc ml-4">
+							{blog.content[0].listBenefit.map((item, index) => (
+								<li key={index}>{item.text}</li>
+							))}
+						</ul>
 						<br />
-						<p className="text-lg font-bold">
-							The Power of Reliable Information
+						<p className="text--lg font-bold">
+							{blog.content[0].Handling}
 						</p>
-						<p className="text-lg">
-							Misinformation can be harmful, especially when it
-							comes to health. That’s why all our content is
-							carefully researched and reviewed by medical
-							professionals to ensure accuracy and credibility. We
-							believe that knowledge is the key to better health,
-							and our goal is to make expert insights accessible
-							to everyone. Stay Informed, Stay Healthy
+						<p className="text--lg">
+							{blog.content[0].HandlingDesc}
 						</p>
+						<ul className="text--lg list-disc ml-4">
+							{blog.content[0].HandlingList.map((item, index) => (
+								<li key={index}>{item.text}</li>
+							))}
+						</ul>
 						<br />
-						<p className="text-lg">
-							Your health journey starts with knowledge. By
-							reading our blog, you’re not just gaining
-							information—you’re taking an active step toward a
-							healthier life. Explore our latest articles, stay
-							updated with medical trends, and empower yourself
-							with the awareness you need to make confident health
-							decisions.
+						<p className="text--lg font-bold">
+						Kesimpulan
 						</p>
-						<br />
-						<p className="text-lg">
-							Start exploring today and take control of your
-							health with trusted medical insights!
+						<p className="text--lg">
+							{blog.content[0].conclusion}
 						</p>
 					</div>
 				</div>
@@ -135,7 +84,7 @@ export const BlogDetail = () => {
 			{/* more blog  */}
 			<div className="mb-12">
 				<div
-					onClick={() => navigate('/blogs')}
+					onClick={() => navigate("/blogs")}
 					className=" flex justify-between py-[32px] px-[48px] bg-white rounded-[40px] items-center gap-2 group "
 				>
 					<p className="text--5xl font-semibold">More Blogs</p>

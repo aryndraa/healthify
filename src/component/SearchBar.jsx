@@ -1,8 +1,12 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import searchIcon from "../assets/search.svg";
 
-export const SearchBar = ({ onSearch, placeholder }) => {
+export const SearchBar = ({ onSearch, placeholder, clearTrigger }) => {
 	const [query, setQuery] = useState("");
+
+	useEffect(() => {
+		setQuery("");
+	}, [clearTrigger]);
 
 	const handleSearch = (e) => {
 		e.preventDefault();

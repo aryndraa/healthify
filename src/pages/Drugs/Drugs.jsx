@@ -9,6 +9,7 @@ import { Filter } from "../../component/Drugs/FilterDrug";
 export function Drugs() {
 	const [searchQuery, setSearchQuery] = useState("");
 	const [active, setActive] = useState(false);
+		const [clearTrigger, setClearTrigger] = useState(false);
 	const [tagsActive, setTagsActive] = useState([]);
 	const [filteredDrugs, setFilteredDrugs] = useState(drugData);
 
@@ -74,6 +75,7 @@ export function Drugs() {
 		<div className="relative min-h-screen mb-4">
 			<div className="w-full flex gap-2 items-center mb-4">
 				<SearchBar
+					clearTrigger={clearTrigger}
 					onSearch={setSearchQuery}
 					placeholder="Search Drugs on our listing"
 				/>
@@ -154,7 +156,7 @@ export function Drugs() {
 			)}
 
 			{/* Hero Section */}
-			<div className="flex items-stretch xl:gap-4 mb-4">
+			<div className="   flex items-stretch xl:gap-4 mb-4">
 				<div>
 					<img
 						src={drugsImage}
@@ -178,27 +180,36 @@ export function Drugs() {
 			</div>
 
 			{/* Drug List */}
-			<div className="w-full grid gap-4 grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4">
-				{filteredDrugs.length > 0 ? (
-					filteredDrugs
-						.slice(0, 12)
-						.map((drug) => (
-							<DrugCard
-								key={drug.id}
-								id={drug.id}
-								pricing={drug.pricing}
-								title={drug.title}
-								standFor={drug.standFor}
-								illustration={drug.ilustration}
-								drugLevel={drug.drugLevel}
-							/>
-						))
-				) : (
-					<p className="col-span-full text-center text-gray-500">
-						No results found.
-					</p>
-				)}
-			</div>
+			{filteredDrugs.length > 0 ? (
+				<div className="w-full grid gap-4 grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4">
+					{filteredDrugs.slice(0, 12).map((drug) => (
+						<DrugCard
+							key={drug.id}
+							id={drug.id}
+							pricing={drug.pricing}
+							title={drug.title}
+							standFor={drug.standFor}
+							illustration={drug.ilustration}
+							drugLevel={drug.drugLevel}
+						/>
+					))}
+				</div>
+			) : (
+				<div className="w-full flex flex-col items-center justify-center py-10 text-zinc-500 text-lg">
+					<h1 className="text-5xl mb-4">404 Not Found</h1>
+					<p>No Drugs found.</p>
+					<button
+						onClick={() => {
+							setSearchQuery("");
+							setTagsActive([]);
+							setClearTrigger((prev) => !prev);
+						}}
+						className="mt-4 underline text-blue-500"
+					>
+						Reset Search
+					</button>
+				</div>
+			)}
 		</div>
 	);
 }

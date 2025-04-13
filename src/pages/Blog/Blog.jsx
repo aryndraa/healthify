@@ -11,6 +11,7 @@ export function Blog() {
 	const [active, setActive] = useState(false);
 	const [tagsActive, setTagsActive] = useState([]);
 	const [filteredBlogs, setFilteredBlogs] = useState(blogData);
+	const [clearTrigger, setClearTrigger] = useState(false);
 
 	const tags = [
 		"Health",
@@ -121,6 +122,7 @@ export function Blog() {
 		<div className=" relative min-h-screen  mb-4">
 			<div className="w-full flex gap-2 items-center mb-4">
 				<SearchBar
+					clearTrigger={clearTrigger}
 					onSearch={setSearchQuery}
 					placeholder="Search some of our blogs"
 				/>
@@ -264,17 +266,29 @@ export function Blog() {
 					className="rounded-[40px] max-[1550px]:hidden"
 				/>
 			</div>
-			<div className="w-full grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-4 mt-4">
-				{filteredBlogs.length > 0 ? (
-					filteredBlogs.map((blog) => (
+			
+			{filteredBlogs.length > 0 ? (
+				<div className="w-full grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-4 mt-4">
+					{filteredBlogs.map((blog) => (
 						<BlogCard key={blog.id} blog={blog} />
-					))
-				) : (
-					<p className="col-span-full text-center text-gray-500">
-						No results found.
-					</p>
-				)}
-			</div>
+					))}
+				</div>
+			) : (
+				<div className="w-full text-center py-10 text-zinc-500 text-lg">
+					<h1 className="text-5xl mb-4">404 Not Found</h1>
+					<p>No Blog found.</p>
+					<button
+						onClick={() => {
+							setSearchQuery("");
+							setTagsActive([]);
+							setClearTrigger((prev) => !prev);
+						}}
+						className="mt-4 underline text-blue-500"
+					>
+						Reset Search
+					</button>
+				</div>
+			)}
 		</div>
 	);
 }

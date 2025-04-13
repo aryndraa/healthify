@@ -111,7 +111,7 @@ export function DiseaseDetail() {
 
   return (
     <>
-      <section className="mt-[100px] lg:mt-[160px] mb-4">
+      <section className="mb-4">
 
         <div className="flex flex-col lg:flex-row gap-4">
           <div className="flex-1">
@@ -125,13 +125,13 @@ export function DiseaseDetail() {
               </div>
             </div>
           </div>
-          <img src={detail.img} className="min-w-full h-[200px] lg:min-w-[420px] lg:h-[420px] 2xl:min-w-[549px] 2xl:h-[549px] bg-gray-300 rounded-xl lg:rounded-xxl"></img>
+          <img src={detail.img} className="object-cover min-w-full h-[200px] lg:min-w-[420px] lg:h-[420px] 2xl:min-w-[549px] 2xl:h-[549px] bg-gray-300 rounded-xl lg:rounded-xxl"></img>
         </div>
       </section>
 
       <section className="mb-12">
         <div className="mb-2 lg:mb-4">
-          <MoreLink name={"More Disease"}/>
+          <MoreLink name={"More Disease"} link={'/disease'}/>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-2 lg:gap-4">
           {

@@ -55,3 +55,31 @@ body::-webkit-scrollbar {
 .text--7xl {
 	font-size: clamp(2.5rem, -2.1875rem + 11vw, 4rem);
 }
+
+
+.animate_scroll_up {
+	animation: animate_scroll_up 0.4s forwards;
+}
+
+@keyframes animate_scroll_up {
+	from {
+		transform: translateY(-100%);
+	}
+	to {
+	transform: translateY(0);
+	}
+}
+
+.animate_scroll_down {
+	animation: animate_scroll_down 0.4s forwards;
+	position: fixed;
+}
+
+@keyframes animate_scroll_down {
+	from {
+		transform: translateY(0);
+	}
+	to {
+		transform: translateY(100%);
+	}
+}
