@@ -10,14 +10,14 @@ export const ExpPharmacy = () => {
 			initial={{ opacity: 0, y: 100 }}
 			animate={inView ? { opacity: 1, y: 0 } : {}}
 			transition={{ duration: 1 }}
-			className="grid grid-cols-1 2xl:grid-cols-3 gap-4 mb-12 mt-4  flex-row-reverse"
+			className="2xl:grid flex flex-col-reverse 2xl:grid-cols-3 gap-4 mb-12 mt-4 "
 		>
 			<div className="items">
 				<div
 					onClick={() => navigate("/pharmacy/2")}
-					className="BOX2  flex flex-col h-screen justify-between bg-Jinx bg-cover   "
+					className="BOX2  flex flex-col h-screen w-screen  justify-between bg-Jinx bg-cover   "
 				>
-					<div className="p-8 flex flex-col w-full justify-between h-screen hover:bg-blue-300 hover:bg-opacity-40 rounded-[40px] group">
+					<div className="p-8 flex flex-col justify-between h-screen hover:bg-blue-300 hover:bg-opacity-40 rounded-[40px] group">
 						<svg
 							className="rounded-full p-[10px] w-[50px] h-[50px] md:w-[72px] md:h-[72px] md:p-[20px] self-end transition-transform duration-300 bg-white  group-hover:border-solid group-hover:border-[#C5E5FF]  group-hover:border-[3px] group-hover:rotate-45  group-hover:bg-[#213170]"
 							xmlns="http://www.w3.org/2000/svg"
@@ -32,7 +32,7 @@ export const ExpPharmacy = () => {
 							></path>
 						</svg>
 						<div className="flex flex-col bg-white rounded-[40px] p-[22px]">
-							<div className="flex items-center justify-between ease-in-out duration-700 group-hover:mb-6">
+							<div className="flex items-center  justify-between ease-in-out duration-700 group-hover:mb-6">
 								<div>
 									<p className="text--2xl font-semibold">
 										Kimia Farma Pharmacy Teuku Umar

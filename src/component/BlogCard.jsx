@@ -14,7 +14,7 @@ export const BlogCard = ({ blog }) => {
 			>
 				<div className="flex flex-col gap-6 justify-between lg:flex-row">
 					{/* Tags */}
-					<div className="flex gap-4">
+					<div className="flex gap-4 h-fit">
 						{blog.tags.map((tag, index) => (
 							<p key={index} className="Tag">
 								{tag}
