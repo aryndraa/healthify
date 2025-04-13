@@ -25,7 +25,7 @@ export const Hero = () => {
 			ref={ref}
 			initial="hidden"
 			animate={inView ? "visible" : "hidden"}
-			className="max-w-screen flex gap-4 "
+			className="max-w-screen flex md:gap-4 "
 		>
 			<motion.div variants={fadeUpVariants} className="Container1 2xl:gap-4">
 				<div className="item-1 ">
@@ -95,7 +95,7 @@ export const Hero = () => {
 						variants={fadeUpVariants}
 						custom={6}
 						whileHover={{ scale: 1.02 }}
-						className="deskItem1 font-medium italic text--lg mt-8   "
+						className="deskItem1 hidden sm:block font-medium italic text--lg mt-8   "
 					>
 						“Great health stems from great knowledge, as
 						understanding our bodies and the factors that influence
@@ -134,7 +134,7 @@ export const Hero = () => {
 				variants={fadeUpVariants}
 				custom={9}
 				whileHover={{ scale: 1.02 }}
-				className="Container2 max-xl:hidden bg-cover bg-center rounded-[40px] w-screen   "
+				className="Container2 max-lg:hidden bg-cover bg-center rounded-[40px] w-screen   "
 				style={{ backgroundImage: `url(${IDemo})` }}
 			></motion.div>
 		</motion.div>
