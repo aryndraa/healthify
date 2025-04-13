@@ -7,7 +7,7 @@ import {useDisease} from "../../contexts/DiseaseContext.jsx";
 import {useEffect, useState} from "react";
 
 export function Diseases() {
-  const {search, setSearch, letterSelect} = useDisease();
+  const {search, setSearch, letterSelect, setLetterSelect} = useDisease();
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
@@ -28,6 +28,8 @@ export function Diseases() {
         setIsLoading(false);
       }, 800	);
 
+      setSearch('')
+
       return () => clearTimeout(delay);
     } else {
       setIsLoading(false);
@@ -38,15 +40,14 @@ export function Diseases() {
 
   return (
     <>
-      <section className="min-h-screen  mb-4">
+      <section className="max-h-fit  mb-4">
         <div className="w-full flex  gap-2 items-center mb-4">
-          {
-            letterSelect === "all" &&
             <SearchBar
               placeholder={"Search Disease on our listing"}
+              value={letterSelect}
               onSearch={setSearch}
+              onclick={() => setLetterSelect("all")}
             />
-          }
         </div>
 
         {
@@ -60,14 +61,9 @@ export function Diseases() {
             />
         }
 
-        <div className="grid grid-cols-1 w lg:grid-cols-3 gap-x-0 gap-y-4  lg:gap-4 my-4 lg:my-8 2xl:my-12">
-          {
-            search && search.length > 0 ?
-              ""
-              :
-              <ListWords/>
-          }
-          <div className={`${ search && search.length > 0  ? "col-span-3 " : "col-span-2"}`}>
+        <div className="grid grid-cols-1  lg:grid-cols-3 gap-x-0 gap-y-4  lg:gap-4 my-4 lg:my-8 2xl:my-12">
+          <ListWords/>
+          <div className={`${ search && search.length > 0  ? "col-span-2 " : "col-span-2"}`}>
             <DiseaseList search={search} loading={isLoading} />
           </div>
         </div>

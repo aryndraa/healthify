@@ -44,7 +44,7 @@ export function PharmacyDetail() {
           <img
             src={pharmacy.image}
             alt=""
-            className="h-[220px] 2xl:h-[549px] lg:h-[420px] p-4 lg:p-0 bg-white lg:bg-transparent  object-cover rounded-lg lg:rounded-xxl"
+            className="h-[220px] 2xl:h-[549px] lg:h-[420px] p-4 lg:p-0 bg-white lg:bg-transparent  object-cover rounded-xxl  lg:rounded-xxl"
           />
 
           <div className="w-full flex flex-col gap-4 bg-white lg:bg-transparent p-4 lg:p-0 rounded-lg">

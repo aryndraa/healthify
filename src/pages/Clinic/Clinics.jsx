@@ -71,7 +71,7 @@ export function Clinics() {
 
   return (
 		<>
-			<section className="min-h-screen  mb-4 relative">
+			<section className="max-h-fit  mb-4 relative">
 				<div className="w-full flex  gap-2 items-center mb-4">
 					<SearchBar
 						placeholder="Saerch clinics near you!"
@@ -159,7 +159,7 @@ export const Banner = ({image, title, text}) => {
 		>
 			<div className="hidden lg:block bg-transparent">
 				<img src={image} alt=""
-						 className="w-full lg:w-[28rem] 2xl:w-full object-cover lg:rounded-xxl bg rounded-lg h-full"/>
+						 className="w-full lg:w-[28rem] 2xl:w-full object-cover lg:rounded-[60px] bg rounded-lg h-full"/>
 			</div>
 			<div className="bg-white flex flex-col justify-between flex-1 min-h-full rounded-xl lg:rounded-xxl p-6 lg:p-10 2xl:p-16">
 				<h1 className="font-semibold text-xl lg:text-4xl 2xl:text-5xl leading-8">

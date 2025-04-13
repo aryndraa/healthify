@@ -44,11 +44,11 @@ const Navbar = () => {
 	];
 
 	return (
-		<div className={` top-0 left-0 right-0 w-full z-50 flex justify-center ${
+		<div className={` top-0 left-0 right-0 w-full z-50  flex justify-center ${
 			isScrolled ? 'fixed animate_scroll_up' : "absolute "
 		}`}>
 			<div
-				className={`w-screen z-50 transition-all rounded-b-xl duration-500 ${
+				className={`w-screen z-50 transition-all max-w-[1750px] rounded-b-xl duration-500 ${
 					isScrolled
 						? isScrollingDown
 							? "-translate-y-full bg-white shadow-md py-[18px] lg:py-4 px-5 md:px-8 lg:px-10 lg:mx-8 2xl:mx-16"
