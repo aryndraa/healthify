@@ -22,13 +22,13 @@ export const Explore = () => {
 				</p>
 			</div>
 
-			<div className="grid grid-cols-1 min-[1024px]:grid-cols-2 2xl:grid-cols-4  gap-4 ">
+			<div className="grid grid-cols-1 min-[800px]:grid-cols-2 2xl:grid-cols-4  gap-4 ">
 				<div className="items">
 					<div
 						onClick={() => navigate("/pharmacy")}
-						className="group relative w-[377px] min-h-[300px] min-[640px]:h-[400px]  bg-white rounded-[40px] overflow-hidden transition duration-300 hover:bg-[#213170] hover:shadow-xl hover:border-white hover:border-solid hover:border-[2px]  "
+						className="group relative  min-h-[300px] min-[640px]:h-[400px]  w-screen  bg-white rounded-[40px] overflow-hidden transition duration-300 hover:bg-[#213170] hover:shadow-xl hover:border-white hover:border-solid hover:border-[2px]  "
 					>
-						<div className="h-[200px] sm:h-[307px] justify-end flex rounded-[40px] transition-all duration-500 ease-in-out bg-Pharmacy group-hover:bg-none group-hover:transition-all ">
+						<div className="h-[200px] sm:h-[307px] bg-no-repeat  bg-cover justify-end flex rounded-[40px] transition-all duration-500 ease-in-out bg-Pharmacy group-hover:bg-none group-hover:transition-all ">
 							<svg
 								className="rounded-full p-[10px] w-[50px] h-[50px] md:w-[72px] md:h-[72px] md:p-[20px] m-4 transition-transform duration-300 group-hover:rotate-45"
 								style={{
@@ -61,9 +61,9 @@ export const Explore = () => {
 				<div className="items">
 					<div
 						onClick={() => navigate("/clinic")}
-						className="group relative w-[377px] min-h-[300px] min-[640px]:h-[400px]  bg-white rounded-[40px] overflow-hidden transition duration-300 hover:bg-[#213170] hover:shadow-xl hover:border-white hover:border-solid hover:border-[2px]  "
+						className="group relative  min-h-[300px] min-[640px]:h-[400px]  w-screen  bg-white rounded-[40px] overflow-hidden transition duration-300 hover:bg-[#213170] hover:shadow-xl hover:border-white hover:border-solid hover:border-[2px]  "
 					>
-						<div className="h-[200px] sm:h-[307px] justify-end flex rounded-[40px] transition-all duration-500 ease-in-out bg-Clinic group-hover:bg-none group-hover:transition-all ">
+						<div className="h-[200px] sm:h-[307px]  bg-no-repeat  bg-cover justify-end flex rounded-[40px] transition-all duration-500 ease-in-out bg-Clinic group-hover:bg-none group-hover:transition-all ">
 							<svg
 								className="rounded-full p-[10px] w-[50px] h-[50px] md:w-[72px] md:h-[72px] md:p-[20px] m-4 transition-transform duration-300 group-hover:rotate-45"
 								style={{
@@ -96,9 +96,9 @@ export const Explore = () => {
 				<div className="items">
 					<div
 						onClick={() => navigate("/drugs")}
-						className="group relative w-[377px] min-h-[300px] min-[640px]:h-[400px]  bg-white rounded-[40px] overflow-hidden transition duration-300 hover:bg-[#213170] hover:shadow-xl hover:border-white hover:border-solid hover:border-[2px]  "
+						className="group relative  min-h-[300px] min-[640px]:h-[400px]  w-screen  bg-white rounded-[40px] overflow-hidden transition duration-300 hover:bg-[#213170] hover:shadow-xl hover:border-white hover:border-solid hover:border-[2px]  "
 					>
-						<div className="h-[200px] sm:h-[307px] justify-end flex rounded-[40px] transition-all duration-500 ease-in-out bg-Drugs group-hover:bg-none group-hover:transition-all ">
+						<div className="h-[200px] sm:h-[307px] bg-no-repeat  bg-cover justify-end flex rounded-[40px] transition-all duration-500 ease-in-out bg-Drugs group-hover:bg-none group-hover:transition-all ">
 							<svg
 								className="rounded-full p-[10px] w-[50px] h-[50px] md:w-[72px] md:h-[72px] md:p-[20px] m-4 transition-transform duration-300 group-hover:rotate-45"
 								style={{
@@ -131,9 +131,9 @@ export const Explore = () => {
 				<div className="items">
 					<div
 						onClick={() => navigate("/disease")}
-						className="group relative w-[377px] min-h-[300px] min-[640px]:h-[400px]  bg-white rounded-[40px] overflow-hidden transition duration-300 hover:bg-[#213170] hover:shadow-xl hover:border-white hover:border-solid hover:border-[2px]  "
+						className="group relative  min-h-[300px] min-[640px]:h-[400px]  w-screen  bg-white rounded-[40px] overflow-hidden transition duration-300 hover:bg-[#213170] hover:shadow-xl hover:border-white hover:border-solid hover:border-[2px]  "
 					>
-						<div className="h-[200px] sm:h-[307px] justify-end flex rounded-[40px] transition-all duration-500 ease-in-out bg-Disease group-hover:bg-none group-hover:transition-all ">
+						<div className="h-[200px] sm:h-[307px] justify-end flex rounded-[40px] bg-no-repeat  bg-cover transition-all duration-500 ease-in-out bg-Disease group-hover:bg-none group-hover:transition-all ">
 							<svg
 								className="rounded-full p-[10px] w-[50px] h-[50px] md:w-[72px] md:h-[72px] md:p-[20px] m-4 transition-transform duration-300 group-hover:rotate-45"
 								style={{

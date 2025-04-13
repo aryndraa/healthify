@@ -42,8 +42,8 @@ const FAQ = () => {
 			ref={ref}
 			initial={{ opacity: 0, y: 100 }}
 			animate={inView ? { opacity: 1, y: 0 } : {}}
-			transition={{ duration: 0.8, ease: "easeOut" }}
-			className="flex flex-col w-screen min-[1920px]:w-[973px] p-[34px] bg-white rounded-[40px] gap-[32px]"
+
+			className="flex flex-col min-h-[843px] w-screen min-[1920px]:w-[973px] p-[34px] bg-white rounded-[40px] gap-[32px]"
 		>
 			<div>
 				<p className="text--5xl font-semibold mb-[8px]">
@@ -65,7 +65,7 @@ const FAQ = () => {
 						>
 							<motion.div
 								onClick={() => toggleFAQ(index)}
-								className={`cursor-pointer transition-all duration-300 ease-in-out px-4 py-3 rounded-[20px] ${
+								className={`cursor-pointer transition-all duration-300  ease-in-out px-4 py-3 rounded-[20px] ${
 									isActive
 										? "bg-[#E8F6FF]"
 										: "hover:bg-[#F5FAFF]"

@@ -2,24 +2,24 @@
   import { IoMenu } from "react-icons/io5";
   import {useDisease} from "../../contexts/DiseaseContext.jsx";
 
-  export const ListWords = () => {
+  export const ListWords = ({clearTrigger, setClearTrigger}) => {
     const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
-    const [activeLetter, setActiveLetter] = useState("All");
+    const [activeLetter, setActiveLetter] = useState("all");
     const [isModalOpen, setIsModalOpen] = useState(false);
-    const {setLetterSelect} = useDisease()
+    const {setLetterSelect, letterSelect, setSearch } = useDisease()
 
     return (
     <div>
 
-      <div className=" hidden  lg:grid 2xl:grid-cols-6 lg:grid-cols-5 gap-2 h-fit  ">
+      <div className=" hidden sticky top-16   lg:grid 2xl:grid-cols-6 lg:grid-cols-5 gap-2 h-fit  ">
         <button
-          key="All"
+          key="all"
           onClick={() => {
-            setActiveLetter("All");
             setLetterSelect("all");
+            setSearch("")
           }}
           className={`2xl:text-2xl  lg:text-lg  lg:h-[60px] lg:w-[60px] 2xl:w-[72px]  2xl:h-[72px]  font-medium flex justify-center items-center  rounded-ful transition rounded-full ${
-            activeLetter === "All" ? "bg-secondary text-white" : "bg-white hover:bg-gray-200"
+            letterSelect === "all" ? "bg-secondary text-white" : "bg-white hover:bg-gray-200"
           }`}
         >
           All
@@ -28,11 +28,11 @@
           <button
             key={letter}
             onClick={() => {
-              setActiveLetter(letter);
               setLetterSelect(letter);
+              setSearch("")
             }}
             className={`2xl:text-2xl  lg:text-lg  lg:h-[60px] lg:w-[60px] 2xl:w-[72px] 2xl:h-[72px] font-medium flex justify-center items-center  rounded-full transition ${
-              activeLetter === letter ? "bg-secondary text-white" : "bg-white hover:bg-gray-200"
+              letterSelect === letter ? "bg-secondary text-white" : "bg-white hover:bg-gray-200"
             }`}
           >
             {letter}
@@ -45,7 +45,7 @@
         className="lg:hidden pl-6 p-2 w-full flex justify-between gap-4 items-center bg-white font-semibold rounded-full"
         onClick={() => setIsModalOpen(true)}
       >
-        Select : {activeLetter}
+        Select : {letterSelect}
         <span className="p-3 text-white text-xl bg-secondary rounded-full"><IoMenu/></span>
       </button>
 
@@ -58,12 +58,12 @@
               <button
                 key="All"
                 onClick={() => {
-                  setActiveLetter("All");
+                  setSearch("")
                   setLetterSelect("all");
                   setIsModalOpen(false);
                 }}
                 className={`w-[40px] h-[40px] rounded-full ${
-                  activeLetter === "All" ? "bg-secondary text-white" : "bg-gray-200"
+                  letterSelect === "all" ? "bg-secondary text-white" : "bg-gray-200"
                 }`}
               >
                 All
@@ -72,12 +72,12 @@
                 <button
                   key={letter}
                   onClick={() => {
-                    setActiveLetter(letter);
+                    setSearch("")
                     setLetterSelect(letter);
                     setIsModalOpen(false);
                   }}
                   className={`w-[40px] h-[40px] rounded-full ${
-                    activeLetter === letter ? "bg-secondary text-white" : "bg-gray-200"
+                    letterSelect === letter ? "bg-secondary text-white" : "bg-gray-200"
                   }`}
                 >
                   {letter}

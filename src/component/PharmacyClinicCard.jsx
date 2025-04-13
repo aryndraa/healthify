@@ -2,14 +2,14 @@ import {Link} from 'react-router-dom'
 
 export const PharmacyClinicCard = ({img, time, name, type, id, loading}) => {
   return (
-    <Link to={`${id}`} className="relative w-full h-fit  2xl:w-full lg:h-[320px] xl:h-[320px] 2xl:h-[450px]">
+    <Link to={`${id}`} className="relative w-full  2xl:w-full lg:h-[320px] xl:h-[320px] 2xl:h-[450px]">
       <img
         src={img}
         alt=""
         className="hidden lg:block w-full h-[240px] lg:h-[320px] 2xl:h-[450px] object-cover rounded-xl lg:rounded-xxl "
       />
       <div
-        className="lg:absolute bottom-0 right-0 left-0 lg:m-2 bg-white  lg:rounded-xxl p-5 rounded-xl border-b lg:p-5  2xl:p-6 ">
+        className="lg:absolute bottom-0 right-0 left-0 lg:m-2 h-full lg:h-fit bg-white  lg:rounded-xxl p-5 rounded-xl border-b lg:p-5  2xl:p-6 ">
         <div className="flex items-center gap-3 lg:gap-3 mb-2 2xl:mb-3">
           <span
             className="px-3 lg:px-6 bg-secondary text-white rounded-xxl py-1 text-xs lg:text-base 2xl:text-lg font-medium">Open</span>

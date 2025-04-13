@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 import searchIcon from "../assets/search.svg";
 
-export const SearchBar = ({ onSearch, placeholder, clearTrigger }) => {
-	const [query, setQuery] = useState("");
+export const SearchBar = ({ onSearch, placeholder, clearTrigger, onclick, value }) => {
+	const [query, setQuery] = useState();
 
 	useEffect(() => {
 		setQuery("");
-	}, [clearTrigger]);
+	}, [clearTrigger, value]);
 
 	const handleSearch = (e) => {
 		e.preventDefault();
@@ -27,6 +27,7 @@ export const SearchBar = ({ onSearch, placeholder, clearTrigger }) => {
 			/>
 			<button
 				type="submit"
+				onClick={onclick}
 				className="bg-trinary p-5 2xl:p-6 rounded-full"
 			>
 				<img src={searchIcon} alt="Search" className="w-5 2xl:w-8" />

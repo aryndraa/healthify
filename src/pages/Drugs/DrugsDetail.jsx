@@ -32,7 +32,7 @@ export function DrugDetail() {
 	return (
 		<div className="min-h-screen  mb-4">
 			<div className="flex flex-col 2xl:flex-row gap-4  justify-center items-center 2xl:items-start">
-				<div className="max-w-[549px] 2xl:min-w-[549px] ">
+				<div className="w-screen p-10 2xl:min-w-[549px] ">
 					<div className="flex justify-between items-center bg-white rounded-[40px] p-12  ">
 						<div className=" flex flex-col ">
 							<h2 className="font-semibold text--5xl">
@@ -42,6 +42,7 @@ export function DrugDetail() {
 								{drug.standFor}
 							</p>
 						</div>
+
 						<div>
 							<img
 								src={drug.drugLevel}
@@ -51,9 +52,12 @@ export function DrugDetail() {
 						</div>
 					</div>
 					<div
-						className="rounded-[40px] py-4 px-2 max-w-[549px] h-[250px] md:h-[549px] bg-no-repeat bg-center md:bg-cover"
+						className="rounded-[40px] py-4 px-2  h-[250px] md:h-[549px] bg-no-repeat bg-center sm:bg-cover w-[200px] min-[800px]:w-[500px] "
 						style={{
 							backgroundImage: `url(${drug.ilustration})`,
+							backgroundSize:"cover",
+							justifySelf:"center",
+
 						}}
 					/>
 					<div className="flex items-center justify-center bg-[#213170] text-white gap-4 py-8 px-4 rounded-[32px] " onClick={randomNavigate}>

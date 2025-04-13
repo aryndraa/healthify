@@ -12,13 +12,13 @@ export const Feature = () => {
 			initial={{ opacity: 0, y: 100 }}
 			animate={inView ? { opacity: 1, y: 0 } : {}}
 			transition={{ duration: 1 }}
-			className="grid grid-cols-1 min-[1024px]:grid-cols-2 2xl:grid-cols-4 gap-4 "
+			className="grid grid-cols-1 min-[800px]:grid-cols-2 2xl:grid-cols-4 gap-4 "
 		>
 			<div
 				className="items group hover"
 				onClick={() => navigate("/clinic")}
 			>
-				<div className="BOX hover:bg-[#213170] hover:text-white  transition-all duration-300">
+				<div className="BOX hover:bg-[#213170] w-screen hover:text-white  transition-all duration-300">
 					<div className="flex justify-between  mb-[71px]   ">
 						<p className="text--4xl font-semibold w-1/2  ">
 							Clinics Listed
@@ -47,7 +47,7 @@ export const Feature = () => {
 			</div>
 
 			<div className="items group" onClick={() => navigate("/pharmacy")}>
-				<div className="BOX hover:bg-[#213170] hover:text-white  transition-all duration-300">
+				<div className="BOX hover:bg-[#213170] w-screen hover:text-white  transition-all duration-300">
 					<div className="flex justify-between  mb-[71px]">
 						<p className="text--4xl font-semibold w-1/2  ">
 							Supported Pharmacy
@@ -76,7 +76,7 @@ export const Feature = () => {
 			</div>
 
 			<div className="items ">
-				<div className="BOX">
+				<div className="BOX w-screen">
 					<div className="flex justify-between  mb-[71px]">
 						<p className="text--4xl font-semibold w-1/2  ">
 							Our Patient
@@ -100,7 +100,7 @@ export const Feature = () => {
 			</div>
 
 			<div className="items   group" onClick={() => navigate("/disease")}>
-				<div className="BOX hover:bg-[#213170] hover:text-white  transition-all duration-300 flex flex-col justify-between">
+				<div className="BOX hover:bg-[#213170] hover:text-white w-screen transition-all duration-300 flex flex-col justify-between">
 					<div className="flex justify-between  mb-[71px]">
 						<p className="text--4xl font-semibold w-1/2  ">
 							Find More
