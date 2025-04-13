@@ -150,6 +150,7 @@ export function DrugDetail() {
 						></path>
 					</svg>
 				</div>
+				
 				<div className="w-full grid gap-4 grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4 mt-4">
 					{randomDrugs.map((drug) => (
 						<DrugCard
