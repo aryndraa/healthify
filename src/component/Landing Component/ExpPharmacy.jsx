@@ -10,7 +10,7 @@ export const ExpPharmacy = () => {
 			initial={{ opacity: 0, y: 100 }}
 			animate={inView ? { opacity: 1, y: 0 } : {}}
 			transition={{ duration: 1 }}
-			className="2xl:grid flex flex-col-reverse 2xl:grid-cols-3 gap-4 mb-12 mt-4 "
+			className="2xl:grid flex flex-col-reverse xl:grid-cols-3 gap-4 mb-12 mt-4 "
 		>
 			<div className="items">
 				<div
