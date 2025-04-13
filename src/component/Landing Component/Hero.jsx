@@ -27,7 +27,7 @@ export const Hero = () => {
 			animate={inView ? "visible" : "hidden"}
 			className="max-w-screen flex gap-4 "
 		>
-			<motion.div variants={fadeUpVariants} className="Container1">
+			<motion.div variants={fadeUpVariants} className="Container1 2xl:gap-4">
 				<div className="item-1 ">
 					{/** Heading */}
 					<motion.p
@@ -134,7 +134,7 @@ export const Hero = () => {
 				variants={fadeUpVariants}
 				custom={9}
 				whileHover={{ scale: 1.02 }}
-				className="Container2 max-[1550px]:hidden bg-cover bg-center rounded-[40px] w-screen   "
+				className="Container2 max-xl:hidden bg-cover bg-center rounded-[40px] w-screen   "
 				style={{ backgroundImage: `url(${IDemo})` }}
 			></motion.div>
 		</motion.div>

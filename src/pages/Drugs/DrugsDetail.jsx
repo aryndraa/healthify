@@ -52,9 +52,12 @@ export function DrugDetail() {
 						</div>
 					</div>
 					<div
-						className="rounded-[40px] py-4 px-2  h-[250px] md:h-[549px] bg-no-repeat bg-center md:bg-cover"
+						className="rounded-[40px] py-4 px-2  h-[250px] md:h-[549px] bg-no-repeat bg-center sm:bg-cover w-[200px] min-[800px]:w-[500px] "
 						style={{
 							backgroundImage: `url(${drug.ilustration})`,
+							backgroundSize:"cover",
+							justifySelf:"center",
+
 						}}
 					/>
 					<div className="flex items-center justify-center bg-[#213170] text-white gap-4 py-8 px-4 rounded-[32px] " onClick={randomNavigate}>

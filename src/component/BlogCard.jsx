@@ -12,9 +12,9 @@ export const BlogCard = ({ blog }) => {
 				onClick={handleClick}
 				className="BLOG bg-white h-screen  flex flex-col justify-between p-6 "
 			>
-				<div className="flex flex-col gap-6 justify-between lg:flex-row">
+				<div className="flex flex-col gap-6 justify-between sm:flex-row">
 					{/* Tags */}
-					<div className="flex gap-4">
+					<div className="flex gap-4 h-fit">
 						{blog.tags.map((tag, index) => (
 							<p key={index} className="Tag">
 								{tag}
