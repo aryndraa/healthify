@@ -84,7 +84,7 @@ const Footer = () => {
 								</li>
 								<li>
 									<a
-										href="disease"
+										href="/disease"
 										className="opacity-35 hover:opacity-100 transition-all duration-150"
 									>
 										Disease
@@ -92,7 +92,7 @@ const Footer = () => {
 								</li>
 								<li>
 									<a
-										href="drugs"
+										href="/drugs"
 										className="opacity-35 hover:opacity-100 transition-all duration-150"
 									>
 										Drugs
@@ -100,7 +100,7 @@ const Footer = () => {
 								</li>
 								<li>
 									<a
-										href="blogs"
+										href="/blogs"
 										className="opacity-35 hover:opacity-100 transition-all duration-150"
 									>
 										Blogs
@@ -118,7 +118,7 @@ const Footer = () => {
 							<div className="flex flex-col gap-3 text--lg">
 								<li>
 									<a
-										href="clinics"
+										href="/clinic"
 										className="opacity-35 hover:opacity-100 transition-all duration-150"
 									>
 										Clinics
@@ -126,7 +126,7 @@ const Footer = () => {
 								</li>
 								<li>
 									<a
-										href="pharmacy"
+										href="/pharmacy"
 										className="opacity-35 hover:opacity-100 transition-all duration-150"
 									>
 										Pharmacy

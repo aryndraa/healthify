@@ -52,14 +52,13 @@ const Landing = () => {
 			<motion.div
 				ref={refFaq}
 				initial={{ opacity: 0, y: 100 }}
-				
 				animate={inViewFaq ? { opacity: 1, y: 0 } : {}}
-				transition={{ duration: 1}}
+				transition={{ duration: 1 }}
 				className="mt-[34px] mb-[30px] flex gap-4"
 			>
 				<FAQ />
 				<div
-					className="Container2 max-[1550px]:hidden bg-cover bg-center rounded-[40px] w-[690px]"
+					className="Container2 min-h-[1000px] max-[1550px]:hidden bg-cover bg-center rounded-[40px] w-[690px]"
 					style={{ backgroundImage: `url(${IDemo3})` }}
 				></div>
 			</motion.div>

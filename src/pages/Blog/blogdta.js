@@ -1,7 +1,7 @@
 export const blogData = [
 	{
 		id: 1,
-		image: "https://res.cloudinary.com/dektxbmmb/image/upload/v1741082570/Healthify/ezwjtkmf3hgkx1oedagk.png",
+		image: "https://res.cloudinary.com/dektxbmmb/image/upload/v1744533996/Healthify/Blogs%20Image/Blogs/qb8eakvsa9hohefrisbk.jpg",
 		tags: ["Health", "Wellness"],
 		title: "Meningkatkan Kesehatan Mental Melalui Meditasi: Panduan Lengkap untuk Pemula",
 		author: "Dr.Nell Samantha",
@@ -54,7 +54,7 @@ export const blogData = [
 	},
 	{
 		id: 2,
-		image: "https://res.cloudinary.com/dektxbmmb/image/upload/v1741082570/Healthify/ezwjtkmf3hgkx1oedagk.png",
+		image: "https://res.cloudinary.com/dektxbmmb/image/upload/v1744533997/Healthify/Blogs%20Image/Blogs/cc0owwhnvpsxmwkbqcf0.jpg",
 		tags: ["Health", "Wellness"],
 		title: "Mengenal Mindfulness: Seni Hidup di Saat Ini",
 		author: "Dr. Emilia Hartmann",
@@ -110,7 +110,7 @@ export const blogData = [
 	},
 	{
 		id: 3,
-		image: "https://res.cloudinary.com/dektxbmmb/image/upload/v1741082570/Healthify/ezwjtkmf3hgkx1oedagk.png",
+		image: "https://res.cloudinary.com/dektxbmmb/image/upload/v1744534001/Healthify/Blogs%20Image/Blogs/jlg6iqthyj2o15stixp3.jpg",
 		tags: ["Health", "Wellness"],
 		title: "Kekuatan Nutrisi: Membangun Kesehatan dari Dalam",
 		author: "Dr. Alexander Montgomery",
@@ -169,7 +169,7 @@ export const blogData = [
 	},
 	{
 		id: 4,
-		image: "https://res.cloudinary.com/dektxbmmb/image/upload/v1741082570/Healthify/ezwjtkmf3hgkx1oedagk.png",
+		image: "https://res.cloudinary.com/dektxbmmb/image/upload/v1744533999/Healthify/Blogs%20Image/Blogs/bf7xklp9imq533hyh9w7.jpg",
 		tags: ["Health", "Wellness"],
 		title: "Mengatasi Kecemasan: Strategi Efektif untuk Kehidupan Sehari-hari",
 		author: "Dr. Olivia Kensington",
@@ -219,7 +219,7 @@ export const blogData = [
 	},
 	{
 		id: 5,
-		image: "https://res.cloudinary.com/dektxbmmb/image/upload/v1741082570/Healthify/ezwjtkmf3hgkx1oedagk.png",
+		image: "https://res.cloudinary.com/dektxbmmb/image/upload/v1744536569/Healthify/Blogs%20Image/Blogs/q7j5erftdjr3arnng07f.jpg",
 		tags: ["Health", "Wellness"],
 		title: "Kekuatan Tidur: Mengapa Tidur Berkualitas Sangat Penting untuk Kesehatan",
 		author: "Dr. Nathaniel Hawthorne",
@@ -275,7 +275,7 @@ export const blogData = [
 	},
 	{
 		id: 6,
-		image: "https://res.cloudinary.com/dektxbmmb/image/upload/v1741082570/Healthify/ezwjtkmf3hgkx1oedagk.png",
+		image: "https://res.cloudinary.com/dektxbmmb/image/upload/v1744536569/Healthify/Blogs%20Image/Blogs/xcr3on5d82rhuvoigspw.jpg",
 		tags: ["Health", "Wellness"],
 		title: "Kekuatan Positif dari Berpikir: Membangun Mental yang Kuat",
 		author: "Dr. Benjamin Caldwell",
@@ -328,7 +328,7 @@ export const blogData = [
 	},
 	{
 		id: 7,
-		image: "https://res.cloudinary.com/dektxbmmb/image/upload/v1741082570/Healthify/ezwjtkmf3hgkx1oedagk.png",
+		image: "https://res.cloudinary.com/dektxbmmb/image/upload/v1744533995/Healthify/Blogs%20Image/Blogs/f0cdsezqd3lomotblrtd.jpg",
 		tags: ["Health", "Wellness"],
 		title: "Membangun Kebiasaan Sehat: Langkah Awal Menuju Gaya Hidup yang Lebih Baik",
 		author: "Dr. Isabella Montgomery",
@@ -379,7 +379,7 @@ export const blogData = [
 	},
 	{
 		id: 8,
-		image: "https://res.cloudinary.com/dektxbmmb/image/upload/v1741082570/Healthify/ezwjtkmf3hgkx1oedagk.png",
+		image: "https://res.cloudinary.com/dektxbmmb/image/upload/v1744534000/Healthify/Blogs%20Image/Blogs/qv2gvg3ki51y97k7q2xb.jpg",
 		tags: ["Health", "Wellness"],
 		title: "Pentingnya Hidrasi: Mengapa Air Adalah Kunci Kesehatan",
 		author: "Dr. Victoria Langston",
@@ -435,7 +435,7 @@ export const blogData = [
 	},
 	{
 		id: 9,
-		image: "https://res.cloudinary.com/dektxbmmb/image/upload/v1741082570/Healthify/ezwjtkmf3hgkx1oedagk.png",
+		image: "https://res.cloudinary.com/dektxbmmb/image/upload/v1744533996/Healthify/Blogs%20Image/Blogs/qb8eakvsa9hohefrisbk.jpg",
 		tags: ["Health", "Wellness"],
 		title: "Mengatasi Stres: Teknik Efektif untuk Kehidupan Sehari-hari",
 		author: "Dr. Samuel Whitaker",
@@ -488,7 +488,7 @@ export const blogData = [
 	},
 	{
 		id: 10,
-		image: "https://res.cloudinary.com/dektxbmmb/image/upload/v1741082570/Healthify/ezwjtkmf3hgkx1oedagk.png",
+		image: "https://res.cloudinary.com/dektxbmmb/image/upload/v1744533996/Healthify/Blogs%20Image/Blogs/wpujsuzy46jxsg8i1znr.jpg",
 		tags: ["Health", "Wellness"],
 		title: "Nutrisi untuk Kesehatan Jantung: Makanan yang Harus Anda Konsumsi",
 		author: "Dr. Eleanor Fitzpatrick",
