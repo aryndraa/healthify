@@ -6,6 +6,11 @@ import { drugData } from "./drugsdta";
 import { useState, useEffect } from "react";
 import { Filter } from "../../component/Drugs/FilterDrug";
 
+
+import { DrugsHero } from "../../component/Drugs/drugHero";
+import { ActiveFilterTags } from "../../component/Drugs/tagsDrug";
+import { FilterPanel } from "../../component/Drugs/FIlterPanelDrug";
+
 export function Drugs() {
 	const [searchQuery, setSearchQuery] = useState("");
 	const [active, setActive] = useState(false);
@@ -81,109 +86,25 @@ export function Drugs() {
 				/>
 				<Filter onClick={() => setActive((prev) => !prev)} />
 			</div>
+			<FilterPanel
+				active={active}
+				toggleActive={() => setActive(false)}
+				tags={tags}
+				level={level}
+				tagsActive={tagsActive}
+				toggleTag={toggleTag}
+			/>
 
-			{active && (
-				<div className="w-full grid grid-cols-4 absolute">
-					<div className="col-span-4  md:col-span-3 md:col-start-2 bg-white p-8 rounded-xl">
-						<div className="flex justify-end">
-							<button onClick={() => setActive(false)}>
-								<img src={xIcon} alt="Close" />
-							</button>
-						</div>
+			<ActiveFilterTags
+				tagsActive={tagsActive}
+				clearFilters={clearFilters}
+			/>
 
-						{/* Types */}
-						<div>
-							<p className="font-medium text-xl">Types</p>
-							<hr />
-							<div className="tags mt-4 flex gap-3 flex-wrap">
-								{tags.map((tag, index) => (
-									<button
-										key={index}
-										onClick={() => toggleTag(tag)}
-										className={`border border-[#213170] rounded-full px-4 py-2 transition-colors duration-300 ${
-											tagsActive.includes(tag)
-												? "bg-[#213170] text-white"
-												: "hover:bg-[#213170] hover:text-white"
-										}`}
-									>
-										{tag}
-									</button>
-								))}
-							</div>
-						</div>
-
-						{/* Level */}
-						<div className="mt-4">
-							<p className="font-medium text-xl">Level</p>
-							<hr />
-							<div className="tags mt-4 flex gap-3 flex-wrap">
-								{level.map((tag, index) => (
-									<button
-										key={index}
-										onClick={() => toggleTag(tag)}
-										className={`border border-[#213170] rounded-full px-4 py-2 transition-colors duration-300 ${
-											tagsActive.includes(tag)
-												? "bg-[#213170] text-white"
-												: "hover:bg-[#213170] hover:text-white"
-										}`}
-									>
-										{tag}
-									</button>
-								))}
-							</div>
-						</div>
-					</div>
-				</div>
-			)}
-
-			{tagsActive.length > 0 && (
-				<div className="my-4 border rounded-2xl items-center gap-4 p-8 flex bg-white md:flex-row flex-col md:rounded-full">
-					<p className="font-semibold text-2xl">Filter Applied:</p>
-					<div className="flex flex-wrap gap-2 mt-2">
-						{tagsActive.map((tag, index) => (
-							<span
-								key={index}
-								className="px-4 py-2 bg-[#213170] text-white rounded-full"
-							>
-								{tag}
-							</span>
-						))}
-						<button className="text-red-500" onClick={clearFilters}>
-							Clear Filter
-						</button>
-					</div>
-				</div>
-			)}
-
-			{/* Hero Section */}
-			{!searchQuery && tagsActive.length === 0 && (
-				<div className="hidden sm:flex items-stretch xl:gap-4 mb-4">
-					<div>
-						<img
-							src={drugsImage}
-							alt="drugs illustration"
-							className="w-[28rem] object-cover rounded-xxl h-full hidden lg:block"
-						/>
-					</div>
-					<div className="bg-white flex-1 min-h-full rounded-xxl p-10 2xl:p-16">
-						<h1 className="font-semibold text-4xl 2xl:text-5xl mb-6 2xl:mb-16">
-							Discover Reliable Drug Information for Safe and
-							Informed Healthcare
-						</h1>
-						<p className="text-sm 2xl:text-xl">
-							Explore a complete database of trusted drug
-							information, including uses, dosages, side effects,
-							precautions, interactions, and safety guidelines, to
-							make well-informed healthcare decisions for yourself
-							and your loved ones.
-						</p>
-					</div>
-				</div>
-			)}
+			{!searchQuery && tagsActive.length === 0 && <DrugsHero />}
 
 			{/* Drug List */}
 			{filteredDrugs.length > 0 ? (
-				<div className="w-full grid gap-4 grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
+				<div className="w-full grid gap-4 grid-cols-1 min-[320px]:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 mt-4">
 					{filteredDrugs.slice(0, 12).map((drug) => (
 						<DrugCard
 							key={drug.id}
