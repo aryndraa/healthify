@@ -6,7 +6,7 @@ const Footer = () => {
 			setEmail(""); // Clear input
 		};
 	return (
-		<footer className="bg-[#213170] text-white lg:p-10 2xl:p-16 rounded-xl lg:rounded-[40px]">
+		<footer className="bg-[#213170] text-white p-10 2xl:p-16 rounded-xl lg:rounded-[40px]">
 			<div className="container mx-auto flex justify-between max-[1280px]:justify-start ">
 				<div className=" hidden max-w-[536px] xl:flex flex-col gap-12">
 					<div>

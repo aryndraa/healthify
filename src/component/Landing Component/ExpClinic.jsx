@@ -10,9 +10,9 @@ export const ExpClinic = () => {
 			initial={{ opacity: 0, y: 100 }}
 			animate={inView ? { opacity: 1, y: 0 } : {}}
 			transition={{ duration: 1 }}
-			className="grid grid-cols-1 2xl:grid-cols-3  gap-4 mt-12"
+			className="flex flex-col xl:grid xl:grid-cols-6  gap-4 mt-12 mb-4"
 		>
-			<div className="items">
+			<div className="items  xl:col-span-6 2xl:col-span-2">
 				<div
 					onClick={() => navigate("/clinic")}
 					className="BOX2 bg-[#213170] w-screen flex flex-col h-screen justify-between p-8 group   "
@@ -51,7 +51,7 @@ export const ExpClinic = () => {
 					</div>
 				</div>
 			</div>
-			<div className="items">
+			<div className="items  xl:col-span-3 2xl:col-span-2">
 				<div
 					onClick={() => navigate("/clinic")}
 					className="BOX2  flex flex-col h-screen w-screen justify-between bg-Clinic2 bg-cover   "
@@ -96,7 +96,7 @@ export const ExpClinic = () => {
 					</div>
 				</div>
 			</div>
-			<div className="items">
+			<div className="items   xl:col-span-3 2xl:col-span-2">
 				<div
 					onClick={() => navigate("/clinic/2")}
 					className="BOX2  flex flex-col h-screen w-screen justify-between bg-vaelclinic bg-cover    "
