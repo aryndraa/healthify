@@ -71,7 +71,7 @@ export function Clinics() {
 
   return (
 		<>
-			<section className="min-h-screen  mb-4 relative">
+			<section className="max-h-fit  mb-4 relative">
 				<div className="w-full flex  gap-2 items-center mb-4">
 					<SearchBar
 						placeholder="Saerch clinics near you!"
