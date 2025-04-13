@@ -14,7 +14,7 @@ export function DrugCard({ pricing, title, standFor, illustration, drugLevel, id
 				className="md:w-[408px] h-[400px] md:h-[500px]    bg-center bg-no-repeat bg-w-[50px]  2xl:bg-cover"
 
 			>
-				<div className="justify-between flex flex-col rounded-[40px] py-4 px-2 shadow-lg  h-[400px] md:h-[500px]  bg-slate-500 bg-opacity-10">
+				<div className="justify-between flex flex-col rounded-[40px] py-4 px-2   h-[400px] md:h-[500px]  bg-slate-500 bg-opacity-10">
 					<div className="  bg-white text-gray-800 font-semibold w-fit px-6 text--lg py-4 rounded-full ">
 						{pricing}
 					</div>

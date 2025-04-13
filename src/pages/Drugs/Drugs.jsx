@@ -162,7 +162,7 @@ export function Drugs() {
 						<img
 							src={drugsImage}
 							alt="drugs illustration"
-							className="w-[28rem] 2xl:w-full object-cover rounded-xxl h-full max-[1550px]:hidden"
+							className="w-[28rem] object-cover rounded-xxl h-full hidden lg:block"
 						/>
 					</div>
 					<div className="bg-white flex-1 min-h-full rounded-xxl p-10 2xl:p-16">
@@ -183,7 +183,7 @@ export function Drugs() {
 
 			{/* Drug List */}
 			{filteredDrugs.length > 0 ? (
-				<div className="w-full grid gap-4 grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4">
+				<div className="w-full grid gap-4 grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
 					{filteredDrugs.slice(0, 12).map((drug) => (
 						<DrugCard
 							key={drug.id}
