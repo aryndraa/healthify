@@ -50,12 +50,12 @@ export function ClinicDetail() {
               <img
                 src={detail.images[1]}
                 alt=""
-                className="md:max-w-[49%] h-[140px] lg:h-[260px] 2xl:h-[332px] rounded-xl lg:rounded-xxl flex-1  object-cover"
+                className="md:min-w-full md:min-h-48 h-[140px] lg:h-[260px] 2xl:h-[332px] rounded-xl lg:rounded-xxl flex-1  object-cover"
               />
               <img
                 src={detail.images[2]}
                 alt=""
-                className="md:max-w-[49%] h-[140px] lg:h-[260px] 2xl:h-[332px] rounded-xl lg:rounded-xxl flex-1 object-cover"
+                className="md:min-w-full md:min-h-48 h-[140px] lg:h-[260px] 2xl:h-[332px] rounded-xl lg:rounded-xxl flex-1 object-cover"
               />
             </div>
           </div>
