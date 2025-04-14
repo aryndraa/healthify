@@ -2,7 +2,7 @@ export function BlogContent({ blog }) {
 	return (
 		<div className=" items-center lg:items-start flex flex-col lg:flex-row 2xl:items-start gap-4 mb-12">
 			<div
-				className="min-w-[220px] min-h-[220px] 2xl:w-[549px] 2xl:h-[549px] rounded-[40px] bg-cover bg-center"
+				className="min-w-[220px] max-xl:hidden min-h-[220px] 2xl:w-[549px] 2xl:h-[549px] rounded-[40px] bg-cover bg-center"
 				style={{ backgroundImage: `url(${blog.image})` }}
 			></div>
 

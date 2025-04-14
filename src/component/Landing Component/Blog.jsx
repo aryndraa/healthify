@@ -14,6 +14,11 @@ export const Blogs = () => {
 		.sort(() => Math.random() - 0.5)
 		.slice(0, 3);
 
+	const randomBlogs1 = blogData
+		.filter((b) => b.id !== parseInt(id))
+		.sort(() => Math.random() - 0.5)
+		.slice(0, 1);
+
 	const { ref, inView } = useInView({ triggerOnce: true });
 	return (
 		<motion.div
@@ -44,10 +49,20 @@ export const Blogs = () => {
 					</svg>
 				</div>
 			</div>
-			<div className="w-full grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 justify-center gap-4 mt-4">
+			<div className="w-full h-max grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 2xl:gap-6 mt-4 ">
 				{randomBlogs.map((blog) => (
-					<BlogCard key={blog.id} blog={blog} />
+					<div className=" h-full">
+						<BlogCard key={blog.id} blog={blog} />
+					</div>
 				))}
+
+				{randomBlogs1.map((blog) => (
+					<div className=" block xl:hidden h-full">
+						<BlogCard key={blog.id} blog={blog} />
+					</div>
+				))}
+
+					
 			</div>
 		</motion.div>
 	);
