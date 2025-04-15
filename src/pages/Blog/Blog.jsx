@@ -1,6 +1,5 @@
 import { SearchBar } from "../../component/SearchBar";
 import { blogData } from "./blogdta";
-import { BlogCard } from "../../component/BlogCard";
 import idemo3 from "../../assets/Rectangle 78.svg";
 import { useState, useEffect } from "react";
 import { Filter } from "../../component/Drugs/FilterDrug";
