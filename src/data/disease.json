@@ -1,243 +1,206 @@
 [
-  {
-    "asthma bronchiale": {
-      "gambar": "https://media-hosting.imagekit.io//89f833e3f75646a0/Asthma%20Bronchiale.png?Expires=1836332368&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=s6qoOHqEym7eW0lgIyaIowSXz8Seu5xPB3C2dJ2ZP~cmVPMCh1eazykQiuhlgn6x1j75qVGE-osgLCTQhlnWq~kLK1xJ~ik3zLNJKR2BlneFKUs1sF0ieqMvXktA4~VIxuyCYiddt~mHhfPZF37i~JYxo4XvlBUCmE-IoW6yb2mEEfDdWhWljc~Qxb3Z0REsaI312APwsYvIwTO0w55W4~-sdtMoMwJG0WCAIy4mcxeuRRJAJzRzvK7cR00kLkhkSYUyyu2AlQVosEbMBjoR~DYKnIjweQQLx4XWFzu4NSOh6i9r4vXwelp0Hd9PpF2WWr-xf~QbAN~H2hTbjQdXcQ__",
-      "definisi": "Asthma bronkial adalah penyakit pernapasan kronis yang ditandai dengan peradangan dan penyempitan saluran napas, yang menyebabkan kesulitan bernapas, batuk, dan mengi. Kondisi ini dapat bervariasi dalam tingkat keparahan dan frekuensi serangan, memerlukan pengelolaan yang tepat untuk menjaga kualitas hidup penderita. Asma sering kali dipicu oleh berbagai faktor lingkungan dan genetik.\n",
-      "gejala": {
-        "umum": [
-          "Sesak Napas: Kesulitan bernapas saat beraktivitas atau di malam hari, dengan perasaan tekanan di dada.",
-          "Batuk: Batuk kronis yang memburuk di malam hari atau saat berolahraga, bisa kering atau berdahak.\n",
-          "Wheezing: Suara mengi saat bernapas, terutama saat mengeluarkan napas, akibat penyempitan saluran napas.\n",
-          "Nyeri Dada: Ketidaknyamanan di dada akibat ketegangan otot pernapasan saat bernapas dalam-dalam.\n",
-          "Kelelahan: Kelelahan akibat usaha ekstra untuk bernapas, sering terjadi setelah serangan.\n"
-        ],
-        "spesifik": [
-          "Nyeri dada: Rasa nyeri atau tekanan di dada yang dapat diperparah oleh batuk atau napas dalam.\n",
-          "Kelelahan: Rasa lelah yang berlebihan, bahkan setelah beristirahat.\n",
-          "Gejala yang muncul saat terpapar pemicu (alergen, iritan): Perburukan gejala asma setelah terpapar alergen seperti serbuk sari, bulu hewan, atau iritan seperti asap rokok dan polusi udara.\n"
-        ],
-        "tahapan": {
-          "ringan": "Gejala muncul sesekali, seperti batuk ringan.",
-          "sedang": "Gejala lebih sering muncul, termasuk wheezing.",
-          "parah": "Gejala menjadi lebih intens, dengan serangan asma yang sering terjadi."
+    {
+        "asthma bronchiale": {
+            "gambar": "https://media-hosting.imagekit.io//89f833e3f75646a0/Asthma%20Bronchiale.png?Expires=1836332368&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=s6qoOHqEym7eW0lgIyaIowSXz8Seu5xPB3C2dJ2ZP~cmVPMCh1eazykQiuhlgn6x1j75qVGE-osgLCTQhlnWq~kLK1xJ~ik3zLNJKR2BlneFKUs1sF0ieqMvXktA4~VIxuyCYiddt~mHhfPZF37i~JYxo4XvlBUCmE-IoW6yb2mEEfDdWhWljc~Qxb3Z0REsaI312APwsYvIwTO0w55W4~-sdtMoMwJG0WCAIy4mcxeuRRJAJzRzvK7cR00kLkhkSYUyyu2AlQVosEbMBjoR~DYKnIjweQQLx4XWFzu4NSOh6i9r4vXwelp0Hd9PpF2WWr-xf~QbAN~H2hTbjQdXcQ__",
+            "definisi": "Asthma bronkial adalah penyakit pernapasan kronis yang ditandai dengan peradangan dan penyempitan saluran napas, yang menyebabkan kesulitan bernapas, batuk, dan mengi. Kondisi ini dapat bervariasi dalam tingkat keparahan dan frekuensi serangan, memerlukan pengelolaan yang tepat untuk menjaga kualitas hidup penderita. Asma sering kali dipicu oleh berbagai faktor lingkungan dan genetik.\n",
+            "gejala": {
+                "umum": [
+                    "Sesak Napas: Kesulitan bernapas saat beraktivitas atau di malam hari, dengan perasaan tekanan di dada.",
+                    "Batuk: Batuk kronis yang memburuk di malam hari atau saat berolahraga, bisa kering atau berdahak.\n",
+                    "Wheezing: Suara mengi saat bernapas, terutama saat mengeluarkan napas, akibat penyempitan saluran napas.\n",
+                    "Nyeri Dada: Ketidaknyamanan di dada akibat ketegangan otot pernapasan saat bernapas dalam-dalam.\n",
+                    "Kelelahan: Kelelahan akibat usaha ekstra untuk bernapas, sering terjadi setelah serangan.\n"
+                ],
+                "spesifik": [
+                    "Nyeri dada: Rasa nyeri atau tekanan di dada yang dapat diperparah oleh batuk atau napas dalam.\n",
+                    "Kelelahan: Rasa lelah yang berlebihan, bahkan setelah beristirahat.\n",
+                    "Gejala yang muncul saat terpapar pemicu (alergen, iritan): Perburukan gejala asma setelah terpapar alergen seperti serbuk sari, bulu hewan, atau iritan seperti asap rokok dan polusi udara.\n"
+                ],
+                "tahapan": {
+                    "ringan": "Gejala muncul sesekali, seperti batuk ringan.",
+                    "sedang": "Gejala lebih sering muncul, termasuk wheezing.",
+                    "parah": "Gejala menjadi lebih intens, dengan serangan asma yang sering terjadi."
+                }
+            },
+            "penyebab": [
+                "Alergen (debu, serbuk sari, bulu hewan)\n",
+                "Iritan (asap rokok, polusi udara, bahan kimia)\n",
+                "Infeksi saluran pernapasan",
+                "Aktivitas fisik (terutama di lingkungan dingin)\n",
+                "Stres emosional"
+            ],
+            "pengobatan": {
+                "medis": ["Inhaler bronkodilator untuk meredakan gejala", "Obat anti-inflamasi (kortikosteroid) untuk mengurangi peradangan.\ni"],
+                "mandiri": ["Menghindari pemicu asma.", "Menggunakan obat pencegahan sesuai anjuran dokter."],
+                "alternatif": ["Terapi pernapasan", "Akupunktur"],
+                "durasi perawatan": "Pengobatan asma bersifat jangka panjang dan memerlukan pemantauan rutin untuk menyesuaikan pengobatan sesuai kebutuhan.\n"
+            },
+            "pencegahan": [
+                "Menghindari alergen dan iritan yang diketahui.",
+                "Menggunakan masker saat beraktivitas di lingkungan berdebu atau berpolusi.",
+                "Melakukan pemeriksaan rutin untuk memantau kondisi."
+            ],
+            "komplikasi": "Jika tidak dikelola dengan baik, asma bronkial dapat menyebabkan serangan parah yang mengancam jiwa. Selain itu, penderita berisiko mengalami perubahan permanen pada saluran napas, yang dapat mengurangi fungsi paru-paru dan kualitas hidup. "
         }
-      },
-      "penyebab": [
-        "Alergen (debu, serbuk sari, bulu hewan)\n",
-        "Iritan (asap rokok, polusi udara, bahan kimia)\n",
-        "Infeksi saluran pernapasan",
-        "Aktivitas fisik (terutama di lingkungan dingin)\n",
-        "Stres emosional"
-      ],
-      "pengobatan": {
-        "medis": [
-          "Inhaler bronkodilator untuk meredakan gejala",
-          "Obat anti-inflamasi (kortikosteroid) untuk mengurangi peradangan.\ni"
-        ],
-        "mandiri": [
-          "Menghindari pemicu asma.",
-          "Menggunakan obat pencegahan sesuai anjuran dokter."
-        ],
-        "alternatif": [
-          "Terapi pernapasan",
-          "Akupunktur"
-        ],
-        "durasi perawatan": "Pengobatan asma bersifat jangka panjang dan memerlukan pemantauan rutin untuk menyesuaikan pengobatan sesuai kebutuhan.\n"
-      },
-      "pencegahan": [
-        "Menghindari alergen dan iritan yang diketahui.",
-        "Menggunakan masker saat beraktivitas di lingkungan berdebu atau berpolusi.",
-        "Melakukan pemeriksaan rutin untuk memantau kondisi."
-      ],
-      "komplikasi": "Jika tidak dikelola dengan baik, asma bronkial dapat menyebabkan serangan parah yang mengancam jiwa. Selain itu, penderita berisiko mengalami perubahan permanen pada saluran napas, yang dapat mengurangi fungsi paru-paru dan kualitas hidup. "
-    }
-  },
-  {
-    "bronchitis_acuta": {
-      "gambar": "https://media-hosting.imagekit.io//56216e0b006d40e0/Bronchitis%20Acuta.png?Expires=1836332368&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=FHW~MmzbxosoP0Xcnelvy0B3RupqFHColXcokV1vMh61GDYMEnJPp3FZdf6lPVnVi0lHOVCisMyzYYDO563hz0Er2C4cIOqVng7vI8AdsEykQ3TqHxpU8D72suT5rHitBRyq~OciOTJN3mXdYpf-XsHOucsBHoP77HC3Np-YjNoRdyzO7xICx~nb2GSm3ymtB09BDQ9XAB~gDY-7FimHlfkHwInL4poaSWc0RRHQkWHL6w0Rpdr90mFdJl9hEa2bzojv7MPwIrYE7T31IBPu55Vq~x5-OJtMFAgyIQeef3YJbkbOmLdaAj4g6w4Qx-ZsTZ1CjGOrlx62SizZnveqcg__",
-      "definisi": "Bronchitis acuta adalah peradangan pada saluran bronkus, biasanya disebabkan oleh infeksi virus. Kondisi ini menyebabkan batuk dan produksi lendir, dan umumnya bersifat sementara. Dengan perawatan yang tepat, bronchitis acuta biasanya sembuh dalam beberapa minggu.",
-      "gejala": {
-        "umum": [
-          "Batuk: Batuk berdahak yang bisa berlangsung selama beberapa minggu. Dahaknya bisa berwarna putih, kuning, atau hijau.\n",
-          "Sesak Napas: Kesulitan bernapas, terutama saat beraktivitas fisik. Ini terjadi karena pembengkakan dan penyempitan saluran udara di paru-paru.\n",
-          "Nyeri Dada: Rasa nyeri atau ketidaknyamanan di dada, seringkali diperparah saat batuk. Nyeri ini biasanya terasa di belakang tulang dada.\n"
-        ],
-        "spesifik": [
-          "Demam: Demam ringan hingga sedang, biasanya tidak terlalu tinggi.\n",
-          "Kelelahan: Rasa lelah yang berlebihan, bahkan setelah beristirahat. Ini disebabkan oleh infeksi dan usaha tubuh untuk melawannya.\n",
-          "Bersin/Pilek: Gejala-gejala ini sering menyertai bronchitis acuta, menunjukkan adanya infeksi saluran pernapasan atas.\n"
-        ],
-        "tahapan": {
-          "ringan": "Dimulai dengan gejala ringan seperti batuk kering dan gejala mirip flu (hidung tersumbat, sakit kepala, nyeri otot).\n",
-          "sedang": "Batuk menjadi lebih produktif (berdahak), disertai sesak napas ringan.",
-          "parah": "Sesak napas yang signifikan, nyeri dada yang intens, dan mungkin demam tinggi. Membutuhkan perawatan medis segera.\n"
+    },
+    {
+        "bronchitis_acuta": {
+            "gambar": "https://media-hosting.imagekit.io//56216e0b006d40e0/Bronchitis%20Acuta.png?Expires=1836332368&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=FHW~MmzbxosoP0Xcnelvy0B3RupqFHColXcokV1vMh61GDYMEnJPp3FZdf6lPVnVi0lHOVCisMyzYYDO563hz0Er2C4cIOqVng7vI8AdsEykQ3TqHxpU8D72suT5rHitBRyq~OciOTJN3mXdYpf-XsHOucsBHoP77HC3Np-YjNoRdyzO7xICx~nb2GSm3ymtB09BDQ9XAB~gDY-7FimHlfkHwInL4poaSWc0RRHQkWHL6w0Rpdr90mFdJl9hEa2bzojv7MPwIrYE7T31IBPu55Vq~x5-OJtMFAgyIQeef3YJbkbOmLdaAj4g6w4Qx-ZsTZ1CjGOrlx62SizZnveqcg__",
+            "definisi": "Bronchitis acuta adalah peradangan pada saluran bronkus, biasanya disebabkan oleh infeksi virus. Kondisi ini menyebabkan batuk dan produksi lendir, dan umumnya bersifat sementara. Dengan perawatan yang tepat, bronchitis acuta biasanya sembuh dalam beberapa minggu.",
+            "gejala": {
+                "umum": [
+                    "Batuk: Batuk berdahak yang bisa berlangsung selama beberapa minggu. Dahaknya bisa berwarna putih, kuning, atau hijau.\n",
+                    "Sesak Napas: Kesulitan bernapas, terutama saat beraktivitas fisik. Ini terjadi karena pembengkakan dan penyempitan saluran udara di paru-paru.\n",
+                    "Nyeri Dada: Rasa nyeri atau ketidaknyamanan di dada, seringkali diperparah saat batuk. Nyeri ini biasanya terasa di belakang tulang dada.\n"
+                ],
+                "spesifik": [
+                    "Demam: Demam ringan hingga sedang, biasanya tidak terlalu tinggi.\n",
+                    "Kelelahan: Rasa lelah yang berlebihan, bahkan setelah beristirahat. Ini disebabkan oleh infeksi dan usaha tubuh untuk melawannya.\n",
+                    "Bersin/Pilek: Gejala-gejala ini sering menyertai bronchitis acuta, menunjukkan adanya infeksi saluran pernapasan atas.\n"
+                ],
+                "tahapan": {
+                    "ringan": "Dimulai dengan gejala ringan seperti batuk kering dan gejala mirip flu (hidung tersumbat, sakit kepala, nyeri otot).\n",
+                    "sedang": "Batuk menjadi lebih produktif (berdahak), disertai sesak napas ringan.",
+                    "parah": "Sesak napas yang signifikan, nyeri dada yang intens, dan mungkin demam tinggi. Membutuhkan perawatan medis segera.\n"
+                }
+            },
+            "penyebab": [
+                "Infeksi Virus: Virus influenza dan virus pernapasan lainnya adalah penyebab paling umum.\n",
+                "Iritasi Lingkungan: Paparan terhadap asap rokok, polusi udara, atau iritan lainnya dapat memicu atau memperburuk bronchitis.\n",
+                "Infeksi Bakteri: Meskipun lebih jarang, infeksi bakteri juga dapat menyebabkan bronchitis acuta.",
+                "Alergi: Reaksi alergi terhadap zat tertentu dapat memicu peradangan pada saluran bronkus.\n",
+                "Kondisi Kesehatan Lain: Kondisi seperti asma atau PPOK (Penyakit Paru Obstruktif Kronik) dapat meningkatkan risiko dan keparahan bronchitis.\n"
+            ],
+            "pengobatan": {
+                "medis": [
+                    "Obat batuk ekspektoran (untuk membantu mengeluarkan dahak), dekongestan (untuk meredakan hidung tersumbat), dan pereda nyeri/penurun demam (seperti parasetamol). Antibiotik hanya diberikan jika infeksi bakteri terkonfirmasi."
+                ],
+                "mandiri": ["Istirahat yang cukup, minum banyak cairan (air putih, jus), dan makan makanan bergizi. Hindari asap rokok dan iritan lainnya.\n"],
+                "alternatif": [
+                    " Inhalasi uap hangat dengan sedikit minyak kayu putih atau eucalyptus dapat membantu meredakan saluran napas yang tersumbat. Namun, ini bukan pengganti pengobatan medis.\n"
+                ],
+                "durasi perawatan": "Biasanya berlangsung 1-3 minggu, tetapi bisa lebih lama tergantung pada keparahan dan respons terhadap pengobatan.\n"
+            },
+            "pencegahan": [
+                "Hindari Merokok: Merokok merupakan faktor risiko utama bronchitis acuta. Hindari paparan asap rokok.",
+                "Vaksinasi: Vaksin influenza tahunan dapat membantu mengurangi risiko infeksi virus.\n",
+                "Cuci Tangan: Mencuci tangan secara teratur dengan sabun dan air dapat membantu mencegah penyebaran infeksi.\n"
+            ],
+            "komplikasi": "Bronchitis acuta yang tidak diobati dengan baik dapat menyebabkan komplikasi seperti pneumonia (infeksi paru-paru) atau perburukan kondisi paru-paru yang sudah ada sebelumnya, seperti asma atau PPOK. Pada kasus yang jarang, bronchitis acuta dapat menyebabkan gagal napas.\n"
         }
-      },
-      "penyebab": [
-        "Infeksi Virus: Virus influenza dan virus pernapasan lainnya adalah penyebab paling umum.\n",
-        "Iritasi Lingkungan: Paparan terhadap asap rokok, polusi udara, atau iritan lainnya dapat memicu atau memperburuk bronchitis.\n",
-        "Infeksi Bakteri: Meskipun lebih jarang, infeksi bakteri juga dapat menyebabkan bronchitis acuta.",
-        "Alergi: Reaksi alergi terhadap zat tertentu dapat memicu peradangan pada saluran bronkus.\n",
-        "Kondisi Kesehatan Lain: Kondisi seperti asma atau PPOK (Penyakit Paru Obstruktif Kronik) dapat meningkatkan risiko dan keparahan bronchitis.\n"
-      ],
-      "pengobatan": {
-        "medis": [
-          "Obat batuk ekspektoran (untuk membantu mengeluarkan dahak), dekongestan (untuk meredakan hidung tersumbat), dan pereda nyeri/penurun demam (seperti parasetamol). Antibiotik hanya diberikan jika infeksi bakteri terkonfirmasi."
-        ],
-        "mandiri": [
-          "Istirahat yang cukup, minum banyak cairan (air putih, jus), dan makan makanan bergizi. Hindari asap rokok dan iritan lainnya.\n"
-        ],
-        "alternatif": [
-          " Inhalasi uap hangat dengan sedikit minyak kayu putih atau eucalyptus dapat membantu meredakan saluran napas yang tersumbat. Namun, ini bukan pengganti pengobatan medis.\n"
-        ],
-        "durasi perawatan": "Biasanya berlangsung 1-3 minggu, tetapi bisa lebih lama tergantung pada keparahan dan respons terhadap pengobatan.\n"
-      },
-      "pencegahan": [
-        "Hindari Merokok: Merokok merupakan faktor risiko utama bronchitis acuta. Hindari paparan asap rokok.",
-        "Vaksinasi: Vaksin influenza tahunan dapat membantu mengurangi risiko infeksi virus.\n",
-        "Cuci Tangan: Mencuci tangan secara teratur dengan sabun dan air dapat membantu mencegah penyebaran infeksi.\n"
-      ],
-      "komplikasi": "Bronchitis acuta yang tidak diobati dengan baik dapat menyebabkan komplikasi seperti pneumonia (infeksi paru-paru) atau perburukan kondisi paru-paru yang sudah ada sebelumnya, seperti asma atau PPOK. Pada kasus yang jarang, bronchitis acuta dapat menyebabkan gagal napas.\n"
-    }
-  },
-  {
-    "cholera": {
-      "gambar": "https://media-hosting.imagekit.io//2d476dd498de4bc2/Cholera.png?Expires=1836332368&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=rFzOkZRix6ptiUtvRx0doyXgtfr6X7SEukR5oPPlX3pylMCRMaLBORcVYVmP15ZUk1RgauWZ6kmh054xO4PdjqUdXCun1YUatRwa-rS26ovPI7c-dgWCZnY7HjKduts5ZQ7-F5xdXTJfNCsToNvWFy9geonO4u9zYS7W-n9UX5HelsUAxwG9iKiITmDeVv27gSGia~1jxXi6qmlkfabQ7x7sq1X1mfqvPA2GSMMWsMxfp62dpWrfOiCXV1djcvf8XKrVNxfHeURX-RwJdGNEunQf32d8aTu1tfvITsoaHczVUgglhiA10bBysYFL84fpRc-5Ei23DXASJKWLmZpiPg__",
-      "definisi": "Cholera adalah infeksi usus akut yang disebabkan oleh bakteri Vibrio cholerae, yang ditularkan melalui air atau makanan yang terkontaminasi. Penyakit ini dapat menyebabkan diare parah dan dehidrasi, yang jika tidak diobati dapat berakibat fatal.\n",
-      "gejala": {
-        "umum": [
-          "Diare Cair: Diare yang sangat encer, sering kali disebut \"diare beras air.\"\n",
-          "Muntah: Muntah yang dapat menyertai diare.\n",
-          "Dehidrasi: Tanda-tanda dehidrasi seperti mulut kering, haus berlebihan, dan penurunan turgor kulit.\n"
-        ],
-        "spesifik": [
-          "Kram Perut: Nyeri atau kram di perut.\n",
-          "Kelemahan: Rasa lemah yang signifikan akibat kehilangan cairan.\n",
-          "Peningkatan Detak Jantung: Detak jantung yang cepat sebagai respons terhadap dehidrasi.\n"
-        ],
-        "tahapan": {
-          "ringan": "Gejala ringan seperti diare dan muntah mulai muncul.",
-          "sedang": "Gejala memburuk dengan diare yang lebih parah dan tanda-tanda dehidrasi.\n",
-          "parah": "Komplikasi serius dapat terjadi, termasuk syok hipovolemik dan kematian jika tidak diobati.\n"
+    },
+    {
+        "cholera": {
+            "gambar": "https://media-hosting.imagekit.io//2d476dd498de4bc2/Cholera.png?Expires=1836332368&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=rFzOkZRix6ptiUtvRx0doyXgtfr6X7SEukR5oPPlX3pylMCRMaLBORcVYVmP15ZUk1RgauWZ6kmh054xO4PdjqUdXCun1YUatRwa-rS26ovPI7c-dgWCZnY7HjKduts5ZQ7-F5xdXTJfNCsToNvWFy9geonO4u9zYS7W-n9UX5HelsUAxwG9iKiITmDeVv27gSGia~1jxXi6qmlkfabQ7x7sq1X1mfqvPA2GSMMWsMxfp62dpWrfOiCXV1djcvf8XKrVNxfHeURX-RwJdGNEunQf32d8aTu1tfvITsoaHczVUgglhiA10bBysYFL84fpRc-5Ei23DXASJKWLmZpiPg__",
+            "definisi": "Cholera adalah infeksi usus akut yang disebabkan oleh bakteri Vibrio cholerae, yang ditularkan melalui air atau makanan yang terkontaminasi. Penyakit ini dapat menyebabkan diare parah dan dehidrasi, yang jika tidak diobati dapat berakibat fatal.\n",
+            "gejala": {
+                "umum": [
+                    "Diare Cair: Diare yang sangat encer, sering kali disebut \"diare beras air.\"\n",
+                    "Muntah: Muntah yang dapat menyertai diare.\n",
+                    "Dehidrasi: Tanda-tanda dehidrasi seperti mulut kering, haus berlebihan, dan penurunan turgor kulit.\n"
+                ],
+                "spesifik": [
+                    "Kram Perut: Nyeri atau kram di perut.\n",
+                    "Kelemahan: Rasa lemah yang signifikan akibat kehilangan cairan.\n",
+                    "Peningkatan Detak Jantung: Detak jantung yang cepat sebagai respons terhadap dehidrasi.\n"
+                ],
+                "tahapan": {
+                    "ringan": "Gejala ringan seperti diare dan muntah mulai muncul.",
+                    "sedang": "Gejala memburuk dengan diare yang lebih parah dan tanda-tanda dehidrasi.\n",
+                    "parah": "Komplikasi serius dapat terjadi, termasuk syok hipovolemik dan kematian jika tidak diobati.\n"
+                }
+            },
+            "penyebab": [
+                "Infeksi oleh bakteri Vibrio cholerae.\n",
+                "Penularan melalui air atau makanan yang terkontaminasi, terutama di daerah dengan sanitasi yang buruk",
+                "Konsumsi makanan laut mentah atau setengah matang yang terkontaminasi.\n"
+            ],
+            "pengobatan": {
+                "medis": ["Rehidrasi oral atau intravena untuk menggantikan cairan dan elektrolit yang hilang.\n"],
+                "mandiri": ["Mengonsumsi larutan rehidrasi oral (ORS) untuk mengatasi dehidrasi.\n"],
+                "alternatif": ["Antibiotik untuk mengurangi durasi diare (dengan konsultasi dokter).\n"],
+                "durasi perawatan": "Perawatan untuk dehidrasi biasanya berlangsung selama beberapa hari, tergantung pada keparahan kondisi."
+            },
+            "pencegahan": [
+                "Memastikan akses ke air bersih dan sanitasi yang baik.\n",
+                "Vaksinasi untuk mencegah infeksi di daerah endemik.\n",
+                "Menghindari konsumsi makanan dan minuman yang tidak terjamin kebersihannya.\n"
+            ],
+            "komplikasi": "Cholera dapat menyebabkan komplikasi serius, termasuk dehidrasi berat, syok hipovolemik, dan kematian jika tidak diobati. Tingkat kematian dapat tinggi, terutama di daerah dengan akses terbatas ke perawatan medis.\n\n"
         }
-      },
-      "penyebab": [
-        "Infeksi oleh bakteri Vibrio cholerae.\n",
-        "Penularan melalui air atau makanan yang terkontaminasi, terutama di daerah dengan sanitasi yang buruk",
-        "Konsumsi makanan laut mentah atau setengah matang yang terkontaminasi.\n"
-      ],
-      "pengobatan": {
-        "medis": [
-          "Rehidrasi oral atau intravena untuk menggantikan cairan dan elektrolit yang hilang.\n"
-        ],
-        "mandiri": [
-          "Mengonsumsi larutan rehidrasi oral (ORS) untuk mengatasi dehidrasi.\n"
-        ],
-        "alternatif": [
-          "Antibiotik untuk mengurangi durasi diare (dengan konsultasi dokter).\n"
-        ],
-        "durasi perawatan": "Perawatan untuk dehidrasi biasanya berlangsung selama beberapa hari, tergantung pada keparahan kondisi."
-      },
-      "pencegahan": [
-        "Memastikan akses ke air bersih dan sanitasi yang baik.\n",
-        "Vaksinasi untuk mencegah infeksi di daerah endemik.\n",
-        "Menghindari konsumsi makanan dan minuman yang tidak terjamin kebersihannya.\n"
-      ],
-      "komplikasi": "Cholera dapat menyebabkan komplikasi serius, termasuk dehidrasi berat, syok hipovolemik, dan kematian jika tidak diobati. Tingkat kematian dapat tinggi, terutama di daerah dengan akses terbatas ke perawatan medis.\n\n"
-    }
-  },
-  {
-    "diphtheria": {
-      "gambar": "https://media-hosting.imagekit.io//15f558997f714297/Diphtheria.png?Expires=1836332368&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=TQ50dP34mvJ2qwW72Z-X5SMFG3o8Ay8Ur0rfId9Xp9T7nJGKkvGV1FNEUTmxYZufXEuL5Wi0pVebmkzUh22bHxp4XzqoUOhEFeQJNdMCz76uhNpjjvgeTghnojh2v5ePEfDNvC-6RbIuS79QoGVij5oL8Nau84s2OxLzSBcvhcRPTDcPehYaSoW4Rn~zrk3qAjEAMo1~zkGJEqd5tAwG-6Fu0p5IVustUjcBNX~s2wdUrar3er53T~PMMtPGhci7rTH7BKoZfU2vjojDDT2d5gKGFkWsIT8vp9xmdWhRxcLyYamNx1f3baQPZ1pbZKkquBVObeTmTKF1Vq-Ezcw9~w__",
-      "definisi": "Diphtheria adalah infeksi bakteri yang disebabkan oleh Corynebacterium diphtheriae, yang dapat mempengaruhi saluran pernapasan dan menyebabkan pembentukan selaput di tenggorokan. Penyakit ini dapat berakibat fatal jika tidak diobati, terutama pada anak-anak.\n",
-      "gejala": {
-        "umum": [
-          "Sakit Tenggorokan: Rasa sakit yang parah di tenggorokan, sering disertai kesulitan menelan.\n",
-          "Demam: Suhu tubuh yang meningkat, biasanya ringan hingga sedang.\n",
-          "Pembengkakan Kelenjar Getah Bening: Kelenjar di leher dapat membesar dan nyeri.\n"
-        ],
-        "spesifik": [
-          "Selaput di Tenggorokan: Pembentukan selaput berwarna abu-abu yang dapat menghalangi saluran napas.\n",
-          "Kesulitan Bernapas: Napas yang terdengar serak atau sulit, terutama jika selaput menghalangi saluran pernapasan.\n",
-          "Kelemahan Umum: Rasa lelah dan lemah yang tidak biasa.\n"
-        ],
-        "tahapan": {
-          "ringan": "Gejala mirip flu seperti sakit tenggorokan dan demam ringan.\n",
-          "sedang": "Pembentukan selaput di tenggorokan dan pembengkakan kelenjar getah bening.\n",
-          "parah": " Kesulitan bernapas dan komplikasi serius jika tidak diobati.\n"
+    },
+    {
+        "diphtheria": {
+            "gambar": "https://media-hosting.imagekit.io//15f558997f714297/Diphtheria.png?Expires=1836332368&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=TQ50dP34mvJ2qwW72Z-X5SMFG3o8Ay8Ur0rfId9Xp9T7nJGKkvGV1FNEUTmxYZufXEuL5Wi0pVebmkzUh22bHxp4XzqoUOhEFeQJNdMCz76uhNpjjvgeTghnojh2v5ePEfDNvC-6RbIuS79QoGVij5oL8Nau84s2OxLzSBcvhcRPTDcPehYaSoW4Rn~zrk3qAjEAMo1~zkGJEqd5tAwG-6Fu0p5IVustUjcBNX~s2wdUrar3er53T~PMMtPGhci7rTH7BKoZfU2vjojDDT2d5gKGFkWsIT8vp9xmdWhRxcLyYamNx1f3baQPZ1pbZKkquBVObeTmTKF1Vq-Ezcw9~w__",
+            "definisi": "Diphtheria adalah infeksi bakteri yang disebabkan oleh Corynebacterium diphtheriae, yang dapat mempengaruhi saluran pernapasan dan menyebabkan pembentukan selaput di tenggorokan. Penyakit ini dapat berakibat fatal jika tidak diobati, terutama pada anak-anak.\n",
+            "gejala": {
+                "umum": [
+                    "Sakit Tenggorokan: Rasa sakit yang parah di tenggorokan, sering disertai kesulitan menelan.\n",
+                    "Demam: Suhu tubuh yang meningkat, biasanya ringan hingga sedang.\n",
+                    "Pembengkakan Kelenjar Getah Bening: Kelenjar di leher dapat membesar dan nyeri.\n"
+                ],
+                "spesifik": [
+                    "Selaput di Tenggorokan: Pembentukan selaput berwarna abu-abu yang dapat menghalangi saluran napas.\n",
+                    "Kesulitan Bernapas: Napas yang terdengar serak atau sulit, terutama jika selaput menghalangi saluran pernapasan.\n",
+                    "Kelemahan Umum: Rasa lelah dan lemah yang tidak biasa.\n"
+                ],
+                "tahapan": {
+                    "ringan": "Gejala mirip flu seperti sakit tenggorokan dan demam ringan.\n",
+                    "sedang": "Pembentukan selaput di tenggorokan dan pembengkakan kelenjar getah bening.\n",
+                    "parah": " Kesulitan bernapas dan komplikasi serius jika tidak diobati.\n"
+                }
+            },
+            "penyebab": ["Infeksi oleh Corynebacterium diphtheriae.\n", "Penularan melalui percikan udara dari batuk atau bersin.", "Kontak langsung dengan luka atau benda yang terkontaminasi.\n"],
+            "pengobatan": {
+                "medis": ["Pemberian antitoksin dan antibiotik untuk mengatasi infeksi."],
+                "mandiri": ["Istirahat yang cukup dan menjaga hidrasi.\n"],
+                "alternatif": ["Tidak ada pengobatan alternatif yang terbukti efektif; vaksinasi adalah pencegahan utama.\n"],
+                "durasi perawatan": "Pengobatan biasanya berlangsung selama 10-14 hari, tergantung pada keparahan infeksi.\n"
+            },
+            "pencegahan": [
+                "Vaksinasi dengan vaksin DTP (Diphtheria, Tetanus, Pertussis).\n",
+                "Menghindari kontak dengan orang yang terinfeksi.\n",
+                "Menerapkan kebersihan yang baik, seperti mencuci tangan secara teratur.\n"
+            ],
+            "komplikasi": "Diphtheria dapat menyebabkan komplikasi serius, termasuk kerusakan jantung, kerusakan saraf, dan kesulitan bernapas yang dapat mengancam jiwa. Jika tidak diobati, infeksi ini dapat berakibat fatal.\n"
         }
-      },
-      "penyebab": [
-        "Infeksi oleh Corynebacterium diphtheriae.\n",
-        "Penularan melalui percikan udara dari batuk atau bersin.",
-        "Kontak langsung dengan luka atau benda yang terkontaminasi.\n"
-      ],
-      "pengobatan": {
-        "medis": [
-          "Pemberian antitoksin dan antibiotik untuk mengatasi infeksi."
-        ],
-        "mandiri": [
-          "Istirahat yang cukup dan menjaga hidrasi.\n"
-        ],
-        "alternatif": [
-          "Tidak ada pengobatan alternatif yang terbukti efektif; vaksinasi adalah pencegahan utama.\n"
-        ],
-        "durasi perawatan": "Pengobatan biasanya berlangsung selama 10-14 hari, tergantung pada keparahan infeksi.\n"
-      },
-      "pencegahan": [
-        "Vaksinasi dengan vaksin DTP (Diphtheria, Tetanus, Pertussis).\n",
-        "Menghindari kontak dengan orang yang terinfeksi.\n",
-        "Menerapkan kebersihan yang baik, seperti mencuci tangan secara teratur.\n"
-      ],
-      "komplikasi": "Diphtheria dapat menyebabkan komplikasi serius, termasuk kerusakan jantung, kerusakan saraf, dan kesulitan bernapas yang dapat mengancam jiwa. Jika tidak diobati, infeksi ini dapat berakibat fatal.\n"
-    }
-  },
-  {
-    "epilepsia": {
-      "gambar": "https://media-hosting.imagekit.io//7cdd1a24b1e24b93/Epilepsia.png?Expires=1836332368&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=GuLzOpJpcBi7ibd5hkx3NkX1~JxCef-xBc1ELatD76eCPFu~vrT-iUK~FDLe-yqnj3hPkNgrwZkY7i3EvH96F5JiZg0a36EVWc0kjPk3nRYXRxui4dPss3e3mloB5vCIPSe11twotZpXs23sOfosnuZN-lEZ16DyOxqSk1SWEgdWAjMIS6YSfhdgrjtuL1oXg34wLOLPakro65GR~nfSsnFHAvBrQAIvyFLfXdVmuJIAijvHHtGmpjceK9XNs4DOrt34QMiag6DeQVRxqTXDOcRDG3YJTIC3yfxYjQG6mr90C8gtRJ8CyZRYm7cSZlfi8~lNalFPxbrxKEbRX-wnFg__",
-      "definisi": "Epilepsia adalah gangguan neurologis kronis yang ditandai oleh serangan kejang berulang akibat aktivitas listrik abnormal di otak. Kondisi ini dapat mempengaruhi berbagai fungsi tubuh dan mental, tergantung pada jenis kejang yang dialami.\n",
-      "gejala": {
-        "umum": [
-          "Kejang: Episode kejang yang dapat bervariasi dalam durasi dan intensitas.\n",
-          "Kehilangan Kesadaran: Penderita mungkin kehilangan kesadaran selama serangan.\n",
-          "Kebingungan: Perasaan bingung atau disorientasi setelah serangan.\n"
-        ],
-        "spesifik": [
-          "Gerakan Tidak Terkendali: Gerakan tubuh yang tidak dapat dikendalikan, seperti kejang otot.",
-          "Aura: Sensasi aneh atau perasaan yang dialami sebelum kejang, seperti bau atau rasa tertentu.\n",
-          "Perubahan Emosional: Perubahan suasana hati yang tiba-tiba, seperti kecemasan atau depresi.\n"
-        ],
-        "tahapan": {
-          "aura": "Sensasi atau perasaan aneh yang dialami sebelum kejang.\n",
-          "kejang": "Episode kejang yang berlangsung dari beberapa detik hingga beberapa menit.\n",
-          "pasca-kejang": "Periode pemulihan setelah kejang, di mana penderita mungkin merasa bingung atau lelah.\n"
+    },
+    {
+        "epilepsia": {
+            "gambar": "https://media-hosting.imagekit.io//7cdd1a24b1e24b93/Epilepsia.png?Expires=1836332368&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=GuLzOpJpcBi7ibd5hkx3NkX1~JxCef-xBc1ELatD76eCPFu~vrT-iUK~FDLe-yqnj3hPkNgrwZkY7i3EvH96F5JiZg0a36EVWc0kjPk3nRYXRxui4dPss3e3mloB5vCIPSe11twotZpXs23sOfosnuZN-lEZ16DyOxqSk1SWEgdWAjMIS6YSfhdgrjtuL1oXg34wLOLPakro65GR~nfSsnFHAvBrQAIvyFLfXdVmuJIAijvHHtGmpjceK9XNs4DOrt34QMiag6DeQVRxqTXDOcRDG3YJTIC3yfxYjQG6mr90C8gtRJ8CyZRYm7cSZlfi8~lNalFPxbrxKEbRX-wnFg__",
+            "definisi": "Epilepsia adalah gangguan neurologis kronis yang ditandai oleh serangan kejang berulang akibat aktivitas listrik abnormal di otak. Kondisi ini dapat mempengaruhi berbagai fungsi tubuh dan mental, tergantung pada jenis kejang yang dialami.\n",
+            "gejala": {
+                "umum": [
+                    "Kejang: Episode kejang yang dapat bervariasi dalam durasi dan intensitas.\n",
+                    "Kehilangan Kesadaran: Penderita mungkin kehilangan kesadaran selama serangan.\n",
+                    "Kebingungan: Perasaan bingung atau disorientasi setelah serangan.\n"
+                ],
+                "spesifik": [
+                    "Gerakan Tidak Terkendali: Gerakan tubuh yang tidak dapat dikendalikan, seperti kejang otot.",
+                    "Aura: Sensasi aneh atau perasaan yang dialami sebelum kejang, seperti bau atau rasa tertentu.\n",
+                    "Perubahan Emosional: Perubahan suasana hati yang tiba-tiba, seperti kecemasan atau depresi.\n"
+                ],
+                "tahapan": {
+                    "aura": "Sensasi atau perasaan aneh yang dialami sebelum kejang.\n",
+                    "kejang": "Episode kejang yang berlangsung dari beberapa detik hingga beberapa menit.\n",
+                    "pasca-kejang": "Periode pemulihan setelah kejang, di mana penderita mungkin merasa bingung atau lelah.\n"
+                }
+            },
+            "penyebab": [
+                "Genetik atau riwayat keluarga dengan epilepsia.\n",
+                "Cedera kepala atau trauma otak.\n",
+                "Infeksi otak, seperti meningitis.\n",
+                "Tumor otak atau kelainan struktural.\n",
+                "Penyakit neurodegeneratif.\n"
+            ],
+            "pengobatan": {
+                "medis": ["Pemberian obat antiepilepsi untuk mengontrol kejang.\n"],
+                "mandiri": ["Menghindari pemicu kejang, seperti stres atau kurang tidur."],
+                "alternatif": ["Terapi diet ketogenik atau stimulasi saraf vagus (dengan konsultasi dokter)."],
+                "durasi perawatan": "Pengobatan biasanya bersifat jangka panjang dan memerlukan pemantauan rutin.\n"
+            },
+            "pencegahan": ["Menghindari faktor pemicu yang diketahui.\n", "Mengelola stres dan menjaga pola tidur yang baik.", "Menghindari alkohol dan obat-obatan terlarang."],
+            "komplikasi": "Epilepsia dapat menyebabkan komplikasi serius, termasuk cedera akibat kejang, gangguan mental, dan dampak sosial yang signifikan. Penderita juga berisiko mengalami status epileptikus, yaitu serangan kejang yang berlangsung lebih dari 5 menit atau serangan berulang tanpa pemulihan di antara serangan.\n"
         }
-      },
-      "penyebab": [
-        "Genetik atau riwayat keluarga dengan epilepsia.\n",
-        "Cedera kepala atau trauma otak.\n",
-        "Infeksi otak, seperti meningitis.\n",
-        "Tumor otak atau kelainan struktural.\n",
-        "Penyakit neurodegeneratif.\n"
-      ],
-      "pengobatan": {
-        "medis": [
-          "Pemberian obat antiepilepsi untuk mengontrol kejang.\n"
-        ],
-        "mandiri": [
-          "Menghindari pemicu kejang, seperti stres atau kurang tidur."
-        ],
-        "alternatif": [
-          "Terapi diet ketogenik atau stimulasi saraf vagus (dengan konsultasi dokter)."
-        ],
-        "durasi perawatan": "Pengobatan biasanya bersifat jangka panjang dan memerlukan pemantauan rutin.\n"
-      },
-      "pencegahan": [
-        "Menghindari faktor pemicu yang diketahui.\n",
-        "Mengelola stres dan menjaga pola tidur yang baik.",
-        "Menghindari alkohol dan obat-obatan terlarang."
-      ],
-      "komplikasi": "Epilepsia dapat menyebabkan komplikasi serius, termasuk cedera akibat kejang, gangguan mental, dan dampak sosial yang signifikan. Penderita juga berisiko mengalami status epileptikus, yaitu serangan kejang yang berlangsung lebih dari 5 menit atau serangan berulang tanpa pemulihan di antara serangan.\n"
     }
-  }
 ]

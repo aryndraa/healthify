@@ -1,114 +1,107 @@
 @tailwind utilities;
 
 :root {
-	  --primary-color: #ffff;
-	  --second-color: #213170;
-		--tranary-color: #C5E5FF;
+    --primary-color: #ffff;
+    --second-color: #213170;
+    --tranary-color: #c5e5ff;
 }
 
-
 @layer utilities {
-	.item-1 {
-		display: flex;
-		flex-direction: column;
-		padding: 48px;
-		gap: 16px;
-		background-color: white;
-		border-radius: 40px;
-		min-height: 600px;
-		justify-content: space-between;
-	}
+    .item-1 {
+        display: flex;
+        flex-direction: column;
+        padding: 48px;
+        gap: 16px;
+        background-color: white;
+        border-radius: 40px;
+        min-height: 600px;
+        justify-content: space-between;
+    }
 
-	.items{
-		display: flex;
-		justify-content: center;
-	}
-	
+    .items {
+        display: flex;
+        justify-content: center;
+    }
 
-	.Button {
-		display: flex;
-		align-items: center;
-		padding: 8px 24px;
-		gap: 4px;
-		/* width: max-content; */
-		border-radius: 40px;
-		background-color: white;
-		border: solid;
-		border-width: 1px;
-		transition: background-color 0.3s ease, color 0.3s ease;
-	}
-	
-	.Button:hover {
-		transition: all;
-		background-color: #213170;
-		color: white;
-	}
+    .Button {
+        display: flex;
+        align-items: center;
+        padding: 8px 24px;
+        gap: 4px;
+        /* width: max-content; */
+        border-radius: 40px;
+        background-color: white;
+        border: solid;
+        border-width: 1px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
 
-	.Container1 {
-		display: flex;
-		flex-direction: column;
-		max-width: 1680px;
-	}
+    .Button:hover {
+        transition: all;
+        background-color: #213170;
+        color: white;
+    }
 
-	@media only screen and (min-width:1553px) {
-		.Container1{
-			width: 833px;
-		}
-		.item-2{
-			width: 883px;
-		}
-	}
+    .Container1 {
+        display: flex;
+        flex-direction: column;
+        max-width: 1680px;
+    }
 
-	.item-2 {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		padding: 32px;
-		gap: 20px;
-		background-color: white;
-		border-radius: 40px;
-		
-	}
-	.item-2 p {
-		background-color: inherit;
-	}
+    @media only screen and (min-width: 1553px) {
+        .Container1 {
+            width: 833px;
+        }
+        .item-2 {
+            width: 883px;
+        }
+    }
 
-	.BOX {
-		margin-top: 16px;
+    .item-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 32px;
+        gap: 20px;
+        background-color: white;
+        border-radius: 40px;
+    }
+    .item-2 p {
+        background-color: inherit;
+    }
 
-		min-height: 350px;
-		padding: 32px;
-		background-color: white;
-		border-radius: 40px;
-	}
-	.BOX2 {
-		max-height: 450px;
-		/* width: 549px; */
-		border-radius: 40px;
-	}
-	
+    .BOX {
+        margin-top: 16px;
 
-	.BLOG {
-		padding: 32px;
-		border-radius: 40px;
-	}
-	
+        min-height: 350px;
+        padding: 32px;
+        background-color: white;
+        border-radius: 40px;
+    }
+    .BOX2 {
+        max-height: 450px;
+        /* width: 549px; */
+        border-radius: 40px;
+    }
 
-	.BLOG:hover{
-		transition: all;
-		transition-duration: 400ms;
-		background-color: #213170;
-		color: white;
-	}
-	.Tag{
-		font-size: 1rem;
-		padding: 4px 16px 4px 16px ;
+    .BLOG {
+        padding: 32px;
+        border-radius: 40px;
+    }
 
-		border: solid;
-		border-width: 1px;
-		border-radius: 24px;
-		max-height: fit-content;
-	}
+    .BLOG:hover {
+        transition: all;
+        transition-duration: 400ms;
+        background-color: #213170;
+        color: white;
+    }
+    .Tag {
+        font-size: 1rem;
+        padding: 4px 16px 4px 16px;
 
-
+        border: solid;
+        border-width: 1px;
+        border-radius: 24px;
+        max-height: fit-content;
+    }
 }

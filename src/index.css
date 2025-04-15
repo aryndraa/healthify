@@ -1,85 +1,83 @@
-@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 * {
-	margin: 0;
-	padding: 0;
-	font-family: "Figtree", sans-serif;
-	scroll-behavior: smooth;
-	cursor: url('./assets/cursorhea.svg') , auto ;
+    margin: 0;
+    padding: 0;
+    font-family: 'Figtree', sans-serif;
+    scroll-behavior: smooth;
+    cursor: url('./assets/cursorhea.svg'), auto;
 }
-button{
-	
-	cursor: url('./assets/cursorhea.svg') , auto ;
+button {
+    cursor: url('./assets/cursorhea.svg'), auto;
 }
 
 body {
-	margin: auto;
-	max-width: 1920px;
-	background-color: rgb(239, 239, 239);
-	margin: auto;
+    margin: auto;
+    max-width: 1920px;
+    background-color: rgb(239, 239, 239);
+    margin: auto;
 }
 
 body::-webkit-scrollbar {
-	display: none;
+    display: none;
 }
 
 .text--2xl {
-	font-size: clamp(1.125rem, 0.6563rem + 1.5vw, 1.5rem);
-	line-height: 32px;
+    font-size: clamp(1.125rem, 0.6563rem + 1.5vw, 1.5rem);
+    line-height: 32px;
 }
 .text--lg {
-	font-size: clamp(0.875rem, 0.5625rem + 1vw, 1.125rem);
+    font-size: clamp(0.875rem, 0.5625rem + 1vw, 1.125rem);
 }
 .text--xl {
-	font-size: clamp(0.875rem, 0.4063rem + 1.5vw, 1.25rem);
+    font-size: clamp(0.875rem, 0.4063rem + 1.5vw, 1.25rem);
 }
 
 .text--32 {
-	font-size: clamp(1.125rem, 0.0313rem + 3.5vw, 2rem);
+    font-size: clamp(1.125rem, 0.0313rem + 3.5vw, 2rem);
 }
 .text--38 {
-	font-size: clamp(1.25rem, -0.4375rem + 5vw, 2.375rem);
+    font-size: clamp(1.25rem, -0.4375rem + 5vw, 2.375rem);
 }
 
 .text--5xl {
-	font-size: clamp(1.5rem, -1.5rem + 8vw, 3rem);
+    font-size: clamp(1.5rem, -1.5rem + 8vw, 3rem);
 }
 .text--4xl {
-	font-size: clamp(1.5rem, -3.5625rem + 5vw, 2.25rem);
+    font-size: clamp(1.5rem, -3.5625rem + 5vw, 2.25rem);
 }
 
 .text--7xl {
-	font-size: clamp(2.5rem, -2.1875rem + 11vw, 4rem);
+    font-size: clamp(2.5rem, -2.1875rem + 11vw, 4rem);
 }
 
-
 .animate_scroll_up {
-	animation: animate_scroll_up 0.4s forwards;
+    animation: animate_scroll_up 0.4s forwards;
 }
 
 @keyframes animate_scroll_up {
-	from {
-		transform: translateY(-100%);
-	}
-	to {
-	transform: translateY(0);
-	}
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
 }
 
 .animate_scroll_down {
-	animation: animate_scroll_down 0.4s forwards;
-	position: fixed;
+    animation: animate_scroll_down 0.4s forwards;
+    position: fixed;
 }
 
 @keyframes animate_scroll_down {
-	from {
-		transform: translateY(0);
-	}
-	to {
-		transform: translateY(100%);
-	}
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(100%);
+    }
 }
