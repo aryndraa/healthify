@@ -1,5 +1,7 @@
 import heal from '../assets/logo-white.svg';
 import { useState } from 'react';
+import {Link} from 'react-router-dom';
+
 const Footer = () => {
     const [email, setEmail] = useState('');
     const handleClear = () => {
@@ -7,8 +9,8 @@ const Footer = () => {
     };
     return (
         <footer className="bg-[#213170] text-white p-10 lg:p-16 2xl:p-20 rounded-xl lg:rounded-[40px]">
-            <div className="container mx-auto flex justify-between max-[1280px]:justify-start ">
-                <div className=" hidden max-w-[536px] xl:flex flex-col gap-12">
+            <div className="container mx-auto flex justify-between max-[1280px]:justify-start  gap-20">
+                <div className=" hidden xl:flex flex-col gap-12 flex-1">
                     <div>
                         <img src={heal} alt=" healthify logo" />
                         <p className="max-w-[506px]">We provide accessible health information to empower informed decisions and enhance well-being.</p>
@@ -16,22 +18,22 @@ const Footer = () => {
 
                     <div className="flex flex-col gap-6">
                         <div>
-                            <p className="text-xl">company</p>
-                            <p className="text--38 font-semibold">Healthify.inc Health Information Center</p>
+                            <p className="text-lg 2xl:text-xl">Company</p>
+                            <p className="text-3xl leading-[1.5] 2xl:text-4xl 2xl:leading-[1.5] font-semibold">Healthify.inc Health Information Center</p>
                         </div>
 
                         <div>
-                            <p className="text-xl">Explore</p>
-                            <p className="text--38 font-semibold">Disease Information, Drugs Library, Pharmacy & Clinics</p>
+                            <p className="text-lg 2xl:text-xl">Explore</p>
+                            <p className="text-3xl leading-[1.5] 2xl:text-4xl 2xl:leading-[1.5] font-semibold">Disease Information, Drugs Library, Pharmacy & Clinics</p>
                         </div>
                     </div>
                 </div>
 
-                <div>
-                    <div className="min-w-[200px] min-[1440px]:w-[652px]">
+                <div className="flex-1">
+                    <div className="">
                         <div className="hidden xl:flex justify-between items-center mb-6">
                             <input
-                                className="text-5xl font-semibold bg-transparent placeholder-white focus:outline-none focus:ring-0 focus:border-none"
+                                className="lg:text-2xl 2xl:text-3xl font-semibold bg-transparent placeholder-white focus:outline-none focus:ring-0 focus:border-none"
                                 type="email"
                                 placeholder="Enter your email"
                                 value={email}
@@ -50,31 +52,31 @@ const Footer = () => {
                         </div>
                         <hr className="border-t border-gray-100 opacity-35 hidden xl:flex" />
                     </div>
-                    <div className="flex flex-col  gap-16 xl:pt-16 sm:flex sm:flex-row  justify-end ">
+                    <div className="flex flex-col  gap-16 xl:pt-12 sm:flex sm:flex-row  justify-between">
                         <ul className="   hover:text-white">
                             <li>
                                 <p className="text--2xl font-semibold mb-4">Pages</p>
                             </li>
                             <div className="flex flex-col gap-3 text--lg ">
                                 <li>
-                                    <a href="/" className="opacity-35 hover:opacity-100 transition-all duration-150">
+                                    <Link to="/" className="opacity-35 hover:opacity-100 transition-all duration-150">
                                         Home
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href="/disease" className="opacity-35 hover:opacity-100 transition-all duration-150">
+                                    <Link to="/disease" className="opacity-35 hover:opacity-100 transition-all duration-150">
                                         Disease
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href="/drugs" className="opacity-35 hover:opacity-100 transition-all duration-150">
+                                    <Link to="/drugs" className="opacity-35 hover:opacity-100 transition-all duration-150">
                                         Drugs
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href="/blogs" className="opacity-35 hover:opacity-100 transition-all duration-150">
+                                    <Link to="/blogs" className="opacity-35 hover:opacity-100 transition-all duration-150">
                                         Blogs
-                                    </a>
+                                    </Link>
                                 </li>
                             </div>
                         </ul>
@@ -85,14 +87,14 @@ const Footer = () => {
                             </li>
                             <div className="flex flex-col gap-3 text--lg">
                                 <li>
-                                    <a href="/clinic" className="opacity-35 hover:opacity-100 transition-all duration-150">
+                                    <Link to="/clinic" className="opacity-35 hover:opacity-100 transition-all duration-150">
                                         Clinics
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href="/pharmacy" className="opacity-35 hover:opacity-100 transition-all duration-150">
+                                    <Link to="/pharmacy" className="opacity-35 hover:opacity-100 transition-all duration-150">
                                         Pharmacy
-                                    </a>
+                                    </Link>
                                 </li>
                             </div>
                         </ul>
@@ -102,19 +104,19 @@ const Footer = () => {
                             </li>
 
                             <li>
-                                <a href="" className="opacity-35 hover:opacity-100 transition-all duration-150">
+                                <Link to="" className="opacity-35 hover:opacity-100 transition-all duration-150">
                                     331 Rhett Ville, Burleson <br /> 58799
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="" className="opacity-35 hover:opacity-100 transition-all duration-150">
+                                <Link to="" className="opacity-35 hover:opacity-100 transition-all duration-150">
                                     1-449-709-9073 x5655
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="" className="opacity-35 hover:opacity-100 transition-all duration-150">
+                                <Link to="" className="opacity-35 hover:opacity-100 transition-all duration-150">
                                     United State
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
@@ -126,9 +128,9 @@ const Footer = () => {
                 <div className="flex flex-col justify-between sm:flex sm:flex-row gap-4">
                     <p>Copyright © 2024 Healthify, inc. All Right Reserved</p>
                     <div className="flex flex-col gap-2 sm:flex sm:flex-row sm:gap-12 ">
-                        <a href="">Privacy Policy</a>
-                        <a href="">FAQ</a>
-                        <a href="">Terms of Service</a>
+                        <Link to="">Privacy Policy</Link>
+                        <Link to="">FAQ</Link>
+                        <Link to="">Terms of Service</Link>
                     </div>
                 </div>
             </div>
