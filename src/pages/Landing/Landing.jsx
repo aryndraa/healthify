@@ -37,7 +37,7 @@ const Landing = () => {
                     initial={{ opacity: 0, y: 100 }}
                     animate={inViewImage ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 1 }}
-                    className="max-w-[1680px] h-[500px] rounded-[40px] mt-4 hidden xl:block"
+                    className="max-w-[1680px] h-[350px] rounded-[40px] mt-4 hidden xl:block"
                     style={{
                         backgroundImage: `url(${IDemo2})`,
                         backgroundSize: 'cover',
@@ -46,7 +46,7 @@ const Landing = () => {
                 ></motion.div>
             </div>
             {/* explore clinic and pharmacy  */}
-            <div className=' sm:grid sm:grid-cols-2 xl:flex xl:flex-col gap-4'>
+            <div className=' sm:grid sm:grid-cols-2 xl:flex xl:flex-col gap-4  xl:gap-0'>
                 <ExpClinic />
                 <ExpPharmacy />
             </div>
@@ -62,7 +62,7 @@ const Landing = () => {
                     className="mt-[34px] mb-[30px] h-full w-full flex gap-4"
                 >
                     <FAQ />
-                    <div className="Container2 min-h-[1000px] h-full max-xl:hidden bg-cover bg-center rounded-[40px] w-[690px]" style={{ backgroundImage: `url(${IDemo3})` }}></div>
+                    <div className="Container2 min-h-[850px] h-full max-xl:hidden bg-cover bg-center rounded-[40px] w-[690px]" style={{ backgroundImage: `url(${IDemo3})` }}></div>
                 </motion.div>
             </div>
         </div>
