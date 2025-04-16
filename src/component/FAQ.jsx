@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-
 import { useInView } from 'react-intersection-observer';
 
 const FAQ = () => {
@@ -63,31 +62,15 @@ const FAQ = () => {
                                     </motion.div>
                                 </div>
                             </motion.div>
-                            <AnimatePresence initial={false}>
+
                                 {isActive && (
                                     <motion.div
-                                        key="content"
-                                        initial={{
-                                            opacity: 0,
-                                            y: -10,
-                                            height: 0,
-                                        }}
-                                        animate={{
-                                            opacity: 1,
-                                            y: 0,
-                                            height: 'auto',
-                                        }}
-                                        exit={{ opacity: 0, y: -10, height: 0 }}
-                                        transition={{
-                                            duration: 0.4,
-                                            ease: 'easeInOut',
-                                        }}
                                         className="pl-4 pr-6 pb-6"
                                     >
                                         <p className="text--lg  text-justify mt-4">{item.answer}</p>
                                     </motion.div>
                                 )}
-                            </AnimatePresence>
+
                             <hr className="my-4 border-[#E0E0E0]" />
                         </motion.div>
                     );

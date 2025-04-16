@@ -5,18 +5,12 @@ export const ExpClinic = () => {
     const navigate = useNavigate();
     const { ref, inView } = useInView({ triggerOnce: true });
     return (
-        <motion.div
-            ref={ref}
-            initial={{ opacity: 0, y: 100 }}
-            animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 1 }}
-            className="flex flex-col xl:grid xl:grid-cols-6  gap-4 mt-12 mb-4"
-        >
-            <div className="items  xl:col-span-6 2xl:col-span-2">
+        <motion.div ref={ref} initial={{ opacity: 0, y: 100 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 1 }} className="flex flex-col xl:grid xl:grid-cols-6  gap-4  mb-4">
+            <div className="items   xl:col-span-2">
                 <div onClick={() => navigate('/clinic')} className="BOX2 bg-[#213170] w-screen flex flex-col h-screen justify-between p-8 group   ">
                     <div className="flex flex-col gap-4">
                         <div className="flex justify-between ">
-                            <p className="text--5xl font-semibold text-white  ">Explore Clinics Nearby</p>
+                            <p className="text-3xl 2xl:text--5xl font-semibold text-white  ">Explore Clinics Nearby</p>
                             <svg
                                 className="rounded-full p-[10px] w-[50px] h-[50px] md:w-[72px] md:h-[72px] md:p-[20px]  transition-transform duration-300 bg-[#C5E5FF]  group-hover:border-solid group-hover:border-[#C5E5FF]  group-hover:border-[3px] group-hover:rotate-45  group-hover:bg-white "
                                 xmlns="http://www.w3.org/2000/svg"
@@ -39,7 +33,7 @@ export const ExpClinic = () => {
                     </div>
                 </div>
             </div>
-            <div className="items  xl:col-span-3 2xl:col-span-2">
+            <div className="items   xl:col-span-2">
                 <div onClick={() => navigate('/clinic')} className="BOX2  flex flex-col h-screen w-screen justify-between bg-Clinic2 bg-cover   ">
                     <div className="p-8 flex flex-col justify-between h-screen hover:bg-blue-300 hover:bg-opacity-40 rounded-[40px] group">
                         <svg
@@ -72,7 +66,7 @@ export const ExpClinic = () => {
                     </div>
                 </div>
             </div>
-            <div className="items   xl:col-span-3 2xl:col-span-2">
+            <div className="items   xl:col-span-2">
                 <div onClick={() => navigate('/clinic/2')} className="BOX2  flex flex-col h-screen w-screen justify-between bg-vaelclinic bg-cover    ">
                     <div className="p-8 flex flex-col justify-between h-screen hover:bg-blue-300 hover:bg-opacity-40 rounded-[40px] group">
                         <svg

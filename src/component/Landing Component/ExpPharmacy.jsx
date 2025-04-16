@@ -5,12 +5,18 @@ export const ExpPharmacy = () => {
     const navigate = useNavigate();
     const { ref, inView } = useInView({ triggerOnce: true });
     return (
-        <motion.div ref={ref} initial={{ opacity: 0, y: 100 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 1 }} className="flex flex-col xl:grid xl:grid-cols-6  gap-4 mb-12">
-            <div className="items col-start-5 xl:col-span-6 2xl:col-span-2">
+        <motion.div
+            ref={ref}
+            initial={{ opacity: 0, y: 100 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 1 }}
+            className="flex flex-col xl:grid xl:grid-cols-6  gap-4  mb-4"
+        >
+            <div className="items col-start-5  xl:col-span-2">
                 <div onClick={() => navigate('/pharmacy')} className="BOX2 bg-[#C5E5FF] flex flex-col w-screen h-screen justify-between p-8 group  ">
                     <div className="flex flex-col gap-4">
                         <div className="flex justify-between ">
-                            <p className="text--5xl font-semibold  ">Explore Nearest Pharmacy</p>
+                            <p className="text-3xl 2xl:text--5xl font-semibold  ">Explore Nearest Pharmacy</p>
                             <svg
                                 className="rounded-full p-[10px] w-[50px] h-[50px] md:w-[72px] md:h-[72px] md:p-[20px]  transition-transform duration-300 bg-white  group-hover:border-solid group-hover:border-[#C5E5FF]  group-hover:border-[3px] group-hover:rotate-45  group-hover:bg-[#213170]"
                                 xmlns="http://www.w3.org/2000/svg"
@@ -33,7 +39,7 @@ export const ExpPharmacy = () => {
                     </div>
                 </div>
             </div>
-            <div className="items col-start-3 xl:col-span-3 2xl:col-span-2">
+            <div className="items col-start-3  xl:col-span-2">
                 <div onClick={() => navigate('/pharmacy/2')} className="BOX2  flex flex-col h-screen w-screen  justify-between bg-Jinx bg-cover   ">
                     <div className="p-8 flex flex-col justify-between h-screen hover:bg-blue-300 hover:bg-opacity-40 rounded-[40px] group">
                         <svg
@@ -66,7 +72,7 @@ export const ExpPharmacy = () => {
                     </div>
                 </div>
             </div>
-            <div className="items col-start-1 xl:col-span-3 2xl:col-span-2">
+            <div className="items col-start-1 xl:col-span-2">
                 <div onClick={() => navigate('/pharmacy/1')} className="BOX2  flex flex-col h-screen w-screen justify-between bg-Dyven bg-cover   ">
                     <div className="p-8 flex flex-col justify-between h-screen hover:bg-blue-300 hover:bg-opacity-40 rounded-[40px] group">
                         <svg
