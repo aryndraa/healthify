@@ -23,8 +23,8 @@ export const BlogCard = ({ blog }) => {
                 </div>
                 {/* Blog Content */}
                 <div className="Blog-Content flex flex-col gap-4">
-                    <p className="text--2xl font-semibold">{blog.title}</p>
-                    <p className="text--lg">{blog.description}</p>
+                    <p className="lg:text-2xl text-xl font-semibold">{blog.title}</p>
+                    <p className="lg:text-lg text-base line-clamp-2">{blog.description}</p>
                 </div>
             </div>
         </div>

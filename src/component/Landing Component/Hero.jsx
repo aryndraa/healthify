@@ -24,13 +24,14 @@ export const Hero = () => {
         <motion.div ref={ref} initial="hidden" animate={inView ? 'visible' : 'hidden'} className="max-w-screen flex md:gap-4 ">
             <motion.div variants={fadeUpVariants} className="Container1 2xl:gap-4">
                 <div className="item-1 ">
+                    
                     {/** Heading */}
-                    <motion.p variants={fadeUpVariants} custom={0} className="font-semibold text--5xl">
+                    <motion.p variants={fadeUpVariants} custom={0} className="font-semibold lg:text-5xl text-3xl md:text-4xl ">
                         Where Health Meets Knowledge for a Brighter Future
                     </motion.p>
 
                     {/** Subheading */}
-                    <motion.p variants={fadeUpVariants} custom={1} className="text--lg mt-4 mb-6   ">
+                    <motion.p variants={fadeUpVariants} custom={1} className="lg:text-lg text-base mt-4 mb-6   ">
                         Explore a wealth of resources designed to empower you with the knowledge you need to make informed health decisions. From understanding medications and diseases to finding
                         local healthcare services, we are dedicated to supporting your journey towards a healthier, happier life.
                     </motion.p>
@@ -51,7 +52,7 @@ export const Hero = () => {
                                 onClick={() => navigate(btn.link)}
                                 className="Button flex items-center gap-2   "
                             >
-                                <p className="font-medium text--lg">{btn.label}</p>
+                                <p className="font-medium lg:text-lg text-base">{btn.label}</p>
                                 <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24">
                                     <path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 12h16m0 0l-6-6m6 6l-6 6" />
                                 </svg>
@@ -60,7 +61,7 @@ export const Hero = () => {
                     </div>
 
                     {/** Quote */}
-                    <motion.p variants={fadeUpVariants} custom={6} whileHover={{ scale: 1.02 }} className="deskItem1 hidden sm:block font-medium italic text--lg mt-8   ">
+                    <motion.p variants={fadeUpVariants} custom={6} whileHover={{ scale: 1.02 }} className="deskItem1 hidden sm:block font-medium italic lg:text-lg text-base mt-8   ">
                         “Great health stems from great knowledge, as understanding our bodies and the factors that influence our well-being empowers us to make informed choices.”
                     </motion.p>
                 </div>
@@ -69,8 +70,8 @@ export const Hero = () => {
                 <div className="hidden sm:flex gap-4">
                     <motion.img src={IDemo} alt="particle image" width={250} variants={fadeUpVariants} custom={7} whileHover={{ scale: 1.02 }} className="rounded-[40px] max-[1550px]:hidden   " />
                     <motion.div variants={fadeUpVariants} custom={8} className="item-2 justify-center max-[1550px]:hidden space-y-2   ">
-                        <p className="font-semibold text--4xl">Our mission</p>
-                        <p className="text--lg">Our mission is to empower individuals with accessible health information that promotes informed decision-making and enhances overall well-being.</p>
+                        <p className="font-semibold lg:text-4xl text-2xl">Our mission</p>
+                        <p className="lg:text-lg text-base">Our mission is to empower individuals with accessible health information that promotes informed decision-making and enhances overall well-being.</p>
                     </motion.div>
                 </div>
             </motion.div>
