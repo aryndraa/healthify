@@ -1,11 +1,14 @@
-import { useState, useEffect } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import Heal from '../assets/Logo.svg';
 import { NavLink } from 'react-router-dom';
+
 
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isScrollingDown, setIsScrollingDown] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const menuRef = useRef(null);
 
     useEffect(() => {
         let lastScrollY = window.scrollY;
@@ -13,11 +16,8 @@ const Navbar = () => {
         const handleScroll = () => {
             const currentScrollY = window.scrollY;
 
-            // Set isScrolled to true if passed 200px
             if (currentScrollY > 200) {
                 setIsScrolled(true);
-
-                // Only update scroll direction if isScrolled is true
                 if (currentScrollY > lastScrollY) {
                     setIsScrollingDown(true);
                 } else if (currentScrollY < lastScrollY - 10) {
@@ -33,6 +33,25 @@ const Navbar = () => {
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
+
+    // 🔥 Detect click outside mobile menu
+    useEffect(() => {
+        const handleClickOutside = event => {
+            if (menuRef.current && !menuRef.current.contains(event.target)) {
+                setIsMenuOpen(false);
+            }
+        };
+
+        if (isMenuOpen) {
+            document.addEventListener('mousedown', handleClickOutside);
+        } else {
+            document.removeEventListener('mousedown', handleClickOutside);
+        }
+
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, [isMenuOpen]);
 
     const navItems = [
         { name: 'Home', to: '/' },
@@ -69,14 +88,14 @@ const Navbar = () => {
                             </NavLink>
                         ))}
                     </nav>
-                    <div className="min-[1156px]:hidden   " onClick={() => setIsMenuOpen(!isMenuOpen)}>
+                    <div className="min-[1156px]:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
                         <svg className="bg-white rounded-md w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                             <path fill="none" stroke="currentColor" strokeLinecap="round" strokeWidth={1.5} d="M4 7h16M4 12h16M4 17h16" />
                         </svg>
                     </div>
                 </div>
 
-                <div className={`lg:hidden flex flex-col items-center transition-all duration-300 overflow-hidden ${isMenuOpen ? 'max-h-[300px] mt-4' : 'max-h-0'}`}>
+                <div ref={menuRef} className={`lg:hidden flex flex-col items-center transition-all duration-300 overflow-hidden ${isMenuOpen ? 'max-h-[300px] mt-4' : 'max-h-0'}`}>
                     <nav className="flex flex-col items-center bg-white rounded-lg shadow-md w-full">
                         {navItems.map(item => (
                             <NavLink key={item.to} to={item.to} className={({ isActive }) => `block w-full text-center py-2 ${isActive ? 'bg-gray-100' : ''}`} onClick={() => setIsMenuOpen(false)}>
@@ -89,5 +108,6 @@ const Navbar = () => {
         </div>
     );
 };
+
 
 export default Navbar;

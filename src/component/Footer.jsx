@@ -105,17 +105,17 @@ const Footer = () => {
 
                             <li>
                                 <Link to="" className="opacity-35 hover:opacity-100 transition-all duration-150">
-                                    331 Rhett Ville, Burleson <br /> 58799
+                                    Teuku Umuar No.11 <br /> Denpasar
                                 </Link>
                             </li>
                             <li>
                                 <Link to="" className="opacity-35 hover:opacity-100 transition-all duration-150">
-                                    1-449-709-9073 x5655
+                                    0361-112-3870-11
                                 </Link>
                             </li>
                             <li>
                                 <Link to="" className="opacity-35 hover:opacity-100 transition-all duration-150">
-                                    United State
+                                    Bali, Indonesia
                                 </Link>
                             </li>
                         </ul>

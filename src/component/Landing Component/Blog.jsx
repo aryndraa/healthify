@@ -23,8 +23,8 @@ export const Blogs = () => {
     return (
         <motion.div ref={ref} initial={{ opacity: 0, y: 100 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 1 }} className=" flex  flex-col gap-4 ">
             <div className="items">
-                <div onClick={() => navigate('/blogs')} className=" flex justify-between min-[1441px]:max-w-[1920px] w-screen py-[32px] px-[48px] bg-white rounded-[40px] items-center gap-2 group  ">
-                    <p className="text--5xl font-semibold">Explore Our Blogs</p>
+                <div onClick={() => navigate('/blogs')} className=" flex justify-between min-[1441px]:max-w-[1920px] w-screen py-[32px] px-[48px] bg-white rounded-[40px] xl:rounded-full items-center gap-2 group  ">
+                    <p className="text-3xl 2xl:text-5xl font-semibold">Explore Our Blogs</p>
                     <svg
                         className="rounded-full p-[10px] w-[50px] h-[50px] md:w-[72px] md:h-[72px] md:p-[20px]  transition-transform duration-300 bg-[#C5E5FF]  group-hover:border-solid group-hover:border-[#C5E5FF]  group-hover:border-[3px] group-hover:rotate-45  group-hover:bg-[#213170] "
                         xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +40,7 @@ export const Blogs = () => {
                     </svg>
                 </div>
             </div>
-            <div className="w-full h-max grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 2xl:gap-6 mt-4 ">
+            <div className="w-full  grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4  mt-4 ">
                 {randomBlogs.map(blog => (
                     <div className=" h-full">
                         <BlogCard key={blog.id} blog={blog} />

@@ -9,7 +9,7 @@ export const BlogCard = ({ blog }) => {
     return (
         <div className="items h-full">
             <div onClick={handleClick} className="BLOG bg-white h-full w-full gap-6 flex flex-col justify-between p-6 ">
-                <div className="flex flex-col gap-6 justify-between 2xl:flex-row">
+                <div className="flex flex-col gap-6 justify-between xl:flex-row">
                     {/* Tags */}
                     <div className="flex gap-4 h-fit">
                         {blog.tags.map((tag, index) => (
@@ -23,8 +23,8 @@ export const BlogCard = ({ blog }) => {
                 </div>
                 {/* Blog Content */}
                 <div className="Blog-Content flex flex-col gap-4">
-                    <p className="text--2xl font-semibold">{blog.title}</p>
-                    <p className="text--lg">{blog.description}</p>
+                    <p className="lg:text-2xl text-xl font-semibold">{blog.title}</p>
+                    <p className="lg:text-lg text-base line-clamp-2">{blog.description}</p>
                 </div>
             </div>
         </div>
