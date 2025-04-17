@@ -1,6 +1,4 @@
 import { MapsView } from '../../component/MapsView.jsx';
-import { SearchBar } from '../../component/SearchBar.jsx';
-import { ShortBy } from '../../component/ShortBy.jsx';
 import { useParams } from 'react-router-dom';
 import { pharmacies } from './pharmachyData.js';
 import { drugData } from '../Drugs/drugsdta.js';
@@ -8,9 +6,7 @@ import { DrugCard } from '../../component/Drugs/Drug.jsx';
 import { MoreLink } from '../../component/MoreLink.jsx';
 import { useEffect, useState } from 'react';
 import searchIcon from '../../assets/search.svg';
-import { blogData } from '../Blog/blogdta.js';
 import { PharmacyClinicCard } from '../../component/PharmacyClinicCard.jsx';
-import { clinics } from '../Clinic/clinicData.js';
 
 export function PharmacyDetail() {
     const [filteredDrugs, setFilteredDrugs] = useState(drugData);
@@ -82,7 +78,7 @@ export function PharmacyDetail() {
                     <MoreLink name={'More Pharmacy'} />
                     <div className="grid grid-cols-1 lg:grid-cols-3 mt-2 lg:mt-4 gap-2 lg:gap-4">
                         {randomPharmacy.map((item, index) => (
-                            <PharmacyClinicCard key={index} name={item.name} type={item.type} id={item.id} img={item.image} time={item.time} />
+                            <PharmacyClinicCard key={index} name={item.name} type={item.type} id={`/pharmacy/${id}`} img={item.image} time={item.time} />
                         ))}
                     </div>
                 </div>
