@@ -2,7 +2,6 @@ import { useRef, useState, useEffect } from 'react';
 import Heal from '../assets/Logo.svg';
 import { NavLink } from 'react-router-dom';
 
-
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isScrollingDown, setIsScrollingDown] = useState(false);
@@ -108,6 +107,5 @@ const Navbar = () => {
         </div>
     );
 };
-
 
 export default Navbar;
