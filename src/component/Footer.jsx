@@ -52,7 +52,7 @@ const Footer = () => {
                         </div>
                         <hr className="border-t border-gray-100 opacity-35 hidden xl:flex" />
                     </div>
-                    <div className="flex flex-col  gap-16 xl:pt-12 sm:flex sm:flex-row  justify-end">
+                    <div className="flex flex-col  gap-16 xl:pt-12 sm:flex sm:flex-row  md:justify-between lg:justify-end">
                         <ul className="   hover:text-white">
                             <li>
                                 <p className="text--2xl font-semibold mb-4">Pages</p>
