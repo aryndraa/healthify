@@ -43,7 +43,7 @@ export const Explore = () => {
                             </svg>
                         </div>
                         <div className="absolute p-4 group-hover:mt-[-40px] transition-all duration-300">
-                            <p className=" text-start font-semibold lg:text-2xl text-xl text-black transition duration-300 group-hover:text-white">Find Nearest Clinic</p>
+                            <p className=" text-start font-semibold lg:text-2xl text-xl text-black transition duration-300 group-hover:text-white">Find Nearest Pharmacy</p>
                             <p className="text-start  text-white opacity-0 transition duration-300 group-hover:opacity-100">Know more about disease, so you can self diagnose or just learning!</p>
                         </div>
                     </div>
