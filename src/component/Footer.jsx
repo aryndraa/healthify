@@ -12,8 +12,8 @@ const Footer = () => {
             <div className="container mx-auto flex justify-between max-[1280px]:justify-start  gap-20">
                 <div className=" hidden xl:flex flex-col gap-12 flex-1">
                     <div>
-                        <img src={heal} alt=" healthify logo" />
-                        <p className="max-w-[506px]">We provide accessible health information to empower informed decisions and enhance well-being.</p>
+                        <img src={heal} alt=" healthify logo " />
+                        <p className="max-w-[506px] ">We provide accessible health information to empower informed decisions and enhance well-being.</p>
                     </div>
 
                     <div className="flex flex-col gap-6">
